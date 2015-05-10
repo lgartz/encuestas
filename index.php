@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Encuesta</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/encuestas.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="navbar-header">
+					<a href="index.php" class="navbar-brand">Encuestas</a>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<form action="#">
+			<div class="form-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>¿Cual es su sabor de helado favorito?</h4>
+					</div>
+					<div class="panel-body">
+					  	<div class="radio">
+							<label class="form-control">
+								<input id="fresa" name="optionsRadios" type="radio" checked>
+								Fresa	
+							</label>
+						</div>
+						<div class="radio">
+							<label class="form-control">
+								<input id="chicle" name="optionsRadios" type="radio" >
+								Chicle
+							</label>
+						</div>
+						<div class="radio">
+							<label class="form-control">
+								<input id="arequipe" name="optionsRadios" type="radio" >
+								Arequipe
+							</label>
+						</div>
+						<div class="radio" >
+							<label class="form-control">
+								<input id="arequipe" name="optionsRadios" type="radio" >
+								Queso
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>¿Cuales son sus sabores de helado favoritos?</h4>
+					</div>
+					<div class="panel-body">
+						<div class="checkbox">
+							<label class="form-control">
+								<input type="checkbox">
+								Fresa						
+							</label>
+						</div>
+						<div class="checkbox">
+							<label class="form-control">
+								<input type="checkbox">
+								Chicle						
+							</label>
+						</div>
+						<div class="checkbox">
+							<label class="form-control">
+								<input type="checkbox">
+								Arequipe						
+							</label>
+						</div>
+						<div class="checkbox">
+							<label class="form-control">
+								<input type="checkbox">
+								Queso					
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>¿Cual es su sabor de helado favorito?</h4>
+					</div>
+					<div class="panel-body">
+						<select multiple name="selectHelado" id="selectHelado" class="form-control">
+							<option class="form-control">Fresa</option>
+							<option class="form-control">Arequipe</option>
+							<option class="form-control">Chicle</option>
+							<option class="form-control">Queso</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>¿Cual es su sabor de helado favorito para cada miembro de su familia?</h4>
+					</div>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-striped table-bordered table-hover ">
+								<tr class="active">
+									<th class="th-center"></th>
+									<th class="th-center">Arequipe</th>
+									<th class="th-center">Fresa</th>
+									<th class="th-center">Chicle</th>
+									<th class="th-center">Queso</th>
+									<th class="th-center">Coco</th>
+								</tr>
+								<tr>
+									<th>Papa</th>
+									<td class="td-center"><input id="papaRadio1" name="optionsRadios1" type="radio" class="form-control	"></td>
+									<td class="td-center"><input id="papaRadio2" name="optionsRadios1" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="papaRadio3" name="optionsRadios1" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="papaRadio4" name="optionsRadios1" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="papaRadio5" name="optionsRadios1" type="radio" class="form-control"></td>
+								</tr>
+								<tr>
+									<th>Mama</th>
+									<td class="td-center"><input id="mamaRadio1" name="optionsRadios2" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="mamaRadio2" name="optionsRadios2" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="mamaRadio3" name="optionsRadios2" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="mamaRadio4" name="optionsRadios2" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="mamaRadio5" name="optionsRadios2" type="radio" class="form-control"></td>
+								</tr>
+								<tr>
+									<th>Hermano</th>
+									<td class="td-center"><input id="hermanoRadio1" name="optionsRadios3" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="hermanoRadio2" name="optionsRadios3" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="hermanoRadio3" name="optionsRadios3" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="hermanoRadio4" name="optionsRadios3" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="hermanoRadio5" name="optionsRadios3" type="radio" class="form-control"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>¿Cual es su sabor de helado favorito para cada miembro de su familia?</h4>
+					</div>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-striped table-bordered table-hover ">
+								<tr class="active">
+									<th class="th-center"></th>
+									<th class="th-center">Arequipe</th>
+									<th class="th-center">Fresa</th>
+									<th class="th-center">Chicle</th>
+									<th class="th-center">Queso</th>
+									<th class="th-center">Coco</th>
+								</tr>
+								<tr>
+									<th>Papa</th>
+									<td class="td-center"><input id="papaCheck1" type="checkbox" class="form-control	"></td>
+									<td class="td-center"><input id="papaCheck2" type="checkbox" class="form-control"></td>
+									<td class="td-center"><input id="papaCheck3" type="checkbox" class="form-control"></td>
+									<td class="td-center"><input id="papaCheck4" type="checkbox" class="form-control"></td>
+									<td class="td-center"><input id="papaCheck5" type="checkbox" class="form-control"></td>
+								</tr>
+								<tr>
+									<th>Mama</th>
+									<td class="td-center"><input id="mamaCheck1" type="checkbox" class="form-control"></td>
+									<td class="td-center"><input id="mamaCheck2" type="checkbox" class="form-control"></td>
+									<td class="td-center"><input id="mamaCheck3" type="checkbox" class="form-control"></td>
+									<td class="td-center"><input id="mamaCheck4" type="checkbox" class="form-control"></td>
+									<td class="td-center"><input id="mamaCheck5" type="checkbox" class="form-control"></td>
+								</tr>
+								<tr>
+									<th>Hermano</th>
+									<td class="td-center"><input id="hermanoCheck1" type="checkbox" class="form-control"></td>
+									<td class="td-center"><input id="hermanoCheck2" type="checkbox" class="form-control"></td>
+									<td class="td-center"><input id="hermanoCheck3" type="checkbox" class="form-control"></td>
+									<td class="td-center"><input id="hermanoCheck4" type="checkbox" class="form-control"></td>
+									<td class="td-center"><input id="hermanoCheck5" type="checkbox" class="form-control"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Evalue las siguientes preguntas </h4>
+					</div>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-striped table-bordered table-hover ">
+								<tr class="active">
+									<th class="th-center">Pregunta</th>
+									<th class="th-center">Nada Importante</th>
+									<th class="th-center">Poco Importante</th>
+									<th class="th-center">Importante</th>
+									<th class="th-center">Bastante Importante</th>
+									<th class="th-center">Muy Importante</th>
+								</tr>
+								<tr>
+									<th>1. ¿Que tan Importante es su Educacion?</th>
+									<td class="td-center"><input id="educacion1" name="optionsRadios4" type="radio" class="form-control	"></td>
+									<td class="td-center"><input id="educacion2" name="optionsRadios4" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="educacion3" name="optionsRadios4" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="educacion4" name="optionsRadios4" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="educacion5" name="optionsRadios4" type="radio" class="form-control"></td>
+								</tr>
+								<tr>
+									<th>2. ¿Que tan Importante es su Familia?</th>
+									<td class="td-center"><input id="familia1" name="optionsRadios5" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="familia2" name="optionsRadios5" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="familia3" name="optionsRadios5" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="familia4" name="optionsRadios5" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="familia5" name="optionsRadios5" type="radio" class="form-control"></td>
+								</tr>
+								<tr>
+									<th>3. ¿Que tan Importante es su Religion?</th>
+									<td class="td-center"><input id="religion1" name="optionsRadios6" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="religion2" name="optionsRadios6" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="religion3" name="optionsRadios6" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="religion4" name="optionsRadios6" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="religion5" name="optionsRadios6" type="radio" class="form-control"></td>
+								</tr>
+								<tr>
+									<th>4. ¿Que tan Importante es su Ejercicio Fisico?</th>
+									<td class="td-center"><input id="ejercicio1" name="optionsRadios7" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="ejercicio2" name="optionsRadios7" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="ejercicio3" name="optionsRadios7" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="ejercicio4" name="optionsRadios7" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="ejercicio5" name="optionsRadios7" type="radio" class="form-control"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Segun los siguientes sabores de helados seleccione el tipo de textura y sabor que prefiere</h4>
+					</div>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-striped table-bordered table-hover">
+								<tr class="active">
+									<th class="th-center">Sabor</th>
+									<th class="th-center">Textura</th>
+									<th class="th-center">Sabor</th>
+								</tr>
+								<tr>
+									<th>Chocolate</th>
+									<td>
+										<select name="textura" id="texturaChocolate" class="form-control">
+											<option value="Liso">Liso</option>
+											<option value="Rugoso">Rugoso</option>
+											<option value="Esponjoso">Esponjoso</option>
+										</select>
+									</td>
+									<td>
+										<select name="sabor" id="saborChocolate" class="form-control">
+											<option value="Dulce">Dulce</option>
+											<option value="Amargo">Amargo</option>
+											<option value="Agridulce">Agridulce</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>Fresa</th>
+									<td>
+										<select name="textura" id="texturaFresa" class="form-control">
+											<option value="Liso">Liso</option>
+											<option value="Rugoso">Rugoso</option>
+											<option value="Esponjoso">Esponjoso</option>
+										</select>
+									</td>
+									<td>
+										<select name="sabor" id="saborFresa" class="form-control">
+											<option value="Dulce">Dulce</option>
+											<option value="Amargo">Amargo</option>
+											<option value="Agridulce">Agridulce</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>Coco</th>
+									<td>
+										<select name="textura" id="texturaCoco" class="form-control">
+											<option value="Liso">Liso</option>
+											<option value="Rugoso">Rugoso</option>
+											<option value="Esponjoso">Esponjoso</option>
+										</select>
+									</td>
+									<td>
+										<select name="sabor" id="saborCoco" class="form-control">
+											<option value="Dulce">Dulce</option>
+											<option value="Amargo">Amargo</option>
+											<option value="Agridulce">Agridulce</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>Queso</th>
+									<td>
+										<select name="textura" id="texturaQueso" class="form-control">
+											<option value="Liso">Liso</option>
+											<option value="Rugoso">Rugoso</option>
+											<option value="Esponjoso">Esponjoso</option>
+										</select>
+									</td>
+									<td>
+										<select name="sabor" id="saborQueso" class="form-control">
+											<option value="Dulce">Dulce</option>
+											<option value="Amargo">Amargo</option>
+											<option value="Agridulce">Agridulce</option>
+										</select>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button id="next" type="button" class="btn btn-default btn-md">
+				Siguiente <span class="glyphicon glyphicon-forward"></span>
+			</button>
+		</form>
+	</div>		
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/encuestas.js"></script>
+</body>
+</html>
