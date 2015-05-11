@@ -6,13 +6,14 @@
 	<title>Encuesta</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" href="css/encuestas.css">
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="navbar-header">
-					<a href="index.php" class="navbar-brand">Encuestas</a>
+				<a href="index.php" class="navbar-brand">Encuestas</a>
 			</div>
 		</nav>
 	</header>
@@ -48,6 +49,21 @@
 								Queso
 							</label>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>¿Cual es su sabor de helado favorito?</h4>
+					</div>
+					<div class="panel-body">
+						<select name="selectHelados" id="selectHelados" class="form-control">
+							<option value="Fresa">Fresa</option>
+							<option value="Arequipe">Arequipe</option>
+							<option value="Chicle">Chicle</option>
+							<option value="Queso">Queso</option>
+						</select>
 					</div>
 				</div>
 			</div>
@@ -328,8 +344,54 @@
 					</div>
 				</div>
 			</div>
-
-			<button id="next" type="button" class="btn btn-default btn-md">
+			<div class="form-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Clasifique los siguientes elementos, segun su favoritismo</h4>
+					</div>
+					<div class="panel-body">
+						<ul id="clasificacion" class="list-unstyled">
+							<li>
+								<div class="input-group">
+								  <span class="input-group-addon" id="listArequipe">1</span>
+								  <span class="form-control" aria-describedby="listArequipe">Arequipe</span>								  
+								</div>
+							</li>
+							<li>
+								<div class="input-group">
+								  <span class="input-group-addon" id="listFresa">2</span>
+								  <span class="form-control" aria-describedby="listFresa">Fresa</span>
+								</div>
+							</li>
+							<li>
+								<div class="input-group">
+								  <span class="input-group-addon" id="listQueso">3</span>
+								  <span class="form-control" aria-describedby="listQueso">Queso</span>
+								</div>
+							</li>
+							<li>
+								<div class="input-group">
+								  <span class="input-group-addon" id="listCoco">4</span>
+								  <span class="form-control" aria-describedby="listCoco">Coco</span>
+								</div>
+							</li>
+							<li>
+								<div class="input-group">
+								  <span class="input-group-addon" id="listChocolate">5</span>
+								  <span class="form-control" aria-describedby="listChocolate">Chocolate</span>
+								</div>
+							</li>
+							<li>
+								<div class="input-group">
+								  <span class="input-group-addon" id="listLimon">6</span>
+								  <span class="form-control" aria-describedby="listLimon">Limon</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<button id="next" type="button" class="btn btn-primary btn-sm">
 				Siguiente <span class="glyphicon glyphicon-forward"></span>
 			</button>
 		</form>
@@ -337,7 +399,7 @@
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.js"></script>
-	<script type="text/javascript" src="js/encuestas.js"></script>
+	<script type="text/javascript" src="javascript/jquery-ui.js"></script>
+	<script type="text/javascript" src="javascript/encuestas.js"></script>	
 </body>
 </html>
