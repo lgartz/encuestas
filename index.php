@@ -391,6 +391,49 @@
 					</div>
 				</div>
 			</div>
+			<div class="form-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>¿Que tan probable es que recomiende el helado de fresa?</h4>
+					</div>
+					<div class="panel-body">						
+						<div class="table-responsive">
+							<table class="table table-striped table-hover ">
+								<tr>
+									<td></td>
+									<td class="td-center">0</td>
+									<td class="td-center">1</td>
+									<td class="td-center">2</td>
+									<td class="td-center">3</td>
+									<td class="td-center">4</td>
+									<td class="td-center">5</td>
+									<td class="td-center">6</td>
+									<td class="td-center">7</td>
+									<td class="td-center">8</td>
+									<td class="td-center">9</td>
+									<td class="td-center">10</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th class="th-center" class="form-control">Nada Probable</th>	
+									<td class="td-center"><input id="probabilidad0" name="optionsProbabilidad" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="probabilidad1" name="optionsProbabilidad" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="probabilidad2" name="optionsProbabilidad" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="probabilidad3" name="optionsProbabilidad" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="probabilidad4" name="optionsProbabilidad" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="probabilidad5" name="optionsProbabilidad" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="probabilidad6" name="optionsProbabilidad" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="probabilidad7" name="optionsProbabilidad" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="probabilidad8" name="optionsProbabilidad" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="probabilidad9" name="optionsProbabilidad" type="radio" class="form-control"></td>
+									<td class="td-center"><input id="probabilidad10" name="optionsProbabilidad" type="radio" class="form-control"></td>
+									<th class="th-center" class="form-control">Muy Probable</th>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
 			<button id="next" type="button" class="btn btn-primary btn-sm">
 				Siguiente <span class="glyphicon glyphicon-forward"></span>
 			</button>

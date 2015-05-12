@@ -10,3 +10,19 @@ body{
 .td-center{
 	text-align: center;
 }
+
+.th-left{
+	text-align: left;
+}
+
+.td-left{
+	text-align: left;
+}
+
+.th-right{
+	text-align: right;
+}
+
+.td-right{
+	text-align: right;
+}
