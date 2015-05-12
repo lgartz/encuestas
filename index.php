@@ -390,7 +390,7 @@
 						</ul>
 					</div>
 				</div>
-			</div>
+			</div>			
 			<div class="form-group">
 				<div class="panel panel-default">
 					<div class="panel-heading">
@@ -401,16 +401,16 @@
 							<table class="table table-striped table-hover ">
 								<tr>
 									<td></td>
-									<td class="td-center">0</td>
-									<td class="td-center">1</td>
-									<td class="td-center">2</td>
-									<td class="td-center">3</td>
-									<td class="td-center">4</td>
-									<td class="td-center">5</td>
-									<td class="td-center">6</td>
-									<td class="td-center">7</td>
-									<td class="td-center">8</td>
-									<td class="td-center">9</td>
+									<td class="td-center">&nbsp;0</td>
+									<td class="td-center">&nbsp;1</td>
+									<td class="td-center">&nbsp;2</td>
+									<td class="td-center">&nbsp;3</td>
+									<td class="td-center">&nbsp;4</td>
+									<td class="td-center">&nbsp;5</td>
+									<td class="td-center">&nbsp;6</td>
+									<td class="td-center">&nbsp;7</td>
+									<td class="td-center">&nbsp;8</td>
+									<td class="td-center">&nbsp;9</td>
 									<td class="td-center">10</td>
 									<td></td>
 								</tr>
@@ -433,6 +433,50 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="form-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>¿Cual es su marca de helado favorita?</h4>
+					</div>
+					<div class="panel-body">
+						<input id="marcaFavorita" type="text" class="form-control" placeholder="Escriba su respuesta...">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>¿Cuales son sus tres marcas de helado?</h4>
+					</div>
+					<div class="panel-body">
+						<div class="input-group">
+							<span class="input-group-addon" >1</span>
+							<input id="preg1" type="text" class="form-control" placeholder="Escriba su respuesta...">
+						</div>
+						<br/>
+						<div class="input-group">
+							<span class="input-group-addon" >2</span>
+							<input id="preg12" type="text" class="form-control" placeholder="Escriba su respuesta...">
+						</div>
+						<br/>
+						<div class="input-group">
+							<span class="input-group-addon" >3</span>
+							<input id="preg3" type="text" class="form-control" placeholder="Escriba su respuesta...">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>¿Que es lo que mas le gusta de su helado favorito?</h4>
+					</div>
+					<div class="panel-body">
+						<textarea name="comentarios" id="comentarios" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
+					</div>
+				</div>
+
 			</div>
 			<button id="next" type="button" class="btn btn-primary btn-sm">
 				Siguiente <span class="glyphicon glyphicon-forward"></span>
