@@ -20,7 +20,7 @@
 	<div class="container">
 		<form action="#">
 			<div class="form-group">
-				<div class="panel panel-default">
+				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h4>¿Cual es su sabor de helado favorito?</h4>
 					</div>
@@ -53,7 +53,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="panel panel-default">
+				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h4>¿Cual es su sabor de helado favorito?</h4>
 					</div>
@@ -68,7 +68,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="panel panel-default">
+				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h4>¿Cuales son sus sabores de helado favoritos?</h4>
 					</div>
@@ -101,7 +101,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="panel panel-default">
+				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h4>¿Cual es su sabor de helado favorito?</h4>
 					</div>
@@ -116,7 +116,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="panel panel-default">
+				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h4>¿Cual es su sabor de helado favorito para cada miembro de su familia?</h4>
 					</div>
@@ -161,7 +161,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="panel panel-default">
+				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h4>¿Cual es su sabor de helado favorito para cada miembro de su familia?</h4>
 					</div>
@@ -206,7 +206,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="panel panel-default">
+				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h4>Evalue las siguientes preguntas </h4>
 					</div>
@@ -259,7 +259,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="panel panel-default">
+				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h4>Segun los siguientes sabores de helados seleccione el tipo de textura y sabor que prefiere</h4>
 					</div>
@@ -345,7 +345,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="panel panel-default">
+				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h4>Clasifique los siguientes elementos, segun su favoritismo</h4>
 					</div>
@@ -392,7 +392,7 @@
 				</div>
 			</div>			
 			<div class="form-group">
-				<div class="panel panel-default">
+				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h4>¿Que tan probable es que recomiende el helado de fresa?</h4>
 					</div>
@@ -435,7 +435,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="panel panel-default">
+				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h4>¿Cual es su marca de helado favorita?</h4>
 					</div>
@@ -445,7 +445,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="panel panel-default">
+				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h4>¿Cuales son sus tres marcas de helado?</h4>
 					</div>
@@ -468,7 +468,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="panel panel-default">
+				<div class="panel panel-primary">
 					<div class="panel-heading">
 						<h4>¿Que es lo que mas le gusta de su helado favorito?</h4>
 					</div>
@@ -476,7 +476,83 @@
 						<textarea name="comentarios" id="comentarios" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
 					</div>
 				</div>
-
+			</div>
+			<div class="form-group">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4>¿Cuando fue el ultimo dia y hora en comer su helado?</h4>
+					</div>
+					<div class="panel-body">
+						<div class="visible-xs">
+							<label for="fecha2">Fecha:</label>
+							<input id="fecha2" type="text" class="form-control" placeholder="Escriba la fecha...">
+							<label for="hora2">Hora:</label>
+							<div class="col col-xs-12">
+								<div class="col col-xs-5">
+									<select name="hora2" id="hora2" class="form-control">
+										<?php 
+											$cero = "0";
+											for ($i=0; $i<24; $i++) { 
+												if ($i<10) {
+													echo '<option value="'.$i.'">'.$cero.$i.'</option>';	
+												}else{
+													echo '<option value="'.$i.'">'.$i.'</option>';
+												}
+												
+											}
+										?>								
+									</select>
+								</div>
+								<div class="col col-xs-2" >:</div>
+								<div class="col col-xs-5">
+									<select name="minuto2" id="minuto2" class="form-control">
+										<?php 
+										$cero = "0";
+											for ($i=0; $i<60; $i++) { 
+												if ($i<10) {
+													echo '<option value="'.$i.'">'.$cero.$i.'</option>';	
+												}else{
+													echo '<option value="'.$i.'">'.$i.'</option>';
+												}
+											}
+										?>								
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="input-group hidden-xs">
+							<div class="input-group-addon">Fecha:</div>
+							<input id="fecha1" type="text" class="form-control" placeholder="Escriba la fecha...">
+							<div class="input-group-addon" >Hora:</div>
+							<select name="hora" id="hora" class="form-control">
+								<?php 
+									$cero = "0";
+									for ($i=0; $i<24; $i++) { 
+										if ($i<10) {
+											echo '<option value="'.$i.'">'.$cero.$i.'</option>';	
+										}else{
+											echo '<option value="'.$i.'">'.$i.'</option>';
+										}
+										
+									}
+								?>								
+							</select>
+							<div class="input-group-addon" >:</div>
+							<select name="minuto" id="minuto" class="form-control">
+								<?php 
+								$cero = "0";
+									for ($i=0; $i<60; $i++) { 
+										if ($i<10) {
+											echo '<option value="'.$i.'">'.$cero.$i.'</option>';	
+										}else{
+											echo '<option value="'.$i.'">'.$i.'</option>';
+										}
+									}
+								?>								
+							</select>
+						</div>
+					</div>
+				</div>
 			</div>
 			<button id="next" type="button" class="btn btn-primary btn-sm">
 				Siguiente <span class="glyphicon glyphicon-forward"></span>
@@ -485,8 +561,8 @@
 	</div>		
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="javascript/jquery-ui.js"></script>
+	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script type="text/javascript" src="javascript/encuestas.js"></script>	
 </body>
 </html>
