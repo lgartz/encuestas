@@ -483,30 +483,29 @@
 						<h4>¿Cuando fue el ultimo dia y hora en comer su helado?</h4>
 					</div>
 					<div class="panel-body">
-						<div class="visible-xs">
-							<label for="fecha2">Fecha:</label>
-							<input id="fecha2" type="text" class="form-control" placeholder="Escriba la fecha...">
-							<label for="hora2">Hora:</label>
-							<div class="col col-xs-12">
-								<div class="col col-xs-5">
-									<select name="hora2" id="hora2" class="form-control">
-										<?php 
-											$cero = "0";
-											for ($i=0; $i<24; $i++) { 
-												if ($i<10) {
-													echo '<option value="'.$i.'">'.$cero.$i.'</option>';	
-												}else{
-													echo '<option value="'.$i.'">'.$i.'</option>';
-												}
-												
+						<label for="fecha2">Fecha:</label>
+						<input id="fecha2" type="text" class="form-control" placeholder="Escriba la fecha...">
+						<label for="hora2">Hora:</label>
+						<div class="row">
+							<div class="col col-sm-5">						
+								<select name="hora2" id="hora2" class="form-control">
+									<?php 
+										$cero = "0";
+										for ($i=0; $i<24; $i++) { 
+											if ($i<10) {
+												echo '<option value="'.$i.'">'.$cero.$i.'</option>';	
+											}else{
+												echo '<option value="'.$i.'">'.$i.'</option>';
 											}
-										?>								
-									</select>
-								</div>
-								<div class="col col-xs-2" >:</div>
-								<div class="col col-xs-5">
-									<select name="minuto2" id="minuto2" class="form-control">
-										<?php 
+													
+										}
+									?>								
+								</select>
+							</div>
+							<div class="col col-sm-2 td-center" >:</div>
+							<div class="col col-sm-5">
+								<select name="minuto2" id="minuto2" class="form-control">
+									<?php 
 										$cero = "0";
 											for ($i=0; $i<60; $i++) { 
 												if ($i<10) {
@@ -516,40 +515,50 @@
 												}
 											}
 										?>								
-									</select>
-								</div>
+								</select>
 							</div>
 						</div>
-						<div class="input-group hidden-xs">
-							<div class="input-group-addon">Fecha:</div>
-							<input id="fecha1" type="text" class="form-control" placeholder="Escriba la fecha...">
-							<div class="input-group-addon" >Hora:</div>
-							<select name="hora" id="hora" class="form-control">
-								<?php 
-									$cero = "0";
-									for ($i=0; $i<24; $i++) { 
-										if ($i<10) {
-											echo '<option value="'.$i.'">'.$cero.$i.'</option>';	
-										}else{
-											echo '<option value="'.$i.'">'.$i.'</option>';
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4>¿Cual es su hora favorita del dia para comer un helado?</h4>
+					</div>
+					<div class="panel-body">
+						<label >Hora:</label>
+						<div class="row">
+							<div class="col col-sm-5">						
+								<select name="hora2" id="hora2" class="form-control">
+									<?php 
+										$cero = "0";
+										for ($i=0; $i<24; $i++) { 
+											if ($i<10) {
+												echo '<option value="'.$i.'">'.$cero.$i.'</option>';	
+											}else{
+												echo '<option value="'.$i.'">'.$i.'</option>';
+											}
+													
 										}
-										
-									}
-								?>								
-							</select>
-							<div class="input-group-addon" >:</div>
-							<select name="minuto" id="minuto" class="form-control">
-								<?php 
-								$cero = "0";
-									for ($i=0; $i<60; $i++) { 
-										if ($i<10) {
-											echo '<option value="'.$i.'">'.$cero.$i.'</option>';	
-										}else{
-											echo '<option value="'.$i.'">'.$i.'</option>';
-										}
-									}
-								?>								
-							</select>
+									?>								
+								</select>
+							</div>
+							<div class="col col-sm-2 td-center" >:</div>
+							<div class="col col-sm-5">
+								<select name="minuto2" id="minuto2" class="form-control">
+									<?php 
+										$cero = "0";
+											for ($i=0; $i<60; $i++) { 
+												if ($i<10) {
+													echo '<option value="'.$i.'">'.$cero.$i.'</option>';	
+												}else{
+													echo '<option value="'.$i.'">'.$i.'</option>';
+												}
+											}
+										?>								
+								</select>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -18,7 +18,6 @@ $(function(){
 			};
 		};	
     };
-    alert("Hola 8");    
     $("#fecha1").datepicker({
     	showAnim: "drop",
     	changeMonth: true,
@@ -37,5 +36,5 @@ $(function(){
         dayNamesMin: [ "Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa" ],
         monthNamesShort: [ "Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic" ]
     });
-    alert("Hola 343");     
+    alert('Prueba Nueva');
 });
