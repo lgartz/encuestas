@@ -1,0 +1,48 @@
+<poll>
+	<question number="1" type="smur-rb">
+		<ask value="¿Cual es su sabor de helado favorito?"/>
+		<option value="Fresa"/>
+		<option value="Chicle"/>
+		<option value="Arequipe"/>
+		<option value="Queso"/>
+		<option value="Feijoa"/>
+		<option value="Mani"/>
+	</question>
+	<question number="2" type="smur-s">
+		<ask value="¿Cual es su sabor de helado favorito?"/>
+		<option value="Fresa"/>
+		<option value="Chicle"/>
+		<option value="Arequipe"/>
+		<option value="Queso"/>
+		<option value="Feijoa"/>
+		<option value="Mani"/>
+	</question>
+	<question number="3" type="smmr-cb">
+		<ask value="¿Cuales son sus sabores de helado favoritos?"/>
+		<option value="Fresa"/>
+		<option value="Chicle"/>
+		<option value="Arequipe"/>
+		<option value="Queso"/>
+		<option value="Feijoa"/>
+		<option value="Mani"/>
+	</question>
+	<question number="3" type="smmr-sm">
+		<ask value="¿Cuales son sus sabores de helado favoritos?"/>
+		<option value="Fresa"/>
+		<option value="Chicle"/>
+		<option value="Arequipe"/>
+		<option value="Queso"/>
+		<option value="Feijoa"/>
+		<option value="Mani"/>		
+	</question>
+</poll>
+<!-- smur-rb = seleccion multiple unica respuesta radio button-->
+<!-- smur-s = seleccion multiple unica respuesta select-->
+<!-- smmr-cb = seleccion múltiple multiple respuesta check box-->
+<!-- smmr-sm = seleccion múltiple multiple respuesta select multiple-->
+<!-- mmomr-rb = matriz múltiples opciones multiples respuestas radio buton ---ver-->  
+<!-- mmomr-cb = matriz múltiples opciones multiples respuestas check box-->
+<!-- mmomr-s = matriz múltiples opciones multiples respuestas select-->
+<!-- mmpmr-rb = matriz múltiples preguntas multiples respuestas radio button ---ver -->
+<!-- locr-ul = lista ordenada clasificacion de respuestas unordered list-->
+<!-- er-rb escala de respuesta -->

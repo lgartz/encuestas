@@ -563,9 +563,6 @@
 					</div>
 				</div>
 			</div>
-			<button id="next" type="button" class="btn btn-primary btn-sm">
-				Siguiente <span class="glyphicon glyphicon-forward"></span>
-			</button>
 		</form>
 	</div>		
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
