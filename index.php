@@ -214,7 +214,7 @@
 						<div class="table-responsive">
 							<table class="table table-striped table-bordered table-hover ">
 								<tr class="active">
-									<th class="th-center">Pregunta</th>
+									<th class="th-center"></th>
 									<th class="th-center">Nada Importante</th>
 									<th class="th-center">Poco Importante</th>
 									<th class="th-center">Importante</th>
@@ -267,7 +267,7 @@
 						<div class="table-responsive">
 							<table class="table table-striped table-bordered table-hover">
 								<tr class="active">
-									<th class="th-center">Sabor</th>
+									<th class="th-center"></th>
 									<th class="th-center">Textura</th>
 									<th class="th-center">Sabor</th>
 								</tr>
