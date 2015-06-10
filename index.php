@@ -6,14 +6,14 @@
 	<title>Encuesta</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">						         
 	<link rel="stylesheet" href="css/encuestas.css">
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="navbar-header">
-				<a href="index.php" class="navbar-brand">Encuestas</a>
+				<span class="navbar-brand">Encuestas</span>
 			</div>
 		</nav>
 	</header>
@@ -27,7 +27,7 @@
 					<div class="panel-body">
 					  	<div class="radio">
 							<label class="form-control">
-								<input id="fresa" name="optionsRadios" type="radio" checked>
+								<input id="fresa" name="optionsRadios" type="radio">
 								Fresa	
 							</label>
 						</div>
