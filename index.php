@@ -27,25 +27,25 @@
 					<div class="panel-body">
 					  	<div class="radio">
 							<label class="form-control">
-								<input id="fresa" name="optionsRadios" type="radio">
+								<input id="fresa" name="optionsRadios" type="radio" value="Fresa">
 								Fresa	
 							</label>
 						</div>
 						<div class="radio">
 							<label class="form-control">
-								<input id="chicle" name="optionsRadios" type="radio" >
+								<input id="chicle" name="optionsRadios" type="radio" value="Chicle">
 								Chicle
 							</label>
 						</div>
 						<div class="radio">
 							<label class="form-control">
-								<input id="arequipe" name="optionsRadios" type="radio" >
+								<input id="arequipe" name="optionsRadios" type="radio" value="Arequipe">
 								Arequipe
 							</label>
 						</div>
 						<div class="radio" >
 							<label class="form-control">
-								<input id="arequipe" name="optionsRadios" type="radio" >
+								<input id="queso" name="optionsRadios" type="radio" value="Queso">
 								Queso
 							</label>
 						</div>
@@ -75,25 +75,25 @@
 					<div class="panel-body">
 						<div class="checkbox">
 							<label class="form-control">
-								<input type="checkbox">
+								<input type="checkbox" value="Fresa">
 								Fresa						
 							</label>
 						</div>
 						<div class="checkbox">
 							<label class="form-control">
-								<input type="checkbox">
+								<input type="checkbox" value="Chicle">
 								Chicle						
 							</label>
 						</div>
 						<div class="checkbox">
 							<label class="form-control">
-								<input type="checkbox">
+								<input type="checkbox" value="Arequipe">
 								Arequipe						
 							</label>
 						</div>
 						<div class="checkbox">
 							<label class="form-control">
-								<input type="checkbox">
+								<input type="checkbox" value="Queso">
 								Queso					
 							</label>
 						</div>
@@ -454,12 +454,10 @@
 							<span class="input-group-addon" >1</span>
 							<input id="preg1" type="text" class="form-control" placeholder="Escriba su respuesta...">
 						</div>
-						<br/>
 						<div class="input-group">
 							<span class="input-group-addon" >2</span>
 							<input id="preg12" type="text" class="form-control" placeholder="Escriba su respuesta...">
 						</div>
-						<br/>
 						<div class="input-group">
 							<span class="input-group-addon" >3</span>
 							<input id="preg3" type="text" class="form-control" placeholder="Escriba su respuesta...">

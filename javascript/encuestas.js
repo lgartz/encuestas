@@ -7,7 +7,6 @@ $(function(){
 
     $("#clasificacion").disableSelection();
     
-
     function cambiarNumeros(){
     	$lista =  $( "#clasificacion li div span" ).toArray();
 		$num = 1;
@@ -18,6 +17,7 @@ $(function(){
 			};
 		};	
     };
+    
     $("#fecha1").datepicker({
     	showAnim: "drop",
     	changeMonth: true,
@@ -27,6 +27,7 @@ $(function(){
         monthNamesShort: [ "Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic" ]
     }
     );
+    
     $("#fecha2").datepicker(
     	{
     	showAnim: "drop",
@@ -36,5 +37,6 @@ $(function(){
         dayNamesMin: [ "Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa" ],
         monthNamesShort: [ "Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic" ]
     });
+    
     alert('Prueba Nueva');
 });

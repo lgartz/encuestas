@@ -1,0 +1,15 @@
+<div class="form-group">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h4><%=ask%></h4>
+		</div>
+		<div class="panel-body"><% listOptions.each{ |option| %>
+			<div class="checkbox">
+				<label class="form-control">
+					<input name="<%=type%><%=number%>" type="checkbox" value="<%=option["value"]%>">
+					<%=option["value"]%>
+				</label>
+			</div><% } %>
+		</div>
+	</div>
+</div>

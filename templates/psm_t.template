@@ -1,0 +1,13 @@
+<div class="form-group">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h4><%=ask%></h4>
+		</div>
+		<div class="panel-body"><% listOptions.each{ |option| %><%for i in 1..option["value"].to_i%>
+			<div class="input-group">
+				<span class="input-group-addon"><%=i%></span>
+				<input id="<%=type%><%=number%><%=i%>" type="text" class="form-control" placeholder="Escriba su respuesta...">
+			</div><%end%><%}%>
+		</div>
+	</div>
+</div>

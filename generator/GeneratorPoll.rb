@@ -28,7 +28,7 @@ def readPollFileXml ( pathFile )
       when "mmr_cb"
         then getmmr_cb(questionChild)
       when "mmr_s"
-        then "mmr_s"
+        then getmmr_s(questionChild)
       when "loc_ul"
         then getloc_ul(questionChild)
       when "eru_rb"
@@ -44,8 +44,9 @@ def readPollFileXml ( pathFile )
       when "psh_s"
         then getpsh_s(questionChild)
       end
-      print "respuesta: #{resultado}\n"
-
+      print "-------------------------------#{type}----------------------------------\n"
+      print "#{resultado}\n"
+      print "-------------------------------#{type}----------------------------------\n"
     end
   end
 end
@@ -69,7 +70,8 @@ def getsmu_rb(questionChild)
   type = questionChild.attributes["type"]
   ask = questionChild.elements["ask"].attributes["value"].to_s
   listOptions = getListOptions(questionChild,"option")
-  return listOptions.to_s
+  erbClase = getTemplate("../encuestas/templates/smu_rb.template",binding)
+  return erbClase.to_s
 end
 
 def getsmu_s(questionChild)
@@ -78,7 +80,8 @@ def getsmu_s(questionChild)
   type = questionChild.attributes["type"]
   ask = questionChild.elements["ask"].attributes["value"].to_s
   listOptions = getListOptions(questionChild,"option")
-  return listOptions.to_s
+  erbClase = getTemplate("../encuestas/templates/smu_s.template",binding)
+  return erbClase.to_s
 end
 
 def getsmr_cb (questionChild)
@@ -87,7 +90,8 @@ def getsmr_cb (questionChild)
   type = questionChild.attributes["type"]
   ask = questionChild.elements["ask"].attributes["value"].to_s
   listOptions = getListOptions(questionChild,"option")
-  return listOptions.to_s
+  erbClase = getTemplate("../encuestas/templates/smr_cb.template",binding)
+  return erbClase.to_s
 end
 
 def getsmr_sm (questionChild)
@@ -96,7 +100,8 @@ def getsmr_sm (questionChild)
   type = questionChild.attributes["type"]
   ask = questionChild.elements["ask"].attributes["value"].to_s
   listOptions = getListOptions(questionChild,"option")
-  return listOptions.to_s
+  erbClase = getTemplate("../encuestas/templates/smr_sm.template",binding)
+  return erbClase.to_s
 end
 
 def getloc_ul (questionChild)
@@ -105,7 +110,8 @@ def getloc_ul (questionChild)
   type = questionChild.attributes["type"]
   ask = questionChild.elements["ask"].attributes["value"].to_s
   listOptions = getListOptions(questionChild,"option")
-  return listOptions.to_s
+  erbClase = getTemplate("../encuestas/templates/loc_ul.template",binding)
+  return erbClase.to_s
 end
 
 def getpsm_t (questionChild)
@@ -114,7 +120,8 @@ def getpsm_t (questionChild)
   type = questionChild.attributes["type"]
   ask = questionChild.elements["ask"].attributes["value"].to_s
   listOptions = getListOptions(questionChild,"option")
-  return listOptions.to_s
+  erbClase = getTemplate("../encuestas/templates/psm_t.template",binding)
+    return erbClase.to_s
 end
 
 def getmmr_rb (questionChild)
@@ -124,7 +131,7 @@ def getmmr_rb (questionChild)
   ask = questionChild.elements["ask"].attributes["value"].to_s
   listRows = getListOptions(questionChild.elements["rows"],"option")
   listColumns = getListOptions(questionChild.elements["columns"],"option")
-  return "Listas filas: #{listRows} columnas: #{listColumns}"
+  return "filas: #{listRows} columnas: #{listColumns}"
 end
 
 def getmmr_cb (questionChild)
@@ -134,7 +141,7 @@ def getmmr_cb (questionChild)
   ask = questionChild.elements["ask"].attributes["value"].to_s
   listRows = getListOptions(questionChild.elements["rows"],"option")
   listColumns = getListOptions(questionChild.elements["columns"],"option")
-  return "Listas filas: #{listRows} columnas: #{listColumns}"
+  return "filas: #{listRows} columnas: #{listColumns}"
 end
 
 def geteru_rb (questionChild)
@@ -146,7 +153,8 @@ def geteru_rb (questionChild)
   questionChild.elements["range"].attributes.each_attribute do |range|
     has[range.expanded_name] = range.value
   end
-  return "#{has}"
+  erbClase = getTemplate("../encuestas/templates/eru_rb.template",binding)
+  return erbClase.to_s
 end
 
 def getpsu_t (questionChild)
@@ -154,7 +162,8 @@ def getpsu_t (questionChild)
   required = questionChild.attributes["required"]
   type = questionChild.attributes["type"]
   ask = questionChild.elements["ask"].attributes["value"].to_s
-  return ask
+  erbClase = getTemplate("../encuestas/templates/psu_t.template",binding)
+  return erbClase.to_s
 end
 
 def getpsc_ta (questionChild)
@@ -179,6 +188,33 @@ def getpsh_s (questionChild)
   type = questionChild.attributes["type"]
   ask = questionChild.elements["ask"].attributes["value"].to_s
   return ask
+end
+
+def getmmr_s (questionChild)
+  number = questionChild.attributes["number"]
+  required = questionChild.attributes["required"]
+  type = questionChild.attributes["type"]
+  ask = questionChild.elements["ask"].attributes["value"].to_s
+  listRows = getListOptions(questionChild.elements["rows"],"option")
+  hashColumnas = getListOptionSelect(questionChild)
+  return "#{hashColumnas}"
+end
+
+def getListOptionSelect(questionChild)
+  has = Hash.new
+  questionChild.elements["columns"].each_element do |columns|
+    columnName = columns.attributes["value"]
+    listOption = getListOptions(columns,"label")
+    has[columnName] = listOption
+  end
+  return has
+end
+
+def getTemplate (pathTemplate, binding)
+  fileTemplate = File.new( pathTemplate )
+  filehtml = fileTemplate.read
+  erb = ERB.new filehtml
+  return erb.result(binding)
 end
 
 if ARGV[0]

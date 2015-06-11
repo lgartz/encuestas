@@ -1,0 +1,10 @@
+<div class="form-group">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h4><%=ask%></h4>
+		</div>
+		<div class="panel-body">
+			<input id="<%=type%><%=number%>" type="text" class="form-control" placeholder="Escriba su respuesta...">
+		</div>
+	</div>
+</div>

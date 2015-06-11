@@ -104,7 +104,7 @@
 		</question>
 		<question number="9" type="eru_rb" required="true">
 			<ask value="¿Que tan probable es que recomiende el helado de fresa?" />
-			<range minimum="0" maximum="10" />
+			<range minimum="0" maximum="10" labelminimum="Nada Probable" labelmaximum="Muy Probable"/>
 		</question>
 		<question number="10" type="psu_t" required="true">
 			<ask value="¿Cual es su marca de helado favorita?" />
@@ -228,7 +228,7 @@
 		</question>
 		<question number="9" type="eru_rb" required="true">
 			<ask value="¿Que tan probable es que recomiende el helado de fresa?" />
-			<range minimum="0" maximum="10" />
+			<range minimum="0" maximum="10" labelminimum="Nada Probable" labelmaximum="Muy Probable"/>
 		</question>
 		<question number="10" type="psu_t" required="true">
 			<ask value="¿Cual es su marca de helado favorita?" />

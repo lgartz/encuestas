@@ -1,0 +1,23 @@
+<div class="form-group">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h4><%=ask%></h4>
+		</div>
+		<div class="panel-body">						
+			<div class="table-responsive">
+				<table class="table table-striped table-hover ">
+					<tr>
+						<td></td><% for i in has["minimum"].to_i..has["maximum"].to_i %>
+						<td class="td-center"><%if i < 10 %>&nbsp;<%end%><%=i%></td><% end %>
+						<td></td>
+					</tr>
+					<tr>
+						<th class="th-center" class="form-control"><%=has["labelminimum"]%></th><% for i in has["minimum"].to_i..has["maximum"].to_i %>
+						<td class="td-center"><input id="<%=type%><%=number%><%=i%>" name="<%=type%><%=number%>" type="radio" class="form-control"></td><% end %>
+						<th class="th-center" class="form-control"><%=has["labelmaximum"]%></th>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

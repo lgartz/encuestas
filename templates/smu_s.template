@@ -1,0 +1,12 @@
+<div class="form-group">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h4><%=ask%></h4>
+		</div>
+		<div class="panel-body">
+			<select name="<%=type%><%=number%>" id="<%=type%><%=number%>" class="form-control"><% listOptions.each{ |option| %>
+				<option value="<%=option["value"]%>"><%=option["value"]%></option><% } %>
+			</select>
+		</div>
+	</div>
+</div>

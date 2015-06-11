@@ -1,0 +1,17 @@
+<div class="form-group">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h4><%=ask%></h4>
+		</div>
+		<div class="panel-body">
+			<ul id="<%=type%><%=number%>" class="list-unstyled"><% val = 1 %><% listOptions.each{ |option| %>
+				<li>
+					<div class="input-group">
+						<span class="input-group-addon" id="<%=type%><%=option["value"]%><%=number%>"><%=val%></span>
+					  	<span class="form-control" aria-describedby="<%=type%><%=option["value"]%><%=number%>"><%=option["value"]%></span>
+					</div>
+				</li><% val += 1 %><%}%>
+			</ul>
+		</div>
+	</div>
+</div>
