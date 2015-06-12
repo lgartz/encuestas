@@ -1,0 +1,10 @@
+<div class="form-group">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h4><%=ask%></h4>
+		</div>
+		<div class="panel-body">
+			<textarea name="<%=type%><%=number%>" id="<%=type%><%=number%>" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
+		</div>
+	</div>
+</div>

@@ -121,7 +121,7 @@ def getpsm_t (questionChild)
   ask = questionChild.elements["ask"].attributes["value"].to_s
   listOptions = getListOptions(questionChild,"option")
   erbClase = getTemplate("../encuestas/templates/psm_t.template",binding)
-    return erbClase.to_s
+  return erbClase.to_s
 end
 
 def getmmr_rb (questionChild)
@@ -171,7 +171,8 @@ def getpsc_ta (questionChild)
   required = questionChild.attributes["required"]
   type = questionChild.attributes["type"]
   ask = questionChild.elements["ask"].attributes["value"].to_s
-  return ask
+  erbClase = getTemplate("../encuestas/templates/psc_ta.template",binding)
+  return erbClase.to_s
 end
 
 def getpfh_s (questionChild)
@@ -179,7 +180,8 @@ def getpfh_s (questionChild)
   required = questionChild.attributes["required"]
   type = questionChild.attributes["type"]
   ask = questionChild.elements["ask"].attributes["value"].to_s
-  return ask
+  erbClase = getTemplate("../encuestas/templates/pfh_s.template",binding)
+  return erbClase.to_s
 end
 
 def getpsh_s (questionChild)
@@ -187,7 +189,8 @@ def getpsh_s (questionChild)
   required = questionChild.attributes["required"]
   type = questionChild.attributes["type"]
   ask = questionChild.elements["ask"].attributes["value"].to_s
-  return ask
+  erbClase = getTemplate("../encuestas/templates/pfh_s.template",binding)
+  return erbClase.to_s
 end
 
 def getmmr_s (questionChild)
