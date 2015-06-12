@@ -1,0 +1,25 @@
+<div class="form-group">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h4><%=ask%></h4>
+		</div>
+		<div class="panel-body">
+			<div class="table-responsive">
+				<table class="table table-striped table-bordered table-hover">
+					<tr class="active">
+						<th class="th-center"></th><%hashColumnas.keys.each{|key|%>
+						<th class="th-center"><%=key%></th><%}%>
+					</tr><%rowNum=1%><%listRows.each{|row|%>
+					<tr>
+						<th><%=row["value"]%></th><%columnNum=1%><%hashColumnas.each{|keys,values|%>
+						<td>
+							<select id="<%=type%>_<%=number%>_<%=rowNum%>_<%=columnNum%>" name="<%=type%>_<%=number%>_<%=rowNum%>_<%=columnNum%>" class="form-control"><%values.each{|val|%>
+								<option value="<%=val["value"]%>"><%=val["value"]%></option><%}%>
+							</select>
+						</td><%columnNum+=1%><%}%>
+					</tr><%rowNum+=1%><%}%>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

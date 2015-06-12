@@ -4,7 +4,7 @@
 			<h4><%=ask%></h4>
 		</div>
 		<div class="panel-body">
-			<select multiple name="<%=type%><%=number%>" id="<%=type%><%=number%>" class="form-control"><% listOptions.each{ |option| %>
+			<select multiple id="<%=type%>_<%=number%>" name="<%=type%>_<%=number%>" class="form-control"><% listOptions.each{ |option| %>
 				<option class="form-control"><%=option["value"]%></option><% } %>			
 			</select>
 		</div>

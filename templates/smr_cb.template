@@ -6,7 +6,7 @@
 		<div class="panel-body"><% listOptions.each{ |option| %>
 			<div class="checkbox">
 				<label class="form-control">
-					<input name="<%=type%><%=number%>" type="checkbox" value="<%=option["value"]%>">
+					<input id="<%=type%>_<%=number%>" name="<%=type%>_<%=number%>" type="checkbox" value="<%=option["value"]%>">
 					<%=option["value"]%>
 				</label>
 			</div><% } %>

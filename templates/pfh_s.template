@@ -4,12 +4,12 @@
 			<h4><%=ask%></h4>
 		</div>
 		<div class="panel-body">
-			<label for="<%=type%>_date<%=number%>">Fecha:</label>
-			<input id="<%=type%>_date<%=number%>" type="text" class="form-control" placeholder="Ingrese la fecha...">
-			<label for="<%=type%>_hour<%=number%>">Hora:</label>
+			<label for="<%=type%>_date_<%=number%>">Fecha:</label>
+			<input id="<%=type%>_date_<%=number%>" name="<%=type%>_date_<%=number%>" type="text" class="form-control" placeholder="Ingrese la fecha...">
+			<label for="<%=type%>_hour_<%=number%>">Hora:</label>
 			<div class="row">
 				<div class="col col-sm-5">					
-					<select name="<%=type%>_hour<%=number%>" id="<%=type%>_hour<%=number%>" class="form-control">
+					<select name="<%=type%>_hour<%=number%>" id="<%=type%>_hour_<%=number%>" name="<%=type%>_hour_<%=number%>" class="form-control">
 						<?php 
 							$cero = "0";
 							for ($i=0; $i<24; $i++) { 
@@ -25,7 +25,7 @@
 				</div>
 				<div class="col col-sm-2 td-center" >:</div>
 				<div class="col col-sm-5">
-					<select name="<%=type%>_minute<%=number%>" id="<%=type%>_minute<%=number%>" class="form-control">
+					<select name="<%=type%>_minute<%=number%>" id="<%=type%>_minute_<%=number%>" name="<%=type%>_minute_<%=number%>" class="form-control">
 						<?php 
 							$cero = "0";
 							for ($i=0; $i<60; $i++) { 

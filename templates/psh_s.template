@@ -7,7 +7,7 @@
 			<label >Hora:</label>
 			<div class="row">
 				<div class="col col-sm-5">						
-					<select name="<%=type%>_hour<%=number%>" id="<%=type%>_hour<%=number%>" class="form-control">
+					<select id="<%=type%>_hour_<%=number%>" name="<%=type%>_hour_<%=number%>" class="form-control">
 						<?php 
 							$cero = "0";
 							for ($i=0; $i<24; $i++) { 
@@ -23,7 +23,7 @@
 				</div>
 				<div class="col col-sm-2 td-center" >:</div>
 				<div class="col col-sm-5">
-					<select name="<%=type%>_minute<%=number%>" id="<%=type%>_minute<%=number%>" class="form-control">
+					<select id="<%=type%>_minute_<%=number%>" name="<%=type%>_minute_<%=number%>" class="form-control">
 						<?php 
 							$cero = "0";
 							for ($i=0; $i<60; $i++) { 

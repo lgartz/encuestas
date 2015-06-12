@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title><%= title =></title>
+	<title><%=title%></title>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">			
@@ -13,16 +13,15 @@
 	<header>
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="navbar-header">
-				<span class="navbar-brand"><%= name %></span>
+				<span class="navbar-brand"><%=name%></span>
 			</div>
 		</nav>
 	</header>
 	<div class="container">
 		<form action="#">
-			<%= body %>
+			<%=body%>
 		</form>
 	</div>
-	<%= body %>
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

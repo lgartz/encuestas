@@ -1,0 +1,21 @@
+<div class="form-group">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h4><%=ask%></h4>
+		</div>
+		<div class="panel-body">
+			<div class="table-responsive">
+				<table class="table table-striped table-bordered table-hover ">
+					<tr class="active">
+						<th class="th-center"></th><%listColumns.each{|column|%>
+						<th class="th-center"><%=column["value"]%></th><%}%>
+					</tr><%numRow = 1%><%listRows.each{|row|%>
+					<tr>
+						<th><%=row["value"]%></th><%for i in 1..listColumns.length%>
+						<td class="td-center"><input id="<%=type%>_<%=number%>_<%=numRow%>_<%=i%>" name="<%=type%>_<%=number%>_<%=numRow%>" type="radio" class="form-control"></td><%end%>
+					</tr><%numRow+=1%><%}%>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

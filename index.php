@@ -133,7 +133,7 @@
 								</tr>
 								<tr>
 									<th>Papa</th>
-									<td class="td-center"><input id="papaRadio1" name="optionsRadios1" type="radio" class="form-control	"></td>
+									<td class="td-center"><input id="papaRadio1" name="optionsRadios1" type="radio" class="form-control"></td>
 									<td class="td-center"><input id="papaRadio2" name="optionsRadios1" type="radio" class="form-control"></td>
 									<td class="td-center"><input id="papaRadio3" name="optionsRadios1" type="radio" class="form-control"></td>
 									<td class="td-center"><input id="papaRadio4" name="optionsRadios1" type="radio" class="form-control"></td>
@@ -178,7 +178,7 @@
 								</tr>
 								<tr>
 									<th>Papa</th>
-									<td class="td-center"><input id="papaCheck1" type="checkbox" class="form-control	"></td>
+									<td class="td-center"><input id="papaCheck1" type="checkbox" class="form-control"></td>
 									<td class="td-center"><input id="papaCheck2" type="checkbox" class="form-control"></td>
 									<td class="td-center"><input id="papaCheck3" type="checkbox" class="form-control"></td>
 									<td class="td-center"><input id="papaCheck4" type="checkbox" class="form-control"></td>

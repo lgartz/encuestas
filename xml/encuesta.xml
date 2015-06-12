@@ -1,5 +1,5 @@
 <polls>
-	<poll title="encuesta1" name="Encuesta Helados 1">
+	<poll title="encuesta1" name="Encuesta Helados 1" namePage="prueba">
 		<question number="1" type="smu_rb" required="true">
 			<ask value="¿Cual es su sabor de helado favorito?" />
 			<option value="Fresa" checked="true"/>
@@ -123,7 +123,7 @@
 			<ask value="¿Cual es su hora favorita del dia para comer un helado?" />
 		</question>
 	</poll>
-	<poll title="encuesta2" name="Encuesta Helados 2">
+	<poll title="encuesta2" name="Encuesta Helados 2" namePage="prueba2">
 		<question number="1" type="smu_rb" required="true">
 			<ask value="¿Cual es su sabor de helado favorito?" />
 			<option value="Fresa" />

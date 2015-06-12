@@ -6,7 +6,7 @@
 		<div class="panel-body"><% listOptions.each{ |option| %><%for i in 1..option["value"].to_i%>
 			<div class="input-group">
 				<span class="input-group-addon"><%=i%></span>
-				<input id="<%=type%><%=number%><%=i%>" type="text" class="form-control" placeholder="Escriba su respuesta...">
+				<input id="<%=type%>_<%=number%>_<%=i%>" name="<%=type%>_<%=number%>_<%=i%>" type="text" class="form-control" placeholder="Escriba su respuesta...">
 			</div><%end%><%}%>
 		</div>
 	</div>

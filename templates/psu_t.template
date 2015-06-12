@@ -4,7 +4,7 @@
 			<h4><%=ask%></h4>
 		</div>
 		<div class="panel-body">
-			<input id="<%=type%><%=number%>" type="text" class="form-control" placeholder="Escriba su respuesta...">
+			<input id="<%=type%>_<%=number%>" name="<%=type%>_<%=number%>" type="text" class="form-control" placeholder="Escriba su respuesta...">
 		</div>
 	</div>
 </div>
