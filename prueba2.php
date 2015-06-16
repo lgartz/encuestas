@@ -537,12 +537,10 @@
 			<h4>¿Cual es su hora favorita del dia para comer un helado?</h4>
 		</div>
 		<div class="panel-body">
-			<label for="psh_s_date_14">Fecha:</label>
-			<input id="psh_s_date_14" name="psh_s_date_14" type="text" class="form-control" placeholder="Ingrese la fecha...">
-			<label for="psh_s_hour_14">Hora:</label>
+			<label >Hora:</label>
 			<div class="row">
-				<div class="col col-sm-5">					
-					<select name="psh_s_hour14" id="psh_s_hour_14" name="psh_s_hour_14" class="form-control">
+				<div class="col col-sm-5">						
+					<select id="psh_s_hour_14" name="psh_s_hour_14" class="form-control">
 						<?php 
 							$cero = "0";
 							for ($i=0; $i<24; $i++) { 
@@ -558,7 +556,7 @@
 				</div>
 				<div class="col col-sm-2 td-center" >:</div>
 				<div class="col col-sm-5">
-					<select name="psh_s_minute14" id="psh_s_minute_14" name="psh_s_minute_14" class="form-control">
+					<select id="psh_s_minute_14" name="psh_s_minute_14" class="form-control">
 						<?php 
 							$cero = "0";
 							for ($i=0; $i<60; $i++) { 
@@ -582,7 +580,7 @@
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-	<script type="text/javascript" src="javascript/encuestas.js"></script>
+	<script type="text/javascript" src="javascript/prueba2.js"></script>
 </body>
 </html>
 

@@ -12,6 +12,8 @@ def readPollFileXml ( pathFile )
     name = pollChild.attributes["name"].to_s
     namePage = pollChild.attributes["namePage"].to_s
     body = ""
+    listLocUlId = []
+    listDatesId = []
     # Se realiza la lectura de cada una las preguntas
     pollChild.each_element("question") do | questionChild |
       type = questionChild.attributes["type"]
@@ -31,7 +33,7 @@ def readPollFileXml ( pathFile )
       when "mmr_s"
         then getmmr_s(questionChild)
       when "loc_ul"
-        then getloc_ul(questionChild)
+        then getloc_ul(questionChild,listLocUlId)
       when "eru_rb"
         then geteru_rb(questionChild)
       when "psu_t"
@@ -41,12 +43,14 @@ def readPollFileXml ( pathFile )
       when "psc_ta"
         then getpsc_ta(questionChild)
       when "pfh_s"
-        then getpfh_s(questionChild)
+        then getpfh_s(questionChild,listDatesId)
       when "psh_s"
         then getpsh_s(questionChild)
       end
       body << "#{resultado}\n"
     end
+    erbJavaScript = getTemplate("../encuestas/templates/poll_script.template",binding)
+    createFile("../encuestas/javascript/",".js",namePage,erbJavaScript)
     erbHtml = getTemplate("../encuestas/templates/poll.template",binding)
     createFile("../encuestas/",".php",namePage,erbHtml)
   end
@@ -105,10 +109,11 @@ def getsmr_sm (questionChild)
   return erbTemplate.to_s
 end
 
-def getloc_ul (questionChild)
+def getloc_ul (questionChild, listLocUlId)
   number = questionChild.attributes["number"]
   required = questionChild.attributes["required"]
   type = questionChild.attributes["type"]
+  listLocUlId.push("#{type}_#{number}")
   ask = questionChild.elements["ask"].attributes["value"].to_s
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/loc_ul.template",binding)
@@ -178,10 +183,11 @@ def getpsc_ta (questionChild)
   return erbTemplate.to_s
 end
 
-def getpfh_s (questionChild)
+def getpfh_s (questionChild, listDatesId)
   number = questionChild.attributes["number"]
   required = questionChild.attributes["required"]
   type = questionChild.attributes["type"]
+  listDatesId.push("#{type}_date_#{number}")
   ask = questionChild.elements["ask"].attributes["value"].to_s
   erbTemplate = getTemplate("../encuestas/templates/pfh_s.template",binding)
   return erbTemplate.to_s
@@ -192,7 +198,7 @@ def getpsh_s (questionChild)
   required = questionChild.attributes["required"]
   type = questionChild.attributes["type"]
   ask = questionChild.elements["ask"].attributes["value"].to_s
-  erbTemplate = getTemplate("../encuestas/templates/pfh_s.template",binding)
+  erbTemplate = getTemplate("../encuestas/templates/psh_s.template",binding)
   return erbTemplate.to_s
 end
 

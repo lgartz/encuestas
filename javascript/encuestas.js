@@ -1,14 +1,14 @@
 $(function(){	
-	$("#clasificacion").sortable({
+	$("#loc_ul_8").sortable({
 		beforeStop: function( event, ui ) {
-			cambiarNumeros();
+			cambiarNumeros("#loc_ul_8");
 		}
 	});
 
-    $("#clasificacion").disableSelection();
+    $("#loc_ul_8").disableSelection();
     
-    function cambiarNumeros(){
-    	$lista =  $( "#clasificacion li div span" ).toArray();
+    function cambiarNumeros(id){
+    	$lista =  $( id+" li div span" ).toArray();
 		$num = 1;
 		for (var i = 0; i < $lista.length; i++) {			
 			if ((i%2) == 0){
@@ -18,7 +18,7 @@ $(function(){
 		};	
     };
     
-    $("#fecha1").datepicker({
+    $("#pfh_s_date_13").datepicker({
     	showAnim: "drop",
     	changeMonth: true,
         changeYear: true,        
@@ -28,7 +28,7 @@ $(function(){
     }
     );
     
-    $("#fecha2").datepicker(
+    $("#psh_s_date_14").datepicker(
     	{
     	showAnim: "drop",
     	changeMonth: true,
@@ -38,5 +38,5 @@ $(function(){
         monthNamesShort: [ "Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic" ]
     });
     
-    alert('Prueba Nueva');
+    alert('Prueba Nueva --');
 });
