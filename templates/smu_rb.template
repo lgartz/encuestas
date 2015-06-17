@@ -1,12 +1,12 @@
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4><%= ask %></h4>
+	<div id="panel_<%=type%>_<%=number%>" class="panel panel-primary">
+		<div id="panel_head_<%=type%>_<%=number%>" class="panel-heading">
+			<h4><%=ask%> <small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta pregunta es obligatoria</b></small></h4>
 		</div>
-		<div class="panel-body"><%i = 1%><% listOptions.each{ |option| %>	
+		<div id="panel_body_<%=type%>_<%=number%>" class="panel-body"><%i = 1%><% listOptions.each{ |option| %>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="<%=type%>_<%=number%>_<%i%>" name="<%=type%>_<%=number%>" type="radio" value="<%=option["value"]%>">
+					<input id="<%=type%>_<%=number%>_<%=i%>" name="<%=type%>_<%=number%>" type="radio" value="<%=option["value"]%>">
 					<%=option["value"]%>
 				</label>
 			</div><%i += 1%><% } %>

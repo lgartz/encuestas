@@ -14,46 +14,98 @@ def readPollFileXml ( pathFile )
     body = ""
     listLocUlId = []
     listDatesId = []
+    hashValidate = Hash.new
     # Se realiza la lectura de cada una las preguntas
     pollChild.each_element("question") do | questionChild |
       type = questionChild.attributes["type"]
-      resultado = case type
-      when "smu_rb"
-        then getsmu_rb(questionChild)
-      when "smu_s"
-        then getsmu_s(questionChild)
-      when "smr_cb"
-        then getsmr_cb(questionChild)
-      when "smr_sm"
-        then getsmr_sm(questionChild)
-      when "mmr_rb"
-        then getmmr_rb(questionChild)
-      when "mmr_cb"
-        then getmmr_cb(questionChild)
-      when "mmr_s"
-        then getmmr_s(questionChild)
-      when "loc_ul"
-        then getloc_ul(questionChild,listLocUlId)
-      when "eru_rb"
-        then geteru_rb(questionChild)
-      when "psu_t"
-        then getpsu_t(questionChild)
-      when "psm_t"
-        then getpsm_t(questionChild)
-      when "psc_ta"
-        then getpsc_ta(questionChild)
-      when "pfh_s"
-        then getpfh_s(questionChild,listDatesId)
-      when "psh_s"
-        then getpsh_s(questionChild)
-      end
+      number = questionChild.attributes["number"]
+      required = questionChild.attributes["required"]
+      ask = questionChild.elements["ask"].attributes["value"]
+      resultado = getResultElementForm(questionChild,type,number,required,ask,listLocUlId,listDatesId)
       body << "#{resultado}\n"
+      if required == "true"
+        getResultHashElementsRequired(type,number,hashValidate,questionChild)
+      end
     end
+    print hashValidate.to_s
     erbJavaScript = getTemplate("../encuestas/templates/poll_script.template",binding)
     createFile("../encuestas/javascript/",".js",namePage,erbJavaScript)
     erbHtml = getTemplate("../encuestas/templates/poll.template",binding)
     createFile("../encuestas/",".php",namePage,erbHtml)
   end
+end
+
+def getResultHashElementsRequired(type,number,hashValidate,questionChild)
+  case type
+  when "smu_rb"
+    name="#{type}_#{number}"
+    getContainsKey(hashValidate,type,number,name)
+  when "smu_s"
+    name="#{type}_#{number}"
+    getContainsKey(hashValidate,type,number,name)
+  when "smr_cb"
+    name="#{type}_#{number}"
+    getContainsKey(hashValidate,type,number,name)
+  when "smr_sm"
+    name="#{type}_#{number}"
+    getContainsKey(hashValidate,type,number,name)
+  when "mmr_rb"
+    listRows = getListOptions(questionChild.elements["rows"],"option")
+    for i in 1..listRows.length
+      name="#{type}_#{number}_#{i}"
+      getContainsKey(hashValidate,type,number,name)
+    end
+  when "mmr_cb"
+    listRows = getListOptions(questionChild.elements["rows"],"option")
+    for i in 1..listRows.length
+      name="#{type}_#{number}_#{i}"
+      getContainsKey(hashValidate,type,number,name)
+    end
+  end
+end
+
+def getContainsKey (hashValidate,type,number,name)
+  if hashValidate[type]
+    hashValidate[type].push(name)
+  else
+    list = []
+    list.push(name)
+    hashValidate[type] = list
+  end
+end
+
+def getResultElementForm(questionChild,type,number,required,ask,listLocUlId,listDatesId)
+  resultado = case type
+  when "smu_rb"
+    then getsmu_rb(questionChild,type,number,required,ask)
+  when "smu_s"
+    then getsmu_s(questionChild,type,number,required,ask)
+  when "smr_cb"
+    then getsmr_cb(questionChild,type,number,required,ask)
+  when "smr_sm"
+    then getsmr_sm(questionChild,type,number,required,ask)
+  when "mmr_rb"
+    then getmmr_rb(questionChild,type,number,required,ask,getListOptions(questionChild.elements["rows"],"option"),getListOptions(questionChild.elements["columns"],"option"))
+  when "mmr_cb"
+    then getmmr_cb(questionChild,type,number,required,ask,getListOptions(questionChild.elements["rows"],"option"),getListOptions(questionChild.elements["columns"],"option"))
+  when "mmr_s"
+    then getmmr_s(questionChild,type,number,required,ask,getListOptions(questionChild.elements["rows"],"option"))
+  when "loc_ul"
+    then getloc_ul(questionChild,listLocUlId,type,number,required,ask)
+  when "eru_rb"
+    then geteru_rb(questionChild,type,number,required,ask)
+  when "psu_t"
+    then getpsu_t(questionChild,type,number,required,ask)
+  when "psm_t"
+    then getpsm_t(questionChild,type,number,required,ask)
+  when "psc_ta"
+    then getpsc_ta(questionChild,type,number,required,ask)
+  when "pfh_s"
+    then getpfh_s(questionChild,listDatesId,type,number,required,ask)
+  when "psh_s"
+    then getpsh_s(questionChild,type,number,required,ask)
+  end
+  return resultado
 end
 
 # Método encargado de obtener de un determinado elemento el listado de opciones
@@ -69,94 +121,54 @@ def getListOptions ( element, value )
   return listOptions
 end
 
-def getsmu_rb(questionChild)
-  number = questionChild.attributes["number"]
-  required = questionChild.attributes["required"]
-  type = questionChild.attributes["type"]
-  ask = questionChild.elements["ask"].attributes["value"].to_s
+def getsmu_rb(questionChild,type,number,required,ask)
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/smu_rb.template",binding)
   return erbTemplate.to_s
 end
 
-def getsmu_s(questionChild)
-  number = questionChild.attributes["number"]
-  required = questionChild.attributes["required"]
-  type = questionChild.attributes["type"]
-  ask = questionChild.elements["ask"].attributes["value"].to_s
+def getsmu_s(questionChild,type,number,required,ask)
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/smu_s.template",binding)
   return erbTemplate.to_s
 end
 
-def getsmr_cb (questionChild)
-  number = questionChild.attributes["number"]
-  required = questionChild.attributes["required"]
-  type = questionChild.attributes["type"]
-  ask = questionChild.elements["ask"].attributes["value"].to_s
+def getsmr_cb (questionChild,type,number,required,ask)
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/smr_cb.template",binding)
   return erbTemplate.to_s
 end
 
-def getsmr_sm (questionChild)
-  number = questionChild.attributes["number"]
-  required = questionChild.attributes["required"]
-  type = questionChild.attributes["type"]
-  ask = questionChild.elements["ask"].attributes["value"].to_s
+def getsmr_sm (questionChild,type,number,required,ask)
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/smr_sm.template",binding)
   return erbTemplate.to_s
 end
 
-def getloc_ul (questionChild, listLocUlId)
-  number = questionChild.attributes["number"]
-  required = questionChild.attributes["required"]
-  type = questionChild.attributes["type"]
+def getloc_ul (questionChild, listLocUlId,type,number,required,ask)
   listLocUlId.push("#{type}_#{number}")
-  ask = questionChild.elements["ask"].attributes["value"].to_s
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/loc_ul.template",binding)
   return erbTemplate.to_s
 end
 
-def getpsm_t (questionChild)
-  number = questionChild.attributes["number"]
-  required = questionChild.attributes["required"]
-  type = questionChild.attributes["type"]
-  ask = questionChild.elements["ask"].attributes["value"].to_s
+def getpsm_t (questionChild,type,number,required,ask)
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/psm_t.template",binding)
   return erbTemplate.to_s
 end
 
-def getmmr_rb (questionChild)
-  number = questionChild.attributes["number"]
-  required = questionChild.attributes["required"]
-  type = questionChild.attributes["type"]
-  ask = questionChild.elements["ask"].attributes["value"].to_s
-  listRows = getListOptions(questionChild.elements["rows"],"option")
-  listColumns = getListOptions(questionChild.elements["columns"],"option")
+def getmmr_rb (questionChild,type,number,required,ask,listRows,listColumns)
   erbTemplate = getTemplate("../encuestas/templates/mmr_rb.template",binding)
   return erbTemplate.to_s
 end
 
-def getmmr_cb (questionChild)
-  number = questionChild.attributes["number"]
-  required = questionChild.attributes["required"]
-  type = questionChild.attributes["type"]
-  ask = questionChild.elements["ask"].attributes["value"].to_s
-  listRows = getListOptions(questionChild.elements["rows"],"option")
-  listColumns = getListOptions(questionChild.elements["columns"],"option")
+def getmmr_cb (questionChild,type,number,required,ask,listRows,listColumns)
   erbTemplate = getTemplate("../encuestas/templates/mmr_cb.template",binding)
   return erbTemplate.to_s
 end
 
-def geteru_rb (questionChild)
-  number = questionChild.attributes["number"]
-  required = questionChild.attributes["required"]
-  type = questionChild.attributes["type"]
-  ask = questionChild.elements["ask"].attributes["value"].to_s
+def geteru_rb (questionChild,type,number,required,ask)
   has = Hash.new
   questionChild.elements["range"].attributes.each_attribute do |range|
     has[range.expanded_name] = range.value
@@ -165,49 +177,28 @@ def geteru_rb (questionChild)
   return erbTemplate.to_s
 end
 
-def getpsu_t (questionChild)
-  number = questionChild.attributes["number"]
-  required = questionChild.attributes["required"]
-  type = questionChild.attributes["type"]
-  ask = questionChild.elements["ask"].attributes["value"].to_s
+def getpsu_t (questionChild,type,number,required,ask)
   erbTemplate = getTemplate("../encuestas/templates/psu_t.template",binding)
   return erbTemplate.to_s
 end
 
-def getpsc_ta (questionChild)
-  number = questionChild.attributes["number"]
-  required = questionChild.attributes["required"]
-  type = questionChild.attributes["type"]
-  ask = questionChild.elements["ask"].attributes["value"].to_s
+def getpsc_ta (questionChild,type,number,required,ask)
   erbTemplate = getTemplate("../encuestas/templates/psc_ta.template",binding)
   return erbTemplate.to_s
 end
 
-def getpfh_s (questionChild, listDatesId)
-  number = questionChild.attributes["number"]
-  required = questionChild.attributes["required"]
-  type = questionChild.attributes["type"]
+def getpfh_s (questionChild, listDatesId,type,number,required,ask)
   listDatesId.push("#{type}_date_#{number}")
-  ask = questionChild.elements["ask"].attributes["value"].to_s
   erbTemplate = getTemplate("../encuestas/templates/pfh_s.template",binding)
   return erbTemplate.to_s
 end
 
-def getpsh_s (questionChild)
-  number = questionChild.attributes["number"]
-  required = questionChild.attributes["required"]
-  type = questionChild.attributes["type"]
-  ask = questionChild.elements["ask"].attributes["value"].to_s
+def getpsh_s (questionChild,type,number,required,ask)
   erbTemplate = getTemplate("../encuestas/templates/psh_s.template",binding)
   return erbTemplate.to_s
 end
 
-def getmmr_s (questionChild)
-  number = questionChild.attributes["number"]
-  required = questionChild.attributes["required"]
-  type = questionChild.attributes["type"]
-  ask = questionChild.elements["ask"].attributes["value"].to_s
-  listRows = getListOptions(questionChild.elements["rows"],"option")
+def getmmr_s (questionChild,type,number,required,ask,listRows)
   hashColumnas = getListOptionSelect(questionChild)
   erbTemplate = getTemplate("../encuestas/templates/mmr_s.template",binding)
   return erbTemplate.to_s

@@ -18,8 +18,12 @@
 		</nav>
 	</header>
 	<div class="container">
-		<form action="#">
+		<form action="#" method="GET">
 			<%=body%>
+		<div class="form-group">
+			<button id="enviar" type="submit" class="btn btn-primary">Enviar</button>
+			<button id="cancelar" type="reset" class="btn btn-primary">Cancelar</button>
+		</div>
 		</form>
 	</div>
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>

@@ -91,7 +91,7 @@
 				</option>
 			</columns>
 		</question>
-		<question number="8" type="loc_ul" required="true">
+		<question number="8" type="loc_ul" required="false">
 			<ask value="Clasifique los siguientes elementos, segun su favoritismo" />
 			<option value="Fresa" />
 			<option value="Chicle" />
@@ -215,7 +215,7 @@
 				</option>
 			</columns>
 		</question>
-		<question number="8" type="loc_ul" required="true">
+		<question number="8" type="loc_ul" required="false">
 			<ask value="Clasifique los siguientes elementos, segun su favoritismo" />
 			<option value="Fresa" />
 			<option value="Chicle" />

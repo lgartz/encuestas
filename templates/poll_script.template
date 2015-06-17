@@ -5,7 +5,7 @@ $(function(){
 			cambiarNumeros("#<%=id%>");
 		}
 	});
-	$("#loc_ul_8").disableSelection();<%}%>
+	$("#<%=id%>").disableSelection();<%}%>
 	<%listDatesId.each{|id|%>
 	$("#<%=id%>").datepicker({
     	showAnim: "drop",
@@ -15,7 +15,80 @@ $(function(){
         dayNamesMin: [ "Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa" ],
         monthNamesShort: [ "Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic" ]
     });<%}%>
+    
+    
+    $("#enviar").click(function() {
+	  validarDatosObligatorios();
+	  return false;
+	});
+	
+	function validarDatosObligatorios(){
+	<%hashValidate.each{|key,list|%>
+		<%if key == "smu_rb"%>
+			<%list.each{|value|%>
+		if ($("input[name='<%=value%>']:checked").length == 0) {
+	      		$("#panel_<%=value%>").removeClass( "panel-primary" );
+	      		$("#panel_<%=value%>").addClass( "panel-danger" );
+	      		$("#panel_head_<%=value%> h4 small b").removeClass("message_error")
+	   	}else{
+	   		$("#panel_<%=value%>").removeClass( "panel-danger" );
+	      		$("#panel_<%=value%>").addClass( "panel-primary" );
+	      		$("#panel_head_<%=value%> h4 small b").addClass("message_error")
+	   	}
+	   		<%}%>
+	   	<%elsif key == "smu_s"%>
+	   		<%list.each{|value|%>
+	   	if($("select[name='<%=value%>']").val()==""){
+	   		$("#panel_<%=value%>").removeClass( "panel-primary" );
+	      		$("#panel_<%=value%>").addClass( "panel-danger" );
+	      		$("#panel_head_<%=value%> h4 small b").removeClass("message_error")
+	   	}else{
+	   		$("#panel_<%=value%>").removeClass( "panel-danger" );
+	   		$("#panel_<%=value%>").addClass( "panel-primary" );	        		
+	      		$("#panel_head_<%=value%> h4 small b").addClass("message_error")
+	   	}
+	   		<%}%>
+	   	<%elsif key == "smr_cb"%>
+	   		<%list.each{|value|%>
+	   	if($("input[name='<%=value%>']:checked").length == 0){
+	   		$("#panel_<%=value%>").removeClass( "panel-primary" );
+	      		$("#panel_<%=value%>").addClass( "panel-danger" );
+	      		$("#panel_head_<%=value%> h4 small b").removeClass("message_error")
+	   	}else{
+	   		$("#panel_<%=value%>").removeClass( "panel-danger" );
+	      		$("#panel_<%=value%>").addClass( "panel-primary" );
+	      		$("#panel_head_<%=value%> h4 small b").addClass("message_error")
+	   	}
+	   		<%}%>
+	   	<%elsif key == "smr_sm"%>
+	   		<%list.each{|value|%>
+	   	if($("select[name='<%=value%>'] option:selected").length == 0){
+	   		$("#panel_<%=value%>").removeClass( "panel-primary" );
+	      		$("#panel_<%=value%>").addClass( "panel-danger" );
+	      		$("#panel_head_<%=value%> h4 small b").removeClass("message_error")
+	   	}else{
+	   		$("#panel_<%=value%>").removeClass( "panel-danger" );
+	      		$("#panel_<%=value%>").addClass( "panel-primary" );
+	      		$("#panel_head_<%=value%> h4 small b").addClass("message_error")
+	   	}
+	   		<%}%>
+	   	<%elsif key == "mmr_rb"%>
+	   		<%compare=""%><%val=""%><%list.each{|value|%><%val = value.split('_')%><%compare+="$("%><%compare+='"'%><%compare+="input[name='"%><%compare+=value%><%compare+="'"%><%compare+="]:checked"%><%compare+='"'%><%compare+=").length == 0"%><%compare+="||"%><%}%><%compare=compare[0..compare.length-3]%>
+	   	if (<%=compare%>) {
+       		$("#panel_<%=val[0]+"_"+val[1]+"_"+val[2]%>").removeClass( "panel-primary" );
+        	$("#panel_<%=val[0]+"_"+val[1]+"_"+val[2]%>").addClass( "panel-danger" );
+        	$("#panel_head_<%=val[0]+"_"+val[1]+"_"+val[2]%> h4 small b").removeClass("message_error")
+    	}else{
+    		$("#panel_<%=val[0]+"_"+val[1]+"_"+val[2]%>").removeClass( "panel-danger" );
+        	$("#panel_<%=val[0]+"_"+val[1]+"_"+val[2]%>").addClass( "panel-primary" );
+        	$("#panel_head_<%=val[0]+"_"+val[1]+"_"+val[2]%> h4 small b").addClass("message_error")
+    	}
+    	<%elsif key == "mmr_cb"%>
     	
+    	<%end%>
+	 <%}%>
+	}
+	
 	function cambiarNumeros(id){
     	$lista =  $( id+" li div span" ).toArray();
 		$num = 1;
@@ -26,4 +99,7 @@ $(function(){
 			};
 		};	
     };
+    
+    
+    
 });

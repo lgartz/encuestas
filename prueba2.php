@@ -18,46 +18,46 @@
 		</nav>
 	</header>
 	<div class="container">
-		<form action="#">
+		<form action="#" method="GET">
 			<div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4>¿Cual es su sabor de helado favorito?</h4>
+	<div id="panel_smu_rb_1" class="panel panel-primary">
+		<div id="panel_head_smu_rb_1" class="panel-heading">
+			<h4>¿Cual es su sabor de helado favorito? <small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta pregunta es obligatoria</b></small></h4>
 		</div>
-		<div class="panel-body">	
+		<div id="panel_body_smu_rb_1" class="panel-body">	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_" name="smu_rb_1" type="radio" value="Fresa">
+					<input id="smu_rb_1_1" name="smu_rb_1" type="radio" value="Fresa">
 					Fresa
 				</label>
 			</div>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_" name="smu_rb_1" type="radio" value="Chicle">
+					<input id="smu_rb_1_2" name="smu_rb_1" type="radio" value="Chicle">
 					Chicle
 				</label>
 			</div>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_" name="smu_rb_1" type="radio" value="Arequipe">
+					<input id="smu_rb_1_3" name="smu_rb_1" type="radio" value="Arequipe">
 					Arequipe
 				</label>
 			</div>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_" name="smu_rb_1" type="radio" value="Queso">
+					<input id="smu_rb_1_4" name="smu_rb_1" type="radio" value="Queso">
 					Queso
 				</label>
 			</div>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_" name="smu_rb_1" type="radio" value="Feijoa">
+					<input id="smu_rb_1_5" name="smu_rb_1" type="radio" value="Feijoa">
 					Feijoa
 				</label>
 			</div>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_" name="smu_rb_1" type="radio" value="Mani">
+					<input id="smu_rb_1_6" name="smu_rb_1" type="radio" value="Mani">
 					Mani
 				</label>
 			</div>
@@ -65,12 +65,13 @@
 	</div>
 </div>
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4>¿Cual es su sabor de helado favorito?</h4>
+	<div id="panel_smu_s_2" class="panel panel-primary">
+		<div id="panel_head_smu_s_2" class="panel-heading">
+			<h4>¿Cual es su sabor de helado favorito? <small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta pregunta es obligatoria</b></small></h4>
 		</div>
-		<div class="panel-body">
+		<div id="panel_body_smu_s_2" class="panel-body">
 			<select name="smu_s_2" id="smu_s_2" class="form-control">
+				<option value="" selected>--Seleccione una opci&oacute;n--</option>
 				<option value="Fresa">Fresa</option>
 				<option value="Chicle">Chicle</option>
 				<option value="Arequipe">Arequipe</option>
@@ -82,11 +83,11 @@
 	</div>
 </div>
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4>¿Cuales son sus sabores de helado favoritos?</h4>
+	<div id="panel_smr_cb_3" class="panel panel-primary">
+		<div id="panel_head_smr_cb_3" class="panel-heading">
+			<h4>¿Cuales son sus sabores de helado favoritos? <small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta pregunta es obligatoria</b></small></h4>
 		</div>
-		<div class="panel-body">
+		<div id="panel_body_smr_cb_3" class="panel-body">
 			<div class="checkbox">
 				<label class="form-control">
 					<input id="smr_cb_3" name="smr_cb_3" type="checkbox" value="Fresa">
@@ -127,11 +128,11 @@
 	</div>
 </div>
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4>¿Cuales son sus sabores de helado favoritos?</h4>
+	<div id="panel_smr_sm_4" class="panel panel-primary">
+		<div id="panel_head_smr_sm_4" class="panel-heading">
+			<h4>¿Cuales son sus sabores de helado favoritos? <small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta pregunta es obligatoria</b></small></h4>
 		</div>
-		<div class="panel-body">
+		<div id="panel_body_smr_sm_4" class="panel-body">
 			<select multiple id="smr_sm_4" name="smr_sm_4" class="form-control">
 				<option class="form-control">Fresa</option>
 				<option class="form-control">Chicle</option>
@@ -144,11 +145,11 @@
 	</div>
 </div>
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4>Evalue las siguientes preguntas</h4>
+	<div id="panel_mmr_rb_5" class="panel panel-primary">
+		<div id="panel_head_mmr_rb_5" class="panel-heading">
+			<h4>Evalue las siguientes preguntas<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Todas la filas son obligatorias</b></small></h4>
 		</div>
-		<div class="panel-body">
+		<div id="panel_body_mmr_rb_5" class="panel-body">
 			<div class="table-responsive">
 				<table class="table table-striped table-bordered table-hover ">
 					<tr class="active">
@@ -197,11 +198,11 @@
 	</div>
 </div>
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4>¿Cuales sabores de helado son los favoritos para cada miembro de su familia?</h4>
+	<div id="panel_mmr_cb_6" class="panel panel-primary">
+		<div id="panel_head_mmr_cb class="panel-heading">
+			<h4>¿Cuales sabores de helado son los favoritos para cada miembro de su familia?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Todas la filas son obligatorias</b></small></h4>
 		</div>
-		<div class="panel-body">
+		<div id="panel_body_mmr_cb_6" class="panel-body">
 			<div class="table-responsive">
 				<table class="table table-striped table-bordered table-hover ">
 					<tr class="active">
@@ -574,6 +575,10 @@
 	</div>
 </div>
 
+		<div class="form-group">
+			<button id="enviar" type="submit" class="btn btn-primary">Enviar</button>
+			<button id="cancelar" type="reset" class="btn btn-primary">Cancelar</button>
+		</div>
 		</form>
 	</div>
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>

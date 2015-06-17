@@ -1,5 +1,4 @@
 body{
-	height: 100%;
 	padding-top: 60px;
 }
 
@@ -25,4 +24,8 @@ body{
 
 .td-right{
 	text-align: right;
+}
+
+.message_error{
+	display: none;
 }
