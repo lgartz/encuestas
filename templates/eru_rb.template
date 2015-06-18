@@ -1,9 +1,9 @@
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4><%=ask%></h4>
+	<div id="panel_<%=type%>_<%=number%>" class="panel panel-primary">
+		<div id="panel_head_<%=type%>_<%=number%>" class="panel-heading">
+			<h4><%=ask%><small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div class="panel-body">						
+		<div id="panel_body_<%=type%>_<%=number%>" class="panel-body">						
 			<div class="table-responsive">
 				<table class="table table-striped table-hover ">
 					<tr>

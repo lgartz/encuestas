@@ -1,6 +1,6 @@
 <div class="form-group">
 	<div id="panel_<%=type%>_<%=number%>" class="panel panel-primary">
-		<div id="panel_head_<%=type%> class="panel-heading">
+		<div id="panel_head_<%=type%>_<%=number%>" class="panel-heading">
 			<h4><%=ask%><small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Todas la filas son obligatorias</b></small></h4>
 		</div>
 		<div id="panel_body_<%=type%>_<%=number%>" class="panel-body">

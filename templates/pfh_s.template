@@ -1,15 +1,16 @@
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4><%=ask%></h4>
+	<div id="panel_<%=type%>_<%=number%>" class="panel panel-primary">
+		<div id="panel_head_<%=type%>_<%=number%>" class="panel-heading">
+			<h4><%=ask%><small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div class="panel-body">
+		<div id="panel_body_<%=type%>_<%=number%>" class="panel-body">
 			<label for="<%=type%>_date_<%=number%>">Fecha:</label>
 			<input id="<%=type%>_date_<%=number%>" name="<%=type%>_date_<%=number%>" type="text" class="form-control" placeholder="Ingrese la fecha...">
 			<label for="<%=type%>_hour_<%=number%>">Hora:</label>
 			<div class="row">
 				<div class="col col-sm-5">					
-					<select name="<%=type%>_hour<%=number%>" id="<%=type%>_hour_<%=number%>" name="<%=type%>_hour_<%=number%>" class="form-control">
+					<select id="<%=type%>_hour_<%=number%>" name="<%=type%>_hour_<%=number%>" class="form-control">
+						<option value="">--Seleccione una opci&oacute;n</option>
 						<?php 
 							$cero = "0";
 							for ($i=0; $i<24; $i++) { 
@@ -25,7 +26,8 @@
 				</div>
 				<div class="col col-sm-2 td-center" >:</div>
 				<div class="col col-sm-5">
-					<select name="<%=type%>_minute<%=number%>" id="<%=type%>_minute_<%=number%>" name="<%=type%>_minute_<%=number%>" class="form-control">
+					<select id="<%=type%>_minute_<%=number%>" name="<%=type%>_minute_<%=number%>" class="form-control">
+						<option value="">--Seleccione una opci&oacute;n</option>
 						<?php 
 							$cero = "0";
 							for ($i=0; $i<60; $i++) { 

@@ -1,13 +1,14 @@
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
+	<div id="panel_<%=type%>_<%=number%>" class="panel panel-primary">
+		<div id="panel_head_<%=type%>_<%=number%>" class="panel-heading">
 			<h4><%=ask%></h4>
 		</div>
-		<div class="panel-body">
+		<div id="panel_body_<%=type%>_<%=number%>" class="panel-body">
 			<label >Hora:</label>
 			<div class="row">
 				<div class="col col-sm-5">						
 					<select id="<%=type%>_hour_<%=number%>" name="<%=type%>_hour_<%=number%>" class="form-control">
+						<option value="">--Seleccione una opci&oacute;n</option>
 						<?php 
 							$cero = "0";
 							for ($i=0; $i<24; $i++) { 
@@ -24,6 +25,7 @@
 				<div class="col col-sm-2 td-center" >:</div>
 				<div class="col col-sm-5">
 					<select id="<%=type%>_minute_<%=number%>" name="<%=type%>_minute_<%=number%>" class="form-control">
+						<option value="">--Seleccione una opci&oacute;n</option>
 						<?php 
 							$cero = "0";
 							for ($i=0; $i<60; $i++) { 

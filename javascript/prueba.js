@@ -94,7 +94,96 @@ $(function(){
     	
 	 
 		
+    		
+	   	if ($("input[name='mmr_cb_6_1']:checked").length == 0||$("input[name='mmr_cb_6_2']:checked").length == 0||$("input[name='mmr_cb_6_3']:checked").length == 0) {
+       		$("#panel_mmr_cb_6").removeClass( "panel-primary" );
+        	$("#panel_mmr_cb_6").addClass( "panel-danger" );
+        	$("#panel_head_mmr_cb_6 h4 small b").removeClass("message_error")
+    	}else{
+    		$("#panel_mmr_cb_6").removeClass( "panel-danger" );
+        	$("#panel_mmr_cb_6").addClass( "panel-primary" );
+        	$("#panel_head_mmr_cb_6 h4 small b").addClass("message_error")
+    	}
     	
+	 
+		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+	   	if ($("select[name='mmr_s_7_1_1']").val() == ""||$("select[name='mmr_s_7_1_2']").val() == ""||$("select[name='mmr_s_7_2_1']").val() == ""||$("select[name='mmr_s_7_2_2']").val() == ""||$("select[name='mmr_s_7_3_1']").val() == ""||$("select[name='mmr_s_7_3_2']").val() == ""||$("select[name='mmr_s_7_4_1']").val() == ""||$("select[name='mmr_s_7_4_2']").val() == ""||$("select[name='mmr_s_7_5_1']").val() == ""||$("select[name='mmr_s_7_5_2']").val() == "") {
+       		$("#panel_mmr_s_7").removeClass( "panel-primary" );
+        	$("#panel_mmr_s_7").addClass( "panel-danger" );
+        	$("#panel_head_mmr_s_7 h4 small b").removeClass("message_error")
+    	}else{
+    		$("#panel_mmr_s_7").removeClass( "panel-danger" );
+        	$("#panel_mmr_s_7").addClass( "panel-primary" );
+        	$("#panel_head_mmr_s_7 h4 small b").addClass("message_error")
+    	}
+    	
+	 
+		
+    		
+		if ($("input[name='eru_rb_9']:checked").length == 0) {
+	      	$("#panel_eru_rb_9").removeClass( "panel-primary" );
+	      	$("#panel_eru_rb_9").addClass( "panel-danger" );
+	      	$("#panel_head_eru_rb_9 h4 small b").removeClass("message_error")
+	   	}else{
+	   		$("#panel_eru_rb_9").removeClass( "panel-danger" );
+	      	$("#panel_eru_rb_9").addClass( "panel-primary" );
+	      	$("#panel_head_eru_rb_9 h4 small b").addClass("message_error")
+	   	}
+	   		
+	   	
+	 
+		
+	   		
+		if ($("input[name='psu_t_10']").val().trim() == "") {
+	      	$("#panel_psu_t_10").removeClass( "panel-primary" );
+	      	$("#panel_psu_t_10").addClass( "panel-danger" );
+	      	$("#panel_head_psu_t_10 h4 small b").removeClass("message_error")
+	   	}else{
+	   		$("#panel_psu_t_10").removeClass( "panel-danger" );
+	      	$("#panel_psu_t_10").addClass( "panel-primary" );
+	      	$("#panel_head_psu_t_10 h4 small b").addClass("message_error")
+	   	}
+	   		
+	   	
+	 
+		
+	   		   	   		
+	   	if ($("input[name='psm_t_11_1']").val().trim() == ""||$("input[name='psm_t_11_2']").val().trim() == ""||$("input[name='psm_t_11_3']").val().trim() == "") {
+	      	$("#panel_psm_t_11").removeClass( "panel-primary" );
+	      	$("#panel_psm_t_11").addClass( "panel-danger" );
+	      	$("#panel_head_psm_t_11 h4 small b").removeClass("message_error")
+	   	}else{
+	   		$("#panel_psm_t_11").removeClass( "panel-danger" );
+	      	$("#panel_psm_t_11").addClass( "panel-primary" );
+	      	$("#panel_head_psm_t_11 h4 small b").addClass("message_error")
+	   	}
+	   	
+	 
+		
+	   		
+	   	if ($("textarea[name='psc_ta_12']").val().trim() == "") {
+	      	$("#panel_psc_ta_12").removeClass( "panel-primary" );
+	      	$("#panel_psc_ta_12").addClass( "panel-danger" );
+	      	$("#panel_head_psc_ta_12 h4 small b").removeClass("message_error")
+	   	}else{
+	   		$("#panel_psc_ta_12").removeClass( "panel-danger" );
+	      	$("#panel_psc_ta_12").addClass( "panel-primary" );
+	      	$("#panel_head_psc_ta_12 h4 small b").addClass("message_error")
+	   	}
+	   		
     	
 	 
 	}

@@ -27,7 +27,7 @@ def readPollFileXml ( pathFile )
         getResultHashElementsRequired(type,number,hashValidate,questionChild)
       end
     end
-    print hashValidate.to_s
+    print hashValidate.to_s+"\n"
     erbJavaScript = getTemplate("../encuestas/templates/poll_script.template",binding)
     createFile("../encuestas/javascript/",".js",namePage,erbJavaScript)
     erbHtml = getTemplate("../encuestas/templates/poll.template",binding)
@@ -61,6 +61,35 @@ def getResultHashElementsRequired(type,number,hashValidate,questionChild)
       name="#{type}_#{number}_#{i}"
       getContainsKey(hashValidate,type,number,name)
     end
+  when "mmr_s"
+    listRows = getListOptions(questionChild.elements["rows"],"option")
+    hashColumnas = getListOptionSelect(questionChild)
+    tamRow = listRows.length
+    tamColumn = hashColumnas.keys.length
+    for i in 1..tamRow
+      for j in 1..tamColumn
+        name="#{type}_#{number}_#{i}_#{j}"
+        getContainsKey(hashValidate,type,number,name)
+      end
+    end
+  when "eru_rb"
+    name="#{type}_#{number}"
+    getContainsKey(hashValidate,type,number,name)
+  when "psu_t"
+    name="#{type}_#{number}"
+    getContainsKey(hashValidate,type,number,name)
+  when "psm_t"
+    listOptions = getListOptions(questionChild,"option")
+    for i in 1..listOptions.first["value"].to_i
+      name="#{type}_#{number}_#{i}"
+      getContainsKey(hashValidate,type,number,name)
+    end
+  when "psc_ta"
+    name="#{type}_#{number}"
+    getContainsKey(hashValidate,type,number,name)
+  when "pfh_s"
+    name="#{type}_#{number}"
+    getContainsKey(hashValidate,type,number,name)
   end
 end
 

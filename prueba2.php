@@ -199,7 +199,7 @@
 </div>
 <div class="form-group">
 	<div id="panel_mmr_cb_6" class="panel panel-primary">
-		<div id="panel_head_mmr_cb class="panel-heading">
+		<div id="panel_head_mmr_cb_6" class="panel-heading">
 			<h4>¿Cuales sabores de helado son los favoritos para cada miembro de su familia?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Todas la filas son obligatorias</b></small></h4>
 		</div>
 		<div id="panel_body_mmr_cb_6" class="panel-body">
@@ -243,11 +243,11 @@
 	</div>
 </div>
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4>Segun los siguientes sabores de helados seleccione el tipo de textura y sabor que prefiere</h4>
+	<div id="panel_mmr_s_7" class="panel panel-primary">
+		<div id="panel_head_mmr_s_7" class="panel-heading">
+			<h4>Segun los siguientes sabores de helados seleccione el tipo de textura y sabor que prefiere<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Todas la filas son obligatorias</b></small></h4>
 		</div>
-		<div class="panel-body">
+		<div id="panel_body_mmr_s_7" class="panel-body">
 			<div class="table-responsive">
 				<table class="table table-striped table-bordered table-hover">
 					<tr class="active">
@@ -259,6 +259,7 @@
 						<th>Arequipe</th>
 						<td>
 							<select id="mmr_s_7_1_1" name="mmr_s_7_1_1" class="form-control">
+							<option value="">--Seleccione una opci&oacute;n--</option>
 								<option value="Liso">Liso</option>
 								<option value="Rugoso">Rugoso</option>
 								<option value="Esponjoso">Esponjoso</option>
@@ -266,6 +267,7 @@
 						</td>
 						<td>
 							<select id="mmr_s_7_1_2" name="mmr_s_7_1_2" class="form-control">
+							<option value="">--Seleccione una opci&oacute;n--</option>
 								<option value="Dulce">Dulce</option>
 								<option value="Amargo">Amargo</option>
 								<option value="Agridulce">Agridulce</option>
@@ -276,6 +278,7 @@
 						<th>Fresa</th>
 						<td>
 							<select id="mmr_s_7_2_1" name="mmr_s_7_2_1" class="form-control">
+							<option value="">--Seleccione una opci&oacute;n--</option>
 								<option value="Liso">Liso</option>
 								<option value="Rugoso">Rugoso</option>
 								<option value="Esponjoso">Esponjoso</option>
@@ -283,6 +286,7 @@
 						</td>
 						<td>
 							<select id="mmr_s_7_2_2" name="mmr_s_7_2_2" class="form-control">
+							<option value="">--Seleccione una opci&oacute;n--</option>
 								<option value="Dulce">Dulce</option>
 								<option value="Amargo">Amargo</option>
 								<option value="Agridulce">Agridulce</option>
@@ -293,6 +297,7 @@
 						<th>Chicle</th>
 						<td>
 							<select id="mmr_s_7_3_1" name="mmr_s_7_3_1" class="form-control">
+							<option value="">--Seleccione una opci&oacute;n--</option>
 								<option value="Liso">Liso</option>
 								<option value="Rugoso">Rugoso</option>
 								<option value="Esponjoso">Esponjoso</option>
@@ -300,6 +305,7 @@
 						</td>
 						<td>
 							<select id="mmr_s_7_3_2" name="mmr_s_7_3_2" class="form-control">
+							<option value="">--Seleccione una opci&oacute;n--</option>
 								<option value="Dulce">Dulce</option>
 								<option value="Amargo">Amargo</option>
 								<option value="Agridulce">Agridulce</option>
@@ -310,6 +316,7 @@
 						<th>Coco</th>
 						<td>
 							<select id="mmr_s_7_4_1" name="mmr_s_7_4_1" class="form-control">
+							<option value="">--Seleccione una opci&oacute;n--</option>
 								<option value="Liso">Liso</option>
 								<option value="Rugoso">Rugoso</option>
 								<option value="Esponjoso">Esponjoso</option>
@@ -317,6 +324,7 @@
 						</td>
 						<td>
 							<select id="mmr_s_7_4_2" name="mmr_s_7_4_2" class="form-control">
+							<option value="">--Seleccione una opci&oacute;n--</option>
 								<option value="Dulce">Dulce</option>
 								<option value="Amargo">Amargo</option>
 								<option value="Agridulce">Agridulce</option>
@@ -327,6 +335,7 @@
 						<th>Queso</th>
 						<td>
 							<select id="mmr_s_7_5_1" name="mmr_s_7_5_1" class="form-control">
+							<option value="">--Seleccione una opci&oacute;n--</option>
 								<option value="Liso">Liso</option>
 								<option value="Rugoso">Rugoso</option>
 								<option value="Esponjoso">Esponjoso</option>
@@ -334,6 +343,7 @@
 						</td>
 						<td>
 							<select id="mmr_s_7_5_2" name="mmr_s_7_5_2" class="form-control">
+							<option value="">--Seleccione una opci&oacute;n--</option>
 								<option value="Dulce">Dulce</option>
 								<option value="Amargo">Amargo</option>
 								<option value="Agridulce">Agridulce</option>
@@ -405,11 +415,11 @@
 	</div>
 </div>
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4>¿Que tan probable es que recomiende el helado de fresa?</h4>
+	<div id="panel_eru_rb_9" class="panel panel-primary">
+		<div id="panel_head_eru_rb_9" class="panel-heading">
+			<h4>¿Que tan probable es que recomiende el helado de fresa?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div class="panel-body">						
+		<div id="panel_body_eru_rb_9" class="panel-body">						
 			<div class="table-responsive">
 				<table class="table table-striped table-hover ">
 					<tr>
@@ -448,21 +458,21 @@
 	</div>
 </div>
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4>¿Cual es su marca de helado favorita?</h4>
+	<div id="panel_psu_t_10" class="panel panel-primary">
+		<div id="panel_head_psu_t_10" class="panel-heading">
+			<h4>¿Cual es su marca de helado favorita?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div class="panel-body">
+		<div id="panel_body_psu_t_10" class="panel-body">
 			<input id="psu_t_10" name="psu_t_10" type="text" class="form-control" placeholder="Escriba su respuesta...">
 		</div>
 	</div>
 </div>
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4>¿Cuales son sus tres marcas de helado?</h4>
+	<div id="panel_psm_t_11" class="panel panel-primary">
+		<div id="panel_head_psm_t_11" class="panel-heading">
+			<h4>¿Cuales son sus tres marcas de helado?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div class="panel-body">
+		<div id="panel_body_psm_t_11" class="panel-body">
 			<div class="input-group">
 				<span class="input-group-addon">1</span>
 				<input id="psm_t_11_1" name="psm_t_11_1" type="text" class="form-control" placeholder="Escriba su respuesta...">
@@ -479,27 +489,28 @@
 	</div>
 </div>
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4>¿Que es lo que mas le gusta de su helado favorito?</h4>
+	<div id="panel_psc_ta_12" class="panel panel-primary">
+		<div id="panel_head_psc_ta_12" class="panel-heading">
+			<h4>¿Que es lo que mas le gusta de su helado favorito?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div class="panel-body">
+		<div id="panel_body_psc_ta_12" class="panel-body">
 			<textarea name="psc_ta_12" id="psc_ta_12" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
 		</div>
 	</div>
 </div>
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4>¿Cuando fue el ultimo dia y hora en comer su helado?</h4>
+	<div id="panel_pfh_s_13" class="panel panel-primary">
+		<div id="panel_head_pfh_s_13" class="panel-heading">
+			<h4>¿Cuando fue el ultimo dia y hora en comer su helado?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div class="panel-body">
+		<div id="panel_body_pfh_s_13" class="panel-body">
 			<label for="pfh_s_date_13">Fecha:</label>
 			<input id="pfh_s_date_13" name="pfh_s_date_13" type="text" class="form-control" placeholder="Ingrese la fecha...">
 			<label for="pfh_s_hour_13">Hora:</label>
 			<div class="row">
 				<div class="col col-sm-5">					
-					<select name="pfh_s_hour13" id="pfh_s_hour_13" name="pfh_s_hour_13" class="form-control">
+					<select id="pfh_s_hour_13" name="pfh_s_hour_13" class="form-control">
+						<option value="">--Seleccione una opci&oacute;n</option>
 						<?php 
 							$cero = "0";
 							for ($i=0; $i<24; $i++) { 
@@ -515,7 +526,8 @@
 				</div>
 				<div class="col col-sm-2 td-center" >:</div>
 				<div class="col col-sm-5">
-					<select name="pfh_s_minute13" id="pfh_s_minute_13" name="pfh_s_minute_13" class="form-control">
+					<select id="pfh_s_minute_13" name="pfh_s_minute_13" class="form-control">
+						<option value="">--Seleccione una opci&oacute;n</option>
 						<?php 
 							$cero = "0";
 							for ($i=0; $i<60; $i++) { 
