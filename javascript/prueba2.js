@@ -47,119 +47,75 @@ $(function(){
 	
 	function validarDatosObligatorios(){
 		resultado = true;
-	
-		
-			
 		if ($("input[name='smu_rb_1']:checked").length == 0) {
-	      		$("#panel_smu_rb_1").removeClass( "panel-primary" );
-	      		$("#panel_smu_rb_1").addClass( "panel-danger" );
-	      		$("#panel_head_smu_rb_1 h4 small b").removeClass("message_error");
-	      		resultado = false;
+	      	$("#panel_smu_rb_1").removeClass( "panel-primary" );
+	      	$("#panel_smu_rb_1").addClass( "panel-danger" );
+	      	$("#panel_head_smu_rb_1 h4 small b").removeClass("message_error");
+	      	resultado = false;
 	   	}else{
 	   		$("#panel_smu_rb_1").removeClass( "panel-danger" );
-	      		$("#panel_smu_rb_1").addClass( "panel-primary" );
-	      		$("#panel_head_smu_rb_1 h4 small b").addClass("message_error");
+	      	$("#panel_smu_rb_1").addClass( "panel-primary" );
+	      	$("#panel_head_smu_rb_1 h4 small b").addClass("message_error");
 	   	}
-	   		
-	   	
-	 
-		
-	   		
 	   	if($("select[name='smu_s_2']").val()==""){
 	   		$("#panel_smu_s_2").removeClass( "panel-primary" );
-	      		$("#panel_smu_s_2").addClass( "panel-danger" );
-	      		$("#panel_head_smu_s_2 h4 small b").removeClass("message_error");
-	      		resultado = false;
+	      	$("#panel_smu_s_2").addClass( "panel-danger" );
+	      	$("#panel_head_smu_s_2 h4 small b").removeClass("message_error");
+	      	resultado = false;
 	   	}else{
 	   		$("#panel_smu_s_2").removeClass( "panel-danger" );
 	   		$("#panel_smu_s_2").addClass( "panel-primary" );	        		
-	      		$("#panel_head_smu_s_2 h4 small b").addClass("message_error");
+	      	$("#panel_head_smu_s_2 h4 small b").addClass("message_error");
 	   	}
-	   		
-	   	
-	 
-		
-	   		
 	   	if($("input[name='smr_cb_3']:checked").length == 0){
 	   		$("#panel_smr_cb_3").removeClass( "panel-primary" );
-	      		$("#panel_smr_cb_3").addClass( "panel-danger" );
-	      		$("#panel_head_smr_cb_3 h4 small b").removeClass("message_error");
-	      		resultado = false;
+	      	$("#panel_smr_cb_3").addClass( "panel-danger" );
+	      	$("#panel_head_smr_cb_3 h4 small b").removeClass("message_error");
+	      	resultado = false;
 	   	}else{
 	   		$("#panel_smr_cb_3").removeClass( "panel-danger" );
-	      		$("#panel_smr_cb_3").addClass( "panel-primary" );
-	      		$("#panel_head_smr_cb_3 h4 small b").addClass("message_error");
+	      	$("#panel_smr_cb_3").addClass( "panel-primary" );
+	      	$("#panel_head_smr_cb_3 h4 small b").addClass("message_error");
 	   	}
-	   		
-	   	
-	 
-		
-	   		
 	   	if($("select[name='smr_sm_4'] option:selected").length == 0){
 	   		$("#panel_smr_sm_4").removeClass( "panel-primary" );
-	      		$("#panel_smr_sm_4").addClass( "panel-danger" );
-	      		$("#panel_head_smr_sm_4 h4 small b").removeClass("message_error");
-	      		resultado = false;
+	      	$("#panel_smr_sm_4").addClass( "panel-danger" );
+	      	$("#panel_head_smr_sm_4 h4 small b").removeClass("message_error");
+	      	resultado = false;
 	   	}else{
 	   		$("#panel_smr_sm_4").removeClass( "panel-danger" );
-	      		$("#panel_smr_sm_4").addClass( "panel-primary" );
-	      		$("#panel_head_smr_sm_4 h4 small b").addClass("message_error");
+	      	$("#panel_smr_sm_4").addClass( "panel-primary" );
+	      	$("#panel_head_smr_sm_4 h4 small b").addClass("message_error");
 	   	}
-	   		
-	   	
-	 
-		
-	   		
-		   	
 		if($("input[name='mmr_rb_5_1']:checked").length == 0||$("input[name='mmr_rb_5_2']:checked").length == 0||$("input[name='mmr_rb_5_3']:checked").length == 0||$("input[name='mmr_rb_5_4']:checked").length == 0){
 			$("#panel_mmr_rb_5").removeClass( "panel-primary" );
 	      	$("#panel_mmr_rb_5").addClass( "panel-danger" );
 	      	$("#panel_head_mmr_rb_5 h4 small b").removeClass("message_error");
 	      	resultado = false;
-		}
-		else{
+		}else{
 			$("#panel_mmr_rb_5").removeClass( "panel-danger" );
 	      	$("#panel_mmr_rb_5").addClass( "panel-primary" );
 	      	$("#panel_head_mmr_rb_5 h4 small b").addClass("message_error");
 		}
-		   	
-    	
-	 
-		
-    		
-		   	
 		if($("input[name='mmr_cb_6_1']:checked").length == 0||$("input[name='mmr_cb_6_2']:checked").length == 0||$("input[name='mmr_cb_6_3']:checked").length == 0){
 			$("#panel_mmr_cb_6").removeClass( "panel-primary" );
 	      	$("#panel_mmr_cb_6").addClass( "panel-danger" );
 	      	$("#panel_head_mmr_cb_6 h4 small b").removeClass("message_error");
 	      	resultado = false;
-		}
-		else{
+		}else{
 			$("#panel_mmr_cb_6").removeClass( "panel-danger" );
 	      	$("#panel_mmr_cb_6").addClass( "panel-primary" );
 	      	$("#panel_head_mmr_cb_6 h4 small b").addClass("message_error");
 		}
-		   	
-    	
-	 
-		
-    		
-		   	
 		if($("select[name='mmr_s_7_1_1']").val() == ""||$("select[name='mmr_s_7_1_2']").val() == ""||$("select[name='mmr_s_7_2_1']").val() == ""||$("select[name='mmr_s_7_2_2']").val() == ""||$("select[name='mmr_s_7_3_1']").val() == ""||$("select[name='mmr_s_7_3_2']").val() == ""||$("select[name='mmr_s_7_4_1']").val() == ""||$("select[name='mmr_s_7_4_2']").val() == ""||$("select[name='mmr_s_7_5_1']").val() == ""||$("select[name='mmr_s_7_5_2']").val() == ""){
 			$("#panel_mmr_s_7").removeClass( "panel-primary" );
 	      	$("#panel_mmr_s_7").addClass( "panel-danger" );
 	      	$("#panel_head_mmr_s_7 h4 small b").removeClass("message_error");
-		}
-		else{
+		}else{
 			$("#panel_mmr_s_7").removeClass( "panel-danger" );
 	      	$("#panel_mmr_s_7").addClass( "panel-primary" );
 	      	$("#panel_head_mmr_s_7 h4 small b").addClass("message_error");
 		}
-		   	
-    	
-	 
-		
-    		
 		if ($("input[name='eru_rb_9']:checked").length == 0) {
 	      	$("#panel_eru_rb_9").removeClass( "panel-primary" );
 	      	$("#panel_eru_rb_9").addClass( "panel-danger" );
@@ -169,11 +125,6 @@ $(function(){
 	      	$("#panel_eru_rb_9").addClass( "panel-primary" );
 	      	$("#panel_head_eru_rb_9 h4 small b").addClass("message_error");
 	   	}
-	   		
-	   	
-	 
-		
-	   		
 		if ($("input[name='psu_t_10']").val().trim() == "") {
 	      	$("#panel_psu_t_10").removeClass( "panel-primary" );
 	      	$("#panel_psu_t_10").addClass( "panel-danger" );
@@ -184,28 +135,16 @@ $(function(){
 	      	$("#panel_psu_t_10").addClass( "panel-primary" );
 	      	$("#panel_head_psu_t_10 h4 small b").addClass("message_error");
 	   	}
-	   		
-	   	
-	 
-		
-		   	
-		   	
 		if($("input[name='psm_t_11_1']").val().trim() == ""||$("input[name='psm_t_11_2']").val().trim() == ""||$("input[name='psm_t_11_3']").val().trim() == ""){
 			$("#panel_psm_t_11").removeClass( "panel-primary" );
 	      	$("#panel_psm_t_11").addClass( "panel-danger" );
 	      	$("#panel_head_psm_t_11 h4 small b").removeClass("message_error");
 	      	resultado = false;
-		}
-		else{
+		}else{
 			$("#panel_psm_t_11").removeClass( "panel-danger" );
 	      	$("#panel_psm_t_11").addClass( "panel-primary" );
 	      	$("#panel_head_psm_t_11 h4 small b").addClass("message_error");
 		}
-		   	
-	   	
-	 
-		
-	   		
 	   	if ($("textarea[name='psc_ta_12']").val().trim() == "") {
 	      	$("#panel_psc_ta_12").removeClass( "panel-primary" );
 	      	$("#panel_psc_ta_12").addClass( "panel-danger" );
@@ -216,48 +155,26 @@ $(function(){
 	      	$("#panel_psc_ta_12").addClass( "panel-primary" );
 	      	$("#panel_head_psc_ta_12 h4 small b").addClass("message_error");
 	   	}
-	   		
-	   	
-	 
-		
-	   		
-	   		
-	   		
-	   		
-	   		
 	   	if ($("input[name='pfh_s_date_13']").val().trim() == "" || $("select[name='pfh_s_hour_13']").val()=="" || $("select[name='pfh_s_minute_13']").val()=="") {
 	   		$("#panel_pfh_s_13").removeClass( "panel-primary" );
 	      	$("#panel_pfh_s_13").addClass( "panel-danger" );
 	      	$("#panel_head_pfh_s_13 h4 small b").removeClass("message_error");
 	      	resultado = false;
-	   	}
-	   	else{
+	   	}else{
 	   		$("#panel_pfh_s_13").removeClass( "panel-danger" );
 	      	$("#panel_pfh_s_13").addClass( "panel-primary" );
 	      	$("#panel_head_pfh_s_13 h4 small b").addClass("message_error");
 	   	}
-	   		
-	   	
-	 
-		
-	   		
-	   		
-	   		
-	   		
 	   	if ($("select[name='psh_s_hour_14']").val()=="" || $("select[name='psh_s_minute_14']").val()=="") {
 	   		$("#panel_psh_s_14").removeClass( "panel-primary" );
 	      	$("#panel_psh_s_14").addClass( "panel-danger" );
 	      	$("#panel_head_psh_s_14 h4 small b").removeClass("message_error");
 	      	resultado = false;
-	   	}
-	   	else{
+	   	}else{
 	   		$("#panel_psh_s_14").removeClass( "panel-danger" );
 	      	$("#panel_psh_s_14").addClass( "panel-primary" );
 	      	$("#panel_head_psh_s_14 h4 small b").addClass("message_error");
-	   	}	
-	   		
-    	
-	 
+	   	}
 		return resultado;
 	}
 	

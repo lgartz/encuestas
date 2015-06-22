@@ -46,106 +46,76 @@ $(function(){
 	});
 	
 	function validarDatosObligatorios(){
-		resultado = true;
-	<%hashValidate.each{|key,list|%>
-		<%if key == "smu_rb"%>
-			<%list.each{|value|%>
+		resultado = true;<%hashValidate.each{|key,list|%><%if key == "smu_rb"%><%list.each{|value|%>
 		if ($("input[name='<%=value%>']:checked").length == 0) {
-	      		$("#panel_<%=value%>").removeClass( "panel-primary" );
-	      		$("#panel_<%=value%>").addClass( "panel-danger" );
-	      		$("#panel_head_<%=value%> h4 small b").removeClass("message_error");
-	      		resultado = false;
+	      	$("#panel_<%=value%>").removeClass( "panel-primary" );
+	      	$("#panel_<%=value%>").addClass( "panel-danger" );
+	      	$("#panel_head_<%=value%> h4 small b").removeClass("message_error");
+	      	resultado = false;
 	   	}else{
 	   		$("#panel_<%=value%>").removeClass( "panel-danger" );
-	      		$("#panel_<%=value%>").addClass( "panel-primary" );
-	      		$("#panel_head_<%=value%> h4 small b").addClass("message_error");
-	   	}
-	   		<%}%>
-	   	<%elsif key == "smu_s"%>
-	   		<%list.each{|value|%>
+	      	$("#panel_<%=value%>").addClass( "panel-primary" );
+	      	$("#panel_head_<%=value%> h4 small b").addClass("message_error");
+	   	}<%}%><%elsif key == "smu_s"%><%list.each{|value|%>
 	   	if($("select[name='<%=value%>']").val()==""){
 	   		$("#panel_<%=value%>").removeClass( "panel-primary" );
-	      		$("#panel_<%=value%>").addClass( "panel-danger" );
-	      		$("#panel_head_<%=value%> h4 small b").removeClass("message_error");
-	      		resultado = false;
+	      	$("#panel_<%=value%>").addClass( "panel-danger" );
+	      	$("#panel_head_<%=value%> h4 small b").removeClass("message_error");
+	      	resultado = false;
 	   	}else{
 	   		$("#panel_<%=value%>").removeClass( "panel-danger" );
 	   		$("#panel_<%=value%>").addClass( "panel-primary" );	        		
-	      		$("#panel_head_<%=value%> h4 small b").addClass("message_error");
-	   	}
-	   		<%}%>
-	   	<%elsif key == "smr_cb"%>
-	   		<%list.each{|value|%>
+	      	$("#panel_head_<%=value%> h4 small b").addClass("message_error");
+	   	}<%}%><%elsif key == "smr_cb"%><%list.each{|value|%>
 	   	if($("input[name='<%=value%>']:checked").length == 0){
 	   		$("#panel_<%=value%>").removeClass( "panel-primary" );
-	      		$("#panel_<%=value%>").addClass( "panel-danger" );
-	      		$("#panel_head_<%=value%> h4 small b").removeClass("message_error");
-	      		resultado = false;
+	      	$("#panel_<%=value%>").addClass( "panel-danger" );
+	      	$("#panel_head_<%=value%> h4 small b").removeClass("message_error");
+	      	resultado = false;
 	   	}else{
 	   		$("#panel_<%=value%>").removeClass( "panel-danger" );
-	      		$("#panel_<%=value%>").addClass( "panel-primary" );
-	      		$("#panel_head_<%=value%> h4 small b").addClass("message_error");
-	   	}
-	   		<%}%>
-	   	<%elsif key == "smr_sm"%>
-	   		<%list.each{|value|%>
+	      	$("#panel_<%=value%>").addClass( "panel-primary" );
+	      	$("#panel_head_<%=value%> h4 small b").addClass("message_error");
+	   	}<%}%><%elsif key == "smr_sm"%><%list.each{|value|%>
 	   	if($("select[name='<%=value%>'] option:selected").length == 0){
 	   		$("#panel_<%=value%>").removeClass( "panel-primary" );
-	      		$("#panel_<%=value%>").addClass( "panel-danger" );
-	      		$("#panel_head_<%=value%> h4 small b").removeClass("message_error");
-	      		resultado = false;
+	      	$("#panel_<%=value%>").addClass( "panel-danger" );
+	      	$("#panel_head_<%=value%> h4 small b").removeClass("message_error");
+	      	resultado = false;
 	   	}else{
 	   		$("#panel_<%=value%>").removeClass( "panel-danger" );
-	      		$("#panel_<%=value%>").addClass( "panel-primary" );
-	      		$("#panel_head_<%=value%> h4 small b").addClass("message_error");
-	   	}
-	   		<%}%>
-	   	<%elsif key == "mmr_rb"%>
-	   		<% hash = generateCompareMmr_rb (list) %>
-		   	<% hash.each{|ke,val|%>
+	      	$("#panel_<%=value%>").addClass( "panel-primary" );
+	      	$("#panel_head_<%=value%> h4 small b").addClass("message_error");
+	   	}<%}%><%elsif key == "mmr_rb"%><% hash = generateCompareMmr_rb (list) %><% hash.each{|ke,val|%>
 		if(<%=val[0..val.length-3]%>){
 			$("#panel_<%=ke%>").removeClass( "panel-primary" );
 	      	$("#panel_<%=ke%>").addClass( "panel-danger" );
 	      	$("#panel_head_<%=ke%> h4 small b").removeClass("message_error");
 	      	resultado = false;
-		}
-		else{
+		}else{
 			$("#panel_<%=ke%>").removeClass( "panel-danger" );
 	      	$("#panel_<%=ke%>").addClass( "panel-primary" );
 	      	$("#panel_head_<%=ke%> h4 small b").addClass("message_error");
-		}
-		   	<%}%>
-    	<%elsif key == "mmr_cb"%>
-    		<% hash = generateCompareMmr_cb (list) %>
-		   	<% hash.each{|ke,val|%>
+		}<%}%><%elsif key == "mmr_cb"%><% hash = generateCompareMmr_cb (list) %><% hash.each{|ke,val|%>
 		if(<%=val[0..val.length-3]%>){
 			$("#panel_<%=ke%>").removeClass( "panel-primary" );
 	      	$("#panel_<%=ke%>").addClass( "panel-danger" );
 	      	$("#panel_head_<%=ke%> h4 small b").removeClass("message_error");
 	      	resultado = false;
-		}
-		else{
+		}else{
 			$("#panel_<%=ke%>").removeClass( "panel-danger" );
 	      	$("#panel_<%=ke%>").addClass( "panel-primary" );
 	      	$("#panel_head_<%=ke%> h4 small b").addClass("message_error");
-		}
-		   	<%}%>
-    	<%elsif key == "mmr_s"%>
-    		<% hash = generateCompareMmr_s (list) %>
-		   	<% hash.each{|ke,val|%>
+		}<%}%><%elsif key == "mmr_s"%><% hash = generateCompareMmr_s (list) %><% hash.each{|ke,val|%>
 		if(<%=val[0..val.length-3]%>){
 			$("#panel_<%=ke%>").removeClass( "panel-primary" );
 	      	$("#panel_<%=ke%>").addClass( "panel-danger" );
 	      	$("#panel_head_<%=ke%> h4 small b").removeClass("message_error");
-		}
-		else{
+		}else{
 			$("#panel_<%=ke%>").removeClass( "panel-danger" );
 	      	$("#panel_<%=ke%>").addClass( "panel-primary" );
 	      	$("#panel_head_<%=ke%> h4 small b").addClass("message_error");
-		}
-		   	<%}%>
-    	<%elsif key == "eru_rb"%>
-    		<%list.each{|value|%>
+		}<%}%><%elsif key == "eru_rb"%><%list.each{|value|%>
 		if ($("input[name='<%=value%>']:checked").length == 0) {
 	      	$("#panel_<%=value%>").removeClass( "panel-primary" );
 	      	$("#panel_<%=value%>").addClass( "panel-danger" );
@@ -154,10 +124,7 @@ $(function(){
 	   		$("#panel_<%=value%>").removeClass( "panel-danger" );
 	      	$("#panel_<%=value%>").addClass( "panel-primary" );
 	      	$("#panel_head_<%=value%> h4 small b").addClass("message_error");
-	   	}
-	   		<%}%>
-	   	<%elsif key == "psu_t"%>
-	   		<%list.each{|value|%>
+	   	}<%}%><%elsif key == "psu_t"%><%list.each{|value|%>
 		if ($("input[name='<%=value%>']").val().trim() == "") {
 	      	$("#panel_<%=value%>").removeClass( "panel-primary" );
 	      	$("#panel_<%=value%>").addClass( "panel-danger" );
@@ -167,25 +134,17 @@ $(function(){
 	   		$("#panel_<%=value%>").removeClass( "panel-danger" );
 	      	$("#panel_<%=value%>").addClass( "panel-primary" );
 	      	$("#panel_head_<%=value%> h4 small b").addClass("message_error");
-	   	}
-	   		<%}%>
-	   	<%elsif key == "psm_t"%>
-		   	<% hash = generateComparePsm_t (list) %>
-		   	<% hash.each{|ke,val|%>
+	   	}<%}%><%elsif key == "psm_t"%><% hash = generateComparePsm_t (list) %><% hash.each{|ke,val|%>
 		if(<%=val[0..val.length-3]%>){
 			$("#panel_<%=ke%>").removeClass( "panel-primary" );
 	      	$("#panel_<%=ke%>").addClass( "panel-danger" );
 	      	$("#panel_head_<%=ke%> h4 small b").removeClass("message_error");
 	      	resultado = false;
-		}
-		else{
+		}else{
 			$("#panel_<%=ke%>").removeClass( "panel-danger" );
 	      	$("#panel_<%=ke%>").addClass( "panel-primary" );
 	      	$("#panel_head_<%=ke%> h4 small b").addClass("message_error");
-		}
-		   	<%}%>
-	   	<%elsif key == "psc_ta"%>
-	   		<%list.each{|value|%>
+		}<%}%><%elsif key == "psc_ta"%><%list.each{|value|%>
 	   	if ($("textarea[name='<%=value%>']").val().trim() == "") {
 	      	$("#panel_<%=value%>").removeClass( "panel-primary" );
 	      	$("#panel_<%=value%>").addClass( "panel-danger" );
@@ -195,45 +154,27 @@ $(function(){
 	   		$("#panel_<%=value%>").removeClass( "panel-danger" );
 	      	$("#panel_<%=value%>").addClass( "panel-primary" );
 	      	$("#panel_head_<%=value%> h4 small b").addClass("message_error");
-	   	}
-	   		<%}%>
-	   	<%elsif key == "pfh_s"%>
-	   		<%list.each{|value|%>
-	   		<%val = value.split('_')%>
-	   		<%date= val[0]+"_"+val[1]+"_date_"+val[2]%>
-	   		<%hour= val[0]+"_"+val[1]+"_hour_"+val[2]%>
-	   		<%minute= val[0]+"_"+val[1]+"_minute_"+val[2]%>
+	   	}<%}%><%elsif key == "pfh_s"%><%list.each{|value|%><%val = value.split('_')%><%date= val[0]+"_"+val[1]+"_date_"+val[2]%><%hour= val[0]+"_"+val[1]+"_hour_"+val[2]%><%minute= val[0]+"_"+val[1]+"_minute_"+val[2]%>
 	   	if ($("input[name='<%=date%>']").val().trim() == "" || $("select[name='<%=hour%>']").val()=="" || $("select[name='<%=minute%>']").val()=="") {
 	   		$("#panel_<%=value%>").removeClass( "panel-primary" );
 	      	$("#panel_<%=value%>").addClass( "panel-danger" );
 	      	$("#panel_head_<%=value%> h4 small b").removeClass("message_error");
 	      	resultado = false;
-	   	}
-	   	else{
+	   	}else{
 	   		$("#panel_<%=value%>").removeClass( "panel-danger" );
 	      	$("#panel_<%=value%>").addClass( "panel-primary" );
 	      	$("#panel_head_<%=value%> h4 small b").addClass("message_error");
-	   	}
-	   		<%}%>
-	   	<%elsif key == "psh_s"%>
-	   		<%list.each{|value|%>
-	   		<%val = value.split('_')%>
-	   		<%hour= val[0]+"_"+val[1]+"_hour_"+val[2]%>
-	   		<%minute= val[0]+"_"+val[1]+"_minute_"+val[2]%>
+	   	}<%}%><%elsif key == "psh_s"%><%list.each{|value|%><%val = value.split('_')%><%hour= val[0]+"_"+val[1]+"_hour_"+val[2]%><%minute= val[0]+"_"+val[1]+"_minute_"+val[2]%>
 	   	if ($("select[name='<%=hour%>']").val()=="" || $("select[name='<%=minute%>']").val()=="") {
 	   		$("#panel_<%=value%>").removeClass( "panel-primary" );
 	      	$("#panel_<%=value%>").addClass( "panel-danger" );
 	      	$("#panel_head_<%=value%> h4 small b").removeClass("message_error");
 	      	resultado = false;
-	   	}
-	   	else{
+	   	}else{
 	   		$("#panel_<%=value%>").removeClass( "panel-danger" );
 	      	$("#panel_<%=value%>").addClass( "panel-primary" );
 	      	$("#panel_head_<%=value%> h4 small b").addClass("message_error");
-	   	}	
-	   		<%}%>
-    	<%end%>
-	 <%}%>
+	   	}<%}%><%end%><%}%>
 		return resultado;
 	}
 	

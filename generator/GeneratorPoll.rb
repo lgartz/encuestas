@@ -27,7 +27,6 @@ def readPollFileXml ( pathFile )
         getResultHashElementsRequired(type,number,hashValidate,questionChild)
       end
     end
-    print hashValidate.to_s+"\n"
     erbJavaScript = getTemplate("../encuestas/templates/poll_script.template",binding)
     createFile("../encuestas/javascript/",".js",namePage,erbJavaScript)
     erbHtml = getTemplate("../encuestas/templates/poll.template",binding)
@@ -35,6 +34,7 @@ def readPollFileXml ( pathFile )
   end
 end
 
+# Metodo encargado de generar la validacion de los campos de las preguntas psm_t
 def generateComparePsm_t (list)
   hash = Hash.new
   list.each{|value|
@@ -49,6 +49,7 @@ def generateComparePsm_t (list)
   return hash
 end
 
+# Metodo encargado de generar la validacion de los campos de las preguntas mmr_rb
 def generateCompareMmr_rb (list)
   hash = Hash.new
   list.each{|value|
@@ -63,6 +64,7 @@ def generateCompareMmr_rb (list)
   return hash
 end
 
+# Metodo encargado de generar la validacion de los campos de las preguntas mmr_cb
 def generateCompareMmr_cb (list)
   hash = Hash.new
   list.each{|value|
@@ -77,6 +79,7 @@ def generateCompareMmr_cb (list)
   return hash
 end
 
+# Metodo encargado de generar la validacion de los campos de las preguntas mmr_s
 def generateCompareMmr_s (list)
   hash = Hash.new
   list.each{|value|
@@ -91,6 +94,7 @@ def generateCompareMmr_s (list)
   return hash
 end
 
+# Metodo encargado de generar la validacion de los campos de los distintos tipos de preguntas
 def getResultHashElementsRequired(type,number,hashValidate,questionChild)
   case type
   when "smu_rb"
@@ -152,6 +156,7 @@ def getResultHashElementsRequired(type,number,hashValidate,questionChild)
   end
 end
 
+# Metodo encargado de obtener el listado de id de las llaves autogeneradas de cada pregunta
 def getContainsKey (hashValidate,type,number,name)
   if hashValidate[type]
     hashValidate[type].push(name)
@@ -162,6 +167,7 @@ def getContainsKey (hashValidate,type,number,name)
   end
 end
 
+# Metodo encargado de retornar el codigo html para cada una de las preguntas generadas
 def getResultElementForm(questionChild,type,number,required,ask,listLocUlId,listDatesId)
   resultado = case type
   when "smu_rb"
@@ -209,30 +215,35 @@ def getListOptions ( element, value )
   return listOptions
 end
 
+# Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta smu_rb.template
 def getsmu_rb(questionChild,type,number,required,ask)
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/smu_rb.template",binding)
   return erbTemplate.to_s
 end
 
+# Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta smu_s.template
 def getsmu_s(questionChild,type,number,required,ask)
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/smu_s.template",binding)
   return erbTemplate.to_s
 end
 
+# Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta smr_cb.template
 def getsmr_cb (questionChild,type,number,required,ask)
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/smr_cb.template",binding)
   return erbTemplate.to_s
 end
 
+# Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta smr_sm.template
 def getsmr_sm (questionChild,type,number,required,ask)
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/smr_sm.template",binding)
   return erbTemplate.to_s
 end
 
+# Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta loc_ul.template
 def getloc_ul (questionChild, listLocUlId,type,number,required,ask)
   listLocUlId.push("#{type}_#{number}")
   listOptions = getListOptions(questionChild,"option")
@@ -240,22 +251,26 @@ def getloc_ul (questionChild, listLocUlId,type,number,required,ask)
   return erbTemplate.to_s
 end
 
+# Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta psm_t.template
 def getpsm_t (questionChild,type,number,required,ask)
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/psm_t.template",binding)
   return erbTemplate.to_s
 end
 
+# Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta mmr_rb.template
 def getmmr_rb (questionChild,type,number,required,ask,listRows,listColumns)
   erbTemplate = getTemplate("../encuestas/templates/mmr_rb.template",binding)
   return erbTemplate.to_s
 end
 
+# Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta mmr_cb.template
 def getmmr_cb (questionChild,type,number,required,ask,listRows,listColumns)
   erbTemplate = getTemplate("../encuestas/templates/mmr_cb.template",binding)
   return erbTemplate.to_s
 end
 
+# Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta eru_rb.template
 def geteru_rb (questionChild,type,number,required,ask)
   has = Hash.new
   questionChild.elements["range"].attributes.each_attribute do |range|
@@ -265,33 +280,39 @@ def geteru_rb (questionChild,type,number,required,ask)
   return erbTemplate.to_s
 end
 
+# Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta psu_t.template
 def getpsu_t (questionChild,type,number,required,ask)
   erbTemplate = getTemplate("../encuestas/templates/psu_t.template",binding)
   return erbTemplate.to_s
 end
 
+# Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta psc_ta.template
 def getpsc_ta (questionChild,type,number,required,ask)
   erbTemplate = getTemplate("../encuestas/templates/psc_ta.template",binding)
   return erbTemplate.to_s
 end
 
+# Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta pfh_s.template
 def getpfh_s (questionChild, listDatesId,type,number,required,ask)
   listDatesId.push("#{type}_date_#{number}")
   erbTemplate = getTemplate("../encuestas/templates/pfh_s.template",binding)
   return erbTemplate.to_s
 end
 
+# Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta psh_s.template
 def getpsh_s (questionChild,type,number,required,ask)
   erbTemplate = getTemplate("../encuestas/templates/psh_s.template",binding)
   return erbTemplate.to_s
 end
 
+# Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta mmr_s.template
 def getmmr_s (questionChild,type,number,required,ask,listRows)
   hashColumnas = getListOptionSelect(questionChild)
   erbTemplate = getTemplate("../encuestas/templates/mmr_s.template",binding)
   return erbTemplate.to_s
 end
 
+# Metodo encargado de obtener el listado de opciones de una pregunta
 def getListOptionSelect(questionChild)
   has = Hash.new
   questionChild.elements["columns"].each_element do |columns|
@@ -302,6 +323,7 @@ def getListOptionSelect(questionChild)
   return has
 end
 
+# Metodo encargado de obtener la plantilla que se empleara para la generacion del codigo
 def getTemplate (pathTemplate, binding)
   fileTemplate = File.new( pathTemplate )
   filehtml = fileTemplate.read
@@ -309,6 +331,7 @@ def getTemplate (pathTemplate, binding)
   return erb.result(binding)
 end
 
+# Metodo encargado de crear el archivo generado
 def createFile (pathFile,extension,nameFile, erb)
   fileName = pathFile+nameFile+extension
   newFile = File.open(fileName,"w")
