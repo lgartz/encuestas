@@ -545,15 +545,16 @@
 	</div>
 </div>
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4>¿Cual es su hora favorita del dia para comer un helado?</h4>
+	<div id="panel_psh_s_14" class="panel panel-primary">
+		<div id="panel_head_psh_s_14" class="panel-heading">
+			<h4>¿Cual es su hora favorita del dia para comer un helado?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div class="panel-body">
+		<div id="panel_body_psh_s_14" class="panel-body">
 			<label >Hora:</label>
 			<div class="row">
 				<div class="col col-sm-5">						
 					<select id="psh_s_hour_14" name="psh_s_hour_14" class="form-control">
+						<option value="">--Seleccione una opci&oacute;n</option>
 						<?php 
 							$cero = "0";
 							for ($i=0; $i<24; $i++) { 
@@ -570,6 +571,7 @@
 				<div class="col col-sm-2 td-center" >:</div>
 				<div class="col col-sm-5">
 					<select id="psh_s_minute_14" name="psh_s_minute_14" class="form-control">
+						<option value="">--Seleccione una opci&oacute;n</option>
 						<?php 
 							$cero = "0";
 							for ($i=0; $i<60; $i++) { 
@@ -592,6 +594,9 @@
 			<button id="cancelar" type="reset" class="btn btn-primary">Cancelar</button>
 		</div>
 		</form>
+	</div>
+	<div id="dialog-confirm" title="Preguntas inconsistentes">
+  		<p>Existen preguntas a&uacute;n sin resolver o por completar, por favor revise e intente de nuevo</p>
 	</div>
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

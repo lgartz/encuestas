@@ -35,6 +35,62 @@ def readPollFileXml ( pathFile )
   end
 end
 
+def generateComparePsm_t (list)
+  hash = Hash.new
+  list.each{|value|
+    val = value.split('_')
+    key = val[0]+"_"+val[1]+"_"+val[2]
+    if hash[key]
+      hash[key] = hash[key]+"$("+'"'+"input[name='"+value+"'"+"]"+'"'+").val().trim() == "+'"'+'"'+"||"
+    else
+      hash[key] = "$("+'"'+"input[name='"+value+"'"+"]"+'"'+").val().trim() == "+'"'+'"'+"||"
+    end
+  }
+  return hash
+end
+
+def generateCompareMmr_rb (list)
+  hash = Hash.new
+  list.each{|value|
+    val = value.split('_')
+    key = val[0]+"_"+val[1]+"_"+val[2]
+    if hash[key]
+      hash[key] = hash[key]+"$("+'"'+"input[name='"+value+"'"+"]:checked"+'"'+").length == 0"+"||"
+    else
+      hash[key] = "$("+'"'+"input[name='"+value+"'"+"]:checked"+'"'+").length == 0"+"||"
+    end
+  }
+  return hash
+end
+
+def generateCompareMmr_cb (list)
+  hash = Hash.new
+  list.each{|value|
+    val = value.split('_')
+    key = val[0]+"_"+val[1]+"_"+val[2]
+    if hash[key]
+      hash[key] = hash[key]+"$("+'"'+"input[name='"+value+"'"+"]:checked"+'"'+").length == 0"+"||"
+    else
+      hash[key] = "$("+'"'+"input[name='"+value+"'"+"]:checked"+'"'+").length == 0"+"||"
+    end
+  }
+  return hash
+end
+
+def generateCompareMmr_s (list)
+  hash = Hash.new
+  list.each{|value|
+    val = value.split('_')
+    key = val[0]+"_"+val[1]+"_"+val[2]
+    if hash[key]
+      hash[key] = hash[key]+"$("+'"'+"select[name='"+value+"'"+"]"+'"'+").val() == "+'"'+'"'+"||"
+    else
+      hash[key] = "$("+'"'+"select[name='"+value+"'"+"]"+'"'+").val() == "+'"'+'"'+"||"
+    end
+  }
+  return hash
+end
+
 def getResultHashElementsRequired(type,number,hashValidate,questionChild)
   case type
   when "smu_rb"
@@ -88,6 +144,9 @@ def getResultHashElementsRequired(type,number,hashValidate,questionChild)
     name="#{type}_#{number}"
     getContainsKey(hashValidate,type,number,name)
   when "pfh_s"
+    name="#{type}_#{number}"
+    getContainsKey(hashValidate,type,number,name)
+  when "psh_s"
     name="#{type}_#{number}"
     getContainsKey(hashValidate,type,number,name)
   end
