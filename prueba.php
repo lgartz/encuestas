@@ -18,7 +18,7 @@
 		</nav>
 	</header>
 	<div class="container">
-		<form action="#" method="GET">
+		<form action="prueba_process.php" method="GET">
 			<div class="form-group">
 	<div id="panel_smu_rb_1" class="panel panel-primary">
 		<div id="panel_head_smu_rb_1" class="panel-heading">

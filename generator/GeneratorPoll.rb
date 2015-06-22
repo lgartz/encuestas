@@ -11,6 +11,7 @@ def readPollFileXml ( pathFile )
     title = pollChild.attributes["title"].to_s
     name = pollChild.attributes["name"].to_s
     namePage = pollChild.attributes["namePage"].to_s
+    namePhp = namePage+"_process"
     body = ""
     listLocUlId = []
     listDatesId = []
@@ -31,6 +32,8 @@ def readPollFileXml ( pathFile )
     createFile("../encuestas/javascript/",".js",namePage,erbJavaScript)
     erbHtml = getTemplate("../encuestas/templates/poll.template",binding)
     createFile("../encuestas/",".php",namePage,erbHtml)
+    erbPhp = getTemplate("../encuestas/templates/process.template",binding)
+    createFile("../encuestas/",".php",namePhp,erbPhp)
   end
 end
 
