@@ -1,11 +1,11 @@
 <div class="form-group">
-	<div id="panel_<%=type%>_<%=number%>" class="panel panel-primary">
-		<div id="panel_head_<%=type%>_<%=number%>" class="panel-heading">
+	<div id="panel_<%=name%>" class="panel panel-primary">
+		<div id="panel_head_<%=name%>" class="panel-heading">
 			<h4><%=ask%> <small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta pregunta es obligatoria</b></small></h4>
 		</div>
-		<div id="panel_body_<%=type%>_<%=number%>" class="panel-body">
-			<select multiple id="<%=type%>_<%=number%>" name="<%=type%>_<%=number%>" class="form-control"><% listOptions.each{ |option| %>
-				<option class="form-control"><%=option["value"]%></option><% } %>			
+		<div id="panel_body_<%=name%>" class="panel-body">
+			<select multiple id="<%=name%>" name="<%=name%>[]" class="form-control"><% listOptions.each{ |option| %>
+				<option class="form-control"><%=option["value"]%></option><% } %>	
 			</select>
 		</div>
 	</div>

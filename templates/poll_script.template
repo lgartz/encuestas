@@ -67,7 +67,7 @@ $(function(){
 	   		$("#panel_<%=value%>").addClass( "panel-primary" );	        		
 	      	$("#panel_head_<%=value%> h4 small b").addClass("message_error");
 	   	}<%}%><%elsif key == "smr_cb"%><%list.each{|value|%>
-	   	if($("input[name='<%=value%>']:checked").length == 0){
+	   	if($("input[name='<%=value%>[]']:checked").length == 0){
 	   		$("#panel_<%=value%>").removeClass( "panel-primary" );
 	      	$("#panel_<%=value%>").addClass( "panel-danger" );
 	      	$("#panel_head_<%=value%> h4 small b").removeClass("message_error");
@@ -77,7 +77,7 @@ $(function(){
 	      	$("#panel_<%=value%>").addClass( "panel-primary" );
 	      	$("#panel_head_<%=value%> h4 small b").addClass("message_error");
 	   	}<%}%><%elsif key == "smr_sm"%><%list.each{|value|%>
-	   	if($("select[name='<%=value%>'] option:selected").length == 0){
+	   	if($("select[name='<%=value%>[]'] option:selected").length == 0){
 	   		$("#panel_<%=value%>").removeClass( "panel-primary" );
 	      	$("#panel_<%=value%>").addClass( "panel-danger" );
 	      	$("#panel_head_<%=value%> h4 small b").removeClass("message_error");

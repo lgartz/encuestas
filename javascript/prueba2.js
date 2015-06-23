@@ -67,7 +67,7 @@ $(function(){
 	   		$("#panel_smu_s_2").addClass( "panel-primary" );	        		
 	      	$("#panel_head_smu_s_2 h4 small b").addClass("message_error");
 	   	}
-	   	if($("input[name='smr_cb_3']:checked").length == 0){
+	   	if($("input[name='smr_cb_3[]']:checked").length == 0){
 	   		$("#panel_smr_cb_3").removeClass( "panel-primary" );
 	      	$("#panel_smr_cb_3").addClass( "panel-danger" );
 	      	$("#panel_head_smr_cb_3 h4 small b").removeClass("message_error");
@@ -77,7 +77,7 @@ $(function(){
 	      	$("#panel_smr_cb_3").addClass( "panel-primary" );
 	      	$("#panel_head_smr_cb_3 h4 small b").addClass("message_error");
 	   	}
-	   	if($("select[name='smr_sm_4'] option:selected").length == 0){
+	   	if($("select[name='smr_sm_4[]'] option:selected").length == 0){
 	   		$("#panel_smr_sm_4").removeClass( "panel-primary" );
 	      	$("#panel_smr_sm_4").addClass( "panel-danger" );
 	      	$("#panel_head_smr_sm_4 h4 small b").removeClass("message_error");
@@ -97,7 +97,7 @@ $(function(){
 	      	$("#panel_mmr_rb_5").addClass( "panel-primary" );
 	      	$("#panel_head_mmr_rb_5 h4 small b").addClass("message_error");
 		}
-		if($("input[name='mmr_cb_6_1']:checked").length == 0||$("input[name='mmr_cb_6_2']:checked").length == 0||$("input[name='mmr_cb_6_3']:checked").length == 0){
+		if($("input[name='mmr_cb_6_1[]']:checked").length == 0||$("input[name='mmr_cb_6_2[]']:checked").length == 0||$("input[name='mmr_cb_6_3[]']:checked").length == 0){
 			$("#panel_mmr_cb_6").removeClass( "panel-primary" );
 	      	$("#panel_mmr_cb_6").addClass( "panel-danger" );
 	      	$("#panel_head_mmr_cb_6 h4 small b").removeClass("message_error");

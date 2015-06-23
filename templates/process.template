@@ -1,4 +1,9 @@
 <?php
-
-
+	<%hashNames.each{|key,list|%>
+		<%list.each{|name|%>
+	$<%=name%> = $_GET['<%=name%>'];
+	echo var_dump($<%=name%>);
+	echo "<br>";
+		<%}%>
+	<%}%>
 ?>

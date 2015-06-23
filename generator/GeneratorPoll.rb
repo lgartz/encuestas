@@ -16,18 +16,20 @@ def readPollFileXml ( pathFile )
     listLocUlId = []
     listDatesId = []
     hashValidate = Hash.new
+    hashNames = Hash.new
     # Se realiza la lectura de cada una las preguntas
     pollChild.each_element("question") do | questionChild |
       type = questionChild.attributes["type"]
       number = questionChild.attributes["number"]
       required = questionChild.attributes["required"]
       ask = questionChild.elements["ask"].attributes["value"]
-      resultado = getResultElementForm(questionChild,type,number,required,ask,listLocUlId,listDatesId)
+      resultado = getResultElementForm(questionChild,type,number,required,ask,listLocUlId,listDatesId,hashNames)
       body << "#{resultado}\n"
       if required == "true"
         getResultHashElementsRequired(type,number,hashValidate,questionChild)
       end
     end
+    print hashNames
     erbJavaScript = getTemplate("../encuestas/templates/poll_script.template",binding)
     createFile("../encuestas/javascript/",".js",namePage,erbJavaScript)
     erbHtml = getTemplate("../encuestas/templates/poll.template",binding)
@@ -74,9 +76,9 @@ def generateCompareMmr_cb (list)
     val = value.split('_')
     key = val[0]+"_"+val[1]+"_"+val[2]
     if hash[key]
-      hash[key] = hash[key]+"$("+'"'+"input[name='"+value+"'"+"]:checked"+'"'+").length == 0"+"||"
+      hash[key] = hash[key]+"$("+'"'+"input[name='"+value+"[]'"+"]:checked"+'"'+").length == 0"+"||"
     else
-      hash[key] = "$("+'"'+"input[name='"+value+"'"+"]:checked"+'"'+").length == 0"+"||"
+      hash[key] = "$("+'"'+"input[name='"+value+"[]'"+"]:checked"+'"'+").length == 0"+"||"
     end
   }
   return hash
@@ -102,27 +104,27 @@ def getResultHashElementsRequired(type,number,hashValidate,questionChild)
   case type
   when "smu_rb"
     name="#{type}_#{number}"
-    getContainsKey(hashValidate,type,number,name)
+    getContainsKey(hashValidate,type,name)
   when "smu_s"
     name="#{type}_#{number}"
-    getContainsKey(hashValidate,type,number,name)
+    getContainsKey(hashValidate,type,name)
   when "smr_cb"
     name="#{type}_#{number}"
-    getContainsKey(hashValidate,type,number,name)
+    getContainsKey(hashValidate,type,name)
   when "smr_sm"
     name="#{type}_#{number}"
-    getContainsKey(hashValidate,type,number,name)
+    getContainsKey(hashValidate,type,name)
   when "mmr_rb"
     listRows = getListOptions(questionChild.elements["rows"],"option")
     for i in 1..listRows.length
       name="#{type}_#{number}_#{i}"
-      getContainsKey(hashValidate,type,number,name)
+      getContainsKey(hashValidate,type,name)
     end
   when "mmr_cb"
     listRows = getListOptions(questionChild.elements["rows"],"option")
     for i in 1..listRows.length
       name="#{type}_#{number}_#{i}"
-      getContainsKey(hashValidate,type,number,name)
+      getContainsKey(hashValidate,type,name)
     end
   when "mmr_s"
     listRows = getListOptions(questionChild.elements["rows"],"option")
@@ -132,35 +134,35 @@ def getResultHashElementsRequired(type,number,hashValidate,questionChild)
     for i in 1..tamRow
       for j in 1..tamColumn
         name="#{type}_#{number}_#{i}_#{j}"
-        getContainsKey(hashValidate,type,number,name)
+        getContainsKey(hashValidate,type,name)
       end
     end
   when "eru_rb"
     name="#{type}_#{number}"
-    getContainsKey(hashValidate,type,number,name)
+    getContainsKey(hashValidate,type,name)
   when "psu_t"
     name="#{type}_#{number}"
-    getContainsKey(hashValidate,type,number,name)
+    getContainsKey(hashValidate,type,name)
   when "psm_t"
     listOptions = getListOptions(questionChild,"option")
     for i in 1..listOptions.first["value"].to_i
       name="#{type}_#{number}_#{i}"
-      getContainsKey(hashValidate,type,number,name)
+      getContainsKey(hashValidate,type,name)
     end
   when "psc_ta"
     name="#{type}_#{number}"
-    getContainsKey(hashValidate,type,number,name)
+    getContainsKey(hashValidate,type,name)
   when "pfh_s"
     name="#{type}_#{number}"
-    getContainsKey(hashValidate,type,number,name)
+    getContainsKey(hashValidate,type,name)
   when "psh_s"
     name="#{type}_#{number}"
-    getContainsKey(hashValidate,type,number,name)
+    getContainsKey(hashValidate,type,name)
   end
 end
 
 # Metodo encargado de obtener el listado de id de las llaves autogeneradas de cada pregunta
-def getContainsKey (hashValidate,type,number,name)
+def getContainsKey (hashValidate,type,name)
   if hashValidate[type]
     hashValidate[type].push(name)
   else
@@ -171,20 +173,20 @@ def getContainsKey (hashValidate,type,number,name)
 end
 
 # Metodo encargado de retornar el codigo html para cada una de las preguntas generadas
-def getResultElementForm(questionChild,type,number,required,ask,listLocUlId,listDatesId)
+def getResultElementForm(questionChild,type,number,required,ask,listLocUlId,listDatesId,hashNames)
   resultado = case type
   when "smu_rb"
-    then getsmu_rb(questionChild,type,number,required,ask)
+    then getsmu_rb(questionChild,type,number,required,ask,hashNames)
   when "smu_s"
-    then getsmu_s(questionChild,type,number,required,ask)
+    then getsmu_s(questionChild,type,number,required,ask,hashNames)
   when "smr_cb"
-    then getsmr_cb(questionChild,type,number,required,ask)
+    then getsmr_cb(questionChild,type,number,required,ask,hashNames)
   when "smr_sm"
-    then getsmr_sm(questionChild,type,number,required,ask)
+    then getsmr_sm(questionChild,type,number,required,ask,hashNames)
   when "mmr_rb"
-    then getmmr_rb(questionChild,type,number,required,ask,getListOptions(questionChild.elements["rows"],"option"),getListOptions(questionChild.elements["columns"],"option"))
+    then getmmr_rb(questionChild,type,number,required,ask,getListOptions(questionChild.elements["rows"],"option"),getListOptions(questionChild.elements["columns"],"option"),hashNames)
   when "mmr_cb"
-    then getmmr_cb(questionChild,type,number,required,ask,getListOptions(questionChild.elements["rows"],"option"),getListOptions(questionChild.elements["columns"],"option"))
+    then getmmr_cb(questionChild,type,number,required,ask,getListOptions(questionChild.elements["rows"],"option"),getListOptions(questionChild.elements["columns"],"option"),hashNames)
   when "mmr_s"
     then getmmr_s(questionChild,type,number,required,ask,getListOptions(questionChild.elements["rows"],"option"))
   when "loc_ul"
@@ -219,28 +221,36 @@ def getListOptions ( element, value )
 end
 
 # Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta smu_rb.template
-def getsmu_rb(questionChild,type,number,required,ask)
+def getsmu_rb(questionChild,type,number,required,ask,hashNames)
+  name="#{type}_#{number}"
+  getContainsKey(hashNames,type,name)
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/smu_rb.template",binding)
   return erbTemplate.to_s
 end
 
 # Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta smu_s.template
-def getsmu_s(questionChild,type,number,required,ask)
+def getsmu_s(questionChild,type,number,required,ask,hashNames)
+  name="#{type}_#{number}"
+  getContainsKey(hashNames,type,name)
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/smu_s.template",binding)
   return erbTemplate.to_s
 end
 
 # Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta smr_cb.template
-def getsmr_cb (questionChild,type,number,required,ask)
+def getsmr_cb (questionChild,type,number,required,ask,hashNames)
+  name="#{type}_#{number}"
+  getContainsKey(hashNames,type,name)
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/smr_cb.template",binding)
   return erbTemplate.to_s
 end
 
 # Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta smr_sm.template
-def getsmr_sm (questionChild,type,number,required,ask)
+def getsmr_sm (questionChild,type,number,required,ask,hashNames)
+  name="#{type}_#{number}"
+  getContainsKey(hashNames,type,name)
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/smr_sm.template",binding)
   return erbTemplate.to_s
@@ -262,13 +272,21 @@ def getpsm_t (questionChild,type,number,required,ask)
 end
 
 # Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta mmr_rb.template
-def getmmr_rb (questionChild,type,number,required,ask,listRows,listColumns)
+def getmmr_rb (questionChild,type,number,required,ask,listRows,listColumns,hashNames)
+  for i in 1..listRows.length
+    name="#{type}_#{number}_#{i}"
+    getContainsKey(hashNames,type,name)
+  end
   erbTemplate = getTemplate("../encuestas/templates/mmr_rb.template",binding)
   return erbTemplate.to_s
 end
 
 # Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta mmr_cb.template
-def getmmr_cb (questionChild,type,number,required,ask,listRows,listColumns)
+def getmmr_cb (questionChild,type,number,required,ask,listRows,listColumns,hashNames)
+  for i in 1..listRows.length
+    name="#{type}_#{number}_#{i}"
+    getContainsKey(hashNames,type,name)
+  end
   erbTemplate = getTemplate("../encuestas/templates/mmr_cb.template",binding)
   return erbTemplate.to_s
 end

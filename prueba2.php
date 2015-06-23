@@ -90,37 +90,37 @@
 		<div id="panel_body_smr_cb_3" class="panel-body">
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3" name="smr_cb_3" type="checkbox" value="Fresa">
+					<input id="smr_cb_3" name="smr_cb_3[]" type="checkbox" value="Fresa">
 					Fresa
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3" name="smr_cb_3" type="checkbox" value="Chicle">
+					<input id="smr_cb_3" name="smr_cb_3[]" type="checkbox" value="Chicle">
 					Chicle
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3" name="smr_cb_3" type="checkbox" value="Arequipe">
+					<input id="smr_cb_3" name="smr_cb_3[]" type="checkbox" value="Arequipe">
 					Arequipe
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3" name="smr_cb_3" type="checkbox" value="Queso">
+					<input id="smr_cb_3" name="smr_cb_3[]" type="checkbox" value="Queso">
 					Queso
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3" name="smr_cb_3" type="checkbox" value="Feijoa">
+					<input id="smr_cb_3" name="smr_cb_3[]" type="checkbox" value="Feijoa">
 					Feijoa
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3" name="smr_cb_3" type="checkbox" value="Mani">
+					<input id="smr_cb_3" name="smr_cb_3[]" type="checkbox" value="Mani">
 					Mani
 				</label>
 			</div>
@@ -133,13 +133,13 @@
 			<h4>¿Cuales son sus sabores de helado favoritos? <small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta pregunta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_smr_sm_4" class="panel-body">
-			<select multiple id="smr_sm_4" name="smr_sm_4" class="form-control">
+			<select multiple id="smr_sm_4" name="smr_sm_4[]" class="form-control">
 				<option class="form-control">Fresa</option>
 				<option class="form-control">Chicle</option>
 				<option class="form-control">Arequipe</option>
 				<option class="form-control">Queso</option>
 				<option class="form-control">Feijoa</option>
-				<option class="form-control">Mani</option>			
+				<option class="form-control">Mani</option>	
 			</select>
 		</div>
 	</div>
@@ -162,35 +162,35 @@
 					</tr>
 					<tr>
 						<th>¿Que tan Importante es su Educacion?</th>
-						<td class="td-center"><input id="mmr_rb_5_1_1" name="mmr_rb_5_1" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_1_2" name="mmr_rb_5_1" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_1_3" name="mmr_rb_5_1" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_1_4" name="mmr_rb_5_1" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_1_5" name="mmr_rb_5_1" type="radio" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_1_1" name="mmr_rb_5_1" type="radio"  value="Nada Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_1_2" name="mmr_rb_5_1" type="radio"  value="Poco Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_1_3" name="mmr_rb_5_1" type="radio"  value="Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_1_4" name="mmr_rb_5_1" type="radio"  value="Bastante Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_1_5" name="mmr_rb_5_1" type="radio"  value="Muy Importante" class="form-control"></td>
 					</tr>
 					<tr>
 						<th>¿Que tan Importante es su Familia?</th>
-						<td class="td-center"><input id="mmr_rb_5_2_1" name="mmr_rb_5_2" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_2_2" name="mmr_rb_5_2" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_2_3" name="mmr_rb_5_2" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_2_4" name="mmr_rb_5_2" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_2_5" name="mmr_rb_5_2" type="radio" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_2_1" name="mmr_rb_5_2" type="radio"  value="Nada Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_2_2" name="mmr_rb_5_2" type="radio"  value="Poco Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_2_3" name="mmr_rb_5_2" type="radio"  value="Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_2_4" name="mmr_rb_5_2" type="radio"  value="Bastante Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_2_5" name="mmr_rb_5_2" type="radio"  value="Muy Importante" class="form-control"></td>
 					</tr>
 					<tr>
 						<th>¿Que tan Importante es su Religion?</th>
-						<td class="td-center"><input id="mmr_rb_5_3_1" name="mmr_rb_5_3" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_3_2" name="mmr_rb_5_3" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_3_3" name="mmr_rb_5_3" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_3_4" name="mmr_rb_5_3" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_3_5" name="mmr_rb_5_3" type="radio" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_3_1" name="mmr_rb_5_3" type="radio"  value="Nada Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_3_2" name="mmr_rb_5_3" type="radio"  value="Poco Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_3_3" name="mmr_rb_5_3" type="radio"  value="Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_3_4" name="mmr_rb_5_3" type="radio"  value="Bastante Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_3_5" name="mmr_rb_5_3" type="radio"  value="Muy Importante" class="form-control"></td>
 					</tr>
 					<tr>
 						<th>¿Que tan Importante es su Ejercicio Fisico?</th>
-						<td class="td-center"><input id="mmr_rb_5_4_1" name="mmr_rb_5_4" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_4_2" name="mmr_rb_5_4" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_4_3" name="mmr_rb_5_4" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_4_4" name="mmr_rb_5_4" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_4_5" name="mmr_rb_5_4" type="radio" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_4_1" name="mmr_rb_5_4" type="radio"  value="Nada Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_4_2" name="mmr_rb_5_4" type="radio"  value="Poco Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_4_3" name="mmr_rb_5_4" type="radio"  value="Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_4_4" name="mmr_rb_5_4" type="radio"  value="Bastante Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_4_5" name="mmr_rb_5_4" type="radio"  value="Muy Importante" class="form-control"></td>
 					</tr>
 				</table>
 			</div>
@@ -215,27 +215,27 @@
 					</tr>
 					<tr>
 						<th>Papa</th>
-						<td class="td-center"><input id="mmr_cb_6_1_1" name="mmr_cb_6_1" type="checkbox" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_1_2" name="mmr_cb_6_1" type="checkbox" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_1_3" name="mmr_cb_6_1" type="checkbox" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_1_4" name="mmr_cb_6_1" type="checkbox" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_1_5" name="mmr_cb_6_1" type="checkbox" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_1_1" name="mmr_cb_6_1[]" type="checkbox" value="Arequipe" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_1_2" name="mmr_cb_6_1[]" type="checkbox" value="Fresa" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_1_3" name="mmr_cb_6_1[]" type="checkbox" value="Chicle" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_1_4" name="mmr_cb_6_1[]" type="checkbox" value="Coco" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_1_5" name="mmr_cb_6_1[]" type="checkbox" value="Queso" class="form-control"></td>
 					</tr>
 					<tr>
 						<th>Mama</th>
-						<td class="td-center"><input id="mmr_cb_6_2_1" name="mmr_cb_6_2" type="checkbox" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_2_2" name="mmr_cb_6_2" type="checkbox" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_2_3" name="mmr_cb_6_2" type="checkbox" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_2_4" name="mmr_cb_6_2" type="checkbox" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_2_5" name="mmr_cb_6_2" type="checkbox" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_2_1" name="mmr_cb_6_2[]" type="checkbox" value="Arequipe" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_2_2" name="mmr_cb_6_2[]" type="checkbox" value="Fresa" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_2_3" name="mmr_cb_6_2[]" type="checkbox" value="Chicle" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_2_4" name="mmr_cb_6_2[]" type="checkbox" value="Coco" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_2_5" name="mmr_cb_6_2[]" type="checkbox" value="Queso" class="form-control"></td>
 					</tr>
 					<tr>
 						<th>Hermana</th>
-						<td class="td-center"><input id="mmr_cb_6_3_1" name="mmr_cb_6_3" type="checkbox" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_3_2" name="mmr_cb_6_3" type="checkbox" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_3_3" name="mmr_cb_6_3" type="checkbox" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_3_4" name="mmr_cb_6_3" type="checkbox" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_3_5" name="mmr_cb_6_3" type="checkbox" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_3_1" name="mmr_cb_6_3[]" type="checkbox" value="Arequipe" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_3_2" name="mmr_cb_6_3[]" type="checkbox" value="Fresa" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_3_3" name="mmr_cb_6_3[]" type="checkbox" value="Chicle" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_3_4" name="mmr_cb_6_3[]" type="checkbox" value="Coco" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_3_5" name="mmr_cb_6_3[]" type="checkbox" value="Queso" class="form-control"></td>
 					</tr>
 				</table>
 			</div>
