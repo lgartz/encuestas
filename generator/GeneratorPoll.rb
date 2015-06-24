@@ -188,21 +188,21 @@ def getResultElementForm(questionChild,type,number,required,ask,listLocUlId,list
   when "mmr_cb"
     then getmmr_cb(questionChild,type,number,required,ask,getListOptions(questionChild.elements["rows"],"option"),getListOptions(questionChild.elements["columns"],"option"),hashNames)
   when "mmr_s"
-    then getmmr_s(questionChild,type,number,required,ask,getListOptions(questionChild.elements["rows"],"option"))
+    then getmmr_s(questionChild,type,number,required,ask,getListOptions(questionChild.elements["rows"],"option"),hashNames)
   when "loc_ul"
-    then getloc_ul(questionChild,listLocUlId,type,number,required,ask)
+    then getloc_ul(questionChild,listLocUlId,type,number,required,ask,hashNames)
   when "eru_rb"
-    then geteru_rb(questionChild,type,number,required,ask)
+    then geteru_rb(questionChild,type,number,required,ask,hashNames)
   when "psu_t"
-    then getpsu_t(questionChild,type,number,required,ask)
+    then getpsu_t(questionChild,type,number,required,ask,hashNames)
   when "psm_t"
-    then getpsm_t(questionChild,type,number,required,ask)
+    then getpsm_t(questionChild,type,number,required,ask,hashNames)
   when "psc_ta"
-    then getpsc_ta(questionChild,type,number,required,ask)
+    then getpsc_ta(questionChild,type,number,required,ask,hashNames)
   when "pfh_s"
-    then getpfh_s(questionChild,listDatesId,type,number,required,ask)
+    then getpfh_s(questionChild,listDatesId,type,number,required,ask,hashNames)
   when "psh_s"
-    then getpsh_s(questionChild,type,number,required,ask)
+    then getpsh_s(questionChild,type,number,required,ask,hashNames)
   end
   return resultado
 end
@@ -257,7 +257,7 @@ def getsmr_sm (questionChild,type,number,required,ask,hashNames)
 end
 
 # Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta loc_ul.template
-def getloc_ul (questionChild, listLocUlId,type,number,required,ask)
+def getloc_ul (questionChild, listLocUlId,type,number,required,ask,hashNames)
   listLocUlId.push("#{type}_#{number}")
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/loc_ul.template",binding)
@@ -265,8 +265,12 @@ def getloc_ul (questionChild, listLocUlId,type,number,required,ask)
 end
 
 # Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta psm_t.template
-def getpsm_t (questionChild,type,number,required,ask)
+def getpsm_t (questionChild,type,number,required,ask,hashNames)
   listOptions = getListOptions(questionChild,"option")
+  for i in 1..listOptions.first["value"].to_i
+    name="#{type}_#{number}_#{i}"
+    getContainsKey(hashNames,type,name)
+  end  
   erbTemplate = getTemplate("../encuestas/templates/psm_t.template",binding)
   return erbTemplate.to_s
 end
@@ -292,7 +296,9 @@ def getmmr_cb (questionChild,type,number,required,ask,listRows,listColumns,hashN
 end
 
 # Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta eru_rb.template
-def geteru_rb (questionChild,type,number,required,ask)
+def geteru_rb (questionChild,type,number,required,ask,hashNames)
+  name="#{type}_#{number}"
+  getContainsKey(hashNames,type,name)
   has = Hash.new
   questionChild.elements["range"].attributes.each_attribute do |range|
     has[range.expanded_name] = range.value
@@ -302,33 +308,50 @@ def geteru_rb (questionChild,type,number,required,ask)
 end
 
 # Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta psu_t.template
-def getpsu_t (questionChild,type,number,required,ask)
+def getpsu_t (questionChild,type,number,required,ask,hashNames)
+  name="#{type}_#{number}"
+  getContainsKey(hashNames,type,name)
   erbTemplate = getTemplate("../encuestas/templates/psu_t.template",binding)
   return erbTemplate.to_s
 end
 
 # Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta psc_ta.template
-def getpsc_ta (questionChild,type,number,required,ask)
+def getpsc_ta (questionChild,type,number,required,ask,hashNames)
+  name="#{type}_#{number}"
+  getContainsKey(hashNames,type,name)
   erbTemplate = getTemplate("../encuestas/templates/psc_ta.template",binding)
   return erbTemplate.to_s
 end
 
 # Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta pfh_s.template
-def getpfh_s (questionChild, listDatesId,type,number,required,ask)
+def getpfh_s (questionChild, listDatesId,type,number,required,ask,hashNames)
+  getContainsKey(hashNames,type,"#{type}_date_#{number}")
+  getContainsKey(hashNames,type,"#{type}_hour_#{number}")
+  getContainsKey(hashNames,type,"#{type}_minute_#{number}")
   listDatesId.push("#{type}_date_#{number}")
   erbTemplate = getTemplate("../encuestas/templates/pfh_s.template",binding)
   return erbTemplate.to_s
 end
 
 # Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta psh_s.template
-def getpsh_s (questionChild,type,number,required,ask)
+def getpsh_s (questionChild,type,number,required,ask,hashNames)
+  getContainsKey(hashNames,type,"#{type}_hour_#{number}")
+  getContainsKey(hashNames,type,"#{type}_minute_#{number}")
   erbTemplate = getTemplate("../encuestas/templates/psh_s.template",binding)
   return erbTemplate.to_s
 end
 
 # Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta mmr_s.template
-def getmmr_s (questionChild,type,number,required,ask,listRows)
+def getmmr_s (questionChild,type,number,required,ask,listRows,hashNames)
   hashColumnas = getListOptionSelect(questionChild)
+  tamRow = listRows.length
+  tamColumn = hashColumnas.keys.length
+  for i in 1..tamRow
+    for j in 1..tamColumn
+      name="#{type}_#{number}_#{i}_#{j}"
+      getContainsKey(hashNames,type,name)
+    end
+  end
   erbTemplate = getTemplate("../encuestas/templates/mmr_s.template",binding)
   return erbTemplate.to_s
 end

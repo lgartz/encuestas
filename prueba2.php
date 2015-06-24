@@ -361,7 +361,7 @@
 			<h4>Clasifique los siguientes elementos, segun su favoritismo</h4>
 		</div>
 		<div class="panel-body">
-			<ul id="loc_ul_8" class="list-unstyled">
+			<ul id="loc_ul_8" name="loc_ul_8" class="list-unstyled">
 				<li>
 					<div class="input-group">
 						<span class="input-group-addon" id="loc_ul_8_1">1</span>
@@ -439,17 +439,17 @@
 					</tr>
 					<tr>
 						<th class="th-center" class="form-control">Nada Probable</th>
-						<td class="td-center"><input id="eru_rb_9_0" name="eru_rb_9" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_1" name="eru_rb_9" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_2" name="eru_rb_9" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_3" name="eru_rb_9" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_4" name="eru_rb_9" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_5" name="eru_rb_9" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_6" name="eru_rb_9" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_7" name="eru_rb_9" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_8" name="eru_rb_9" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_9" name="eru_rb_9" type="radio" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_10" name="eru_rb_9" type="radio" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_0" name="eru_rb_9" type="radio" value="0" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_1" name="eru_rb_9" type="radio" value="1" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_2" name="eru_rb_9" type="radio" value="2" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_3" name="eru_rb_9" type="radio" value="3" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_4" name="eru_rb_9" type="radio" value="4" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_5" name="eru_rb_9" type="radio" value="5" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_6" name="eru_rb_9" type="radio" value="6" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_7" name="eru_rb_9" type="radio" value="7" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_8" name="eru_rb_9" type="radio" value="8" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_9" name="eru_rb_9" type="radio" value="9" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_10" name="eru_rb_9" type="radio" value="10" class="form-control"></td>
 						<th class="th-center" class="form-control">Muy Probable</th>
 					</tr>
 				</table>

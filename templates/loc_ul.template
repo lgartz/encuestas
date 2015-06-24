@@ -4,7 +4,7 @@
 			<h4><%=ask%></h4>
 		</div>
 		<div class="panel-body">
-			<ul id="<%=type%>_<%=number%>" class="list-unstyled"><% val = 1 %><% listOptions.each{ |option| %>
+			<ul id="<%=type%>_<%=number%>" name="<%=type%>_<%=number%>" class="list-unstyled"><% val = 1 %><% listOptions.each{ |option| %>
 				<li>
 					<div class="input-group">
 						<span class="input-group-addon" id="<%=type%>_<%=number%>_<%=val%>"><%=val%></span>
