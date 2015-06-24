@@ -1,4 +1,9 @@
 <?php
+	// Se incluye la conexion
+	include("conexion.php");
+	// Crear connection
+	$conn = connect_with_mysql("localhost","root","","ejemplo");
+
 	
 		
 	$smu_rb_1 = $_GET['smu_rb_1'];

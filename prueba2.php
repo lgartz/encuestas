@@ -27,37 +27,37 @@
 		<div id="panel_body_smu_rb_1" class="panel-body">	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_1" name="smu_rb_1" type="radio" value="Fresa">
+					<input id="smu_rb_1_1" name="smu_rb_1" type="radio" value="smu_rb_1_1">
 					Fresa
 				</label>
 			</div>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_2" name="smu_rb_1" type="radio" value="Chicle">
+					<input id="smu_rb_1_2" name="smu_rb_1" type="radio" value="smu_rb_1_2">
 					Chicle
 				</label>
 			</div>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_3" name="smu_rb_1" type="radio" value="Arequipe">
+					<input id="smu_rb_1_3" name="smu_rb_1" type="radio" value="smu_rb_1_3">
 					Arequipe
 				</label>
 			</div>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_4" name="smu_rb_1" type="radio" value="Queso">
+					<input id="smu_rb_1_4" name="smu_rb_1" type="radio" value="smu_rb_1_4">
 					Queso
 				</label>
 			</div>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_5" name="smu_rb_1" type="radio" value="Feijoa">
+					<input id="smu_rb_1_5" name="smu_rb_1" type="radio" value="smu_rb_1_5">
 					Feijoa
 				</label>
 			</div>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_6" name="smu_rb_1" type="radio" value="Mani">
+					<input id="smu_rb_1_6" name="smu_rb_1" type="radio" value="smu_rb_1_6">
 					Mani
 				</label>
 			</div>

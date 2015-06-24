@@ -12,7 +12,9 @@ def readPollFileXml ( pathFile )
     name = pollChild.attributes["name"].to_s
     namePage = pollChild.attributes["namePage"].to_s
     namePhp = namePage+"_process"
+    dbname = pollChild.attributes["dbname"].to_s
     body = ""
+    sql = ""
     listLocUlId = []
     listDatesId = []
     hashValidate = Hash.new
@@ -25,18 +27,63 @@ def readPollFileXml ( pathFile )
       ask = questionChild.elements["ask"].attributes["value"]
       resultado = getResultElementForm(questionChild,type,number,required,ask,listLocUlId,listDatesId,hashNames)
       body << "#{resultado}\n"
+      resultSQL = getResultSQL(ask,type,number,questionChild)
+      sql << "#{resultSQL}\n"
       if required == "true"
         getResultHashElementsRequired(type,number,hashValidate,questionChild)
       end
     end
-    print hashNames
     erbJavaScript = getTemplate("../encuestas/templates/poll_script.template",binding)
     createFile("../encuestas/javascript/",".js",namePage,erbJavaScript)
     erbHtml = getTemplate("../encuestas/templates/poll.template",binding)
     createFile("../encuestas/",".php",namePage,erbHtml)
+    erbSQL = getTemplate("../encuestas/templates/sql.template",binding)
+    createFile("../encuestas/sql/",".sql",namePage,erbSQL)    
     erbPhp = getTemplate("../encuestas/templates/process.template",binding)
     createFile("../encuestas/",".php",namePhp,erbPhp)
   end
+end
+
+# Metodo encargado de retornar el codigo sql para cada una de las preguntas generadas
+def getResultSQL(ask,type,number,questionChild)
+  resultado = case type
+  when "smu_rb"
+    then getSqlSmu_rb(ask,type,number,questionChild)
+  when "smu_s"
+    then ""
+  when "smr_cb"
+    then ""
+  when "smr_sm"
+    then ""
+  when "mmr_rb"
+    then ""
+  when "mmr_cb"
+    then ""
+  when "mmr_s"
+    then ""
+  when "loc_ul"
+    then ""
+  when "eru_rb"
+    then ""
+  when "psu_t"
+    then ""
+  when "psm_t"
+    then ""
+  when "psc_ta"
+    then ""
+  when "pfh_s"
+    then ""
+  when "psh_s"
+    then ""
+  end
+  return resultado
+end
+
+def getSqlSmu_rb (ask,type,number,questionChild)
+  name="#{type}_#{number}"
+  listOptions = getListOptions(questionChild,"option")
+  erbTemplate = getTemplate("../encuestas/templates/sql_smu_rb.template",binding)
+  return erbTemplate.to_s  
 end
 
 # Metodo encargado de generar la validacion de los campos de las preguntas psm_t

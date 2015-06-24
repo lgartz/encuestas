@@ -1,4 +1,9 @@
 <?php
+	// Se incluye la conexion
+	include("conexion.php");
+	// Crear connection
+	$conn = connect_with_mysql("localhost","root","","ejemplo");
+
 	<%hashNames.each{|key,list|%>
 		<%list.each{|name|%>
 	$<%=name%> = $_GET['<%=name%>'];

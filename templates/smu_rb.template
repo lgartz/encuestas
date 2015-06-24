@@ -6,7 +6,7 @@
 		<div id="panel_body_<%=name%>" class="panel-body"><%i = 1%><% listOptions.each{ |option| %>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="<%=name%>_<%=i%>" name="<%=name%>" type="radio" value="<%=option["value"]%>">
+					<input id="<%=name%>_<%=i%>" name="<%=name%>" type="radio" value="<%=name%>_<%=i%>">
 					<%=option["value"]%>
 				</label>
 			</div><%i += 1%><% } %>
