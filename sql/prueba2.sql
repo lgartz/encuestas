@@ -1,6 +1,3 @@
--- Model: New Model    Version: 1.0
--- MySQL Workbench Forward Engineering
-
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
@@ -72,19 +69,18 @@ ENGINE = InnoDB;
 -- Table `prueba2`.`encuesta_has_pregunta`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `prueba2`.`encuesta_has_pregunta` (
+  `pregunta_id` VARCHAR(20) NOT NULL COMMENT '',
   `encuesta_id` INT NOT NULL COMMENT '',
-  `pregunta_id` INT NOT NULL COMMENT '',
   INDEX `fk_encuesta_has_pregunta_pregunta1_idx` (`pregunta_id` ASC)  COMMENT '',
   INDEX `fk_encuesta_has_pregunta_encuesta1_idx` (`encuesta_id` ASC)  COMMENT '',
-  PRIMARY KEY (`encuesta_id`, `pregunta_id`)  COMMENT '',
-  CONSTRAINT `fk_encuesta_has_pregunta_encuesta1`
-    FOREIGN KEY (`encuesta_id`)
-    REFERENCES `prueba2`.`encuesta` (`encuesta_id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
   CONSTRAINT `fk_encuesta_has_pregunta_pregunta1`
     FOREIGN KEY (`pregunta_id`)
     REFERENCES `prueba2`.`pregunta` (`pregunta_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_encuesta_has_pregunta_encuesta1`
+    FOREIGN KEY (`encuesta_id`)
+    REFERENCES `prueba2`.`encuesta` (`encuesta_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;

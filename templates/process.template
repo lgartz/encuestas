@@ -2,13 +2,31 @@
 	// Se incluye la conexion
 	include("conexion.php");
 	// Crear connection
-	$conn = connect_with_mysql("localhost","root","","ejemplo");
-
+	$conn = connect_with_mysql("localhost","root","","<%=dbname%>");
+	
 	<%hashNames.each{|key,list|%>
 		<%list.each{|name|%>
 	$<%=name%> = $_GET['<%=name%>'];
+	$valor = explode("_",$<%=name%>);
+	$type = $valor[0]."_".$valor[1];
+	 
 	echo var_dump($<%=name%>);
 	echo "<br>";
 		<%}%>
 	<%}%>
+	
+	
+	$sql = "INSERT INTO persona (nombres,apellidos,password) VALUES ('$nombres','$apellidos','$password')";
+	// Se verifica la inserccion de los datos
+	if (mysql_query($sql)) {
+		close_connect_with_mysql($conn);
+		header('Location: index.php');		
+	}
+	
+	
+	
+	
+	
+	// Cerrar Conexion
+	close_connect_with_mysql($conn);
 ?>

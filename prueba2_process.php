@@ -2,8 +2,17 @@
 	// Se incluye la conexion
 	include("conexion.php");
 	// Crear connection
-	$conn = connect_with_mysql("localhost","root","","ejemplo");
-
+	$conn = connect_with_mysql("localhost","root","","prueba2");
+	$sql = "INSERT INTO persona (nombres,apellidos,password) VALUES ('$nombres','$apellidos','$password')";
+	// Se verifica la inserccion de los datos
+	if (mysql_query($sql)) {
+		close_connect_with_mysql($conn);
+		header('Location: index.php');		
+	}
+	// Cerrar Conexion
+	close_connect_with_mysql($conn);
+	
+	
 	
 		
 	$smu_rb_1 = $_GET['smu_rb_1'];
