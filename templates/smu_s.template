@@ -5,8 +5,8 @@
 		</div>
 		<div id="panel_body_<%=name%>" class="panel-body">
 			<select name="<%=name%>" id="<%=name%>" class="form-control">
-				<option value="" selected>--Seleccione una opci&oacute;n--</option><% listOptions.each{ |option| %>
-				<option value="<%=option["value"]%>"><%=option["value"]%></option><% } %>
+				<option value="" selected>--Seleccione una opci&oacute;n--</option><%i = 1%><% listOptions.each{ |option| %>
+				<option id="<%=name%>_<%=i%>" value="<%=name%>_<%=i%>"><%=option["value"]%></option><%i += 1%><% } %>
 			</select>
 		</div>
 	</div>

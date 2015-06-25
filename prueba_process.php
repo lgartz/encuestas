@@ -3,169 +3,94 @@
 	include("conexion.php");
 	// Crear connection
 	$conn = connect_with_mysql("localhost","root","","prueba");
-	$sql = "INSERT INTO persona (nombres,apellidos,password) VALUES ('$nombres','$apellidos','$password')";
-	// Se verifica la inserccion de los datos
-	if (mysql_query($sql)) {
-		close_connect_with_mysql($conn);
-		header('Location: index.php');		
-	}
+	
+		
+	  		
+	$smu_rb_1 = $_GET["smu_rb_1"];
+	getSqlInsertSmu("1",$smu_rb_1);
+	
+	  		
+	  	
+	    		
+	
+		
+	  		
+	$smu_s_2 = $_GET["smu_s_2"];
+	getSqlInsertSmu("1",$smu_s_2);
+	
+	  		
+	  	
+	    		
+	
+		
+	  		
+	$smr_cb_3 = $_GET["smr_cb_3"];
+	getSqlInsertSmr("1", $smr_cb_3);
+	  		
+	  	
+	    		
+	
+		
+	  		
+	$smr_sm_4 = $_GET["smr_sm_4"];
+	getSqlInsertSmr("1", $smr_sm_4);
+	  		
+	  	
+	    		
+	
+		
+	    		
+	
+		
+	    		
+	
+		
+	    		
+	
+		
+	    		
+	
+		
+	    		
+	
+		
+	    		
+	
+		
+	    		
+	
+		
+	    		
+	
+		
+	    		
+		
+	
 	// Cerrar Conexion
 	close_connect_with_mysql($conn);
 	
+	function getSqlInsertSmu($encuestado, $opcion){
+		$sql = "INSERT INTO ressmu (ressmu_encuestado_id, ressmu_opsmurb_id) VALUES ('".$encuestado."','".$opcion."');";
+		if (mysql_query($sql)) {
+			echo "<h1>Inserto exitosamente</h1>";
+			echo $sql;
+		}else{
+			echo "<h1>No inserto</h1>";
+			echo $sql;
+		}
+	}
 	
-	
-		
-	$smu_rb_1 = $_GET['smu_rb_1'];
-	echo var_dump($smu_rb_1);
-	echo "<br>";
-		
-	
-		
-	$smu_s_2 = $_GET['smu_s_2'];
-	echo var_dump($smu_s_2);
-	echo "<br>";
-		
-	
-		
-	$smr_cb_3 = $_GET['smr_cb_3'];
-	echo var_dump($smr_cb_3);
-	echo "<br>";
-		
-	
-		
-	$smr_sm_4 = $_GET['smr_sm_4'];
-	echo var_dump($smr_sm_4);
-	echo "<br>";
-		
-	
-		
-	$mmr_rb_5_1 = $_GET['mmr_rb_5_1'];
-	echo var_dump($mmr_rb_5_1);
-	echo "<br>";
-		
-	$mmr_rb_5_2 = $_GET['mmr_rb_5_2'];
-	echo var_dump($mmr_rb_5_2);
-	echo "<br>";
-		
-	$mmr_rb_5_3 = $_GET['mmr_rb_5_3'];
-	echo var_dump($mmr_rb_5_3);
-	echo "<br>";
-		
-	$mmr_rb_5_4 = $_GET['mmr_rb_5_4'];
-	echo var_dump($mmr_rb_5_4);
-	echo "<br>";
-		
-	
-		
-	$mmr_cb_6_1 = $_GET['mmr_cb_6_1'];
-	echo var_dump($mmr_cb_6_1);
-	echo "<br>";
-		
-	$mmr_cb_6_2 = $_GET['mmr_cb_6_2'];
-	echo var_dump($mmr_cb_6_2);
-	echo "<br>";
-		
-	$mmr_cb_6_3 = $_GET['mmr_cb_6_3'];
-	echo var_dump($mmr_cb_6_3);
-	echo "<br>";
-		
-	
-		
-	$mmr_s_7_1_1 = $_GET['mmr_s_7_1_1'];
-	echo var_dump($mmr_s_7_1_1);
-	echo "<br>";
-		
-	$mmr_s_7_1_2 = $_GET['mmr_s_7_1_2'];
-	echo var_dump($mmr_s_7_1_2);
-	echo "<br>";
-		
-	$mmr_s_7_2_1 = $_GET['mmr_s_7_2_1'];
-	echo var_dump($mmr_s_7_2_1);
-	echo "<br>";
-		
-	$mmr_s_7_2_2 = $_GET['mmr_s_7_2_2'];
-	echo var_dump($mmr_s_7_2_2);
-	echo "<br>";
-		
-	$mmr_s_7_3_1 = $_GET['mmr_s_7_3_1'];
-	echo var_dump($mmr_s_7_3_1);
-	echo "<br>";
-		
-	$mmr_s_7_3_2 = $_GET['mmr_s_7_3_2'];
-	echo var_dump($mmr_s_7_3_2);
-	echo "<br>";
-		
-	$mmr_s_7_4_1 = $_GET['mmr_s_7_4_1'];
-	echo var_dump($mmr_s_7_4_1);
-	echo "<br>";
-		
-	$mmr_s_7_4_2 = $_GET['mmr_s_7_4_2'];
-	echo var_dump($mmr_s_7_4_2);
-	echo "<br>";
-		
-	$mmr_s_7_5_1 = $_GET['mmr_s_7_5_1'];
-	echo var_dump($mmr_s_7_5_1);
-	echo "<br>";
-		
-	$mmr_s_7_5_2 = $_GET['mmr_s_7_5_2'];
-	echo var_dump($mmr_s_7_5_2);
-	echo "<br>";
-		
-	
-		
-	$eru_rb_9 = $_GET['eru_rb_9'];
-	echo var_dump($eru_rb_9);
-	echo "<br>";
-		
-	
-		
-	$psu_t_10 = $_GET['psu_t_10'];
-	echo var_dump($psu_t_10);
-	echo "<br>";
-		
-	
-		
-	$psm_t_11_1 = $_GET['psm_t_11_1'];
-	echo var_dump($psm_t_11_1);
-	echo "<br>";
-		
-	$psm_t_11_2 = $_GET['psm_t_11_2'];
-	echo var_dump($psm_t_11_2);
-	echo "<br>";
-		
-	$psm_t_11_3 = $_GET['psm_t_11_3'];
-	echo var_dump($psm_t_11_3);
-	echo "<br>";
-		
-	
-		
-	$psc_ta_12 = $_GET['psc_ta_12'];
-	echo var_dump($psc_ta_12);
-	echo "<br>";
-		
-	
-		
-	$pfh_s_date_13 = $_GET['pfh_s_date_13'];
-	echo var_dump($pfh_s_date_13);
-	echo "<br>";
-		
-	$pfh_s_hour_13 = $_GET['pfh_s_hour_13'];
-	echo var_dump($pfh_s_hour_13);
-	echo "<br>";
-		
-	$pfh_s_minute_13 = $_GET['pfh_s_minute_13'];
-	echo var_dump($pfh_s_minute_13);
-	echo "<br>";
-		
-	
-		
-	$psh_s_hour_14 = $_GET['psh_s_hour_14'];
-	echo var_dump($psh_s_hour_14);
-	echo "<br>";
-		
-	$psh_s_minute_14 = $_GET['psh_s_minute_14'];
-	echo var_dump($psh_s_minute_14);
-	echo "<br>";
-		
-	
+	function getSqlInsertSmr($encuestado, $opciones){
+		$tam = count($opciones);
+		for($i = 0; $i < $tam; $i++) {
+	    	$sql = "INSERT INTO ressmu (ressmu_encuestado_id, ressmu_opsmurb_id) VALUES ('".$encuestado."','".$opciones[$i]."');";
+	    	if (mysql_query($sql)) {
+				echo "<h1>Inserto exitosamente</h1>";
+				echo $sql;
+			}else{
+				echo "<h1>No inserto</h1>";
+				echo $sql;
+			}
+		}
+	}
 ?>

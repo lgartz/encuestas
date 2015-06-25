@@ -4,8 +4,8 @@
 			<h4><%=ask%> <small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta pregunta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_<%=name%>" class="panel-body">
-			<select multiple id="<%=name%>" name="<%=name%>[]" class="form-control"><% listOptions.each{ |option| %>
-				<option class="form-control"><%=option["value"]%></option><% } %>	
+			<select multiple id="<%=name%>" name="<%=name%>[]" class="form-control"><%i = 1%><% listOptions.each{ |option| %>
+				<option id="<%=name%>_<%=i%>" class="form-control" value="<%=name%>_<%=i%>"><%=option["value"]%></option><%i += 1%><% } %>	
 			</select>
 		</div>
 	</div>

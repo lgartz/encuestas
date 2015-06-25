@@ -3,30 +3,47 @@
 	include("conexion.php");
 	// Crear connection
 	$conn = connect_with_mysql("localhost","root","","<%=dbname%>");
-	
 	<%hashNames.each{|key,list|%>
-		<%list.each{|name|%>
-	$<%=name%> = $_GET['<%=name%>'];
-	$valor = explode("_",$<%=name%>);
-	$type = $valor[0]."_".$valor[1];
-	 
-	echo var_dump($<%=name%>);
-	echo "<br>";
-		<%}%>
-	<%}%>
+		<% if key == "smu_rb" or key == "smu_s"%>
+	  		<%list.each{|name|%>
+	$<%=name%> = $_GET["<%=name%>"];
+	getSqlInsertSmu("1",$<%=name%>);
 	
-	
-	$sql = "INSERT INTO persona (nombres,apellidos,password) VALUES ('$nombres','$apellidos','$password')";
-	// Se verifica la inserccion de los datos
-	if (mysql_query($sql)) {
-		close_connect_with_mysql($conn);
-		header('Location: index.php');		
-	}
-	
-	
-	
-	
+	  		<%}%>
+	  	<%elsif key == "smr_cb" or key == "smr_sm"%>
+	  		<%list.each{|name|%>
+	$<%=name%> = $_GET["<%=name%>"];
+	getSqlInsertSmr("1", $<%=name%>);
+	  		<%}%>
+	  	<%end%>
+	    		
+	<%}%>	
 	
 	// Cerrar Conexion
 	close_connect_with_mysql($conn);
+	
+	function getSqlInsertSmu($encuestado, $opcion){
+		$sql = "INSERT INTO ressmu (ressmu_encuestado_id, ressmu_opsmurb_id) VALUES ('".$encuestado."','".$opcion."');";
+		if (mysql_query($sql)) {
+			echo "<h1>Inserto exitosamente</h1>";
+			echo $sql;
+		}else{
+			echo "<h1>No inserto</h1>";
+			echo $sql;
+		}
+	}
+	
+	function getSqlInsertSmr($encuestado, $opciones){
+		$tam = count($opciones);
+		for($i = 0; $i < $tam; $i++) {
+	    	$sql = "INSERT INTO ressmu (ressmu_encuestado_id, ressmu_opsmurb_id) VALUES ('".$encuestado."','".$opciones[$i]."');";
+	    	if (mysql_query($sql)) {
+				echo "<h1>Inserto exitosamente</h1>";
+				echo $sql;
+			}else{
+				echo "<h1>No inserto</h1>";
+				echo $sql;
+			}
+		}
+	}
 ?>

@@ -72,12 +72,12 @@
 		<div id="panel_body_smu_s_2" class="panel-body">
 			<select name="smu_s_2" id="smu_s_2" class="form-control">
 				<option value="" selected>--Seleccione una opci&oacute;n--</option>
-				<option value="Fresa">Fresa</option>
-				<option value="Chicle">Chicle</option>
-				<option value="Arequipe">Arequipe</option>
-				<option value="Queso">Queso</option>
-				<option value="Feijoa">Feijoa</option>
-				<option value="Mani">Mani</option>
+				<option id="smu_s_2_1" value="smu_s_2_1">Fresa</option>
+				<option id="smu_s_2_2" value="smu_s_2_2">Chicle</option>
+				<option id="smu_s_2_3" value="smu_s_2_3">Arequipe</option>
+				<option id="smu_s_2_4" value="smu_s_2_4">Queso</option>
+				<option id="smu_s_2_5" value="smu_s_2_5">Feijoa</option>
+				<option id="smu_s_2_6" value="smu_s_2_6">Mani</option>
 			</select>
 		</div>
 	</div>
@@ -90,37 +90,37 @@
 		<div id="panel_body_smr_cb_3" class="panel-body">
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3" name="smr_cb_3[]" type="checkbox" value="Fresa">
+					<input id="smr_cb_3_1" name="smr_cb_3[]" type="checkbox" value="smr_cb_3_1">
 					Fresa
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3" name="smr_cb_3[]" type="checkbox" value="Chicle">
+					<input id="smr_cb_3_2" name="smr_cb_3[]" type="checkbox" value="smr_cb_3_2">
 					Chicle
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3" name="smr_cb_3[]" type="checkbox" value="Arequipe">
+					<input id="smr_cb_3_3" name="smr_cb_3[]" type="checkbox" value="smr_cb_3_3">
 					Arequipe
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3" name="smr_cb_3[]" type="checkbox" value="Queso">
+					<input id="smr_cb_3_4" name="smr_cb_3[]" type="checkbox" value="smr_cb_3_4">
 					Queso
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3" name="smr_cb_3[]" type="checkbox" value="Feijoa">
+					<input id="smr_cb_3_5" name="smr_cb_3[]" type="checkbox" value="smr_cb_3_5">
 					Feijoa
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3" name="smr_cb_3[]" type="checkbox" value="Mani">
+					<input id="smr_cb_3_6" name="smr_cb_3[]" type="checkbox" value="smr_cb_3_6">
 					Mani
 				</label>
 			</div>
@@ -134,12 +134,12 @@
 		</div>
 		<div id="panel_body_smr_sm_4" class="panel-body">
 			<select multiple id="smr_sm_4" name="smr_sm_4[]" class="form-control">
-				<option class="form-control">Fresa</option>
-				<option class="form-control">Chicle</option>
-				<option class="form-control">Arequipe</option>
-				<option class="form-control">Queso</option>
-				<option class="form-control">Feijoa</option>
-				<option class="form-control">Mani</option>	
+				<option id="smr_sm_4_1" class="form-control" value="smr_sm_4_1">Fresa</option>
+				<option id="smr_sm_4_2" class="form-control" value="smr_sm_4_2">Chicle</option>
+				<option id="smr_sm_4_3" class="form-control" value="smr_sm_4_3">Arequipe</option>
+				<option id="smr_sm_4_4" class="form-control" value="smr_sm_4_4">Queso</option>
+				<option id="smr_sm_4_5" class="form-control" value="smr_sm_4_5">Feijoa</option>
+				<option id="smr_sm_4_6" class="form-control" value="smr_sm_4_6">Mani</option>	
 			</select>
 		</div>
 	</div>

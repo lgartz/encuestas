@@ -3,13 +3,13 @@
 		<div id="panel_head_<%=name%>" class="panel-heading">
 			<h4><%=ask%> <small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta pregunta es obligatoria</b></small></h4>
 		</div>
-		<div id="panel_body_<%=name%>" class="panel-body"><% listOptions.each{ |option| %>
+		<div id="panel_body_<%=name%>" class="panel-body"><%i = 1%><% listOptions.each{ |option| %>
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="<%=name%>" name="<%=name%>[]" type="checkbox" value="<%=option["value"]%>">
+					<input id="<%=name%>_<%=i%>" name="<%=name%>[]" type="checkbox" value="<%=name%>_<%=i%>">
 					<%=option["value"]%>
 				</label>
-			</div><% } %>
+			</div><%i += 1%><% } %>
 		</div>
 	</div>
 </div>

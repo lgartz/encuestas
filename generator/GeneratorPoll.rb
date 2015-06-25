@@ -33,6 +33,7 @@ def readPollFileXml ( pathFile )
         getResultHashElementsRequired(type,number,hashValidate,questionChild)
       end
     end
+    print hashNames
     erbJavaScript = getTemplate("../encuestas/templates/poll_script.template",binding)
     createFile("../encuestas/javascript/",".js",namePage,erbJavaScript)
     erbHtml = getTemplate("../encuestas/templates/poll.template",binding)
@@ -50,11 +51,11 @@ def getResultSQL(ask,type,number,questionChild)
   when "smu_rb"
     then getSqlSmu_rb(ask,type,number,questionChild)
   when "smu_s"
-    then ""
+    then getSqlSmu_s(ask,type,number,questionChild)
   when "smr_cb"
-    then ""
+    then getSqlSmr_cb(ask,type,number,questionChild)
   when "smr_sm"
-    then ""
+    then getSqlSmr_sm(ask,type,number,questionChild)
   when "mmr_rb"
     then ""
   when "mmr_cb"
@@ -84,6 +85,27 @@ def getSqlSmu_rb (ask,type,number,questionChild)
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/sql_smu_rb.template",binding)
   return erbTemplate.to_s  
+end
+
+def getSqlSmu_s (ask,type,number,questionChild)
+  name="#{type}_#{number}"
+  listOptions = getListOptions(questionChild,"option")
+  erbTemplate = getTemplate("../encuestas/templates/sql_smu_s.template",binding)
+  return erbTemplate.to_s  
+end
+
+def getSqlSmr_cb (ask,type,number,questionChild)
+  name="#{type}_#{number}"
+  listOptions = getListOptions(questionChild,"option")
+  erbTemplate = getTemplate("../encuestas/templates/sql_smr_cb.template",binding)
+  return erbTemplate.to_s
+end
+
+def getSqlSmr_sm (ask,type,number,questionChild)
+  name="#{type}_#{number}"
+  listOptions = getListOptions(questionChild,"option")
+  erbTemplate = getTemplate("../encuestas/templates/sql_smr_sm.template",binding)
+  return erbTemplate.to_s
 end
 
 # Metodo encargado de generar la validacion de los campos de las preguntas psm_t
