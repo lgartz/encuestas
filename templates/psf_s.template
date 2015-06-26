@@ -1,0 +1,11 @@
+<div class="form-group">
+	<div id="panel_<%=type%>_<%=number%>" class="panel panel-primary">
+		<div id="panel_head_<%=type%>_<%=number%>" class="panel-heading">
+			<h4><%=ask%><small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+		</div>
+		<div id="panel_body_<%=type%>_<%=number%>" class="panel-body">
+			<label for="<%=type%>_date_<%=number%>">Fecha:</label>
+			<input id="<%=type%>_date_<%=number%>" name="<%=type%>_date_<%=number%>" type="text" class="form-control" placeholder="Ingrese la fecha...">
+		</div>
+	</div>
+</div>

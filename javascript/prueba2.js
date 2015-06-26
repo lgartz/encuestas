@@ -15,6 +15,14 @@ $(function(){
         dayNamesMin: [ "Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa" ],
         monthNamesShort: [ "Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic" ]
     });
+	$("#psf_s_date_14").datepicker({
+    	showAnim: "drop",
+    	changeMonth: true,
+        changeYear: true,        
+        dateFormat: "dd/mm/yy",
+        dayNamesMin: [ "Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa" ],
+        monthNamesShort: [ "Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic" ]
+    });
     
     $( "#dialog-confirm" ).dialog({
       autoOpen: false,
@@ -165,15 +173,25 @@ $(function(){
 	      	$("#panel_pfh_s_13").addClass( "panel-primary" );
 	      	$("#panel_head_pfh_s_13 h4 small b").addClass("message_error");
 	   	}
-	   	if ($("select[name='psh_s_hour_14']").val()=="" || $("select[name='psh_s_minute_14']").val()=="") {
-	   		$("#panel_psh_s_14").removeClass( "panel-primary" );
-	      	$("#panel_psh_s_14").addClass( "panel-danger" );
-	      	$("#panel_head_psh_s_14 h4 small b").removeClass("message_error");
+	   	if ($("input[name='psf_s_date_14']").val().trim() == "") {
+	   		$("#panel_psf_s_14").removeClass( "panel-primary" );
+	      	$("#panel_psf_s_14").addClass( "panel-danger" );
+	      	$("#panel_head_psf_s_14 h4 small b").removeClass("message_error");
 	      	resultado = false;
 	   	}else{
-	   		$("#panel_psh_s_14").removeClass( "panel-danger" );
-	      	$("#panel_psh_s_14").addClass( "panel-primary" );
-	      	$("#panel_head_psh_s_14 h4 small b").addClass("message_error");
+	   		$("#panel_psf_s_14").removeClass( "panel-danger" );
+	      	$("#panel_psf_s_14").addClass( "panel-primary" );
+	      	$("#panel_head_psf_s_14 h4 small b").addClass("message_error");
+	   	}
+	   	if ($("select[name='psh_s_hour_15']").val()=="" || $("select[name='psh_s_minute_15']").val()=="") {
+	   		$("#panel_psh_s_15").removeClass( "panel-primary" );
+	      	$("#panel_psh_s_15").addClass( "panel-danger" );
+	      	$("#panel_head_psh_s_15 h4 small b").removeClass("message_error");
+	      	resultado = false;
+	   	}else{
+	   		$("#panel_psh_s_15").removeClass( "panel-danger" );
+	      	$("#panel_psh_s_15").addClass( "panel-primary" );
+	      	$("#panel_head_psh_s_15 h4 small b").addClass("message_error");
 	   	}
 		return resultado;
 	}

@@ -1,0 +1,1 @@
+INSERT INTO pregunta (pregunta_id, pregunta_descripcion, pregunta_tipo) VALUES ('<%=name%>','<%=ask%>','<%=type%>');

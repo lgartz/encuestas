@@ -439,17 +439,17 @@
 					</tr>
 					<tr>
 						<th class="th-center" class="form-control">Nada Probable</th>
-						<td class="td-center"><input id="eru_rb_9_0" name="eru_rb_9" type="radio" value="0" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_1" name="eru_rb_9" type="radio" value="1" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_2" name="eru_rb_9" type="radio" value="2" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_3" name="eru_rb_9" type="radio" value="3" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_4" name="eru_rb_9" type="radio" value="4" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_5" name="eru_rb_9" type="radio" value="5" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_6" name="eru_rb_9" type="radio" value="6" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_7" name="eru_rb_9" type="radio" value="7" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_8" name="eru_rb_9" type="radio" value="8" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_9" name="eru_rb_9" type="radio" value="9" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_10" name="eru_rb_9" type="radio" value="10" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_0" name="eru_rb_9" type="radio" value="eru_rb_9_0" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_1" name="eru_rb_9" type="radio" value="eru_rb_9_1" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_2" name="eru_rb_9" type="radio" value="eru_rb_9_2" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_3" name="eru_rb_9" type="radio" value="eru_rb_9_3" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_4" name="eru_rb_9" type="radio" value="eru_rb_9_4" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_5" name="eru_rb_9" type="radio" value="eru_rb_9_5" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_6" name="eru_rb_9" type="radio" value="eru_rb_9_6" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_7" name="eru_rb_9" type="radio" value="eru_rb_9_7" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_8" name="eru_rb_9" type="radio" value="eru_rb_9_8" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_9" name="eru_rb_9" type="radio" value="eru_rb_9_9" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_9_10" name="eru_rb_9" type="radio" value="eru_rb_9_10" class="form-control"></td>
 						<th class="th-center" class="form-control">Muy Probable</th>
 					</tr>
 				</table>
@@ -545,15 +545,26 @@
 	</div>
 </div>
 <div class="form-group">
-	<div id="panel_psh_s_14" class="panel panel-primary">
-		<div id="panel_head_psh_s_14" class="panel-heading">
+	<div id="panel_psf_s_14" class="panel panel-primary">
+		<div id="panel_head_psf_s_14" class="panel-heading">
+			<h4>¿Cuando fue el ultimo dia en comer su helado?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+		</div>
+		<div id="panel_body_psf_s_14" class="panel-body">
+			<label for="psf_s_date_14">Fecha:</label>
+			<input id="psf_s_date_14" name="psf_s_date_14" type="text" class="form-control" placeholder="Ingrese la fecha...">
+		</div>
+	</div>
+</div>
+<div class="form-group">
+	<div id="panel_psh_s_15" class="panel panel-primary">
+		<div id="panel_head_psh_s_15" class="panel-heading">
 			<h4>¿Cual es su hora favorita del dia para comer un helado?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div id="panel_body_psh_s_14" class="panel-body">
+		<div id="panel_body_psh_s_15" class="panel-body">
 			<label >Hora:</label>
 			<div class="row">
 				<div class="col col-sm-5">						
-					<select id="psh_s_hour_14" name="psh_s_hour_14" class="form-control">
+					<select id="psh_s_hour_15" name="psh_s_hour_15" class="form-control">
 						<option value="">--Seleccione una opci&oacute;n</option>
 						<?php 
 							$cero = "0";
@@ -570,7 +581,7 @@
 				</div>
 				<div class="col col-sm-2 td-center" >:</div>
 				<div class="col col-sm-5">
-					<select id="psh_s_minute_14" name="psh_s_minute_14" class="form-control">
+					<select id="psh_s_minute_15" name="psh_s_minute_15" class="form-control">
 						<option value="">--Seleccione una opci&oacute;n</option>
 						<?php 
 							$cero = "0";

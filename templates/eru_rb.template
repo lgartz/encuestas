@@ -13,7 +13,7 @@
 					</tr>
 					<tr>
 						<th class="th-center" class="form-control"><%=has["labelminimum"]%></th><% for i in has["minimum"].to_i..has["maximum"].to_i %>
-						<td class="td-center"><input id="<%=name%>_<%=i%>" name="<%=name%>" type="radio" value="<%=i%>" class="form-control"></td><% end %>
+						<td class="td-center"><input id="<%=name%>_<%=i%>" name="<%=name%>" type="radio" value="<%=name%>_<%=i%>" class="form-control"></td><% end %>
 						<th class="th-center" class="form-control"><%=has["labelmaximum"]%></th>
 					</tr>
 				</table>

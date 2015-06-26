@@ -164,6 +164,16 @@ $(function(){
 	   		$("#panel_<%=value%>").removeClass( "panel-danger" );
 	      	$("#panel_<%=value%>").addClass( "panel-primary" );
 	      	$("#panel_head_<%=value%> h4 small b").addClass("message_error");
+	   	}<%}%><%elsif key == "psf_s"%><%list.each{|value|%><%val = value.split('_')%><%date= val[0]+"_"+val[1]+"_date_"+val[2]%>
+	   	if ($("input[name='<%=date%>']").val().trim() == "") {
+	   		$("#panel_<%=value%>").removeClass( "panel-primary" );
+	      	$("#panel_<%=value%>").addClass( "panel-danger" );
+	      	$("#panel_head_<%=value%> h4 small b").removeClass("message_error");
+	      	resultado = false;
+	   	}else{
+	   		$("#panel_<%=value%>").removeClass( "panel-danger" );
+	      	$("#panel_<%=value%>").addClass( "panel-primary" );
+	      	$("#panel_head_<%=value%> h4 small b").addClass("message_error");
 	   	}<%}%><%elsif key == "psh_s"%><%list.each{|value|%><%val = value.split('_')%><%hour= val[0]+"_"+val[1]+"_hour_"+val[2]%><%minute= val[0]+"_"+val[1]+"_minute_"+val[2]%>
 	   	if ($("select[name='<%=hour%>']").val()=="" || $("select[name='<%=minute%>']").val()=="") {
 	   		$("#panel_<%=value%>").removeClass( "panel-primary" );

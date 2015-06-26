@@ -1,2 +1,0 @@
-INSERT INTO pregunta (pregunta_id, pregunta_descripcion, pregunta_tipo) VALUES ('<%=name%>','<%=ask%>','<%=type%>');<%i = 1%><% listOptions.each{ |option| %>
-INSERT INTO opsmu (opsmu_id, opsmu_descripcion, opsmu_pregunta_id) VALUES ('<%=name%>_<%=i%>','<%=option["value"]%>','<%=name%>');<%i += 1%><% } %>

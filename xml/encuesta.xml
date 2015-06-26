@@ -119,7 +119,10 @@
 		<question number="13" type="pfh_s" required="true">
 			<ask value="¿Cuando fue el ultimo dia y hora en comer su helado?" />
 		</question>
-		<question number="14" type="psh_s" required="true">
+		<question number="14" type="psf_s" required="true">
+			<ask value="¿Cuando fue el ultimo dia en comer su helado?" />
+		</question>
+		<question number="15" type="psh_s" required="true">
 			<ask value="¿Cual es su hora favorita del dia para comer un helado?" />
 		</question>
 	</poll>
@@ -243,7 +246,10 @@
 		<question number="13" type="pfh_s" required="true">
 			<ask value="¿Cuando fue el ultimo dia y hora en comer su helado?" />
 		</question>
-		<question number="14" type="psh_s" required="true">
+		<question number="14" type="psf_s" required="true">
+			<ask value="¿Cuando fue el ultimo dia en comer su helado?" />
+		</question>
+		<question number="15" type="psh_s" required="true">
 			<ask value="¿Cual es su hora favorita del dia para comer un helado?" />
 		</question>
 	</poll>
@@ -261,4 +267,5 @@
 <!-- psm_t pregunta simple multiple respuesta text-->
 <!-- psc_ta  pregunta simple caja de comentario text area-->
 <!-- pfh_s pregunta simple fecha hora s-->
+<!-- psf_s pregunta simple fecha hora s-->
 <!-- psh_s pregunta simple hora s-->

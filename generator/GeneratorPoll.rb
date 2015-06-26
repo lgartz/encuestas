@@ -49,13 +49,13 @@ end
 def getResultSQL(ask,type,number,questionChild)
   resultado = case type
   when "smu_rb"
-    then getSqlSmu_rb(ask,type,number,questionChild)
+    then getSqlSm(ask,type,number,questionChild)
   when "smu_s"
-    then getSqlSmu_s(ask,type,number,questionChild)
+    then getSqlSm(ask,type,number,questionChild)
   when "smr_cb"
-    then getSqlSmr_cb(ask,type,number,questionChild)
+    then getSqlSm(ask,type,number,questionChild)
   when "smr_sm"
-    then getSqlSmr_sm(ask,type,number,questionChild)
+    then getSqlSm(ask,type,number,questionChild)
   when "mmr_rb"
     then ""
   when "mmr_cb"
@@ -65,46 +65,33 @@ def getResultSQL(ask,type,number,questionChild)
   when "loc_ul"
     then ""
   when "eru_rb"
-    then ""
+    then getSqlAsk(ask,type,number)
   when "psu_t"
-    then ""
+    then getSqlAsk(ask,type,number)
   when "psm_t"
-    then ""
+    then getSqlAsk(ask,type,number)
   when "psc_ta"
-    then ""
+    then getSqlAsk(ask,type,number)
   when "pfh_s"
-    then ""
+    then getSqlAsk(ask,type,number)
+  when "psf_s"
+    then getSqlAsk(ask,type,number)
   when "psh_s"
-    then ""
+    then getSqlAsk(ask,type,number)
   end
   return resultado
 end
 
-def getSqlSmu_rb (ask,type,number,questionChild)
+def getSqlSm (ask,type,number,questionChild)
   name="#{type}_#{number}"
   listOptions = getListOptions(questionChild,"option")
-  erbTemplate = getTemplate("../encuestas/templates/sql_smu_rb.template",binding)
+  erbTemplate = getTemplate("../encuestas/templates/sql_sm.template",binding)
   return erbTemplate.to_s  
 end
 
-def getSqlSmu_s (ask,type,number,questionChild)
+def getSqlAsk (ask,type,number)
   name="#{type}_#{number}"
-  listOptions = getListOptions(questionChild,"option")
-  erbTemplate = getTemplate("../encuestas/templates/sql_smu_s.template",binding)
-  return erbTemplate.to_s  
-end
-
-def getSqlSmr_cb (ask,type,number,questionChild)
-  name="#{type}_#{number}"
-  listOptions = getListOptions(questionChild,"option")
-  erbTemplate = getTemplate("../encuestas/templates/sql_smr_cb.template",binding)
-  return erbTemplate.to_s
-end
-
-def getSqlSmr_sm (ask,type,number,questionChild)
-  name="#{type}_#{number}"
-  listOptions = getListOptions(questionChild,"option")
-  erbTemplate = getTemplate("../encuestas/templates/sql_smr_sm.template",binding)
+  erbTemplate = getTemplate("../encuestas/templates/sql_ask.template",binding)
   return erbTemplate.to_s
 end
 
@@ -224,6 +211,9 @@ def getResultHashElementsRequired(type,number,hashValidate,questionChild)
   when "pfh_s"
     name="#{type}_#{number}"
     getContainsKey(hashValidate,type,name)
+  when "psf_s"
+    name="#{type}_#{number}"
+    getContainsKey(hashValidate,type,name)
   when "psh_s"
     name="#{type}_#{number}"
     getContainsKey(hashValidate,type,name)
@@ -270,6 +260,8 @@ def getResultElementForm(questionChild,type,number,required,ask,listLocUlId,list
     then getpsc_ta(questionChild,type,number,required,ask,hashNames)
   when "pfh_s"
     then getpfh_s(questionChild,listDatesId,type,number,required,ask,hashNames)
+  when "psf_s"
+    then getpsf_s(questionChild,listDatesId,type,number,required,ask,hashNames)
   when "psh_s"
     then getpsh_s(questionChild,type,number,required,ask,hashNames)
   end
@@ -394,18 +386,22 @@ end
 
 # Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta pfh_s.template
 def getpfh_s (questionChild, listDatesId,type,number,required,ask,hashNames)
-  getContainsKey(hashNames,type,"#{type}_date_#{number}")
-  getContainsKey(hashNames,type,"#{type}_hour_#{number}")
-  getContainsKey(hashNames,type,"#{type}_minute_#{number}")
+  getContainsKey(hashNames,type,"#{type}_#{number}")
   listDatesId.push("#{type}_date_#{number}")
   erbTemplate = getTemplate("../encuestas/templates/pfh_s.template",binding)
   return erbTemplate.to_s
 end
 
+def getpsf_s (questionChild, listDatesId,type,number,required,ask,hashNames)
+  getContainsKey(hashNames,type,"#{type}_#{number}")
+  listDatesId.push("#{type}_date_#{number}")
+  erbTemplate = getTemplate("../encuestas/templates/psf_s.template",binding)
+  return erbTemplate.to_s
+end
+
 # Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta psh_s.template
 def getpsh_s (questionChild,type,number,required,ask,hashNames)
-  getContainsKey(hashNames,type,"#{type}_hour_#{number}")
-  getContainsKey(hashNames,type,"#{type}_minute_#{number}")
+  getContainsKey(hashNames,type,"#{type}_#{number}")
   erbTemplate = getTemplate("../encuestas/templates/psh_s.template",binding)
   return erbTemplate.to_s
 end
