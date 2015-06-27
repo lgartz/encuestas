@@ -48,9 +48,26 @@
 	$mmr_rb_5_4 = $_GET["mmr_rb_5_4"];
 	getSqlInsertMmr ("1", $mmr_rb_5_4);
 			
-	  		    		
-	
 			    		
+	
+		
+			
+	echo "<h1>mmrcb empieza</h1>";
+	$mmr_cb_6_1 = $_GET["mmr_cb_6_1"];
+	getSqlInsertMmrCb("1", $mmr_cb_6_1);
+	echo "<h1>mmrcb termina</h1>";
+	  		
+	echo "<h1>mmrcb empieza</h1>";
+	$mmr_cb_6_2 = $_GET["mmr_cb_6_2"];
+	getSqlInsertMmrCb("1", $mmr_cb_6_2);
+	echo "<h1>mmrcb termina</h1>";
+	  		
+	echo "<h1>mmrcb empieza</h1>";
+	$mmr_cb_6_3 = $_GET["mmr_cb_6_3"];
+	getSqlInsertMmrCb("1", $mmr_cb_6_3);
+	echo "<h1>mmrcb termina</h1>";
+	  		
+	  		    		
 	
 			    		
 	
@@ -174,6 +191,14 @@
 	function getSqlInsertMmr ($encuestado, $opcion){
 		$sql = "INSERT INTO resmmr(resmmr_opmmr_id, resmmr_encuestado_id) VALUES ('".$opcion."','".$encuestado."');";
 		insert($sql);
+	}
+	
+	function getSqlInsertMmrCb ($encuestado, $opciones){
+		$tam = count($opciones);
+		for($i = 0; $i < $tam; $i++) {
+	    	$sql = "INSERT INTO resmmr(resmmr_opmmr_id, resmmr_encuestado_id) VALUES ('".$opciones[$i]."','".$encuestado."');";
+	    	insert($sql);
+		}
 	}
 	
 	function insert ($sql){

@@ -215,27 +215,27 @@
 					</tr>
 					<tr>
 						<th>Papa</th>
-						<td class="td-center"><input id="mmr_cb_6_1_1" name="mmr_cb_6_1[]" type="checkbox" value="Arequipe" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_1_2" name="mmr_cb_6_1[]" type="checkbox" value="Fresa" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_1_3" name="mmr_cb_6_1[]" type="checkbox" value="Chicle" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_1_4" name="mmr_cb_6_1[]" type="checkbox" value="Coco" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_1_5" name="mmr_cb_6_1[]" type="checkbox" value="Queso" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_1_1" name="mmr_cb_6_1[]" type="checkbox" value="mmr_cb_6_1_1" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_1_2" name="mmr_cb_6_1[]" type="checkbox" value="mmr_cb_6_1_2" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_1_3" name="mmr_cb_6_1[]" type="checkbox" value="mmr_cb_6_1_3" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_1_4" name="mmr_cb_6_1[]" type="checkbox" value="mmr_cb_6_1_4" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_1_5" name="mmr_cb_6_1[]" type="checkbox" value="mmr_cb_6_1_5" class="form-control"></td>
 					</tr>
 					<tr>
 						<th>Mama</th>
-						<td class="td-center"><input id="mmr_cb_6_2_1" name="mmr_cb_6_2[]" type="checkbox" value="Arequipe" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_2_2" name="mmr_cb_6_2[]" type="checkbox" value="Fresa" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_2_3" name="mmr_cb_6_2[]" type="checkbox" value="Chicle" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_2_4" name="mmr_cb_6_2[]" type="checkbox" value="Coco" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_2_5" name="mmr_cb_6_2[]" type="checkbox" value="Queso" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_2_1" name="mmr_cb_6_2[]" type="checkbox" value="mmr_cb_6_2_1" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_2_2" name="mmr_cb_6_2[]" type="checkbox" value="mmr_cb_6_2_2" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_2_3" name="mmr_cb_6_2[]" type="checkbox" value="mmr_cb_6_2_3" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_2_4" name="mmr_cb_6_2[]" type="checkbox" value="mmr_cb_6_2_4" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_2_5" name="mmr_cb_6_2[]" type="checkbox" value="mmr_cb_6_2_5" class="form-control"></td>
 					</tr>
 					<tr>
 						<th>Hermana</th>
-						<td class="td-center"><input id="mmr_cb_6_3_1" name="mmr_cb_6_3[]" type="checkbox" value="Arequipe" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_3_2" name="mmr_cb_6_3[]" type="checkbox" value="Fresa" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_3_3" name="mmr_cb_6_3[]" type="checkbox" value="Chicle" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_3_4" name="mmr_cb_6_3[]" type="checkbox" value="Coco" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_3_5" name="mmr_cb_6_3[]" type="checkbox" value="Queso" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_3_1" name="mmr_cb_6_3[]" type="checkbox" value="mmr_cb_6_3_1" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_3_2" name="mmr_cb_6_3[]" type="checkbox" value="mmr_cb_6_3_2" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_3_3" name="mmr_cb_6_3[]" type="checkbox" value="mmr_cb_6_3_3" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_3_4" name="mmr_cb_6_3[]" type="checkbox" value="mmr_cb_6_3_4" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_6_3_5" name="mmr_cb_6_3[]" type="checkbox" value="mmr_cb_6_3_5" class="form-control"></td>
 					</tr>
 				</table>
 			</div>

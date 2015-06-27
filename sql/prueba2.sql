@@ -291,7 +291,25 @@ INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_rb_
 INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_rb_5_4_3','Importante','mmr_rb_5_4');
 INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_rb_5_4_4','Bastante Importante','mmr_rb_5_4');
 INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_rb_5_4_5','Muy Importante','mmr_rb_5_4');
-
+INSERT INTO pregunta (pregunta_id, pregunta_descripcion, pregunta_tipo) VALUES ('mmr_cb_6','¿Cuales sabores de helado son los favoritos para cada miembro de su familia?','mmr_cb');
+INSERT INTO mmrrow(mmrrow_id, mmrrow_pregunta_id, mmrrow_descripcion) VALUES ('mmr_cb_6_1','mmr_cb_6','Papa');
+INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_cb_6_1_1','Arequipe','mmr_cb_6_1');
+INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_cb_6_1_2','Fresa','mmr_cb_6_1');
+INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_cb_6_1_3','Chicle','mmr_cb_6_1');
+INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_cb_6_1_4','Coco','mmr_cb_6_1');
+INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_cb_6_1_5','Queso','mmr_cb_6_1');
+INSERT INTO mmrrow(mmrrow_id, mmrrow_pregunta_id, mmrrow_descripcion) VALUES ('mmr_cb_6_2','mmr_cb_6','Mama');
+INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_cb_6_2_1','Arequipe','mmr_cb_6_2');
+INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_cb_6_2_2','Fresa','mmr_cb_6_2');
+INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_cb_6_2_3','Chicle','mmr_cb_6_2');
+INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_cb_6_2_4','Coco','mmr_cb_6_2');
+INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_cb_6_2_5','Queso','mmr_cb_6_2');
+INSERT INTO mmrrow(mmrrow_id, mmrrow_pregunta_id, mmrrow_descripcion) VALUES ('mmr_cb_6_3','mmr_cb_6','Hermana');
+INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_cb_6_3_1','Arequipe','mmr_cb_6_3');
+INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_cb_6_3_2','Fresa','mmr_cb_6_3');
+INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_cb_6_3_3','Chicle','mmr_cb_6_3');
+INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_cb_6_3_4','Coco','mmr_cb_6_3');
+INSERT INTO opmmr(opmmr_id, opmmr_descripcion, opmmr_mmrrow_id) VALUES ('mmr_cb_6_3_5','Queso','mmr_cb_6_3');
 
 
 INSERT INTO pregunta (pregunta_id, pregunta_descripcion, pregunta_tipo) VALUES ('eru_rb_9','¿Que tan probable es que recomiende el helado de fresa?','eru_rb');

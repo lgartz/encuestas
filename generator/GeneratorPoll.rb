@@ -59,7 +59,7 @@ def getResultSQL(ask,type,number,questionChild)
   when "mmr_rb"
     then getSqlMmr(ask,type,number,questionChild)
   when "mmr_cb"
-    then ""
+    then getSqlMmr(ask,type,number,questionChild)
   when "mmr_s"
     then ""
   when "loc_ul"

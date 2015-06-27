@@ -58,6 +58,13 @@
 	$<%=name%> = $_GET["<%=name%>"];
 	getSqlInsertMmr ("1", $<%=name%>);
 			<%}%>
+		<%elsif key == "mmr_cb"%>
+			<%list.each{|name|%>
+	echo "<h1>mmrcb empieza</h1>";
+	$<%=name%> = $_GET["<%=name%>"];
+	getSqlInsertMmrCb("1", $<%=name%>);
+	echo "<h1>mmrcb termina</h1>";
+	  		<%}%>
 	  	<%end%>	    		
 	<%}%>	
 	// Cerrar Conexion
@@ -120,6 +127,14 @@
 	function getSqlInsertMmr ($encuestado, $opcion){
 		$sql = "INSERT INTO resmmr(resmmr_opmmr_id, resmmr_encuestado_id) VALUES ('".$opcion."','".$encuestado."');";
 		insert($sql);
+	}
+	
+	function getSqlInsertMmrCb ($encuestado, $opciones){
+		$tam = count($opciones);
+		for($i = 0; $i < $tam; $i++) {
+	    	$sql = "INSERT INTO resmmr(resmmr_opmmr_id, resmmr_encuestado_id) VALUES ('".$opciones[$i]."','".$encuestado."');";
+	    	insert($sql);
+		}
 	}
 	
 	function insert ($sql){
