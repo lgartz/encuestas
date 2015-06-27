@@ -34,7 +34,21 @@
 	  		
 	  		    		
 	
-			    		
+		
+			
+	$mmr_rb_5_1 = $_GET["mmr_rb_5_1"];
+	getSqlInsertMmr ("1", $mmr_rb_5_1);
+			
+	$mmr_rb_5_2 = $_GET["mmr_rb_5_2"];
+	getSqlInsertMmr ("1", $mmr_rb_5_2);
+			
+	$mmr_rb_5_3 = $_GET["mmr_rb_5_3"];
+	getSqlInsertMmr ("1", $mmr_rb_5_3);
+			
+	$mmr_rb_5_4 = $_GET["mmr_rb_5_4"];
+	getSqlInsertMmr ("1", $mmr_rb_5_4);
+			
+	  		    		
 	
 			    		
 	
@@ -98,7 +112,7 @@
 	$id_psh_s_15 = "psh_s_15";
 	getSqlInsertPsh ("1", $id_psh_s_15);
 			
-	  		    		
+			    		
 		
 	// Cerrar Conexion
 	close_connect_with_mysql($conn);
@@ -154,6 +168,11 @@
 		$hora = $_GET[$value[0]."_".$value[1]."_hour_".$value[2]];
 		$minuto = $_GET[$value[0]."_".$value[1]."_minute_".$value[2]];
 		$sql = "INSERT INTO respfh(respfh_pregunta_id, respfh_encuestado_id, respfh_fecha, respfh_hora) VALUES ('".$opcion."','".$encuestado."',null,'".$hora.":".$minuto."');";
+		insert($sql);
+	}
+	
+	function getSqlInsertMmr ($encuestado, $opcion){
+		$sql = "INSERT INTO resmmr(resmmr_opmmr_id, resmmr_encuestado_id) VALUES ('".$opcion."','".$encuestado."');";
 		insert($sql);
 	}
 	

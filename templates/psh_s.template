@@ -30,7 +30,7 @@
 							$cero = "0";
 							for ($i=0; $i<60; $i++) { 
 								if ($i<10) {
-									echo '<option value="'.$i.'">'.$cero.$i.'</option>';	
+									echo '<option value="'.$cero.$i.'">'.$cero.$i.'</option>';	
 								}else{
 									echo '<option value="'.$i.'">'.$i.'</option>';
 								}

@@ -12,7 +12,7 @@
 					</tr><%numRow = 1%><%listRows.each{|row|%>
 					<tr>
 						<th><%=row["value"]%></th><%for i in 1..listColumns.length%>
-						<td class="td-center"><input id="<%=type%>_<%=number%>_<%=numRow%>_<%=i%>" name="<%=type%>_<%=number%>_<%=numRow%>" type="radio"  value="<%=listColumns[i-1]["value"]%>" class="form-control"></td><%end%>
+						<td class="td-center"><input id="<%=type%>_<%=number%>_<%=numRow%>_<%=i%>" name="<%=type%>_<%=number%>_<%=numRow%>" type="radio"  value="<%=type%>_<%=number%>_<%=numRow%>_<%=i%>" class="form-control"></td><%end%>
 					</tr><%numRow+=1%><%}%>
 				</table>
 			</div>

@@ -162,35 +162,35 @@
 					</tr>
 					<tr>
 						<th>¿Que tan Importante es su Educacion?</th>
-						<td class="td-center"><input id="mmr_rb_5_1_1" name="mmr_rb_5_1" type="radio"  value="Nada Importante" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_1_2" name="mmr_rb_5_1" type="radio"  value="Poco Importante" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_1_3" name="mmr_rb_5_1" type="radio"  value="Importante" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_1_4" name="mmr_rb_5_1" type="radio"  value="Bastante Importante" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_1_5" name="mmr_rb_5_1" type="radio"  value="Muy Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_1_1" name="mmr_rb_5_1" type="radio"  value="mmr_rb_5_1_1" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_1_2" name="mmr_rb_5_1" type="radio"  value="mmr_rb_5_1_2" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_1_3" name="mmr_rb_5_1" type="radio"  value="mmr_rb_5_1_3" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_1_4" name="mmr_rb_5_1" type="radio"  value="mmr_rb_5_1_4" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_1_5" name="mmr_rb_5_1" type="radio"  value="mmr_rb_5_1_5" class="form-control"></td>
 					</tr>
 					<tr>
 						<th>¿Que tan Importante es su Familia?</th>
-						<td class="td-center"><input id="mmr_rb_5_2_1" name="mmr_rb_5_2" type="radio"  value="Nada Importante" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_2_2" name="mmr_rb_5_2" type="radio"  value="Poco Importante" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_2_3" name="mmr_rb_5_2" type="radio"  value="Importante" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_2_4" name="mmr_rb_5_2" type="radio"  value="Bastante Importante" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_2_5" name="mmr_rb_5_2" type="radio"  value="Muy Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_2_1" name="mmr_rb_5_2" type="radio"  value="mmr_rb_5_2_1" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_2_2" name="mmr_rb_5_2" type="radio"  value="mmr_rb_5_2_2" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_2_3" name="mmr_rb_5_2" type="radio"  value="mmr_rb_5_2_3" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_2_4" name="mmr_rb_5_2" type="radio"  value="mmr_rb_5_2_4" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_2_5" name="mmr_rb_5_2" type="radio"  value="mmr_rb_5_2_5" class="form-control"></td>
 					</tr>
 					<tr>
 						<th>¿Que tan Importante es su Religion?</th>
-						<td class="td-center"><input id="mmr_rb_5_3_1" name="mmr_rb_5_3" type="radio"  value="Nada Importante" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_3_2" name="mmr_rb_5_3" type="radio"  value="Poco Importante" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_3_3" name="mmr_rb_5_3" type="radio"  value="Importante" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_3_4" name="mmr_rb_5_3" type="radio"  value="Bastante Importante" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_3_5" name="mmr_rb_5_3" type="radio"  value="Muy Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_3_1" name="mmr_rb_5_3" type="radio"  value="mmr_rb_5_3_1" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_3_2" name="mmr_rb_5_3" type="radio"  value="mmr_rb_5_3_2" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_3_3" name="mmr_rb_5_3" type="radio"  value="mmr_rb_5_3_3" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_3_4" name="mmr_rb_5_3" type="radio"  value="mmr_rb_5_3_4" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_3_5" name="mmr_rb_5_3" type="radio"  value="mmr_rb_5_3_5" class="form-control"></td>
 					</tr>
 					<tr>
 						<th>¿Que tan Importante es su Ejercicio Fisico?</th>
-						<td class="td-center"><input id="mmr_rb_5_4_1" name="mmr_rb_5_4" type="radio"  value="Nada Importante" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_4_2" name="mmr_rb_5_4" type="radio"  value="Poco Importante" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_4_3" name="mmr_rb_5_4" type="radio"  value="Importante" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_4_4" name="mmr_rb_5_4" type="radio"  value="Bastante Importante" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_4_5" name="mmr_rb_5_4" type="radio"  value="Muy Importante" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_4_1" name="mmr_rb_5_4" type="radio"  value="mmr_rb_5_4_1" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_4_2" name="mmr_rb_5_4" type="radio"  value="mmr_rb_5_4_2" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_4_3" name="mmr_rb_5_4" type="radio"  value="mmr_rb_5_4_3" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_4_4" name="mmr_rb_5_4" type="radio"  value="mmr_rb_5_4_4" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_5_4_5" name="mmr_rb_5_4" type="radio"  value="mmr_rb_5_4_5" class="form-control"></td>
 					</tr>
 				</table>
 			</div>
@@ -532,7 +532,7 @@
 							$cero = "0";
 							for ($i=0; $i<60; $i++) { 
 								if ($i<10) {
-									echo '<option value="'.$i.'">'.$cero.$i.'</option>';	
+									echo '<option value="'.$cero.$i.'">'.$cero.$i.'</option>';	
 								}else{
 									echo '<option value="'.$i.'">'.$i.'</option>';
 								}
@@ -587,7 +587,7 @@
 							$cero = "0";
 							for ($i=0; $i<60; $i++) { 
 								if ($i<10) {
-									echo '<option value="'.$i.'">'.$cero.$i.'</option>';	
+									echo '<option value="'.$cero.$i.'">'.$cero.$i.'</option>';	
 								}else{
 									echo '<option value="'.$i.'">'.$i.'</option>';
 								}

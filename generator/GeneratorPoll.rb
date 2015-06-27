@@ -57,7 +57,7 @@ def getResultSQL(ask,type,number,questionChild)
   when "smr_sm"
     then getSqlSm(ask,type,number,questionChild)
   when "mmr_rb"
-    then ""
+    then getSqlMmr(ask,type,number,questionChild)
   when "mmr_cb"
     then ""
   when "mmr_s"
@@ -92,6 +92,14 @@ end
 def getSqlAsk (ask,type,number)
   name="#{type}_#{number}"
   erbTemplate = getTemplate("../encuestas/templates/sql_ask.template",binding)
+  return erbTemplate.to_s
+end
+
+def getSqlMmr(ask,type,number,questionChild)
+  name="#{type}_#{number}"
+  listRows = getListOptions(questionChild.elements["rows"],"option")
+  listColumns = getListOptions(questionChild.elements["columns"],"option")
+  erbTemplate = getTemplate("../encuestas/templates/sql_mmr.template",binding)
   return erbTemplate.to_s
 end
 

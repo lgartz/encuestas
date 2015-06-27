@@ -53,6 +53,11 @@
 	$id_<%=name%> = "<%=name%>";
 	getSqlInsertPsh ("1", $id_<%=name%>);
 			<%}%>
+		<%elsif key == "mmr_rb"%>
+			<%list.each{|name|%>
+	$<%=name%> = $_GET["<%=name%>"];
+	getSqlInsertMmr ("1", $<%=name%>);
+			<%}%>
 	  	<%end%>	    		
 	<%}%>	
 	// Cerrar Conexion
@@ -109,6 +114,11 @@
 		$hora = $_GET[$value[0]."_".$value[1]."_hour_".$value[2]];
 		$minuto = $_GET[$value[0]."_".$value[1]."_minute_".$value[2]];
 		$sql = "INSERT INTO respfh(respfh_pregunta_id, respfh_encuestado_id, respfh_fecha, respfh_hora) VALUES ('".$opcion."','".$encuestado."',null,'".$hora.":".$minuto."');";
+		insert($sql);
+	}
+	
+	function getSqlInsertMmr ($encuestado, $opcion){
+		$sql = "INSERT INTO resmmr(resmmr_opmmr_id, resmmr_encuestado_id) VALUES ('".$opcion."','".$encuestado."');";
 		insert($sql);
 	}
 	
