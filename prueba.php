@@ -260,17 +260,17 @@
 						<td>
 							<select id="mmr_s_7_1_1" name="mmr_s_7_1_1" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-								<option value="Liso">Liso</option>
-								<option value="Rugoso">Rugoso</option>
-								<option value="Esponjoso">Esponjoso</option>
+							<option value="mmr_s_7_1_1_1">Liso</option>
+							<option value="mmr_s_7_1_1_2">Rugoso</option>
+							<option value="mmr_s_7_1_1_3">Esponjoso</option>
 							</select>
 						</td>
 						<td>
 							<select id="mmr_s_7_1_2" name="mmr_s_7_1_2" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-								<option value="Dulce">Dulce</option>
-								<option value="Amargo">Amargo</option>
-								<option value="Agridulce">Agridulce</option>
+							<option value="mmr_s_7_1_2_1">Dulce</option>
+							<option value="mmr_s_7_1_2_2">Amargo</option>
+							<option value="mmr_s_7_1_2_3">Agridulce</option>
 							</select>
 						</td>
 					</tr>
@@ -279,17 +279,17 @@
 						<td>
 							<select id="mmr_s_7_2_1" name="mmr_s_7_2_1" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-								<option value="Liso">Liso</option>
-								<option value="Rugoso">Rugoso</option>
-								<option value="Esponjoso">Esponjoso</option>
+							<option value="mmr_s_7_2_1_1">Liso</option>
+							<option value="mmr_s_7_2_1_2">Rugoso</option>
+							<option value="mmr_s_7_2_1_3">Esponjoso</option>
 							</select>
 						</td>
 						<td>
 							<select id="mmr_s_7_2_2" name="mmr_s_7_2_2" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-								<option value="Dulce">Dulce</option>
-								<option value="Amargo">Amargo</option>
-								<option value="Agridulce">Agridulce</option>
+							<option value="mmr_s_7_2_2_1">Dulce</option>
+							<option value="mmr_s_7_2_2_2">Amargo</option>
+							<option value="mmr_s_7_2_2_3">Agridulce</option>
 							</select>
 						</td>
 					</tr>
@@ -298,17 +298,17 @@
 						<td>
 							<select id="mmr_s_7_3_1" name="mmr_s_7_3_1" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-								<option value="Liso">Liso</option>
-								<option value="Rugoso">Rugoso</option>
-								<option value="Esponjoso">Esponjoso</option>
+							<option value="mmr_s_7_3_1_1">Liso</option>
+							<option value="mmr_s_7_3_1_2">Rugoso</option>
+							<option value="mmr_s_7_3_1_3">Esponjoso</option>
 							</select>
 						</td>
 						<td>
 							<select id="mmr_s_7_3_2" name="mmr_s_7_3_2" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-								<option value="Dulce">Dulce</option>
-								<option value="Amargo">Amargo</option>
-								<option value="Agridulce">Agridulce</option>
+							<option value="mmr_s_7_3_2_1">Dulce</option>
+							<option value="mmr_s_7_3_2_2">Amargo</option>
+							<option value="mmr_s_7_3_2_3">Agridulce</option>
 							</select>
 						</td>
 					</tr>
@@ -317,17 +317,17 @@
 						<td>
 							<select id="mmr_s_7_4_1" name="mmr_s_7_4_1" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-								<option value="Liso">Liso</option>
-								<option value="Rugoso">Rugoso</option>
-								<option value="Esponjoso">Esponjoso</option>
+							<option value="mmr_s_7_4_1_1">Liso</option>
+							<option value="mmr_s_7_4_1_2">Rugoso</option>
+							<option value="mmr_s_7_4_1_3">Esponjoso</option>
 							</select>
 						</td>
 						<td>
 							<select id="mmr_s_7_4_2" name="mmr_s_7_4_2" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-								<option value="Dulce">Dulce</option>
-								<option value="Amargo">Amargo</option>
-								<option value="Agridulce">Agridulce</option>
+							<option value="mmr_s_7_4_2_1">Dulce</option>
+							<option value="mmr_s_7_4_2_2">Amargo</option>
+							<option value="mmr_s_7_4_2_3">Agridulce</option>
 							</select>
 						</td>
 					</tr>
@@ -336,17 +336,17 @@
 						<td>
 							<select id="mmr_s_7_5_1" name="mmr_s_7_5_1" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-								<option value="Liso">Liso</option>
-								<option value="Rugoso">Rugoso</option>
-								<option value="Esponjoso">Esponjoso</option>
+							<option value="mmr_s_7_5_1_1">Liso</option>
+							<option value="mmr_s_7_5_1_2">Rugoso</option>
+							<option value="mmr_s_7_5_1_3">Esponjoso</option>
 							</select>
 						</td>
 						<td>
 							<select id="mmr_s_7_5_2" name="mmr_s_7_5_2" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-								<option value="Dulce">Dulce</option>
-								<option value="Amargo">Amargo</option>
-								<option value="Agridulce">Agridulce</option>
+							<option value="mmr_s_7_5_2_1">Dulce</option>
+							<option value="mmr_s_7_5_2_2">Amargo</option>
+							<option value="mmr_s_7_5_2_3">Agridulce</option>
 							</select>
 						</td>
 					</tr>

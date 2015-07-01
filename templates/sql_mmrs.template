@@ -1,0 +1,4 @@
+INSERT INTO pregunta (pregunta_id, pregunta_descripcion, pregunta_tipo) VALUES ('<%=name%>','<%=ask%>','<%=type%>');<%rowNum=1%><%listRows.each{|row|%>
+INSERT INTO mmrrow(mmrrow_id, mmrrow_pregunta_id, mmrrow_descripcion) VALUES ('<%=name%>_<%=rowNum%>','<%=name%>','<%=row["value"]%>');<%rowNum+=1%><%}%><%columnNum=1%><%hashColumnas.each{|keys,values|%>
+INSERT INTO mmrcol(mmrcol_id, mmrcol_pregunta_id, mmrcol_descripcion) VALUES ('<%=name%>_<%=columnNum%>','<%=name%>','<%=keys%>');<%columnNum+=1%><%}%><%rowNum=1%><%listRows.each{|row|%>	<%columnNum=1%><%hashColumnas.each{|keys,values|%><%i=1%><%values.each{|val|%>
+INSERT INTO opmmrs(opmmrs_id, opmmrs_mmrrow_id, opmmrs_mmrcol_id, opmmrs_descripcion) VALUES ('<%=name%>_<%=rowNum%>_<%=columnNum%>_<%=i%>','<%=name%>_<%=rowNum%>','<%=name%>_<%=columnNum%>','<%=val["value"]%>');<%i+=1%><%}%><%columnNum+=1%><%}%><%rowNum+=1%><%}%>

@@ -14,8 +14,8 @@
 						<th><%=row["value"]%></th><%columnNum=1%><%hashColumnas.each{|keys,values|%>
 						<td>
 							<select id="<%=type%>_<%=number%>_<%=rowNum%>_<%=columnNum%>" name="<%=type%>_<%=number%>_<%=rowNum%>_<%=columnNum%>" class="form-control">
-							<option value="">--Seleccione una opci&oacute;n--</option><%values.each{|val|%>
-								<option value="<%=val["value"]%>"><%=val["value"]%></option><%}%>
+							<option value="">--Seleccione una opci&oacute;n--</option><%i=1%><%values.each{|val|%>
+							<option value="<%=type%>_<%=number%>_<%=rowNum%>_<%=columnNum%>_<%=i%>"><%=val["value"]%></option><%i+=1%><%}%>
 							</select>
 						</td><%columnNum+=1%><%}%>
 					</tr><%rowNum+=1%><%}%>

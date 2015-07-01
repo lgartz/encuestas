@@ -33,7 +33,6 @@ def readPollFileXml ( pathFile )
         getResultHashElementsRequired(type,number,hashValidate,questionChild)
       end
     end
-    print hashNames
     erbJavaScript = getTemplate("../encuestas/templates/poll_script.template",binding)
     createFile("../encuestas/javascript/",".js",namePage,erbJavaScript)
     erbHtml = getTemplate("../encuestas/templates/poll.template",binding)
@@ -61,7 +60,7 @@ def getResultSQL(ask,type,number,questionChild)
   when "mmr_cb"
     then getSqlMmr(ask,type,number,questionChild)
   when "mmr_s"
-    then ""
+    then getSqlMmrs(ask,type,number,questionChild)
   when "loc_ul"
     then ""
   when "eru_rb"
@@ -100,6 +99,14 @@ def getSqlMmr(ask,type,number,questionChild)
   listRows = getListOptions(questionChild.elements["rows"],"option")
   listColumns = getListOptions(questionChild.elements["columns"],"option")
   erbTemplate = getTemplate("../encuestas/templates/sql_mmr.template",binding)
+  return erbTemplate.to_s
+end
+
+def getSqlMmrs (ask,type,number,questionChild)
+  name="#{type}_#{number}"
+  listRows = getListOptions(questionChild.elements["rows"],"option")
+  hashColumnas = getListOptionSelect(questionChild)
+  erbTemplate = getTemplate("../encuestas/templates/sql_mmrs.template",binding)
   return erbTemplate.to_s
 end
 
