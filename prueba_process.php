@@ -2,7 +2,7 @@
 	// Se incluye la conexion
 	include("conexion.php");
 	// Crear connection
-	$conn = connect_with_mysql("localhost","root","","prueba");
+	$conn = connect_with_mysql("localhost","root","","encuestas");
 	
 	$smu_rb_1 = $_GET["smu_rb_1"];
 	getSqlInsertSmu("1",$smu_rb_1);
@@ -146,11 +146,9 @@
 	
 	function insert ($sql){
 		if (mysql_query($sql)) {
-			echo "<h1>Inserto exitosamente</h1>";
-			echo $sql;
+			return true;
 		}else{
-			echo "<h1>No inserto:".$sql."</h1>";
-			echo $sql;
+			return false;	
 		}
 	}
 ?>

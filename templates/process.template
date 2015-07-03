@@ -2,7 +2,7 @@
 	// Se incluye la conexion
 	include("conexion.php");
 	// Crear connection
-	$conn = connect_with_mysql("localhost","root","","<%=dbname%>");
+	$conn = connect_with_mysql("localhost","root","","encuestas");
 	<%hashNames.each{|key,list|%><% if key == "smu_rb" or key == "smu_s"%><%list.each{|name|%>
 	$<%=name%> = $_GET["<%=name%>"];
 	getSqlInsertSmu("1",$<%=name%>);<%}%><%elsif key == "smr_cb" or key == "smr_sm"%><%list.each{|name|%>

@@ -20,44 +20,44 @@
 	<div class="container">
 		<form action="prueba2_process.php" method="GET">
 			<div class="form-group">
-	<div id="panel_smu_rb_1" class="panel panel-primary">
-		<div id="panel_head_smu_rb_1" class="panel-heading">
+	<div id="panel_smu_rb_16" class="panel panel-primary">
+		<div id="panel_head_smu_rb_16" class="panel-heading">
 			<h4>¿Cual es su sabor de helado favorito? <small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta pregunta es obligatoria</b></small></h4>
 		</div>
-		<div id="panel_body_smu_rb_1" class="panel-body">	
+		<div id="panel_body_smu_rb_16" class="panel-body">	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_1" name="smu_rb_1" type="radio" value="smu_rb_1_1">
+					<input id="smu_rb_16_1" name="smu_rb_16" type="radio" value="smu_rb_16_1">
 					Fresa
 				</label>
 			</div>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_2" name="smu_rb_1" type="radio" value="smu_rb_1_2">
+					<input id="smu_rb_16_2" name="smu_rb_16" type="radio" value="smu_rb_16_2">
 					Chicle
 				</label>
 			</div>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_3" name="smu_rb_1" type="radio" value="smu_rb_1_3">
+					<input id="smu_rb_16_3" name="smu_rb_16" type="radio" value="smu_rb_16_3">
 					Arequipe
 				</label>
 			</div>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_4" name="smu_rb_1" type="radio" value="smu_rb_1_4">
+					<input id="smu_rb_16_4" name="smu_rb_16" type="radio" value="smu_rb_16_4">
 					Queso
 				</label>
 			</div>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_5" name="smu_rb_1" type="radio" value="smu_rb_1_5">
+					<input id="smu_rb_16_5" name="smu_rb_16" type="radio" value="smu_rb_16_5">
 					Feijoa
 				</label>
 			</div>	
 			<div class="radio">
 				<label class="form-control">
-					<input id="smu_rb_1_6" name="smu_rb_1" type="radio" value="smu_rb_1_6">
+					<input id="smu_rb_16_6" name="smu_rb_16" type="radio" value="smu_rb_16_6">
 					Mani
 				</label>
 			</div>
@@ -65,62 +65,62 @@
 	</div>
 </div>
 <div class="form-group">
-	<div id="panel_smu_s_2" class="panel panel-primary">
-		<div id="panel_head_smu_s_2" class="panel-heading">
+	<div id="panel_smu_s_17" class="panel panel-primary">
+		<div id="panel_head_smu_s_17" class="panel-heading">
 			<h4>¿Cual es su sabor de helado favorito? <small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta pregunta es obligatoria</b></small></h4>
 		</div>
-		<div id="panel_body_smu_s_2" class="panel-body">
-			<select name="smu_s_2" id="smu_s_2" class="form-control">
+		<div id="panel_body_smu_s_17" class="panel-body">
+			<select name="smu_s_17" id="smu_s_17" class="form-control">
 				<option value="" selected>--Seleccione una opci&oacute;n--</option>
-				<option id="smu_s_2_1" value="smu_s_2_1">Fresa</option>
-				<option id="smu_s_2_2" value="smu_s_2_2">Chicle</option>
-				<option id="smu_s_2_3" value="smu_s_2_3">Arequipe</option>
-				<option id="smu_s_2_4" value="smu_s_2_4">Queso</option>
-				<option id="smu_s_2_5" value="smu_s_2_5">Feijoa</option>
-				<option id="smu_s_2_6" value="smu_s_2_6">Mani</option>
+				<option id="smu_s_17_1" value="smu_s_17_1">Fresa</option>
+				<option id="smu_s_17_2" value="smu_s_17_2">Chicle</option>
+				<option id="smu_s_17_3" value="smu_s_17_3">Arequipe</option>
+				<option id="smu_s_17_4" value="smu_s_17_4">Queso</option>
+				<option id="smu_s_17_5" value="smu_s_17_5">Feijoa</option>
+				<option id="smu_s_17_6" value="smu_s_17_6">Mani</option>
 			</select>
 		</div>
 	</div>
 </div>
 <div class="form-group">
-	<div id="panel_smr_cb_3" class="panel panel-primary">
-		<div id="panel_head_smr_cb_3" class="panel-heading">
+	<div id="panel_smr_cb_18" class="panel panel-primary">
+		<div id="panel_head_smr_cb_18" class="panel-heading">
 			<h4>¿Cuales son sus sabores de helado favoritos? <small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta pregunta es obligatoria</b></small></h4>
 		</div>
-		<div id="panel_body_smr_cb_3" class="panel-body">
+		<div id="panel_body_smr_cb_18" class="panel-body">
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3_1" name="smr_cb_3[]" type="checkbox" value="smr_cb_3_1">
+					<input id="smr_cb_18_1" name="smr_cb_18[]" type="checkbox" value="smr_cb_18_1">
 					Fresa
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3_2" name="smr_cb_3[]" type="checkbox" value="smr_cb_3_2">
+					<input id="smr_cb_18_2" name="smr_cb_18[]" type="checkbox" value="smr_cb_18_2">
 					Chicle
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3_3" name="smr_cb_3[]" type="checkbox" value="smr_cb_3_3">
+					<input id="smr_cb_18_3" name="smr_cb_18[]" type="checkbox" value="smr_cb_18_3">
 					Arequipe
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3_4" name="smr_cb_3[]" type="checkbox" value="smr_cb_3_4">
+					<input id="smr_cb_18_4" name="smr_cb_18[]" type="checkbox" value="smr_cb_18_4">
 					Queso
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3_5" name="smr_cb_3[]" type="checkbox" value="smr_cb_3_5">
+					<input id="smr_cb_18_5" name="smr_cb_18[]" type="checkbox" value="smr_cb_18_5">
 					Feijoa
 				</label>
 			</div>
 			<div class="checkbox">
 				<label class="form-control">
-					<input id="smr_cb_3_6" name="smr_cb_3[]" type="checkbox" value="smr_cb_3_6">
+					<input id="smr_cb_18_6" name="smr_cb_18[]" type="checkbox" value="smr_cb_18_6">
 					Mani
 				</label>
 			</div>
@@ -128,28 +128,28 @@
 	</div>
 </div>
 <div class="form-group">
-	<div id="panel_smr_sm_4" class="panel panel-primary">
-		<div id="panel_head_smr_sm_4" class="panel-heading">
+	<div id="panel_smr_sm_19" class="panel panel-primary">
+		<div id="panel_head_smr_sm_19" class="panel-heading">
 			<h4>¿Cuales son sus sabores de helado favoritos? <small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta pregunta es obligatoria</b></small></h4>
 		</div>
-		<div id="panel_body_smr_sm_4" class="panel-body">
-			<select multiple id="smr_sm_4" name="smr_sm_4[]" class="form-control">
-				<option id="smr_sm_4_1" class="form-control" value="smr_sm_4_1">Fresa</option>
-				<option id="smr_sm_4_2" class="form-control" value="smr_sm_4_2">Chicle</option>
-				<option id="smr_sm_4_3" class="form-control" value="smr_sm_4_3">Arequipe</option>
-				<option id="smr_sm_4_4" class="form-control" value="smr_sm_4_4">Queso</option>
-				<option id="smr_sm_4_5" class="form-control" value="smr_sm_4_5">Feijoa</option>
-				<option id="smr_sm_4_6" class="form-control" value="smr_sm_4_6">Mani</option>	
+		<div id="panel_body_smr_sm_19" class="panel-body">
+			<select multiple id="smr_sm_19" name="smr_sm_19[]" class="form-control">
+				<option id="smr_sm_19_1" class="form-control" value="smr_sm_19_1">Fresa</option>
+				<option id="smr_sm_19_2" class="form-control" value="smr_sm_19_2">Chicle</option>
+				<option id="smr_sm_19_3" class="form-control" value="smr_sm_19_3">Arequipe</option>
+				<option id="smr_sm_19_4" class="form-control" value="smr_sm_19_4">Queso</option>
+				<option id="smr_sm_19_5" class="form-control" value="smr_sm_19_5">Feijoa</option>
+				<option id="smr_sm_19_6" class="form-control" value="smr_sm_19_6">Mani</option>	
 			</select>
 		</div>
 	</div>
 </div>
 <div class="form-group">
-	<div id="panel_mmr_rb_5" class="panel panel-primary">
-		<div id="panel_head_mmr_rb_5" class="panel-heading">
+	<div id="panel_mmr_rb_20" class="panel panel-primary">
+		<div id="panel_head_mmr_rb_20" class="panel-heading">
 			<h4>Evalue las siguientes preguntas<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Todas la filas son obligatorias</b></small></h4>
 		</div>
-		<div id="panel_body_mmr_rb_5" class="panel-body">
+		<div id="panel_body_mmr_rb_20" class="panel-body">
 			<div class="table-responsive">
 				<table class="table table-striped table-bordered table-hover ">
 					<tr class="active">
@@ -162,35 +162,35 @@
 					</tr>
 					<tr>
 						<th>¿Que tan Importante es su Educacion?</th>
-						<td class="td-center"><input id="mmr_rb_5_1_1" name="mmr_rb_5_1" type="radio"  value="mmr_rb_5_1_1" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_1_2" name="mmr_rb_5_1" type="radio"  value="mmr_rb_5_1_2" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_1_3" name="mmr_rb_5_1" type="radio"  value="mmr_rb_5_1_3" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_1_4" name="mmr_rb_5_1" type="radio"  value="mmr_rb_5_1_4" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_1_5" name="mmr_rb_5_1" type="radio"  value="mmr_rb_5_1_5" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_1_1" name="mmr_rb_20_1" type="radio"  value="mmr_rb_20_1_1" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_1_2" name="mmr_rb_20_1" type="radio"  value="mmr_rb_20_1_2" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_1_3" name="mmr_rb_20_1" type="radio"  value="mmr_rb_20_1_3" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_1_4" name="mmr_rb_20_1" type="radio"  value="mmr_rb_20_1_4" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_1_5" name="mmr_rb_20_1" type="radio"  value="mmr_rb_20_1_5" class="form-control"></td>
 					</tr>
 					<tr>
 						<th>¿Que tan Importante es su Familia?</th>
-						<td class="td-center"><input id="mmr_rb_5_2_1" name="mmr_rb_5_2" type="radio"  value="mmr_rb_5_2_1" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_2_2" name="mmr_rb_5_2" type="radio"  value="mmr_rb_5_2_2" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_2_3" name="mmr_rb_5_2" type="radio"  value="mmr_rb_5_2_3" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_2_4" name="mmr_rb_5_2" type="radio"  value="mmr_rb_5_2_4" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_2_5" name="mmr_rb_5_2" type="radio"  value="mmr_rb_5_2_5" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_2_1" name="mmr_rb_20_2" type="radio"  value="mmr_rb_20_2_1" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_2_2" name="mmr_rb_20_2" type="radio"  value="mmr_rb_20_2_2" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_2_3" name="mmr_rb_20_2" type="radio"  value="mmr_rb_20_2_3" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_2_4" name="mmr_rb_20_2" type="radio"  value="mmr_rb_20_2_4" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_2_5" name="mmr_rb_20_2" type="radio"  value="mmr_rb_20_2_5" class="form-control"></td>
 					</tr>
 					<tr>
 						<th>¿Que tan Importante es su Religion?</th>
-						<td class="td-center"><input id="mmr_rb_5_3_1" name="mmr_rb_5_3" type="radio"  value="mmr_rb_5_3_1" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_3_2" name="mmr_rb_5_3" type="radio"  value="mmr_rb_5_3_2" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_3_3" name="mmr_rb_5_3" type="radio"  value="mmr_rb_5_3_3" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_3_4" name="mmr_rb_5_3" type="radio"  value="mmr_rb_5_3_4" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_3_5" name="mmr_rb_5_3" type="radio"  value="mmr_rb_5_3_5" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_3_1" name="mmr_rb_20_3" type="radio"  value="mmr_rb_20_3_1" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_3_2" name="mmr_rb_20_3" type="radio"  value="mmr_rb_20_3_2" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_3_3" name="mmr_rb_20_3" type="radio"  value="mmr_rb_20_3_3" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_3_4" name="mmr_rb_20_3" type="radio"  value="mmr_rb_20_3_4" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_3_5" name="mmr_rb_20_3" type="radio"  value="mmr_rb_20_3_5" class="form-control"></td>
 					</tr>
 					<tr>
 						<th>¿Que tan Importante es su Ejercicio Fisico?</th>
-						<td class="td-center"><input id="mmr_rb_5_4_1" name="mmr_rb_5_4" type="radio"  value="mmr_rb_5_4_1" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_4_2" name="mmr_rb_5_4" type="radio"  value="mmr_rb_5_4_2" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_4_3" name="mmr_rb_5_4" type="radio"  value="mmr_rb_5_4_3" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_4_4" name="mmr_rb_5_4" type="radio"  value="mmr_rb_5_4_4" class="form-control"></td>
-						<td class="td-center"><input id="mmr_rb_5_4_5" name="mmr_rb_5_4" type="radio"  value="mmr_rb_5_4_5" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_4_1" name="mmr_rb_20_4" type="radio"  value="mmr_rb_20_4_1" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_4_2" name="mmr_rb_20_4" type="radio"  value="mmr_rb_20_4_2" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_4_3" name="mmr_rb_20_4" type="radio"  value="mmr_rb_20_4_3" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_4_4" name="mmr_rb_20_4" type="radio"  value="mmr_rb_20_4_4" class="form-control"></td>
+						<td class="td-center"><input id="mmr_rb_20_4_5" name="mmr_rb_20_4" type="radio"  value="mmr_rb_20_4_5" class="form-control"></td>
 					</tr>
 				</table>
 			</div>
@@ -198,11 +198,11 @@
 	</div>
 </div>
 <div class="form-group">
-	<div id="panel_mmr_cb_6" class="panel panel-primary">
-		<div id="panel_head_mmr_cb_6" class="panel-heading">
+	<div id="panel_mmr_cb_21" class="panel panel-primary">
+		<div id="panel_head_mmr_cb_21" class="panel-heading">
 			<h4>¿Cuales sabores de helado son los favoritos para cada miembro de su familia?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Todas la filas son obligatorias</b></small></h4>
 		</div>
-		<div id="panel_body_mmr_cb_6" class="panel-body">
+		<div id="panel_body_mmr_cb_21" class="panel-body">
 			<div class="table-responsive">
 				<table class="table table-striped table-bordered table-hover ">
 					<tr class="active">
@@ -215,27 +215,27 @@
 					</tr>
 					<tr>
 						<th>Papa</th>
-						<td class="td-center"><input id="mmr_cb_6_1_1" name="mmr_cb_6_1[]" type="checkbox" value="mmr_cb_6_1_1" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_1_2" name="mmr_cb_6_1[]" type="checkbox" value="mmr_cb_6_1_2" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_1_3" name="mmr_cb_6_1[]" type="checkbox" value="mmr_cb_6_1_3" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_1_4" name="mmr_cb_6_1[]" type="checkbox" value="mmr_cb_6_1_4" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_1_5" name="mmr_cb_6_1[]" type="checkbox" value="mmr_cb_6_1_5" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_21_1_1" name="mmr_cb_21_1[]" type="checkbox" value="mmr_cb_21_1_1" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_21_1_2" name="mmr_cb_21_1[]" type="checkbox" value="mmr_cb_21_1_2" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_21_1_3" name="mmr_cb_21_1[]" type="checkbox" value="mmr_cb_21_1_3" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_21_1_4" name="mmr_cb_21_1[]" type="checkbox" value="mmr_cb_21_1_4" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_21_1_5" name="mmr_cb_21_1[]" type="checkbox" value="mmr_cb_21_1_5" class="form-control"></td>
 					</tr>
 					<tr>
 						<th>Mama</th>
-						<td class="td-center"><input id="mmr_cb_6_2_1" name="mmr_cb_6_2[]" type="checkbox" value="mmr_cb_6_2_1" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_2_2" name="mmr_cb_6_2[]" type="checkbox" value="mmr_cb_6_2_2" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_2_3" name="mmr_cb_6_2[]" type="checkbox" value="mmr_cb_6_2_3" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_2_4" name="mmr_cb_6_2[]" type="checkbox" value="mmr_cb_6_2_4" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_2_5" name="mmr_cb_6_2[]" type="checkbox" value="mmr_cb_6_2_5" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_21_2_1" name="mmr_cb_21_2[]" type="checkbox" value="mmr_cb_21_2_1" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_21_2_2" name="mmr_cb_21_2[]" type="checkbox" value="mmr_cb_21_2_2" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_21_2_3" name="mmr_cb_21_2[]" type="checkbox" value="mmr_cb_21_2_3" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_21_2_4" name="mmr_cb_21_2[]" type="checkbox" value="mmr_cb_21_2_4" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_21_2_5" name="mmr_cb_21_2[]" type="checkbox" value="mmr_cb_21_2_5" class="form-control"></td>
 					</tr>
 					<tr>
 						<th>Hermana</th>
-						<td class="td-center"><input id="mmr_cb_6_3_1" name="mmr_cb_6_3[]" type="checkbox" value="mmr_cb_6_3_1" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_3_2" name="mmr_cb_6_3[]" type="checkbox" value="mmr_cb_6_3_2" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_3_3" name="mmr_cb_6_3[]" type="checkbox" value="mmr_cb_6_3_3" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_3_4" name="mmr_cb_6_3[]" type="checkbox" value="mmr_cb_6_3_4" class="form-control"></td>
-						<td class="td-center"><input id="mmr_cb_6_3_5" name="mmr_cb_6_3[]" type="checkbox" value="mmr_cb_6_3_5" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_21_3_1" name="mmr_cb_21_3[]" type="checkbox" value="mmr_cb_21_3_1" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_21_3_2" name="mmr_cb_21_3[]" type="checkbox" value="mmr_cb_21_3_2" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_21_3_3" name="mmr_cb_21_3[]" type="checkbox" value="mmr_cb_21_3_3" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_21_3_4" name="mmr_cb_21_3[]" type="checkbox" value="mmr_cb_21_3_4" class="form-control"></td>
+						<td class="td-center"><input id="mmr_cb_21_3_5" name="mmr_cb_21_3[]" type="checkbox" value="mmr_cb_21_3_5" class="form-control"></td>
 					</tr>
 				</table>
 			</div>
@@ -243,11 +243,11 @@
 	</div>
 </div>
 <div class="form-group">
-	<div id="panel_mmr_s_7" class="panel panel-primary">
-		<div id="panel_head_mmr_s_7" class="panel-heading">
+	<div id="panel_mmr_s_22" class="panel panel-primary">
+		<div id="panel_head_mmr_s_22" class="panel-heading">
 			<h4>Segun los siguientes sabores de helados seleccione el tipo de textura y sabor que prefiere<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Todas la filas son obligatorias</b></small></h4>
 		</div>
-		<div id="panel_body_mmr_s_7" class="panel-body">
+		<div id="panel_body_mmr_s_22" class="panel-body">
 			<div class="table-responsive">
 				<table class="table table-striped table-bordered table-hover">
 					<tr class="active">
@@ -258,95 +258,95 @@
 					<tr>
 						<th>Arequipe</th>
 						<td>
-							<select id="mmr_s_7_1_1" name="mmr_s_7_1_1" class="form-control">
+							<select id="mmr_s_22_1_1" name="mmr_s_22_1_1" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-							<option value="mmr_s_7_1_1_1">Liso</option>
-							<option value="mmr_s_7_1_1_2">Rugoso</option>
-							<option value="mmr_s_7_1_1_3">Esponjoso</option>
+							<option value="mmr_s_22_1_1_1">Liso</option>
+							<option value="mmr_s_22_1_1_2">Rugoso</option>
+							<option value="mmr_s_22_1_1_3">Esponjoso</option>
 							</select>
 						</td>
 						<td>
-							<select id="mmr_s_7_1_2" name="mmr_s_7_1_2" class="form-control">
+							<select id="mmr_s_22_1_2" name="mmr_s_22_1_2" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-							<option value="mmr_s_7_1_2_1">Dulce</option>
-							<option value="mmr_s_7_1_2_2">Amargo</option>
-							<option value="mmr_s_7_1_2_3">Agridulce</option>
+							<option value="mmr_s_22_1_2_1">Dulce</option>
+							<option value="mmr_s_22_1_2_2">Amargo</option>
+							<option value="mmr_s_22_1_2_3">Agridulce</option>
 							</select>
 						</td>
 					</tr>
 					<tr>
 						<th>Fresa</th>
 						<td>
-							<select id="mmr_s_7_2_1" name="mmr_s_7_2_1" class="form-control">
+							<select id="mmr_s_22_2_1" name="mmr_s_22_2_1" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-							<option value="mmr_s_7_2_1_1">Liso</option>
-							<option value="mmr_s_7_2_1_2">Rugoso</option>
-							<option value="mmr_s_7_2_1_3">Esponjoso</option>
+							<option value="mmr_s_22_2_1_1">Liso</option>
+							<option value="mmr_s_22_2_1_2">Rugoso</option>
+							<option value="mmr_s_22_2_1_3">Esponjoso</option>
 							</select>
 						</td>
 						<td>
-							<select id="mmr_s_7_2_2" name="mmr_s_7_2_2" class="form-control">
+							<select id="mmr_s_22_2_2" name="mmr_s_22_2_2" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-							<option value="mmr_s_7_2_2_1">Dulce</option>
-							<option value="mmr_s_7_2_2_2">Amargo</option>
-							<option value="mmr_s_7_2_2_3">Agridulce</option>
+							<option value="mmr_s_22_2_2_1">Dulce</option>
+							<option value="mmr_s_22_2_2_2">Amargo</option>
+							<option value="mmr_s_22_2_2_3">Agridulce</option>
 							</select>
 						</td>
 					</tr>
 					<tr>
 						<th>Chicle</th>
 						<td>
-							<select id="mmr_s_7_3_1" name="mmr_s_7_3_1" class="form-control">
+							<select id="mmr_s_22_3_1" name="mmr_s_22_3_1" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-							<option value="mmr_s_7_3_1_1">Liso</option>
-							<option value="mmr_s_7_3_1_2">Rugoso</option>
-							<option value="mmr_s_7_3_1_3">Esponjoso</option>
+							<option value="mmr_s_22_3_1_1">Liso</option>
+							<option value="mmr_s_22_3_1_2">Rugoso</option>
+							<option value="mmr_s_22_3_1_3">Esponjoso</option>
 							</select>
 						</td>
 						<td>
-							<select id="mmr_s_7_3_2" name="mmr_s_7_3_2" class="form-control">
+							<select id="mmr_s_22_3_2" name="mmr_s_22_3_2" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-							<option value="mmr_s_7_3_2_1">Dulce</option>
-							<option value="mmr_s_7_3_2_2">Amargo</option>
-							<option value="mmr_s_7_3_2_3">Agridulce</option>
+							<option value="mmr_s_22_3_2_1">Dulce</option>
+							<option value="mmr_s_22_3_2_2">Amargo</option>
+							<option value="mmr_s_22_3_2_3">Agridulce</option>
 							</select>
 						</td>
 					</tr>
 					<tr>
 						<th>Coco</th>
 						<td>
-							<select id="mmr_s_7_4_1" name="mmr_s_7_4_1" class="form-control">
+							<select id="mmr_s_22_4_1" name="mmr_s_22_4_1" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-							<option value="mmr_s_7_4_1_1">Liso</option>
-							<option value="mmr_s_7_4_1_2">Rugoso</option>
-							<option value="mmr_s_7_4_1_3">Esponjoso</option>
+							<option value="mmr_s_22_4_1_1">Liso</option>
+							<option value="mmr_s_22_4_1_2">Rugoso</option>
+							<option value="mmr_s_22_4_1_3">Esponjoso</option>
 							</select>
 						</td>
 						<td>
-							<select id="mmr_s_7_4_2" name="mmr_s_7_4_2" class="form-control">
+							<select id="mmr_s_22_4_2" name="mmr_s_22_4_2" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-							<option value="mmr_s_7_4_2_1">Dulce</option>
-							<option value="mmr_s_7_4_2_2">Amargo</option>
-							<option value="mmr_s_7_4_2_3">Agridulce</option>
+							<option value="mmr_s_22_4_2_1">Dulce</option>
+							<option value="mmr_s_22_4_2_2">Amargo</option>
+							<option value="mmr_s_22_4_2_3">Agridulce</option>
 							</select>
 						</td>
 					</tr>
 					<tr>
 						<th>Queso</th>
 						<td>
-							<select id="mmr_s_7_5_1" name="mmr_s_7_5_1" class="form-control">
+							<select id="mmr_s_22_5_1" name="mmr_s_22_5_1" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-							<option value="mmr_s_7_5_1_1">Liso</option>
-							<option value="mmr_s_7_5_1_2">Rugoso</option>
-							<option value="mmr_s_7_5_1_3">Esponjoso</option>
+							<option value="mmr_s_22_5_1_1">Liso</option>
+							<option value="mmr_s_22_5_1_2">Rugoso</option>
+							<option value="mmr_s_22_5_1_3">Esponjoso</option>
 							</select>
 						</td>
 						<td>
-							<select id="mmr_s_7_5_2" name="mmr_s_7_5_2" class="form-control">
+							<select id="mmr_s_22_5_2" name="mmr_s_22_5_2" class="form-control">
 							<option value="">--Seleccione una opci&oacute;n--</option>
-							<option value="mmr_s_7_5_2_1">Dulce</option>
-							<option value="mmr_s_7_5_2_2">Amargo</option>
-							<option value="mmr_s_7_5_2_3">Agridulce</option>
+							<option value="mmr_s_22_5_2_1">Dulce</option>
+							<option value="mmr_s_22_5_2_2">Amargo</option>
+							<option value="mmr_s_22_5_2_3">Agridulce</option>
 							</select>
 						</td>
 					</tr>
@@ -361,53 +361,53 @@
 			<h4>Clasifique los siguientes elementos, segun su favoritismo</h4>
 		</div>
 		<div class="panel-body">
-			<ul id="loc_ul_8" name="loc_ul_8" class="list-unstyled">
+			<ul id="loc_ul_23" name="loc_ul_23" class="list-unstyled">
 				<li>
 					<div class="input-group">
-						<span class="input-group-addon" id="loc_ul_8_1">1</span>
-					  	<span class="form-control" aria-describedby="loc_ul_8_1">Fresa</span>
+						<span class="input-group-addon" id="loc_ul_23_1">1</span>
+					  	<span class="form-control" aria-describedby="loc_ul_23_1">Fresa</span>
 					</div>
 				</li>
 				<li>
 					<div class="input-group">
-						<span class="input-group-addon" id="loc_ul_8_2">2</span>
-					  	<span class="form-control" aria-describedby="loc_ul_8_2">Chicle</span>
+						<span class="input-group-addon" id="loc_ul_23_2">2</span>
+					  	<span class="form-control" aria-describedby="loc_ul_23_2">Chicle</span>
 					</div>
 				</li>
 				<li>
 					<div class="input-group">
-						<span class="input-group-addon" id="loc_ul_8_3">3</span>
-					  	<span class="form-control" aria-describedby="loc_ul_8_3">Arequipe</span>
+						<span class="input-group-addon" id="loc_ul_23_3">3</span>
+					  	<span class="form-control" aria-describedby="loc_ul_23_3">Arequipe</span>
 					</div>
 				</li>
 				<li>
 					<div class="input-group">
-						<span class="input-group-addon" id="loc_ul_8_4">4</span>
-					  	<span class="form-control" aria-describedby="loc_ul_8_4">Queso</span>
+						<span class="input-group-addon" id="loc_ul_23_4">4</span>
+					  	<span class="form-control" aria-describedby="loc_ul_23_4">Queso</span>
 					</div>
 				</li>
 				<li>
 					<div class="input-group">
-						<span class="input-group-addon" id="loc_ul_8_5">5</span>
-					  	<span class="form-control" aria-describedby="loc_ul_8_5">Feijoa</span>
+						<span class="input-group-addon" id="loc_ul_23_5">5</span>
+					  	<span class="form-control" aria-describedby="loc_ul_23_5">Feijoa</span>
 					</div>
 				</li>
 				<li>
 					<div class="input-group">
-						<span class="input-group-addon" id="loc_ul_8_6">6</span>
-					  	<span class="form-control" aria-describedby="loc_ul_8_6">Mani</span>
+						<span class="input-group-addon" id="loc_ul_23_6">6</span>
+					  	<span class="form-control" aria-describedby="loc_ul_23_6">Mani</span>
 					</div>
 				</li>
 				<li>
 					<div class="input-group">
-						<span class="input-group-addon" id="loc_ul_8_7">7</span>
-					  	<span class="form-control" aria-describedby="loc_ul_8_7">Limon</span>
+						<span class="input-group-addon" id="loc_ul_23_7">7</span>
+					  	<span class="form-control" aria-describedby="loc_ul_23_7">Limon</span>
 					</div>
 				</li>
 				<li>
 					<div class="input-group">
-						<span class="input-group-addon" id="loc_ul_8_8">8</span>
-					  	<span class="form-control" aria-describedby="loc_ul_8_8">Coco</span>
+						<span class="input-group-addon" id="loc_ul_23_8">8</span>
+					  	<span class="form-control" aria-describedby="loc_ul_23_8">Coco</span>
 					</div>
 				</li>
 			</ul>
@@ -415,11 +415,11 @@
 	</div>
 </div>
 <div class="form-group">
-	<div id="panel_eru_rb_9" class="panel panel-primary">
-		<div id="panel_head_eru_rb_9" class="panel-heading">
+	<div id="panel_eru_rb_24" class="panel panel-primary">
+		<div id="panel_head_eru_rb_24" class="panel-heading">
 			<h4>¿Que tan probable es que recomiende el helado de fresa?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div id="panel_body_eru_rb_9" class="panel-body">						
+		<div id="panel_body_eru_rb_24" class="panel-body">						
 			<div class="table-responsive">
 				<table class="table table-striped table-hover ">
 					<tr>
@@ -439,17 +439,17 @@
 					</tr>
 					<tr>
 						<th class="th-center" class="form-control">Nada Probable</th>
-						<td class="td-center"><input id="eru_rb_9_0" name="eru_rb_9" type="radio" value="eru_rb_9_0" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_1" name="eru_rb_9" type="radio" value="eru_rb_9_1" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_2" name="eru_rb_9" type="radio" value="eru_rb_9_2" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_3" name="eru_rb_9" type="radio" value="eru_rb_9_3" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_4" name="eru_rb_9" type="radio" value="eru_rb_9_4" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_5" name="eru_rb_9" type="radio" value="eru_rb_9_5" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_6" name="eru_rb_9" type="radio" value="eru_rb_9_6" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_7" name="eru_rb_9" type="radio" value="eru_rb_9_7" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_8" name="eru_rb_9" type="radio" value="eru_rb_9_8" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_9" name="eru_rb_9" type="radio" value="eru_rb_9_9" class="form-control"></td>
-						<td class="td-center"><input id="eru_rb_9_10" name="eru_rb_9" type="radio" value="eru_rb_9_10" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_24_0" name="eru_rb_24" type="radio" value="eru_rb_24_0" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_24_1" name="eru_rb_24" type="radio" value="eru_rb_24_1" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_24_2" name="eru_rb_24" type="radio" value="eru_rb_24_2" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_24_3" name="eru_rb_24" type="radio" value="eru_rb_24_3" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_24_4" name="eru_rb_24" type="radio" value="eru_rb_24_4" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_24_5" name="eru_rb_24" type="radio" value="eru_rb_24_5" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_24_6" name="eru_rb_24" type="radio" value="eru_rb_24_6" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_24_7" name="eru_rb_24" type="radio" value="eru_rb_24_7" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_24_8" name="eru_rb_24" type="radio" value="eru_rb_24_8" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_24_9" name="eru_rb_24" type="radio" value="eru_rb_24_9" class="form-control"></td>
+						<td class="td-center"><input id="eru_rb_24_10" name="eru_rb_24" type="radio" value="eru_rb_24_10" class="form-control"></td>
 						<th class="th-center" class="form-control">Muy Probable</th>
 					</tr>
 				</table>
@@ -458,58 +458,58 @@
 	</div>
 </div>
 <div class="form-group">
-	<div id="panel_psu_t_10" class="panel panel-primary">
-		<div id="panel_head_psu_t_10" class="panel-heading">
+	<div id="panel_psu_t_25" class="panel panel-primary">
+		<div id="panel_head_psu_t_25" class="panel-heading">
 			<h4>¿Cual es su marca de helado favorita?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div id="panel_body_psu_t_10" class="panel-body">
-			<input id="psu_t_10" name="psu_t_10" type="text" class="form-control" placeholder="Escriba su respuesta...">
+		<div id="panel_body_psu_t_25" class="panel-body">
+			<input id="psu_t_25" name="psu_t_25" type="text" class="form-control" placeholder="Escriba su respuesta...">
 		</div>
 	</div>
 </div>
 <div class="form-group">
-	<div id="panel_psm_t_11" class="panel panel-primary">
-		<div id="panel_head_psm_t_11" class="panel-heading">
+	<div id="panel_psm_t_26" class="panel panel-primary">
+		<div id="panel_head_psm_t_26" class="panel-heading">
 			<h4>¿Cuales son sus tres marcas de helado?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div id="panel_body_psm_t_11" class="panel-body">
+		<div id="panel_body_psm_t_26" class="panel-body">
 			<div class="input-group">
 				<span class="input-group-addon">1</span>
-				<input id="psm_t_11_1" name="psm_t_11_1" type="text" class="form-control" placeholder="Escriba su respuesta...">
+				<input id="psm_t_26_1" name="psm_t_26_1" type="text" class="form-control" placeholder="Escriba su respuesta...">
 			</div>
 			<div class="input-group">
 				<span class="input-group-addon">2</span>
-				<input id="psm_t_11_2" name="psm_t_11_2" type="text" class="form-control" placeholder="Escriba su respuesta...">
+				<input id="psm_t_26_2" name="psm_t_26_2" type="text" class="form-control" placeholder="Escriba su respuesta...">
 			</div>
 			<div class="input-group">
 				<span class="input-group-addon">3</span>
-				<input id="psm_t_11_3" name="psm_t_11_3" type="text" class="form-control" placeholder="Escriba su respuesta...">
+				<input id="psm_t_26_3" name="psm_t_26_3" type="text" class="form-control" placeholder="Escriba su respuesta...">
 			</div>
 		</div>
 	</div>
 </div>
 <div class="form-group">
-	<div id="panel_psc_ta_12" class="panel panel-primary">
-		<div id="panel_head_psc_ta_12" class="panel-heading">
+	<div id="panel_psc_ta_27" class="panel panel-primary">
+		<div id="panel_head_psc_ta_27" class="panel-heading">
 			<h4>¿Que es lo que mas le gusta de su helado favorito?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div id="panel_body_psc_ta_12" class="panel-body">
-			<textarea name="psc_ta_12" id="psc_ta_12" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
+		<div id="panel_body_psc_ta_27" class="panel-body">
+			<textarea name="psc_ta_27" id="psc_ta_27" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
 		</div>
 	</div>
 </div>
 <div class="form-group">
-	<div id="panel_pfh_s_13" class="panel panel-primary">
-		<div id="panel_head_pfh_s_13" class="panel-heading">
+	<div id="panel_pfh_s_28" class="panel panel-primary">
+		<div id="panel_head_pfh_s_28" class="panel-heading">
 			<h4>¿Cuando fue el ultimo dia y hora en comer su helado?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div id="panel_body_pfh_s_13" class="panel-body">
-			<label for="pfh_s_date_13">Fecha:</label>
-			<input id="pfh_s_date_13" name="pfh_s_date_13" type="text" class="form-control" placeholder="Ingrese la fecha...">
-			<label for="pfh_s_hour_13">Hora:</label>
+		<div id="panel_body_pfh_s_28" class="panel-body">
+			<label for="pfh_s_date_28">Fecha:</label>
+			<input id="pfh_s_date_28" name="pfh_s_date_28" type="text" class="form-control" placeholder="Ingrese la fecha...">
+			<label for="pfh_s_hour_28">Hora:</label>
 			<div class="row">
 				<div class="col col-sm-5">					
-					<select id="pfh_s_hour_13" name="pfh_s_hour_13" class="form-control">
+					<select id="pfh_s_hour_28" name="pfh_s_hour_28" class="form-control">
 						<option value="">--Seleccione una opci&oacute;n</option>
 						<?php 
 							$cero = "0";
@@ -526,7 +526,7 @@
 				</div>
 				<div class="col col-sm-2 td-center" >:</div>
 				<div class="col col-sm-5">
-					<select id="pfh_s_minute_13" name="pfh_s_minute_13" class="form-control">
+					<select id="pfh_s_minute_28" name="pfh_s_minute_28" class="form-control">
 						<option value="">--Seleccione una opci&oacute;n</option>
 						<?php 
 							$cero = "0";
@@ -545,26 +545,26 @@
 	</div>
 </div>
 <div class="form-group">
-	<div id="panel_psf_s_14" class="panel panel-primary">
-		<div id="panel_head_psf_s_14" class="panel-heading">
+	<div id="panel_psf_s_29" class="panel panel-primary">
+		<div id="panel_head_psf_s_29" class="panel-heading">
 			<h4>¿Cuando fue el ultimo dia en comer su helado?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div id="panel_body_psf_s_14" class="panel-body">
-			<label for="psf_s_date_14">Fecha:</label>
-			<input id="psf_s_date_14" name="psf_s_date_14" type="text" class="form-control" placeholder="Ingrese la fecha...">
+		<div id="panel_body_psf_s_29" class="panel-body">
+			<label for="psf_s_date_29">Fecha:</label>
+			<input id="psf_s_date_29" name="psf_s_date_29" type="text" class="form-control" placeholder="Ingrese la fecha...">
 		</div>
 	</div>
 </div>
 <div class="form-group">
-	<div id="panel_psh_s_15" class="panel panel-primary">
-		<div id="panel_head_psh_s_15" class="panel-heading">
+	<div id="panel_psh_s_30" class="panel panel-primary">
+		<div id="panel_head_psh_s_30" class="panel-heading">
 			<h4>¿Cual es su hora favorita del dia para comer un helado?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div id="panel_body_psh_s_15" class="panel-body">
+		<div id="panel_body_psh_s_30" class="panel-body">
 			<label >Hora:</label>
 			<div class="row">
 				<div class="col col-sm-5">						
-					<select id="psh_s_hour_15" name="psh_s_hour_15" class="form-control">
+					<select id="psh_s_hour_30" name="psh_s_hour_30" class="form-control">
 						<option value="">--Seleccione una opci&oacute;n</option>
 						<?php 
 							$cero = "0";
@@ -581,7 +581,7 @@
 				</div>
 				<div class="col col-sm-2 td-center" >:</div>
 				<div class="col col-sm-5">
-					<select id="psh_s_minute_15" name="psh_s_minute_15" class="form-control">
+					<select id="psh_s_minute_30" name="psh_s_minute_30" class="form-control">
 						<option value="">--Seleccione una opci&oacute;n</option>
 						<?php 
 							$cero = "0";

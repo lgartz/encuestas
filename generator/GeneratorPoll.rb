@@ -7,14 +7,13 @@ def readPollFileXml ( pathFile )
   # Se realiza la lectura del documento XML base para realizar las encuestas
   xml = REXML::Document.new(File.open(pathFile))
   # Se realiza la lectura de cada una las encuestas
+  sql = ""
   xml.root.each_element("poll") do | pollChild |
     title = pollChild.attributes["title"].to_s
     name = pollChild.attributes["name"].to_s
     namePage = pollChild.attributes["namePage"].to_s
     namePhp = namePage+"_process"
-    dbname = pollChild.attributes["dbname"].to_s
     body = ""
-    sql = ""
     listLocUlId = []
     listDatesId = []
     hashValidate = Hash.new
@@ -37,11 +36,11 @@ def readPollFileXml ( pathFile )
     createFile("../encuestas/javascript/",".js",namePage,erbJavaScript)
     erbHtml = getTemplate("../encuestas/templates/poll.template",binding)
     createFile("../encuestas/",".php",namePage,erbHtml)
-    erbSQL = getTemplate("../encuestas/templates/sql.template",binding)
-    createFile("../encuestas/sql/",".sql",namePage,erbSQL)    
     erbPhp = getTemplate("../encuestas/templates/process.template",binding)
     createFile("../encuestas/",".php",namePhp,erbPhp)
   end
+    erbSQL = getTemplate("../encuestas/templates/sql.template",binding)
+    createFile("../encuestas/sql/",".sql","encuestas",erbSQL)
 end
 
 # Metodo encargado de retornar el codigo sql para cada una de las preguntas generadas
