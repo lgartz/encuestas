@@ -600,6 +600,7 @@
 	</div>
 </div>
 
+		<input id="encuestado" name="encuestado" type="text" class="form-control" value="<?php $encuestado = $_GET["encuestado"]; echo "".$encuestado; ?>" style="display: none;">
 		<div class="form-group">
 			<button id="enviar" type="submit" class="btn btn-primary">Enviar</button>
 			<button id="cancelar" type="reset" class="btn btn-primary">Cancelar</button>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Encuestas</title>
+    <title>Landing Page - Start Bootstrap Theme</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -48,33 +48,15 @@
     <a name="about"></a>
     <div class="intro-header">
         <div class="container">
-            <form action="encuestas.php">
             <div class="intro-message">
-                <h1>Participa de nuestra(s) encuesta(s)</h1>
-                <h3>Identificate</h3>
+                <h1>Muchas gracias por su respuesta</h1>
                 <hr class="intro-divider"> 
-                <div class="row">                   
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4">
-                        <div class="form-group ">
-                            <label class="control-label" for="inputGroupSuccess1">Ingresa</label>
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email..">
-                            </div><br/>
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-keyboard-o"></i></span>
-                                <input type="password" class="form-control" id="pass" name="pass" placeholder="Ingrese su password..">
-                            </div>
-                        </div>
-                    </div>                    
-                    <div class="col-md-4"></div>
-                </div>
                 <div class="row">
-                    <button id="enviar" type="submit" class="btn btn-info">Enviar</button>
+                    <form action="index.php" methos="post">
+                        <button type="submit" class="btn btn-primary">Salir</button>
+                    </form>
                 </div>
             </div>
-            </form>
         </div>
         <!-- /.container -->
     </div>
@@ -142,10 +124,9 @@
         </div>
     </footer>
     <!-- jQuery -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script type="text/javascript" src="javascript/index.js"></script>
+    <script src="javascript/jquery-2.1.3.js.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="javascript/bootstrap.min.js"></script>
 </body>
+
 </html>

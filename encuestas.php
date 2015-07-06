@@ -16,6 +16,31 @@
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
 <body>
+     <?php
+        $email = $_GET["email"];
+        $pass = $_GET["pass"];
+        include("conexion.php");
+        $conn = connect_with_mysql("localhost","root","","encuestas");
+        $sql = "SELECT encuestado_id,encuestado_nombres,encuestado_apellidos FROM encuestado WHERE encuestado_email = '".$email."'";
+        $result = mysql_query($sql);
+        $nombre="";
+        if (!$result) {
+             $mensaje  = 'Consulta no válida: ' . mysql_error() . "\n";
+             $mensaje .= 'Consulta completa: ' . $sql;
+            die($mensaje);
+            close_connect_with_mysql($conn);
+            header('Location: fail.php');
+        }else{
+            if (mysql_num_rows($result)==0) {
+                close_connect_with_mysql($conn);
+                header('Location: fail.php');
+            }
+        }
+        while ($fila = mysql_fetch_array($result, MYSQL_NUM)) {
+            $nombre = "".$fila[1]." ".$fila[2];
+            break;
+        }
+     ?>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -27,7 +52,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#">Encuestas</a>
+                <a class="navbar-brand topnav" href="">Encuestas</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href=""><?php echo "".$nombre; ?></a>
+                    </li>
+                </ul>
             </div>
         </div>
         <!-- /.container -->
@@ -42,44 +74,39 @@
                     <th class="btn-primary">Descripci&oacute;n</th>
                     <th class="btn-primary"></th>
                 </tr>
-                <?php
-                    $email = $_GET["email"];
-                    $pass = $_GET["pass"];
-                    include("conexion.php");
-                    $conn = connect_with_mysql("localhost","root","","encuestas");
-                    $sql = "SELECT encuesta.encuesta_nombre, encuesta.encuesta_descripcion, encuesta.encuesta_page, encuestado.encuestado_nombres, encuestado.encuestado_apellidos, encuestado.encuestado_email, encuestado.encuestado_password FROM encuesta, encuestado, encuestado_has_encuesta WHERE encuesta.encuesta_id = encuestado_has_encuesta.encuesta_id AND encuestado_has_encuesta.encuestado_id = encuestado.encuestado_id AND encuestado.encuestado_email = '".$email."' AND encuestado.encuestado_password = '".$pass."'";
-                    $result = mysql_query($sql);
-                    if (!$result) {
-                        close_connect_with_mysql($conn);
-                        header('Location: fail.php');
-                    }else{
-                        $i=1;
-                        while ($fila = mysql_fetch_assoc($result)) {
-                            echo "<tr>";                            
-                            echo "<td>";
-                            echo "".$i;
-                            echo "</td>";
-                            echo "<td>";
-                            echo $fila['encuesta_nombre'];
-                            echo "</td>";
-                            echo "<td>";
-                            echo $fila['encuesta_descripcion'];
-                            echo "</td>";
-                            echo "<td>";
-                            echo "<td align=center><a href='".$fila['encuesta_page'];."'>Contestar</a></td>";
-                            echo "</td>";
-                            echo "</tr>";
-                            $i++;
-                        }
-                    }
-                    close_connect_with_mysql($conn);
-                ?>
-                <tr>
-                    <td>1</td>
-                    <td>Prueba</td>
-                    <td>sfsdfdsfsdfsdfdsfsdfsfdf</td>
-                    <td align=center><a href="#">Contestar</a></td>
-                </tr>
+    <?php
+        $sql = "SELECT encuesta.encuesta_nombre, encuesta.encuesta_descripcion, encuesta.encuesta_page, encuestado.encuestado_id ,encuestado.encuestado_nombres, encuestado.encuestado_apellidos, encuestado.encuestado_email, encuestado.encuestado_password FROM encuesta, encuestado, encuestado_has_encuesta WHERE encuesta.encuesta_id = encuestado_has_encuesta.encuesta_id AND encuestado_has_encuesta.encuestado_id = encuestado.encuestado_id AND encuestado.encuestado_email = '".$email."' AND encuestado.encuestado_password = '".$pass."'";
+        $result = mysql_query($sql);
+         if (!$result) {
+             $mensaje  = 'Consulta no válida: ' . mysql_error() . "\n";
+             $mensaje .= 'Consulta completa: ' . $sql;
+            die($mensaje);
+            close_connect_with_mysql($conn);
+            header('Location: fail.php');
+        }else{
+              if (mysql_num_rows($result)==0) {
+                  close_connect_with_mysql($conn);
+                  header('Location: fail.php');  
+              }
+         }
+        $i=1;
+        while ($fila = mysql_fetch_array($result, MYSQL_NUM)) {
+            echo "<tr>";                            
+            echo "<td>";
+            echo "".$i;
+            echo "</td>";
+            echo "<td>";
+            echo $fila[0];
+            echo "</td>";
+            echo "<td>";
+            echo $fila[1];
+            echo "</td>";
+            echo "<td align=center><a href='".$fila[2]."?encuestado=".$fila[3]."'>Contestar</a></td>";
+            echo "</tr>";
+            $i++;
+        }            
+        close_connect_with_mysql($conn);
+    ?>
             </table>
 		</div>	
     </div>

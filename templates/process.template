@@ -3,36 +3,38 @@
 	include("conexion.php");
 	// Crear connection
 	$conn = connect_with_mysql("localhost","root","","encuestas");
+	$encuestado = $_GET["encuestado"];
 	<%hashNames.each{|key,list|%><% if key == "smu_rb" or key == "smu_s"%><%list.each{|name|%>
 	$<%=name%> = $_GET["<%=name%>"];
-	getSqlInsertSmu("1",$<%=name%>);<%}%><%elsif key == "smr_cb" or key == "smr_sm"%><%list.each{|name|%>
+	getSqlInsertSmu($encuestado,$<%=name%>);<%}%><%elsif key == "smr_cb" or key == "smr_sm"%><%list.each{|name|%>
 	$<%=name%> = $_GET["<%=name%>"];
-	getSqlInsertSmr("1", $<%=name%>);<%}%><%elsif key == "eru_rb"%><%list.each{|name|%>
+	getSqlInsertSmr($encuestado, $<%=name%>);<%}%><%elsif key == "eru_rb"%><%list.each{|name|%>
 	$<%=name%> = $_GET["<%=name%>"];
-	getSqlInsertEru("1",$<%=name%>);<%}%><%elsif key == "psu_t"%><%list.each{|name|%>
-	$<%=name%> = $_GET["<%=name%>"];
-	$id_<%=name%> = "<%=name%>";
-	getSqlInsertPsu("1",$id_<%=name%>,$<%=name%>);<%}%><%elsif key == "psm_t"%><%list.each{|name|%>
+	getSqlInsertEru($encuestado,$<%=name%>);<%}%><%elsif key == "psu_t"%><%list.each{|name|%>
 	$<%=name%> = $_GET["<%=name%>"];
 	$id_<%=name%> = "<%=name%>";
-	getSqlInsertPsm ("1", $id_<%=name%>, $<%=name%>);<%}%><%elsif key == "psc_ta"%><%list.each{|name|%>
+	getSqlInsertPsu($encuestado,$id_<%=name%>,$<%=name%>);<%}%><%elsif key == "psm_t"%><%list.each{|name|%>
 	$<%=name%> = $_GET["<%=name%>"];
 	$id_<%=name%> = "<%=name%>";
-	getSqlInsertPsu("1",$id_<%=name%>,$<%=name%>);<%}%><%elsif key == "pfh_s"%><%list.each{|name|%>
-	$id_<%=name%> = "<%=name%>";
-	getSqlInsertPfh ("1", $id_<%=name%>);<%}%><%elsif key == "psf_s"%><%list.each{|name|%>
-	$id_<%=name%> = "<%=name%>";
-	getSqlInsertPsf ("1", $id_<%=name%>);<%}%><%elsif key == "psh_s"%><%list.each{|name|%>
-	$id_<%=name%> = "<%=name%>";
-	getSqlInsertPsh ("1", $id_<%=name%>);<%}%><%elsif key == "mmr_rb"%><%list.each{|name|%>
+	getSqlInsertPsm ($encuestado, $id_<%=name%>, $<%=name%>);<%}%><%elsif key == "psc_ta"%><%list.each{|name|%>
 	$<%=name%> = $_GET["<%=name%>"];
-	getSqlInsertMmr ("1", $<%=name%>);<%}%><%elsif key == "mmr_cb"%><%list.each{|name|%>
+	$id_<%=name%> = "<%=name%>";
+	getSqlInsertPsu($encuestado,$id_<%=name%>,$<%=name%>);<%}%><%elsif key == "pfh_s"%><%list.each{|name|%>
+	$id_<%=name%> = "<%=name%>";
+	getSqlInsertPfh ($encuestado, $id_<%=name%>);<%}%><%elsif key == "psf_s"%><%list.each{|name|%>
+	$id_<%=name%> = "<%=name%>";
+	getSqlInsertPsf ($encuestado, $id_<%=name%>);<%}%><%elsif key == "psh_s"%><%list.each{|name|%>
+	$id_<%=name%> = "<%=name%>";
+	getSqlInsertPsh ($encuestado, $id_<%=name%>);<%}%><%elsif key == "mmr_rb"%><%list.each{|name|%>
 	$<%=name%> = $_GET["<%=name%>"];
-	getSqlInsertMmrCb("1", $<%=name%>);<%}%><%elsif key == "mmr_s"%><%list.each{|name|%>
+	getSqlInsertMmr ($encuestado, $<%=name%>);<%}%><%elsif key == "mmr_cb"%><%list.each{|name|%>
 	$<%=name%> = $_GET["<%=name%>"];
-	getSqlInsertMmrS("1", $<%=name%>);<%}%><%end%><%}%>	
+	getSqlInsertMmrCb($encuestado, $<%=name%>);<%}%><%elsif key == "mmr_s"%><%list.each{|name|%>
+	$<%=name%> = $_GET["<%=name%>"];
+	getSqlInsertMmrS($encuestado, $<%=name%>);<%}%><%end%><%}%>	
 	// Cerrar Conexion
 	close_connect_with_mysql($conn);
+	header('Location: sucess.php');
 	
 	function getSqlInsertSmu($encuestado, $opcion){
 		$sql = "INSERT INTO ressmu (ressmu_encuestado_id, ressmu_opsmurb_id) VALUES ('".$encuestado."','".$opcion."');";
@@ -113,4 +115,6 @@
 			return false;	
 		}
 	}
+	
+	
 ?>

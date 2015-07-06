@@ -563,5 +563,5 @@ INSERT INTO pregunta (pregunta_id, pregunta_descripcion, pregunta_tipo) VALUES (
 INSERT INTO pregunta (pregunta_id, pregunta_descripcion, pregunta_tipo) VALUES ('psh_s_30','¿Cual es su hora favorita del dia para comer un helado?','psh_s');
 
 INSERT INTO encuesta(encuesta_id, encuesta_nombre, encuesta_descripcion, encuesta_page) VALUES ('1','Prueba','Esto es para verificar la prueba','prueba.php');
-INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password) VALUES ('1','Luis Arturo','Zarate Ayala','luisarturo1989@gmail.com','12345');
-INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('1','1');
+INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password) VALUES ('7','Luis Arturo','Zarate Ayala','luisarturo1989@gmail.com','12345');
+INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('7','1');

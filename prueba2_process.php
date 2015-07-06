@@ -3,74 +3,76 @@
 	include("conexion.php");
 	// Crear connection
 	$conn = connect_with_mysql("localhost","root","","encuestas");
+	$encuestado = $_GET["encuestado"];
 	
 	$smu_rb_16 = $_GET["smu_rb_16"];
-	getSqlInsertSmu("1",$smu_rb_16);
+	getSqlInsertSmu($encuestado,$smu_rb_16);
 	$smu_s_17 = $_GET["smu_s_17"];
-	getSqlInsertSmu("1",$smu_s_17);
+	getSqlInsertSmu($encuestado,$smu_s_17);
 	$smr_cb_18 = $_GET["smr_cb_18"];
-	getSqlInsertSmr("1", $smr_cb_18);
+	getSqlInsertSmr($encuestado, $smr_cb_18);
 	$smr_sm_19 = $_GET["smr_sm_19"];
-	getSqlInsertSmr("1", $smr_sm_19);
+	getSqlInsertSmr($encuestado, $smr_sm_19);
 	$mmr_rb_20_1 = $_GET["mmr_rb_20_1"];
-	getSqlInsertMmr ("1", $mmr_rb_20_1);
+	getSqlInsertMmr ($encuestado, $mmr_rb_20_1);
 	$mmr_rb_20_2 = $_GET["mmr_rb_20_2"];
-	getSqlInsertMmr ("1", $mmr_rb_20_2);
+	getSqlInsertMmr ($encuestado, $mmr_rb_20_2);
 	$mmr_rb_20_3 = $_GET["mmr_rb_20_3"];
-	getSqlInsertMmr ("1", $mmr_rb_20_3);
+	getSqlInsertMmr ($encuestado, $mmr_rb_20_3);
 	$mmr_rb_20_4 = $_GET["mmr_rb_20_4"];
-	getSqlInsertMmr ("1", $mmr_rb_20_4);
+	getSqlInsertMmr ($encuestado, $mmr_rb_20_4);
 	$mmr_cb_21_1 = $_GET["mmr_cb_21_1"];
-	getSqlInsertMmrCb("1", $mmr_cb_21_1);
+	getSqlInsertMmrCb($encuestado, $mmr_cb_21_1);
 	$mmr_cb_21_2 = $_GET["mmr_cb_21_2"];
-	getSqlInsertMmrCb("1", $mmr_cb_21_2);
+	getSqlInsertMmrCb($encuestado, $mmr_cb_21_2);
 	$mmr_cb_21_3 = $_GET["mmr_cb_21_3"];
-	getSqlInsertMmrCb("1", $mmr_cb_21_3);
+	getSqlInsertMmrCb($encuestado, $mmr_cb_21_3);
 	$mmr_s_22_1_1 = $_GET["mmr_s_22_1_1"];
-	getSqlInsertMmrS("1", $mmr_s_22_1_1);
+	getSqlInsertMmrS($encuestado, $mmr_s_22_1_1);
 	$mmr_s_22_1_2 = $_GET["mmr_s_22_1_2"];
-	getSqlInsertMmrS("1", $mmr_s_22_1_2);
+	getSqlInsertMmrS($encuestado, $mmr_s_22_1_2);
 	$mmr_s_22_2_1 = $_GET["mmr_s_22_2_1"];
-	getSqlInsertMmrS("1", $mmr_s_22_2_1);
+	getSqlInsertMmrS($encuestado, $mmr_s_22_2_1);
 	$mmr_s_22_2_2 = $_GET["mmr_s_22_2_2"];
-	getSqlInsertMmrS("1", $mmr_s_22_2_2);
+	getSqlInsertMmrS($encuestado, $mmr_s_22_2_2);
 	$mmr_s_22_3_1 = $_GET["mmr_s_22_3_1"];
-	getSqlInsertMmrS("1", $mmr_s_22_3_1);
+	getSqlInsertMmrS($encuestado, $mmr_s_22_3_1);
 	$mmr_s_22_3_2 = $_GET["mmr_s_22_3_2"];
-	getSqlInsertMmrS("1", $mmr_s_22_3_2);
+	getSqlInsertMmrS($encuestado, $mmr_s_22_3_2);
 	$mmr_s_22_4_1 = $_GET["mmr_s_22_4_1"];
-	getSqlInsertMmrS("1", $mmr_s_22_4_1);
+	getSqlInsertMmrS($encuestado, $mmr_s_22_4_1);
 	$mmr_s_22_4_2 = $_GET["mmr_s_22_4_2"];
-	getSqlInsertMmrS("1", $mmr_s_22_4_2);
+	getSqlInsertMmrS($encuestado, $mmr_s_22_4_2);
 	$mmr_s_22_5_1 = $_GET["mmr_s_22_5_1"];
-	getSqlInsertMmrS("1", $mmr_s_22_5_1);
+	getSqlInsertMmrS($encuestado, $mmr_s_22_5_1);
 	$mmr_s_22_5_2 = $_GET["mmr_s_22_5_2"];
-	getSqlInsertMmrS("1", $mmr_s_22_5_2);
+	getSqlInsertMmrS($encuestado, $mmr_s_22_5_2);
 	$eru_rb_24 = $_GET["eru_rb_24"];
-	getSqlInsertEru("1",$eru_rb_24);
+	getSqlInsertEru($encuestado,$eru_rb_24);
 	$psu_t_25 = $_GET["psu_t_25"];
 	$id_psu_t_25 = "psu_t_25";
-	getSqlInsertPsu("1",$id_psu_t_25,$psu_t_25);
+	getSqlInsertPsu($encuestado,$id_psu_t_25,$psu_t_25);
 	$psm_t_26_1 = $_GET["psm_t_26_1"];
 	$id_psm_t_26_1 = "psm_t_26_1";
-	getSqlInsertPsm ("1", $id_psm_t_26_1, $psm_t_26_1);
+	getSqlInsertPsm ($encuestado, $id_psm_t_26_1, $psm_t_26_1);
 	$psm_t_26_2 = $_GET["psm_t_26_2"];
 	$id_psm_t_26_2 = "psm_t_26_2";
-	getSqlInsertPsm ("1", $id_psm_t_26_2, $psm_t_26_2);
+	getSqlInsertPsm ($encuestado, $id_psm_t_26_2, $psm_t_26_2);
 	$psm_t_26_3 = $_GET["psm_t_26_3"];
 	$id_psm_t_26_3 = "psm_t_26_3";
-	getSqlInsertPsm ("1", $id_psm_t_26_3, $psm_t_26_3);
+	getSqlInsertPsm ($encuestado, $id_psm_t_26_3, $psm_t_26_3);
 	$psc_ta_27 = $_GET["psc_ta_27"];
 	$id_psc_ta_27 = "psc_ta_27";
-	getSqlInsertPsu("1",$id_psc_ta_27,$psc_ta_27);
+	getSqlInsertPsu($encuestado,$id_psc_ta_27,$psc_ta_27);
 	$id_pfh_s_28 = "pfh_s_28";
-	getSqlInsertPfh ("1", $id_pfh_s_28);
+	getSqlInsertPfh ($encuestado, $id_pfh_s_28);
 	$id_psf_s_29 = "psf_s_29";
-	getSqlInsertPsf ("1", $id_psf_s_29);
+	getSqlInsertPsf ($encuestado, $id_psf_s_29);
 	$id_psh_s_30 = "psh_s_30";
-	getSqlInsertPsh ("1", $id_psh_s_30);	
+	getSqlInsertPsh ($encuestado, $id_psh_s_30);	
 	// Cerrar Conexion
 	close_connect_with_mysql($conn);
+	header('Location: sucess.php');
 	
 	function getSqlInsertSmu($encuestado, $opcion){
 		$sql = "INSERT INTO ressmu (ressmu_encuestado_id, ressmu_opsmurb_id) VALUES ('".$encuestado."','".$opcion."');";
@@ -151,4 +153,6 @@
 			return false;	
 		}
 	}
+	
+	
 ?>
