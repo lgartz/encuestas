@@ -3,7 +3,9 @@
 	include("conexion.php");
 	// Crear connection
 	$conn = connect_with_mysql("localhost","root","","encuestas");
-	$encuestado = $_GET["encuestado"];
+	session_start();
+	$encuestado = $_SESSION['idEncuestado'];
+	$encuesta = $_SESSION['idEncuesta'];	
 	
 	$smu_rb_1 = $_GET["smu_rb_1"];
 	getSqlInsertSmu($encuestado,$smu_rb_1);
@@ -71,6 +73,8 @@
 	$id_psh_s_15 = "psh_s_15";
 	getSqlInsertPsh ($encuestado, $id_psh_s_15);	
 	// Cerrar Conexion
+	$sql = "UPDATE encuestado_has_encuesta SET encuestado_has_encuesta_respuesta = '1' WHERE encuestado_id = '".$encuestado."' AND encuesta_id = '".$encuesta."';";
+	insert($sql);
 	close_connect_with_mysql($conn);
 	header('Location: sucess.php');
 	
@@ -151,7 +155,7 @@
 			return true;
 		}else{
 			return false;	
-		}
+		}		
 	}
 	
 	

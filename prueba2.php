@@ -356,65 +356,6 @@
 	</div>
 </div>
 <div class="form-group">
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h4>Clasifique los siguientes elementos, segun su favoritismo</h4>
-		</div>
-		<div class="panel-body">
-			<ul id="loc_ul_23" name="loc_ul_23" class="list-unstyled">
-				<li>
-					<div class="input-group">
-						<span class="input-group-addon" id="loc_ul_23_1">1</span>
-					  	<span class="form-control" aria-describedby="loc_ul_23_1">Fresa</span>
-					</div>
-				</li>
-				<li>
-					<div class="input-group">
-						<span class="input-group-addon" id="loc_ul_23_2">2</span>
-					  	<span class="form-control" aria-describedby="loc_ul_23_2">Chicle</span>
-					</div>
-				</li>
-				<li>
-					<div class="input-group">
-						<span class="input-group-addon" id="loc_ul_23_3">3</span>
-					  	<span class="form-control" aria-describedby="loc_ul_23_3">Arequipe</span>
-					</div>
-				</li>
-				<li>
-					<div class="input-group">
-						<span class="input-group-addon" id="loc_ul_23_4">4</span>
-					  	<span class="form-control" aria-describedby="loc_ul_23_4">Queso</span>
-					</div>
-				</li>
-				<li>
-					<div class="input-group">
-						<span class="input-group-addon" id="loc_ul_23_5">5</span>
-					  	<span class="form-control" aria-describedby="loc_ul_23_5">Feijoa</span>
-					</div>
-				</li>
-				<li>
-					<div class="input-group">
-						<span class="input-group-addon" id="loc_ul_23_6">6</span>
-					  	<span class="form-control" aria-describedby="loc_ul_23_6">Mani</span>
-					</div>
-				</li>
-				<li>
-					<div class="input-group">
-						<span class="input-group-addon" id="loc_ul_23_7">7</span>
-					  	<span class="form-control" aria-describedby="loc_ul_23_7">Limon</span>
-					</div>
-				</li>
-				<li>
-					<div class="input-group">
-						<span class="input-group-addon" id="loc_ul_23_8">8</span>
-					  	<span class="form-control" aria-describedby="loc_ul_23_8">Coco</span>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
-<div class="form-group">
 	<div id="panel_eru_rb_24" class="panel panel-primary">
 		<div id="panel_head_eru_rb_24" class="panel-heading">
 			<h4>¿Que tan probable es que recomiende el helado de fresa?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
@@ -600,7 +541,6 @@
 	</div>
 </div>
 
-		<input id="encuestado" name="encuestado" type="text" class="form-control" value="<?php $encuestado = $_GET["encuestado"]; echo "".$encuestado; ?>" style="display: none;">
 		<div class="form-group">
 			<button id="enviar" type="submit" class="btn btn-primary">Enviar</button>
 			<button id="cancelar" type="reset" class="btn btn-primary">Cancelar</button>

@@ -8,23 +8,26 @@ def readPollFileXml ( pathFile )
   xml = REXML::Document.new(File.open(pathFile))
   # Se realiza la lectura de cada una las encuestas
   sql = ""
+  idPoll = 1
   xml.root.each_element("poll") do | pollChild |
     title = pollChild.attributes["title"].to_s
     name = pollChild.attributes["name"].to_s
     namePage = pollChild.attributes["namePage"].to_s
+    detail = pollChild.attributes["detail"].to_s
     namePhp = namePage+"_process"
     body = ""
-    listLocUlId = []
     listDatesId = []
+    listQuestionId = []
     hashValidate = Hash.new
     hashNames = Hash.new
     # Se realiza la lectura de cada una las preguntas
     pollChild.each_element("question") do | questionChild |
       type = questionChild.attributes["type"]
       number = questionChild.attributes["number"]
+      listQuestionId.push("#{type}_#{number}")
       required = questionChild.attributes["required"]
       ask = questionChild.elements["ask"].attributes["value"]
-      resultado = getResultElementForm(questionChild,type,number,required,ask,listLocUlId,listDatesId,hashNames)
+      resultado = getResultElementForm(questionChild,type,number,required,ask,listDatesId,hashNames)
       body << "#{resultado}\n"
       resultSQL = getResultSQL(ask,type,number,questionChild)
       sql << "#{resultSQL}\n"
@@ -32,12 +35,15 @@ def readPollFileXml ( pathFile )
         getResultHashElementsRequired(type,number,hashValidate,questionChild)
       end
     end
+    erbSQLPoll = getTemplate("../encuestas/templates/sql_poll.template",binding)
+    sql << erbSQLPoll.to_s
     erbJavaScript = getTemplate("../encuestas/templates/poll_script.template",binding)
     createFile("../encuestas/javascript/",".js",namePage,erbJavaScript)
     erbHtml = getTemplate("../encuestas/templates/poll.template",binding)
     createFile("../encuestas/",".php",namePage,erbHtml)
     erbPhp = getTemplate("../encuestas/templates/process.template",binding)
     createFile("../encuestas/",".php",namePhp,erbPhp)
+    idPoll += 1
   end
     erbSQL = getTemplate("../encuestas/templates/sql.template",binding)
     createFile("../encuestas/sql/",".sql","encuestas",erbSQL)
@@ -60,8 +66,6 @@ def getResultSQL(ask,type,number,questionChild)
     then getSqlMmr(ask,type,number,questionChild)
   when "mmr_s"
     then getSqlMmrs(ask,type,number,questionChild)
-  when "loc_ul"
-    then ""
   when "eru_rb"
     then getSqlAsk(ask,type,number)
   when "psu_t"
@@ -246,7 +250,7 @@ def getContainsKey (hashValidate,type,name)
 end
 
 # Metodo encargado de retornar el codigo html para cada una de las preguntas generadas
-def getResultElementForm(questionChild,type,number,required,ask,listLocUlId,listDatesId,hashNames)
+def getResultElementForm(questionChild,type,number,required,ask,listDatesId,hashNames)
   resultado = case type
   when "smu_rb"
     then getsmu_rb(questionChild,type,number,required,ask,hashNames)
@@ -262,8 +266,6 @@ def getResultElementForm(questionChild,type,number,required,ask,listLocUlId,list
     then getmmr_cb(questionChild,type,number,required,ask,getListOptions(questionChild.elements["rows"],"option"),getListOptions(questionChild.elements["columns"],"option"),hashNames)
   when "mmr_s"
     then getmmr_s(questionChild,type,number,required,ask,getListOptions(questionChild.elements["rows"],"option"),hashNames)
-  when "loc_ul"
-    then getloc_ul(questionChild,listLocUlId,type,number,required,ask,hashNames)
   when "eru_rb"
     then geteru_rb(questionChild,type,number,required,ask,hashNames)
   when "psu_t"
@@ -328,14 +330,6 @@ def getsmr_sm (questionChild,type,number,required,ask,hashNames)
   getContainsKey(hashNames,type,name)
   listOptions = getListOptions(questionChild,"option")
   erbTemplate = getTemplate("../encuestas/templates/smr_sm.template",binding)
-  return erbTemplate.to_s
-end
-
-# Metodo encargado de obtener el resultado del codigo autogenerado a partir de la plantilla de la pregunta loc_ul.template
-def getloc_ul (questionChild, listLocUlId,type,number,required,ask,hashNames)
-  listLocUlId.push("#{type}_#{number}")
-  listOptions = getListOptions(questionChild,"option")
-  erbTemplate = getTemplate("../encuestas/templates/loc_ul.template",binding)
   return erbTemplate.to_s
 end
 

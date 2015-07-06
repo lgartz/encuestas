@@ -1,5 +1,5 @@
 <polls>
-	<poll title="encuesta1" name="Encuesta Helados 1" namePage="prueba">
+	<poll title="encuesta1" name="Encuesta Helados 1" namePage="prueba" detail="Esta es una encuesta de helados 1">
 		<question number="1" type="smu_rb" required="true">
 			<ask value="¿Cual es su sabor de helado favorito?"/>
 			<option value="Fresa" checked="true"/>
@@ -91,17 +91,6 @@
 				</option>
 			</columns>
 		</question>
-		<question number="8" type="loc_ul" required="false">
-			<ask value="Clasifique los siguientes elementos, segun su favoritismo" />
-			<option value="Fresa" />
-			<option value="Chicle" />
-			<option value="Arequipe" />
-			<option value="Queso" />
-			<option value="Feijoa" />
-			<option value="Mani" />
-			<option value="Limon" />
-			<option value="Coco" />
-		</question>
 		<question number="9" type="eru_rb" required="true">
 			<ask value="¿Que tan probable es que recomiende el helado de fresa?" />
 			<range minimum="0" maximum="10" labelminimum="Nada Probable" labelmaximum="Muy Probable"/>
@@ -126,7 +115,7 @@
 			<ask value="¿Cual es su hora favorita del dia para comer un helado?" />
 		</question>
 	</poll>
-	<poll title="encuesta2" name="Encuesta Helados 2" namePage="prueba2">
+	<poll title="encuesta2" name="Encuesta Helados 2" namePage="prueba2" detail="Esta es una encuesta de helados 2">
 		<question number="16" type="smu_rb" required="true">
 			<ask value="¿Cual es su sabor de helado favorito?" />
 			<option value="Fresa" />
@@ -217,17 +206,6 @@
 					<label value="Agridulce" />
 				</option>
 			</columns>
-		</question>
-		<question number="23" type="loc_ul" required="false">
-			<ask value="Clasifique los siguientes elementos, segun su favoritismo" />
-			<option value="Fresa" />
-			<option value="Chicle" />
-			<option value="Arequipe" />
-			<option value="Queso" />
-			<option value="Feijoa" />
-			<option value="Mani" />
-			<option value="Limon" />
-			<option value="Coco" />
 		</question>
 		<question number="24" type="eru_rb" required="true">
 			<ask value="¿Que tan probable es que recomiende el helado de fresa?" />

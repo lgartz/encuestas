@@ -1,0 +1,2 @@
+INSERT INTO encuesta(encuesta_id, encuesta_nombre, encuesta_descripcion, encuesta_page) VALUES ('<%=idPoll%>','<%=name%>','<%=detail%>','<%=namePage%>.php');<%listQuestionId.each{|id|%>
+INSERT INTO encuesta_has_pregunta(pregunta_id, encuesta_id) VALUES ('<%=id%>','<%=idPoll%>');<%}%>

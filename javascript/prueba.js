@@ -1,11 +1,4 @@
 $(function(){
-
-	$("#loc_ul_8").sortable({
-		beforeStop: function( event, ui ) {
-			cambiarNumeros("#loc_ul_8");
-		}
-	});
-	$("#loc_ul_8").disableSelection();
 	
 	$("#pfh_s_date_13").datepicker({
     	showAnim: "drop",
@@ -194,19 +187,6 @@ $(function(){
 	      	$("#panel_head_psh_s_15 h4 small b").addClass("message_error");
 	   	}
 		return resultado;
-	}
-	
-	function cambiarNumeros(id){
-    	$lista =  $( id+" li div span" ).toArray();
-		$num = 1;
-		for (var i = 0; i < $lista.length; i++) {			
-			if ((i%2) == 0){
-				$lista[i].innerHTML = $num;
-				$num = $num+1;
-			};
-		};	
-    };
-    
-    
+	}   
     
 });

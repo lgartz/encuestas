@@ -21,9 +21,10 @@
         $pass = $_GET["pass"];
         include("conexion.php");
         $conn = connect_with_mysql("localhost","root","","encuestas");
-        $sql = "SELECT encuestado_id,encuestado_nombres,encuestado_apellidos FROM encuestado WHERE encuestado_email = '".$email."'";
+        $sql = "SELECT encuestado_id,encuestado_nombres,encuestado_apellidos,encuestado_email,encuestado_password FROM encuestado WHERE encuestado_email = '".$email."' AND encuestado_password = '".$pass."'";
         $result = mysql_query($sql);
         $nombre="";
+        $idEncuestado="";        
         if (!$result) {
              $mensaje  = 'Consulta no válida: ' . mysql_error() . "\n";
              $mensaje .= 'Consulta completa: ' . $sql;
@@ -38,8 +39,13 @@
         }
         while ($fila = mysql_fetch_array($result, MYSQL_NUM)) {
             $nombre = "".$fila[1]." ".$fila[2];
+            $idEncuestado = "".$fila[0];
             break;
         }
+        session_start();
+        $_SESSION['idEncuestado'] = $idEncuestado;
+        $_SESSION['pass'] = $pass;
+        $_SESSION['email'] = $email;
      ?>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
@@ -75,7 +81,7 @@
                     <th class="btn-primary"></th>
                 </tr>
     <?php
-        $sql = "SELECT encuesta.encuesta_nombre, encuesta.encuesta_descripcion, encuesta.encuesta_page, encuestado.encuestado_id ,encuestado.encuestado_nombres, encuestado.encuestado_apellidos, encuestado.encuestado_email, encuestado.encuestado_password FROM encuesta, encuestado, encuestado_has_encuesta WHERE encuesta.encuesta_id = encuestado_has_encuesta.encuesta_id AND encuestado_has_encuesta.encuestado_id = encuestado.encuestado_id AND encuestado.encuestado_email = '".$email."' AND encuestado.encuestado_password = '".$pass."'";
+        $sql = "SELECT encuesta.encuesta_nombre, encuesta.encuesta_descripcion, encuesta.encuesta_page, encuesta.encuesta_id FROM encuesta, encuestado, encuestado_has_encuesta WHERE encuesta.encuesta_id = encuestado_has_encuesta.encuesta_id AND encuestado_has_encuesta.encuestado_id = encuestado.encuestado_id AND encuestado_has_encuesta.encuestado_has_encuesta_respuesta = '0' AND encuestado.encuestado_email = '".$email."' AND encuestado.encuestado_password = '".$pass."'";
         $result = mysql_query($sql);
          if (!$result) {
              $mensaje  = 'Consulta no válida: ' . mysql_error() . "\n";
@@ -91,6 +97,9 @@
          }
         $i=1;
         while ($fila = mysql_fetch_array($result, MYSQL_NUM)) {
+            if (!isset($_SESSION['idEncuesta'])) {
+              $_SESSION['idEncuesta'] = $fila[3];
+            } 
             echo "<tr>";                            
             echo "<td>";
             echo "".$i;
@@ -101,7 +110,7 @@
             echo "<td>";
             echo $fila[1];
             echo "</td>";
-            echo "<td align=center><a href='".$fila[2]."?encuestado=".$fila[3]."'>Contestar</a></td>";
+            echo "<td align=center><a href='".$fila[2]." '>Contestar</a></td>";
             echo "</tr>";
             $i++;
         }            

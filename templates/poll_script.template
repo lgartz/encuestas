@@ -1,11 +1,4 @@
 $(function(){
-<%listLocUlId.each{|id|%>
-	$("#<%=id%>").sortable({
-		beforeStop: function( event, ui ) {
-			cambiarNumeros("#<%=id%>");
-		}
-	});
-	$("#<%=id%>").disableSelection();<%}%>
 	<%listDatesId.each{|id|%>
 	$("#<%=id%>").datepicker({
     	showAnim: "drop",
@@ -186,19 +179,6 @@ $(function(){
 	      	$("#panel_head_<%=value%> h4 small b").addClass("message_error");
 	   	}<%}%><%end%><%}%>
 		return resultado;
-	}
-	
-	function cambiarNumeros(id){
-    	$lista =  $( id+" li div span" ).toArray();
-		$num = 1;
-		for (var i = 0; i < $lista.length; i++) {			
-			if ((i%2) == 0){
-				$lista[i].innerHTML = $num;
-				$num = $num+1;
-			};
-		};	
-    };
-    
-    
+	}   
     
 });
