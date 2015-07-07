@@ -589,6 +589,6 @@ INSERT INTO encuesta_has_pregunta(pregunta_id, encuesta_id) VALUES ('psc_ta_27',
 INSERT INTO encuesta_has_pregunta(pregunta_id, encuesta_id) VALUES ('pfh_s_28','2');
 INSERT INTO encuesta_has_pregunta(pregunta_id, encuesta_id) VALUES ('psf_s_29','2');
 INSERT INTO encuesta_has_pregunta(pregunta_id, encuesta_id) VALUES ('psh_s_30','2');
-INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password) VALUES ('7','Luis Arturo','Zarate Ayala','luisarturo1989@gmail.com','12345');
+INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password) VALUES ('7','Luis Arturo','Zarate Ayala','luisarturo1989@gmail.com','827ccb0eea8a706c4c34a16891f84e7b');
 INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('7','1');
 INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('7','2');

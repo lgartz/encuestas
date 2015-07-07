@@ -17,8 +17,21 @@
 </head>
 <body>
      <?php
-        $email = $_GET["email"];
-        $pass = $_GET["pass"];
+        session_start();
+        $email = "";
+        $pass = "";
+        if (!isset($_SESSION['email'])) {
+            $email = $_GET["email"];
+            $_SESSION['email'] = $email;
+        }else{
+            $email = $_SESSION['email'];    
+        }
+        if (!isset($_SESSION['pass'])) {
+            $pass = md5($_GET["pass"]);
+            $_SESSION['pass'] = $pass;
+        }else{
+            $pass = $_SESSION['pass'];
+        }
         include("conexion.php");
         $conn = connect_with_mysql("localhost","root","","encuestas");
         $sql = "SELECT encuestado_id,encuestado_nombres,encuestado_apellidos,encuestado_email,encuestado_password FROM encuestado WHERE encuestado_email = '".$email."' AND encuestado_password = '".$pass."'";
@@ -42,10 +55,10 @@
             $idEncuestado = "".$fila[0];
             break;
         }
-        session_start();
-        $_SESSION['idEncuestado'] = $idEncuestado;
-        $_SESSION['pass'] = $pass;
-        $_SESSION['email'] = $email;
+
+        if (!isset($_SESSION['idEncuestado'])) {
+            $_SESSION['idEncuestado'] = $idEncuestado;
+        }      
      ?>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
@@ -97,9 +110,6 @@
          }
         $i=1;
         while ($fila = mysql_fetch_array($result, MYSQL_NUM)) {
-            if (!isset($_SESSION['idEncuesta'])) {
-              $_SESSION['idEncuesta'] = $fila[3];
-            } 
             echo "<tr>";                            
             echo "<td>";
             echo "".$i;
@@ -110,7 +120,7 @@
             echo "<td>";
             echo $fila[1];
             echo "</td>";
-            echo "<td align=center><a href='".$fila[2]." '>Contestar</a></td>";
+            echo "<td align=center><a href='".$fila[2]."?idEncuesta=".$fila[3]."'>Contestar</a></td>";
             echo "</tr>";
             $i++;
         }            

@@ -10,6 +10,14 @@
 	<link rel="stylesheet" href="css/encuestas.css">
 </head>
 <body>
+	<?php
+		if (!$_GET["idEncuesta"]) {
+			header('Location: fail.php');
+		}
+		$idEncuesta = $_GET["idEncuesta"];
+		session_start();
+		$_SESSION['idEncuesta'] = $idEncuesta;
+	?>
 	<header>
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="navbar-header">

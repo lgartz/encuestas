@@ -4,8 +4,8 @@
 	// Crear connection
 	$conn = connect_with_mysql("localhost","root","","encuestas");
 	session_start();
+	$encuesta = $_SESSION['idEncuesta'];
 	$encuestado = $_SESSION['idEncuestado'];
-	$encuesta = $_SESSION['idEncuesta'];	
 	
 	$smu_rb_1 = $_GET["smu_rb_1"];
 	getSqlInsertSmu($encuestado,$smu_rb_1);
@@ -76,7 +76,6 @@
 	$sql = "UPDATE encuestado_has_encuesta SET encuestado_has_encuesta_respuesta = '1' WHERE encuestado_id = '".$encuestado."' AND encuesta_id = '".$encuesta."';";
 	insert($sql);
 	close_connect_with_mysql($conn);
-	header('Location: sucess.php');
 	
 	function getSqlInsertSmu($encuestado, $opcion){
 		$sql = "INSERT INTO ressmu (ressmu_encuestado_id, ressmu_opsmurb_id) VALUES ('".$encuestado."','".$opcion."');";
@@ -155,8 +154,8 @@
 			return true;
 		}else{
 			return false;	
-		}		
+		}			
 	}
 	
-	
+	header('Location: sucess.php');
 ?>

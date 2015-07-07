@@ -52,14 +52,9 @@
                 <h1>Muchas gracias por su respuesta</h1>
                 <hr class="intro-divider"> 
                 <div class="row">
-                    <?php 
-                        session_start();
-                        $pass = $_SESSION['pass'];
-                        $email = $_SESSION['email'];
-                        echo "<form action='encuestas.php?email=".$email."&pass=".$pass."' method='get'>";
-                        echo "<button type='submit' class='btn btn-primary'>Volver</button>";
-                        echo "</form>";
-                    ?>
+                    <form action="encuestas.php" method='get'>
+                        <button type="submit" class="btn btn-primary">Volver</button>
+                    </form>
                 </div>
             </div>
         </div>
