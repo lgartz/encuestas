@@ -1,249 +1,152 @@
 <polls>
-	<poll title="encuesta1" name="Encuesta Helados 1" namePage="prueba" detail="Esta es una encuesta de helados 1">
-		<question number="1" type="smu_rb" required="true">
-			<ask value="¿Cual es su sabor de helado favorito?"/>
-			<option value="Fresa" checked="true"/>
-			<option value="Chicle" />
-			<option value="Arequipe" />
-			<option value="Queso" />
-			<option value="Feijoa" />
-			<option value="Mani" />
+	<poll title="ITIL - Estrategia" name="Estrategia para los servicios IT Cauntitativa" namePage="estrategia_cuantitativa" detail="Esta encuesta ITIL eval&uacute;a las actividades de la fase de estrateg&iacute;a para los servicios de tecnolog&iacute;as de informaci&oacute;n de los servicios">
+		<question type="title" value="Gesti&oacute;n del portafolio de servicios"></question>
+		<question number="1" type="eru_rb" required="true">
+			<ask value="¿Hay Relación entre los planes de negocio y las estrategias de los servicios de TI?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
-		<question number="2" type="smu_s" required="true">
-			<ask value="¿Cual es su sabor de helado favorito?" />
-			<option value="Fresa" />
-			<option value="Chicle" />
-			<option value="Arequipe" />
-			<option value="Queso" />
-			<option value="Feijoa" />
-			<option value="Mani" />
+		<question number="2" type="eru_rb" required="true">
+			<ask value="¿Existe definici&oacute;n y documentaci&oacute;n de la cartera de servicios?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
-		<question number="3" type="smr_cb" required="true">
-			<ask value="¿Cuales son sus sabores de helado favoritos?" />
-			<option value="Fresa" />
-			<option value="Chicle" />
-			<option value="Arequipe" />
-			<option value="Queso" />
-			<option value="Feijoa" />
-			<option value="Mani" />
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿Se tienen definidos los objetivos y expectativas de desempeño hacia el servicio de los clientes?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
-		<question number="4" type="smr_sm" required="true">
-			<ask value="¿Cuales son sus sabores de helado favoritos?" />
-			<option value="Fresa" />
-			<option value="Chicle" />
-			<option value="Arequipe" />
-			<option value="Queso" />
-			<option value="Feijoa" />
-			<option value="Mani" />
+		<question number="4" type="eru_rb" required="true">
+			<ask value="¿Se identifican, seleccionan y priorizan oportunidades de servicio?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
-		<question number="5" type="mmr_rb" required="true">
-			<ask value="Evalue las siguientes preguntas" />
-			<rows>
-				<option value="¿Que tan Importante es su Educacion?" />
-				<option value="¿Que tan Importante es su Familia?" />
-				<option value="¿Que tan Importante es su Religion?" />
-				<option value="¿Que tan Importante es su Ejercicio Fisico?" />
-			</rows>
-			<columns>
-				<option value="Nada Importante" />
-				<option value="Poco Importante" />
-				<option value="Importante" />
-				<option value="Bastante Importante" />
-				<option value="Muy Importante" />
-			</columns>
+		<question number="5" type="eru_rb" required="true">
+			<ask value="¿Se evalúan con frecuencia el cumplimiento de los objetivos de los servicios de TI?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
-		<question number="6" type="mmr_cb" required="true">
-			<ask
-				value="¿Cuales sabores de helado son los favoritos para cada miembro de su familia?" />
-			<rows>
-				<option value="Papa" />
-				<option value="Mama" />
-				<option value="Hermana" />
-			</rows>
-			<columns>
-				<option value="Arequipe" />
-				<option value="Fresa" />
-				<option value="Chicle" />
-				<option value="Coco" />
-				<option value="Queso" />
-			</columns>
+		<question number="6" type="eru_rb" required="true">
+			<ask value="¿La cartera de servicios esta asociadas a las áreas funcionales del negocio?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question> 
+		<question number="7" type="eru_rb" required="true">
+			<ask value="¿Existe clasificación de tipos de proveedores por servicio?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
-		<question number="7" type="mmr_s" required="true">
-			<ask
-				value="Segun los siguientes sabores de helados seleccione el tipo de textura y sabor que prefiere" />
-			<rows>
-				<option value="Arequipe" />
-				<option value="Fresa" />
-				<option value="Chicle" />
-				<option value="Coco" />
-				<option value="Queso" />
-			</rows>
-			<columns>
-				<option value="textura">
-					<label value="Liso" />
-					<label value="Rugoso" />
-					<label value="Esponjoso" />
-				</option>
-				<option value="sabor">
-					<label value="Dulce" />
-					<label value="Amargo" />
-					<label value="Agridulce" />
-				</option>
-			</columns>
+		<question number="8" type="eru_rb" required="true">
+			<ask value="¿Está definido el Portafolio de Servicios?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
 		<question number="9" type="eru_rb" required="true">
-			<ask value="¿Que tan probable es que recomiende el helado de fresa?" />
-			<range minimum="0" maximum="10" labelminimum="Nada Probable" labelmaximum="Muy Probable"/>
+			<ask value="¿Los retos, riesgos y factores críticos de éxito de los procesos están documentados?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
-		<question number="10" type="psu_t" required="true">
-			<ask value="¿Cual es su marca de helado favorita?" />
+		<question type="title" value="Gesti&oacute;n Financiera"></question>
+		<question number="10" type="eru_rb" required="true">
+			<ask value="¿Se realiza un adecuado manejo de costos y riesgos asociados a la cartera de servicios?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
-		<question number="11" type="psm_t" required="true">
-			<ask value="¿Cuales son sus tres marcas de helado?" />
-			<option value="3"></option>
+		<question number="11" type="eru_rb" required="true">
+			<ask value="¿Existe planeación y control de presupuesto para la prestación de los servicios de TI?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
-		<question number="12" type="psc_ta" required="true">
-			<ask value="¿Que es lo que mas le gusta de su helado favorito?" />
+		<question number="12" type="eru_rb" required="true">
+			<ask value="¿Existe centro de costos asignados a las áreas del negocio para la prestación de los servicios o se realiza cobros por los servicios de TI (Asignación costo / incidente)?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
-		<question number="13" type="pfh_s" required="true">
-			<ask value="¿Cuando fue el ultimo dia y hora en comer su helado?" />
+		<question number="13" type="eru_rb" required="true">
+			<ask value="¿Dentro del servicio, hay clasificadores que designan el propósito final del costo (Capital/operacional, Directo/indirecto, Fijo/variable, Unidades de coste, Recurso humano/equipos)?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
-		<question number="14" type="psf_s" required="true">
-			<ask value="¿Cuando fue el ultimo dia en comer su helado?" />
+		<question number="14" type="eru_rb" required="true">
+			<ask value="¿Existe una implementación del procesos de gestión financiera de los servicios?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
-		<question number="15" type="psh_s" required="true">
-			<ask value="¿Cual es su hora favorita del dia para comer un helado?" />
+		<question type="title" value="Gesti&oacute;n de la demanda"></question>
+		<question number="15" type="eru_rb" required="true">
+			<ask value="¿Con frecuencia se evalúa el estado de la demanda de los servicios?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="16" type="eru_rb" required="true">
+			<ask value="¿Hay una definición clara de las áreas usuarias versus servicios prestados?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="17" type="eru_rb" required="true">
+			<ask value="¿Permanentemente se realiza análisis de patrones de actividades del negocio?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="18" type="eru_rb" required="true">
+			<ask value="¿Con frecuencia se identifican, seleccionan y priorizan oportunidades de servicios?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="19" type="eru_rb" required="true">
+			<ask value="¿Los servicios se priorizan de acuerdo al activos estratégico de la organización?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="20" type="eru_rb" required="true">
+			<ask value="¿Existe la definición del rol de atención al cliente que evalúa permanentemente la satisfacción y necesidades de las áreas usuarias?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
 	</poll>
-	<poll title="encuesta2" name="Encuesta Helados 2" namePage="prueba2" detail="Esta es una encuesta de helados 2">
-		<question number="16" type="smu_rb" required="true">
-			<ask value="¿Cual es su sabor de helado favorito?" />
-			<option value="Fresa" />
-			<option value="Chicle" />
-			<option value="Arequipe" />
-			<option value="Queso" />
-			<option value="Feijoa" />
-			<option value="Mani" />
+	<poll title="ITIL - Estrategia" name="Estrategia para los servicios IT Cualitativa" namePage="estrategia_cualitativa" detail="Esta encuesta ITIL registra una descripci&oacute;n de cada una de las actividades de la fase de estrateg&iacute;a para los servicios de tecnolog&iacute;as de informaci&oacute;n de los servicios">
+	    <question type="title" value="Gesti&oacute;n del portafolio de servicios"></question>
+		<question number="21" type="psc_ta" required="true">
+			<ask value="¿Hay Relación entre los planes de negocio y las estrategias de los servicios de TI?" />
 		</question>
-		<question number="17" type="smu_s" required="true">
-			<ask value="¿Cual es su sabor de helado favorito?" />
-			<option value="Fresa" />
-			<option value="Chicle" />
-			<option value="Arequipe" />
-			<option value="Queso" />
-			<option value="Feijoa" />
-			<option value="Mani" />
+		<question number="22" type="psc_ta" required="true">
+			<ask value="¿Existe definici&oacute;n y documentaci&oacute;n de la cartera de servicios?" />
 		</question>
-		<question number="18" type="smr_cb" required="true">
-			<ask value="¿Cuales son sus sabores de helado favoritos?" />
-			<option value="Fresa" />
-			<option value="Chicle" />
-			<option value="Arequipe" />
-			<option value="Queso" />
-			<option value="Feijoa" />
-			<option value="Mani" />
+		<question number="23" type="psc_ta" required="true">
+			<ask value="¿Se tienen definidos los objetivos y expectativas de desempeño hacia el servicio de los clientes?" />
 		</question>
-		<question number="19" type="smr_sm" required="true">
-			<ask value="¿Cuales son sus sabores de helado favoritos?" />
-			<option value="Fresa" />
-			<option value="Chicle" />
-			<option value="Arequipe" />
-			<option value="Queso" />
-			<option value="Feijoa" />
-			<option value="Mani" />
+		<question number="24" type="psc_ta" required="true">
+			<ask value="¿Se identifican, seleccionan y priorizan oportunidades de servicio?" />
 		</question>
-		<question number="20" type="mmr_rb" required="true">
-			<ask value="Evalue las siguientes preguntas" />
-			<rows>
-				<option value="¿Que tan Importante es su Educacion?" />
-				<option value="¿Que tan Importante es su Familia?" />
-				<option value="¿Que tan Importante es su Religion?" />
-				<option value="¿Que tan Importante es su Ejercicio Fisico?" />
-			</rows>
-			<columns>
-				<option value="Nada Importante" />
-				<option value="Poco Importante" />
-				<option value="Importante" />
-				<option value="Bastante Importante" />
-				<option value="Muy Importante" />
-			</columns>
+		<question number="25" type="psc_ta" required="true">
+			<ask value="¿Se evalúan con frecuencia el cumplimiento de los objetivos de los servicios de TI?" />
 		</question>
-		<question number="21" type="mmr_cb" required="true">
-			<ask
-				value="¿Cuales sabores de helado son los favoritos para cada miembro de su familia?" />
-			<rows>
-				<option value="Papa" />
-				<option value="Mama" />
-				<option value="Hermana" />
-			</rows>
-			<columns>
-				<option value="Arequipe" />
-				<option value="Fresa" />
-				<option value="Chicle" />
-				<option value="Coco" />
-				<option value="Queso" />
-			</columns>
-		</question>
-		<question number="22" type="mmr_s" required="true">
-			<ask
-				value="Segun los siguientes sabores de helados seleccione el tipo de textura y sabor que prefiere" />
-			<rows>
-				<option value="Arequipe" />
-				<option value="Fresa" />
-				<option value="Chicle" />
-				<option value="Coco" />
-				<option value="Queso" />
-			</rows>
-			<columns>
-				<option value="textura">
-					<label value="Liso" />
-					<label value="Rugoso" />
-					<label value="Esponjoso" />
-				</option>
-				<option value="sabor">
-					<label value="Dulce" />
-					<label value="Amargo" />
-					<label value="Agridulce" />
-				</option>
-			</columns>
-		</question>
-		<question number="24" type="eru_rb" required="true">
-			<ask value="¿Que tan probable es que recomiende el helado de fresa?" />
-			<range minimum="0" maximum="10" labelminimum="Nada Probable" labelmaximum="Muy Probable"/>
-		</question>
-		<question number="25" type="psu_t" required="true">
-			<ask value="¿Cual es su marca de helado favorita?" />
-		</question>
-		<question number="26" type="psm_t" required="true">
-			<ask value="¿Cuales son sus tres marcas de helado?" />
-			<option value="3"></option>
-		</question>
+		<question number="26" type="psc_ta" required="true">
+			<ask value="¿La cartera de servicios esta asociadas a las áreas funcionales del negocio?" />
+		</question> 
 		<question number="27" type="psc_ta" required="true">
-			<ask value="¿Que es lo que mas le gusta de su helado favorito?" />
+			<ask value="¿Existe clasificación de tipos de proveedores por servicio?" />
 		</question>
-		<question number="28" type="pfh_s" required="true">
-			<ask value="¿Cuando fue el ultimo dia y hora en comer su helado?" />
+		<question number="28" type="psc_ta" required="true">
+			<ask value="¿Está definido el Portafolio de Servicios?" />
 		</question>
-		<question number="29" type="psf_s" required="true">
-			<ask value="¿Cuando fue el ultimo dia en comer su helado?" />
+		<question number="29" type="psc_ta" required="true">
+			<ask value="¿Los retos, riesgos y factores críticos de éxito de los procesos están documentados?" />
 		</question>
-		<question number="30" type="psh_s" required="true">
-			<ask value="¿Cual es su hora favorita del dia para comer un helado?" />
+		<question type="title" value="Gesti&oacute;n Financiera"></question>
+		<question number="30" type="psc_ta" required="true">
+			<ask value="¿Se realiza un adecuado manejo de costos y riesgos asociados a la cartera de servicios?" />
+		</question>
+		<question number="31" type="psc_ta" required="true">
+			<ask value="¿Existe planeación y control de presupuesto para la prestación de los servicios de TI?" />
+		</question>
+		<question number="32" type="psc_ta" required="true">
+			<ask value="¿Existe centro de costos asignados a las áreas del negocio para la prestación de los servicios o se realiza cobros por los servicios de TI (Asignación costo / incidente)?" />
+		</question>
+		<question number="33" type="psc_ta" required="true">
+			<ask value="¿Dentro del servicio, hay clasificadores que designan el propósito final del costo (Capital/operacional, Directo/indirecto, Fijo/variable, Unidades de coste, Recurso humano/equipos)?" />
+		</question>
+		<question number="34" type="psc_ta" required="true">
+			<ask value="¿Existe una implementación del procesos de gestión financiera de los servicios?" />
+		</question>
+		<question type="title" value="Gesti&oacute;n de la demanda"></question>
+		<question number="35" type="psc_ta" required="true">
+			<ask value="¿Con frecuencia se evalúa el estado de la demanda de los servicios?" />
+		</question>
+		<question number="36" type="psc_ta" required="true">
+			<ask value="¿Hay una definición clara de las áreas usuarias versus servicios prestados?" />
+		</question>
+		<question number="37" type="psc_ta" required="true">
+			<ask value="¿Permanentemente se realiza análisis de patrones de actividades del negocio?" />
+		</question>
+		<question number="38" type="psc_ta" required="true">
+			<ask value="¿Con frecuencia se identifican, seleccionan y priorizan oportunidades de servicios?" />
+		</question>
+		<question number="39" type="psc_ta" required="true">
+			<ask value="¿Los servicios se priorizan de acuerdo al activos estratégico de la organización?" />
+		</question>
+		<question number="40" type="psc_ta" required="true">
+			<ask value="¿Existe la definición del rol de atención al cliente que evalúa permanentemente la satisfacción y necesidades de las áreas usuarias?" />
 		</question>
 	</poll>
 </polls>
-<!-- smu_rb = seleccion multiple unica respuesta radio button-->
-<!-- smu_s = seleccion multiple unica respuesta select-->
-<!-- smr_cb = seleccion múltiple multiple respuesta check box-->
-<!-- smr_sm = seleccion múltiple multiple respuesta select multiple-->
-<!-- mmr_rb = matriz multiples respuestas radio button-->  
-<!-- mmr_cb = matriz multiples respuestas check box-->
-<!-- mmr_s = matriz multiples respuestas select-->
-<!-- loc_ul = lista ordenada clasificacion de respuestas unordered list-->
-<!-- eru_rb escala de respuestas unica respuesta radio button -->
-<!-- psu_t pregunta simple unica respuesta text-->
-<!-- psm_t pregunta simple multiple respuesta text-->
-<!-- psc_ta  pregunta simple caja de comentario text area-->
-<!-- pfh_s pregunta simple fecha hora s-->
-<!-- psf_s pregunta simple fecha hora s-->
-<!-- psh_s pregunta simple hora s-->

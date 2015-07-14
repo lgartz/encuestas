@@ -112,6 +112,7 @@ $(function(){
 			$("#panel_mmr_s_7").removeClass( "panel-primary" );
 	      	$("#panel_mmr_s_7").addClass( "panel-danger" );
 	      	$("#panel_head_mmr_s_7 h4 small b").removeClass("message_error");
+	      	resultado = false;
 		}else{
 			$("#panel_mmr_s_7").removeClass( "panel-danger" );
 	      	$("#panel_mmr_s_7").addClass( "panel-primary" );
@@ -121,6 +122,7 @@ $(function(){
 	      	$("#panel_eru_rb_9").removeClass( "panel-primary" );
 	      	$("#panel_eru_rb_9").addClass( "panel-danger" );
 	      	$("#panel_head_eru_rb_9 h4 small b").removeClass("message_error");
+	      	resultado = false;
 	   	}else{
 	   		$("#panel_eru_rb_9").removeClass( "panel-danger" );
 	      	$("#panel_eru_rb_9").addClass( "panel-primary" );

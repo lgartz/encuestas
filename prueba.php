@@ -90,6 +90,7 @@
 		</div>
 	</div>
 </div>
+<br><h1>Titulos prueba vamos a alrgar bastante este mensaje porque lo necitamos largo haber como se visualiza en pantalla</h1>
 <div class="form-group">
 	<div id="panel_smr_cb_3" class="panel panel-primary">
 		<div id="panel_head_smr_cb_3" class="panel-heading">
