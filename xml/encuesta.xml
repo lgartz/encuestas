@@ -149,4 +149,975 @@
 			<ask value="¿Existe la definición del rol de atención al cliente que evalúa permanentemente la satisfacción y necesidades de las áreas usuarias?" />
 		</question>
 	</poll>
+	<poll title="ITIL - Operación (Actividades)" name="Operación de los servicios IT (Actividades) Cauntitativa" namePage="operacion_cuantitativa_actividades" detail="Esta encuesta ITIL evalúa las actividades de la fase de operación para los servicios de tecnologías de información de los servicios">
+		<question type="title" value="Detección y Registro "></question>
+		<question number="120" type="eru_rb" required="true">
+			<ask value="¿Existe una Base de Datos única para el registro de Incidentes?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="121" type="eru_rb" required="true">
+			<ask value="¿Existe un identificador único para cada incidente?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="122" type="eru_rb" required="true">
+			<ask value="¿La documentación registrada de Incidentes esta estandarizada (Ej.: Descripción, Información, historial)?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="123" type="eru_rb" required="true">
+			<ask value="¿Existe un único punto de contacto para el reporte de todos los incidentes?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="124" type="eru_rb" required="true">
+			<ask value="¿Todos los incidentes son reportados al único punto de contacto?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="125" type="eru_rb" required="true">
+			<ask value="¿Los medios de acceso al único punto de contacto están al alcance de todos los usuarios?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="126" type="eru_rb" required="true">
+			<ask value="¿Todos los incidentes son registrados con su elemento de Configuración?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="127" type="eru_rb" required="true">
+			<ask value="¿Las inconsistencias de la CMDB son detectadas y reportadas a Configuration Management?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="128" type="eru_rb" required="true">
+			<ask value="¿Esta identificada claramente la información o campos mínimos requeridos para el registro de un incidente?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="129" type="eru_rb" required="true">
+			<ask value="¿Está disponible la herramienta de gestión de llamadas por medio Web para que los usuarios finales hagan su propio registro y consultas de incidentes?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="130" type="eru_rb" required="true">
+			<ask value="¿Los usuarios finales conocen y realizan su propio registro de incidentes por medio Web (40% óptimo)?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="131" type="eru_rb" required="true">
+			<ask value="¿Se controla la duplicidad de registro de incidentes?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="132" type="eru_rb" required="true">
+			<ask value="¿El reporte de Incidentes por medio e-mail se realiza a través de un formulario predefinido?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="133" type="eru_rb" required="true">
+			<ask value="¿Todos los incidentes que no son detectados automáticamente son registrados en la herramienta de gestión a través del Service Desk?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="134" type="eru_rb" required="true">
+			<ask value="¿Los eventos automáticos registrados que no afectan o degradan el servicio (no son incidentes) son reportados a Operación management para su solución?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question type="title" value="Clasificación y Soporte Inicial"></question>
+		<question number="135" type="eru_rb" required="true">
+			<ask value="¿Los SLA's de los servicios prestados están claramente definidos y entendidos por los diferentes grupos de soporte?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+ 		<question number="136" type="eru_rb" required="true">
+			<ask value="¿Los SLA's están parametrizados correctamente en la herramienta de gestión?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="137" type="eru_rb" required="true">
+			<ask value="¿Todos los incidentes están relacionados con el Servicio afectado y su nivel de servicio?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="138" type="eru_rb" required="true">
+			<ask value="¿La categoría del registro es seleccionada correctamente?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="139" type="eru_rb" required="true">
+			<ask value="¿El árbol de clasificación de incidentes está definido y parametrizados en la herramienta (según el estándar)?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="140" type="eru_rb" required="true">
+			<ask value="¿El único punto de contacto conoce el estándar de clasificación y lo utiliza correctamente?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="141" type="eru_rb" required="true">
+			<ask value="¿El único punto de contacto define la prioridad del incidente basado en el impacto al negocio?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="142" type="eru_rb" required="true">
+			<ask value="¿Se asignan las prioridades con una matriz de Impacto / Urgencia?" />
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="143" type="eru_rb" required="true">
+			<ask value="¿Los grupos solucionadores están identificados y registrados en la herramienta de gestión junto con sus alcances?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="144" type="eru_rb" required="true">
+			<ask value="¿Los alcances de cada grupo solucionador son claros para el único punto de contacto y para el grupo de IM?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="145" type="eru_rb" required="true">
+			<ask value="¿Están definidos los Checklist para los incidentes frecuentes?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="146" type="eru_rb" required="true">
+			<ask value="¿Están definidas las plantillas de documentación para los incidentes frecuentes?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="147" type="eru_rb" required="true">
+			<ask value="¿Existe una Base de Datos con Errores Conocidos y problemas y sus soluciones - KEDB (definitivas o temporales) con acceso al único punto de contacto y al proceso de IM?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="148" type="eru_rb" required="true">
+			<ask value="¿Existe una Base de Datos con Errores Conocidos y problemas y sus soluciones - KEDB (definitivas o temporales) con acceso al único punto de contacto y al proceso de IM?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="149" type="eru_rb" required="true">
+			<ask value="¿En la herramienta de gestión se realiza la relación de incidentes con errores conocidos o problemas?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="150" type="eru_rb" required="true">
+			<ask value="¿Existe una Base de datos de FAQs con acceso a todo el personal del proceso de incidentes y Usuarios Autorizados?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="151" type="eru_rb" required="true">
+			<ask value="¿Se notifica al proceso de problemas la existencia de un posible problema (Incidente con Causa Raíz desconocida o Incidente Crítico)?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="152" type="eru_rb" required="true">
+			<ask value="¿Existe una herramienta de control remoto para el único punto de contacto?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="153" type="eru_rb" required="true">
+			<ask value="¿El grupo de IM soluciona requerimientos de Reset o desbloqueo de password?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="154" type="eru_rb" required="true">
+			<ask value="¿Se realiza correlación de llamadas de usuario con incidentes de plataforma?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question type="title" value="Investigación y Diagnóstico"></question>
+		<question number="155" type="eru_rb" required="true">
+			<ask value="¿Para incidentes críticos la notificación al nivel solucionador se realiza telefónicamente?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="156" type="eru_rb" required="true">
+			<ask value="¿Los incidentes se atienden por orden de prioridad ?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="157" type="eru_rb" required="true">
+			<ask value="¿Se realiza la actualización continua de la historia del incidente?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="158" type="eru_rb" required="true">
+			<ask value="¿El único punto de contacto mantiene informado al cliente sobre el progreso de la solución (Cambio de Estado, Cambio de grupo solucionador, cambio en tiempo estimado de solución)?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="159" type="eru_rb" required="true">
+			<ask value="¿El estado registrado del incidente refleja la situación actual del mismo?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="159" type="eru_rb" required="true">
+			<ask value="¿Si es requerido, el único punto de contacto re-evalúa el impacto y prioridad asignada acorde con los SLA's?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="160" type="eru_rb" required="true">
+			<ask value="¿El único punto de contacto realiza un monitoreo continuo a la solución del incidente y notifica al Incidente Manager incumplimiento en los tiempos de solución según los SLA's?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="161" type="eru_rb" required="true">
+			<ask value="¿El Inicident Manager vigila el cumplimiento de los tiempos de solución de los incidentes según los SLA's?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="162" type="eru_rb" required="true">
+			<ask value="¿Los especialistas notifican y registran nuevos problemas encontrados y son asignados al proceso correspondiente?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="163" type="eru_rb" required="true">
+			<ask value="¿El 2 nivel de soporte realiza el escalamiento a 3 nivel de soporte cuando es requerido?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="164" type="eru_rb" required="true">
+			<ask value="¿Siempre existe una verificación de Incidentes pasados con el mismo Síntoma o relación con un error conocido o problema?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="165" type="eru_rb" required="true">
+			<ask value="¿Existe una matriz de Escalamiento funcional y jerárquico con sus responsables y tiempos definidos?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="166" type="eru_rb" required="true">
+			<ask value="¿Está definido el ciclo de vida de un incidente?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question type="title" value="Resolver el incidente y recuperar el servicio"></question>
+		<question number="167" type="eru_rb" required="true">
+			<ask value="¿La documentación de la solución contiene todas las instrucciones ejecutadas para la recuperación del incidente?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="168" type="eru_rb" required="true">
+			<ask value="¿Los n-niveles solucionadores notifican al único punto de contacto cuando realizan la recuperación del incidente?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="169" type="eru_rb" required="true">
+			<ask value="¿Se notifica al n-nivel del escalamiento jerárquico alcanzado sobre la solución del incidente?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="170" type="eru_rb" required="true">
+			<ask value="¿Se realiza una re-clasificación del incidente cuando sea requerido?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="171" type="eru_rb" required="true">
+			<ask value="¿La fecha registrada de solución está acorde con la fecha de la implementación de la solución?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="172" type="eru_rb" required="true">
+			<ask value="¿Una solución temporal que restaure el servicio resuelve el incidente?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="173" type="eru_rb" required="true">
+			<ask value="¿Existen procedimientos para la solución de un incidente?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question type="title" value="Confirmación y Cierre"></question>
+		<question number="174" type="eru_rb" required="true">
+			<ask value="¿Se categoriza el motivo del cierre (Código de Cierre)?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="175" type="eru_rb" required="true">
+			<ask value="¿Se verifica la correcta documentación del incidente en cuanto a (Categoría, Clasificación, Descripción, Elemento de Configuración, SLA, Prioridad, Solución, Código de Cierre)?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="176" type="eru_rb" required="true">
+			<ask value="¿Se identifican los casos que son FAQs?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="177" type="eru_rb" required="true">
+			<ask value="¿Se identifican nuevas plantillas para documentación de Incidentes y se solicita su creación?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question type="title" value="Confirmación y Cierre"></question>
+		<question number="178" type="eru_rb" required="true">
+			<ask value="¿Se notifica al service Desk cuando el incidente queda pendiente de una acción de por parte de él?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="179" type="eru_rb" required="true">
+			<ask value="¿Los reportes de gestión son divulgados al Cliente?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="180" type="eru_rb" required="true">
+			<ask value="¿El Incidente Manager detecta y escala fallas del proceso?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="181" type="eru_rb" required="true">
+			<ask value="¿Se notifica al usuario el cierre del incidente ?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="182" type="eru_rb" required="true">
+			<ask value="¿Los cambios en los alcances de los servicios son notificados a los usuario finales?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="183" type="eru_rb" required="true">
+			<ask value="¿Los analistas de primer nivel realizan el seguimiento a todos los incidentes desde el registro hasta el cierre?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="184" type="eru_rb" required="true">
+			<ask value="¿El cierre de todos los incidentes es realizado con autorización del Incident Manager?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question type="title" value="Organización"></question>
+		<question number="185" type="eru_rb" required="true">
+			<ask value="¿Existe un Dueño de Proceso de Incident Management?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="186" type="eru_rb" required="true">
+			<ask value="¿Esta identificado el rol Administrador de Incidentes?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="187" type="eru_rb" required="true">
+			<ask value="¿Están identificados los grupos y especialistas solucionadores para todos los servicios soportados?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="188" type="eru_rb" required="true">
+			<ask value="¿Está documentada la Matriz de Escalamiento funcional (por Impacto, con Tiempos escalamiento entre niveles) para el proceso de IM?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="189" type="eru_rb" required="true">
+			<ask value="¿Está documentada la Matriz de Escalamiento Jerárquico (por Impacto, con Tiempo de escalamiento entre niveles)?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="190" type="eru_rb" required="true">
+			<ask value="¿Está documentada la Matriz de Escalamiento Jerárquico (por Impacto, con Tiempo de escalamiento entre niveles)?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="191" type="eru_rb" required="true">
+			<ask value="¿Están identificados los Usuarios Autorizados por Servicio?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="192" type="eru_rb" required="true">
+			<ask value="¿Están identificados los usuarios VIP's dentro de la organización del cliente y documentados en la herramienta de gestión?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="193" type="eru_rb" required="true">
+			<ask value="¿Las responsabilidades de cada rol están definidas y son conocidas por cada persona involucrada?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="194" type="eru_rb" required="true">
+			<ask value="¿El Administrador de Incidentes está entrenado en el proceso de Administración de Incidentes y los procesos relacionados?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="195" type="eru_rb" required="true">
+			<ask value="¿Los analistas y especialistas están entrenados en el proceso de administración de incidentes y los procesos relacionados?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="196" type="eru_rb" required="true">
+			<ask value="¿Existen métricas de productividad individual para los roles Administrador de Incidentes, Especialistas y Analistas?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="197" type="eru_rb" required="true">
+			<ask value="¿El porcentaje de asignación a la administración de incidentes es evaluado para cada rol?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="198" type="eru_rb" required="true">
+			<ask value="¿Existe un plan de carrera para cada rol ?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="199" type="eru_rb" required="true">
+			<ask value="¿El personal de administración de incidentes está motivado?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="200" type="eru_rb" required="true">
+			<ask value="¿Se realizan reuniones quincenales con el grupo de IM y los especialistas para dar retroalimentación de la operación de administración de Incidentes?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question type="title" value="Métricas y Reportes"></question>
+		<question number="201" type="eru_rb" required="true">
+			<ask value="¿Existen métricas de productividad individual para el rol de Administración de Incidentes?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="202" type="eru_rb" required="true">
+			<ask value="¿Se tienen reuniones periódicas para revisar las métricas que existen actualmente?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="203" type="eru_rb" required="true">
+			<ask value="¿Se analiza la carga laboral para los roles del proceso de Administración de Incidentes regularmente?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="204" type="eru_rb" required="true">
+			<ask value="¿Se tienen estadísticas por número de incidentes identificados mensualmente?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="205" type="eru_rb" required="true">
+			<ask value="¿Se tienen estadísticas por número total de incidentes abiertos?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="206" type="eru_rb" required="true">
+			<ask value="¿Se tienen estadísticas por número de incidentes cerrados mensualmente?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="207" type="eru_rb" required="true">
+			<ask value="¿Se tienen estadísticas por número de incidentes escalados con su owner?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="208" type="eru_rb" required="true">
+			<ask value="¿Se tienen estadísticas por número de Requerimientos de Cambios creados por el Administrador de Incidentes para ser evaluados por el Administrador de Cambios?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="209" type="eru_rb" required="true">
+			<ask value="¿Se tienen estadísticas por porcentaje de incidentes que fueron evitados por cumplimiento de labores proactivas?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="210" type="eru_rb" required="true">
+			<ask value="¿Se trazan metas y objetivos para el proceso de Administración de Incidentes?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Operación (Actividades)" name="Operación de los servicios IT (Actividades) Cauntitativa version 2" namePage="operacion_cuantitativa_actividades_v2" detail="Esta encuesta ITIL evalúa las actividades de la fase de operación para los servicios de tecnologías de información de los servicios">
+	    <question number="211" type="mmr_rb" required="true">
+			<ask value="Detección y Registro" />
+			<rows>
+				<option value="¿Existe una Base de Datos única para el registro de Incidentes?" />
+				<option value="¿Existe un identificador único para cada incidente?"/>
+				<option value="¿La documentación registrada de Incidentes esta estandarizada (Ej.: Descripción, Información, historial)?"/>
+				<option value="¿Existe un único punto de contacto para el reporte de todos los incidentes?"/>
+				<option value="¿Todos los incidentes son reportados al único punto de contacto?"/>
+				<option value="¿Los medios de acceso al único punto de contacto están al alcance de todos los usuarios?"/>
+				<option value="¿Todos los incidentes son registrados con su elemento de Configuración?"/>
+				<option value="¿Las inconsistencias de la CMDB son detectadas y reportadas a Configuration Management?"/>
+				<option value="¿Esta identificada claramente la información o campos mínimos requeridos para el registro de un incidente?"/>
+				<option value="¿Está disponible la herramienta de gestión de llamadas por medio Web para que los usuarios finales hagan su propio registro y consultas de incidentes?"/>
+				<option value="¿Los usuarios finales conocen y realizan su propio registro de incidentes por medio Web (40% óptimo)?"/>
+				<option value="¿Se controla la duplicidad de registro de incidentes?"/>
+				<option value="¿El reporte de Incidentes por medio e-mail se realiza a través de un formulario predefinido?"/>
+				<option value="¿Todos los incidentes que no son detectados automáticamente son registrados en la herramienta de gestión a través del Service Desk?"/>
+				<option value="¿Los eventos automáticos registrados que no afectan o degradan el servicio (no son incidentes) son reportados a Operación management para su solución?"/>
+			</rows>
+			<columns>
+				<option value="Nada Factible" />
+				<option value="Poco Factible" />
+				<option value="Algo Factible" />
+				<option value="Factible" />
+				<option value="Bastante Factible" />
+				<option value="Muy Factible" />
+			</columns>
+		</question>
+		<question number="212" type="mmr_rb" required="true">
+		    <ask value="Clasificación y Soporte Inicial" />
+		    <rows>
+				<option value="Los SLA's de los servicios prestados están claramente definidos y entendidos por los diferentes grupos de soporte"/>
+				<option value="Los SLA's están parametrizados correctamente en la herramienta de gestión"/>
+				<option value="Todos los incidentes están relacionados con el Servicio afectado y su nivel de servicio"/>
+				<option value="La categoría del registro es seleccionada correctamente"/>
+				<option value="El árbol de clasificación de incidentes está definido y parametrizados en la herramienta (según el estándar)"/>
+				<option value="El único punto de contacto conoce el estándar de clasificación y lo utiliza correctamente"/>
+				<option value="¿El único punto de contacto define la prioridad del incidente basado en el impacto al negocio?"/>
+				<option value="¿Se asignan las prioridades con una matriz de Impacto / Urgencia?"/>
+				<option value="¿Los grupos solucionadores están identificados y registrados en la herramienta de gestión junto con sus alcances?"/>
+				<option value="¿Los alcances de cada grupo solucionador son claros para el único punto de contacto y para el grupo de IM?"/>
+				<option value="¿Están definidos los Checklist para los incidentes frecuentes?"/>
+				<option value="¿Están definidas las plantillas de documentación para los incidentes frecuentes?"/>
+				<option value="¿Existe una Base de Datos con Errores Conocidos y problemas y sus soluciones - KEDB (definitivas o temporales) con acceso al único punto de contacto y al proceso de IM?"/>
+				<option value="¿En la herramienta de gestión se realiza la relación de incidentes con errores conocidos o problemas?"/>
+				<option value="¿Existe una Base de datos de FAQs con acceso a todo el personal del proceso de incidentes y Usuarios Autorizados?"/>
+				<option value="¿Se notifica al proceso de problemas la existencia de un posible problema (Incidente con Causa Raíz desconocida o Incidente Crítico)?"/>
+				<option value="¿Existe una herramienta de control remoto para el único punto de contacto?"/>
+				<option value="¿El grupo de IM soluciona requerimientos de Reset o desbloqueo de password?"/>
+				<option value="¿Se realiza correlación de llamadas de usuario con incidentes de plataforma?"/>
+		    </rows>
+		    <columns>
+				<option value="Nada Factible" />
+				<option value="Poco Factible" />
+				<option value="Algo Factible" />
+				<option value="Factible" />
+				<option value="Bastante Factible" />
+				<option value="Muy Factible" />
+			</columns>
+		</question>
+		<question number="213" type="mmr_rb" required="true">
+		    <ask value="Investigación y Diagnóstico" />
+		    <rows>
+				<option value="¿Para incidentes críticos la notificación al nivel solucionador se realiza telefónicamente?"/>
+				<option value="¿Los incidentes se atienden por orden de prioridad?"/>
+				<option value="¿Se realiza la actualización continua de la historia del incidente?"/>
+				<option value="¿El único punto de contacto mantiene informado al cliente sobre el progreso de la solución (Cambio de Estado, Cambio de grupo solucionador, cambio en tiempo estimado de solución)?"/>
+				<option value="¿El estado registrado del incidente refleja la situación actual del mismo?"/>
+				<option value="¿Si es requerido, el único punto de contacto re-evalúa el impacto y prioridad asignada acorde con los SLA's?"/>
+				<option value="¿El único punto de contacto realiza un monitoreo continuo a la solución del incidente y notifica al Incidente Manager incumplimiento en los tiempos de solución según los SLA's?"/>
+				<option value="¿El Inicident Manager vigila el cumplimiento de los tiempos de solución de los incidentes según los SLA's?"/>
+				<option value="¿Los especialistas notifican y registran nuevos problemas encontrados y son asignados al proceso correspondiente?"/>
+				<option value="¿El 2 nivel de soporte realiza el escalamiento a 3 nivel de soporte cuando es requerido?"/>
+				<option value="¿Siempre existe una verificación de Incidentes pasados con el mismo Síntoma o relación con un error conocido o problema?"/>
+				<option value="¿Existe una matriz de Escalamiento funcional y jerárquico con sus responsables y tiempos definidos?"/>
+				<option value="¿Está definido el ciclo de vida de un incidente?"/>
+		    </rows>
+		    <columns>
+				<option value="Nada Factible" />
+				<option value="Poco Factible" />
+				<option value="Algo Factible" />
+				<option value="Factible" />
+				<option value="Bastante Factible" />
+				<option value="Muy Factible" />
+			</columns>
+		</question>
+		<question number="214" type="mmr_rb" required="true">
+		    <ask value="Resolver el incidente y recuperar el servicio" />
+		    <rows>
+				<option value="¿La documentación de la solución contiene todas las instrucciones ejecutadas para la recuperación del incidente?"/>
+				<option value="¿Los n-niveles solucionadores notifican al único punto de contacto cuando realizan la recuperación del incidente?"/>
+				<option value="¿Se notifica al n-nivel del escalamiento jerárquico alcanzado sobre la solución del incidente?"/>
+				<option value="¿Se realiza una re-clasificación del incidente cuando sea requerido?"/>
+				<option value="¿La fecha registrada de solución está acorde con la fecha de la implementación de la solución?"/>
+				<option value="¿Una solución temporal que restaure el servicio resuelve el incidente?"/>
+				<option value="¿Existen procedimientos para la solución de un incidente?"/>
+		    </rows>
+		    <columns>
+				<option value="Nada Factible" />
+				<option value="Poco Factible" />
+				<option value="Algo Factible" />
+				<option value="Factible" />
+				<option value="Bastante Factible" />
+				<option value="Muy Factible" />
+			</columns>
+		</question>
+		<question number="215" type="mmr_rb" required="true">
+		    <ask value="Confirmación y Cierre" />
+		    <rows>
+				<option value="¿Se categoriza el motivo del cierre (Código de Cierre)?"/>
+				<option value="¿Se verifica la correcta documentación del incidente en cuanto a (Categoría, Clasificación, Descripción, Elemento de Configuración, SLA, Prioridad, Solución, Código de Cierre)?"/>
+				<option value="¿Se identifican los casos que son FAQs?"/>
+				<option value="¿Se identifican nuevas plantillas para documentación de Incidentes y se solicita su creación?"/>
+		    </rows>
+		    <columns>
+				<option value="Nada Factible" />
+				<option value="Poco Factible" />
+				<option value="Algo Factible" />
+				<option value="Factible" />
+				<option value="Bastante Factible" />
+				<option value="Muy Factible" />
+			</columns>
+		</question>
+		<question number="216" type="mmr_rb" required="true">
+		    <ask value="Apropiamiento, Seguimiento y Comunicación" />
+		    <rows>
+				<option value="¿Se notifica al service Desk cuando el incidente queda pendiente de una acción de por parte de él?"/>
+				<option value="¿Los reportes de gestión son divulgados al Cliente?"/>
+				<option value="¿El Incidente Manager detecta y escala fallas del proceso?"/>
+				<option value="¿Se notifica al usuario el cierre del incidente?"/>
+				<option value="¿Los cambios en los alcances de los servicios son notificados a los usuario finales?"/>
+				<option value="¿Los analistas de primer nivel realizan el seguimiento a todos los incidentes desde el registro hasta el cierre?"/>
+				<option value="¿El cierre de todos los incidentes es realizado con autorización del Incident Manager?"/>
+		    </rows>
+		    <columns>
+				<option value="Nada Factible" />
+				<option value="Poco Factible" />
+				<option value="Algo Factible" />
+				<option value="Factible" />
+				<option value="Bastante Factible" />
+				<option value="Muy Factible" />
+			</columns>
+		</question>
+		<question number="217" type="mmr_rb" required="true">
+		    <ask value="Organización" />
+		    <rows>
+				<option value="¿Existe un Dueño de Proceso de Incident Management?"/>
+				<option value="¿Esta identificado el rol Administrador de Incidentes?"/>
+				<option value="¿Están identificados los grupos y especialistas solucionadores para todos los servicios soportados?"/>
+				<option value="¿Está documentada la Matriz de Escalamiento funcional (por Impacto, con Tiempos escalamiento entre niveles) para el proceso de IM?"/>
+				<option value="¿Está documentada la Matriz de Escalamiento Jerárquico (por Impacto, con Tiempo de escalamiento entre niveles)?"/>
+				<option value="¿Están identificados los Usuarios Autorizados por Servicio?"/>
+				<option value="¿Están identificados los usuarios VIP's dentro de la organización del cliente y documentados en la herramienta de gestión?"/>
+				<option value="¿Las responsabilidades de cada rol están definidas y son conocidas por cada persona involucrada?"/>
+				<option value="¿El Administrador de Incidentes está entrenado en el proceso de Administración de Incidentes y los procesos relacionados?"/>
+				<option value="¿Los analistas y especialistas están entrenados en el proceso de administración de incidentes y los procesos relacionados?"/>
+				<option value="¿Existen métricas de productividad individual para los roles Administrador de Incidentes, Especialistas y Analistas?"/>
+				<option value="¿El porcentaje de asignación a la administración de incidentes es evaluado para cada rol?"/>
+				<option value="¿Existe un plan de carrera para cada rol?"/>
+				<option value="¿El personal de administración de incidentes está motivado?"/>
+				<option value="¿Se realizan reuniones quincenales con el grupo de IM y los especialistas para dar retroalimentación de la operación de administración de Incidentes?"/>
+		    </rows>
+		    <columns>
+				<option value="Nada Factible" />
+				<option value="Poco Factible" />
+				<option value="Algo Factible" />
+				<option value="Factible" />
+				<option value="Bastante Factible" />
+				<option value="Muy Factible" />
+			</columns>
+		</question>
+		<question number="218" type="mmr_rb" required="true">
+		    <ask value="Métricas y Reportes" />
+		    <rows>
+				<option value="¿Existen métricas de productividad individual para el rol de Administración de Incidentes?"/>
+				<option value="¿Se tienen reuniones periódicas para revisar las métricas que existen actualmente?"/>
+				<option value="¿Se analiza la carga laboral para los roles del proceso de Administración de Incidentes regularmente?"/>
+				<option value="¿Se tienen estadísticas por número de incidentes identificados mensualmente?"/>
+				<option value="¿Se tienen estadísticas por número total de incidentes abiertos?"/>
+				<option value="¿Se tienen estadísticas por número de incidentes cerrados mensualmente?"/>
+				<option value="¿Se tienen estadísticas por número de incidentes escalados con su owner?"/>
+				<option value="¿Se tienen estadísticas por número de Requerimientos de Cambios creados por el Administrador de Incidentes para ser evaluados por el Administrador de Cambios?"/>
+				<option value="¿Se tienen estadísticas por porcentaje de incidentes que fueron evitados por cumplimiento de labores proactivas?"/>
+				<option value="¿Se trazan metas y objetivos para el proceso de Administración de Incidentes?"/>
+		    </rows>
+		    <columns>
+				<option value="Nada Factible" />
+				<option value="Poco Factible" />
+				<option value="Algo Factible" />
+				<option value="Factible" />
+				<option value="Bastante Factible" />
+				<option value="Muy Factible" />
+			</columns>
+		</question>
+	</poll>
+	<poll title="ITIL - Operación (Actividades)" name="Operación de los servicios IT (Actividades) Cualitativa" namePage="operacion_cualitativa_actividades" detail="Esta encuesta ITIL evalúa las actividades de la fase de operación para los servicios de tecnologías de información de los servicios">
+		<question type="title" value="Detección y Registro "></question>
+		<question number="120" type="psc_ta" required="true">
+			<ask value="¿Existe una Base de Datos única para el registro de Incidentes?" />
+		</question>
+		<question number="121" type="psc_ta" required="true">
+			<ask value="¿Existe un identificador único para cada incidente?" />
+		</question>
+		<question number="122" type="psc_ta" required="true">
+			<ask value="¿La documentación registrada de Incidentes esta estandarizada (Ej.: Descripción, Información, historial)?" />
+		</question>
+		<question number="123" type="psc_ta" required="true">
+			<ask value="¿Existe un único punto de contacto para el reporte de todos los incidentes?" />
+		</question>
+		<question number="124" type="psc_ta" required="true">
+			<ask value="¿Todos los incidentes son reportados al único punto de contacto?" />
+		</question>
+		<question number="125" type="psc_ta" required="true">
+			<ask value="¿Los medios de acceso al único punto de contacto están al alcance de todos los usuarios?" />
+		</question>
+		<question number="126" type="psc_ta" required="true">
+			<ask value="¿Todos los incidentes son registrados con su elemento de Configuración?" />
+		</question>
+		<question number="127" type="psc_ta" required="true">
+			<ask value="¿Las inconsistencias de la CMDB son detectadas y reportadas a Configuration Management?" />
+		</question>
+		<question number="128" type="psc_ta" required="true">
+			<ask value="¿Esta identificada claramente la información o campos mínimos requeridos para el registro de un incidente?" />
+		</question>
+		<question number="129" type="psc_ta" required="true">
+			<ask value="¿Está disponible la herramienta de gestión de llamadas por medio Web para que los usuarios finales hagan su propio registro y consultas de incidentes?" />
+		</question>
+		<question number="130" type="psc_ta" required="true">
+			<ask value="¿Los usuarios finales conocen y realizan su propio registro de incidentes por medio Web (40% óptimo)?" />
+		</question>
+		<question number="131" type="psc_ta" required="true">
+			<ask value="¿Se controla la duplicidad de registro de incidentes?" />
+		</question>
+		<question number="132" type="psc_ta" required="true">
+			<ask value="¿El reporte de Incidentes por medio e-mail se realiza a través de un formulario predefinido?" />
+		</question>
+		<question number="133" type="psc_ta" required="true">
+			<ask value="¿Todos los incidentes que no son detectados automáticamente son registrados en la herramienta de gestión a través del Service Desk?" />
+		</question>
+		<question number="134" type="psc_ta" required="true">
+			<ask value="¿Los eventos automáticos registrados que no afectan o degradan el servicio (no son incidentes) son reportados a Operación management para su solución?" />
+		</question>
+		<question type="title" value="Clasificación y Soporte Inicial"></question>
+		<question number="135" type="psc_ta" required="true">
+			<ask value="¿Los SLA's de los servicios prestados están claramente definidos y entendidos por los diferentes grupos de soporte?" />
+		</question>
+ 		<question number="136" type="psc_ta" required="true">
+			<ask value="¿Los SLA's están parametrizados correctamente en la herramienta de gestión?" />
+		</question>
+		<question number="137" type="psc_ta" required="true">
+			<ask value="¿Todos los incidentes están relacionados con el Servicio afectado y su nivel de servicio?" />
+		</question>
+		<question number="138" type="psc_ta" required="true">
+			<ask value="¿La categoría del registro es seleccionada correctamente?" />
+		</question>
+		<question number="139" type="psc_ta" required="true">
+			<ask value="¿El árbol de clasificación de incidentes está definido y parametrizados en la herramienta (según el estándar)?" />
+		</question>
+		<question number="140" type="psc_ta" required="true">
+			<ask value="¿El único punto de contacto conoce el estándar de clasificación y lo utiliza correctamente?" />
+		</question>
+		<question number="141" type="psc_ta" required="true">
+			<ask value="¿El único punto de contacto define la prioridad del incidente basado en el impacto al negocio?" />
+		</question>
+		<question number="142" type="psc_ta" required="true">
+			<ask value="¿Se asignan las prioridades con una matriz de Impacto / Urgencia?" />
+		</question>
+		<question number="143" type="psc_ta" required="true">
+			<ask value="¿Los grupos solucionadores están identificados y registrados en la herramienta de gestión junto con sus alcances?"/>
+		</question>
+		<question number="144" type="psc_ta" required="true">
+			<ask value="¿Los alcances de cada grupo solucionador son claros para el único punto de contacto y para el grupo de IM?"/>
+		</question>
+		<question number="145" type="psc_ta" required="true">
+			<ask value="¿Están definidos los Checklist para los incidentes frecuentes?"/>
+		</question>
+		<question number="146" type="psc_ta" required="true">
+			<ask value="¿Están definidas las plantillas de documentación para los incidentes frecuentes?"/>
+		</question>
+		<question number="147" type="psc_ta" required="true">
+			<ask value="¿Existe una Base de Datos con Errores Conocidos y problemas y sus soluciones - KEDB (definitivas o temporales) con acceso al único punto de contacto y al proceso de IM?"/>
+		</question>
+		<question number="148" type="psc_ta" required="true">
+			<ask value="¿Existe una Base de Datos con Errores Conocidos y problemas y sus soluciones - KEDB (definitivas o temporales) con acceso al único punto de contacto y al proceso de IM?"/>
+		</question>
+		<question number="149" type="psc_ta" required="true">
+			<ask value="¿En la herramienta de gestión se realiza la relación de incidentes con errores conocidos o problemas?"/>
+		</question>
+		<question number="150" type="psc_ta" required="true">
+			<ask value="¿Existe una Base de datos de FAQs con acceso a todo el personal del proceso de incidentes y Usuarios Autorizados?"/>
+		</question>
+		<question number="151" type="psc_ta" required="true">
+			<ask value="¿Se notifica al proceso de problemas la existencia de un posible problema (Incidente con Causa Raíz desconocida o Incidente Crítico)?"/>
+		</question>
+		<question number="152" type="psc_ta" required="true">
+			<ask value="¿Existe una herramienta de control remoto para el único punto de contacto?"/>
+		</question>
+		<question number="153" type="psc_ta" required="true">
+			<ask value="¿El grupo de IM soluciona requerimientos de Reset o desbloqueo de password?"/>
+		</question>
+		<question number="154" type="psc_ta" required="true">
+			<ask value="¿Se realiza correlación de llamadas de usuario con incidentes de plataforma?"/>
+		</question>
+		<question type="title" value="Investigación y Diagnóstico"></question>
+		<question number="155" type="psc_ta" required="true">
+			<ask value="¿Para incidentes críticos la notificación al nivel solucionador se realiza telefónicamente?"/>
+		</question>
+		<question number="156" type="psc_ta" required="true">
+			<ask value="¿Los incidentes se atienden por orden de prioridad ?"/>
+		</question>
+		<question number="157" type="psc_ta" required="true">
+			<ask value="¿Se realiza la actualización continua de la historia del incidente?"/>
+		</question>
+		<question number="158" type="psc_ta" required="true">
+			<ask value="¿El único punto de contacto mantiene informado al cliente sobre el progreso de la solución (Cambio de Estado, Cambio de grupo solucionador, cambio en tiempo estimado de solución)?"/>
+		</question>
+		<question number="159" type="psc_ta" required="true">
+			<ask value="¿El estado registrado del incidente refleja la situación actual del mismo?"/>
+		</question>
+		<question number="159" type="psc_ta" required="true">
+			<ask value="¿Si es requerido, el único punto de contacto re-evalúa el impacto y prioridad asignada acorde con los SLA's?"/>
+		</question>
+		<question number="160" type="psc_ta" required="true">
+			<ask value="¿El único punto de contacto realiza un monitoreo continuo a la solución del incidente y notifica al Incidente Manager incumplimiento en los tiempos de solución según los SLA's?"/>
+		</question>
+		<question number="161" type="psc_ta" required="true">
+			<ask value="¿El Inicident Manager vigila el cumplimiento de los tiempos de solución de los incidentes según los SLA's?"/>
+		</question>
+		<question number="162" type="psc_ta" required="true">
+			<ask value="¿Los especialistas notifican y registran nuevos problemas encontrados y son asignados al proceso correspondiente?"/>
+		</question>
+		<question number="163" type="psc_ta" required="true">
+			<ask value="¿El 2 nivel de soporte realiza el escalamiento a 3 nivel de soporte cuando es requerido?"/>
+		</question>
+		<question number="164" type="psc_ta" required="true">
+			<ask value="¿Siempre existe una verificación de Incidentes pasados con el mismo Síntoma o relación con un error conocido o problema?"/>
+		</question>
+		<question number="165" type="psc_ta" required="true">
+			<ask value="¿Existe una matriz de Escalamiento funcional y jerárquico con sus responsables y tiempos definidos?"/>
+		</question>
+		<question number="166" type="psc_ta" required="true">
+			<ask value="¿Está definido el ciclo de vida de un incidente?"/>
+		</question>
+		<question type="title" value="Resolver el incidente y recuperar el servicio"></question>
+		<question number="167" type="psc_ta" required="true">
+			<ask value="¿La documentación de la solución contiene todas las instrucciones ejecutadas para la recuperación del incidente?"/>
+		</question>
+		<question number="168" type="psc_ta" required="true">
+			<ask value="¿Los n-niveles solucionadores notifican al único punto de contacto cuando realizan la recuperación del incidente?"/>
+		</question>
+		<question number="169" type="psc_ta" required="true">
+			<ask value="¿Se notifica al n-nivel del escalamiento jerárquico alcanzado sobre la solución del incidente?"/>
+		</question>
+		<question number="170" type="psc_ta" required="true">
+			<ask value="¿Se realiza una re-clasificación del incidente cuando sea requerido?"/>
+		</question>
+		<question number="171" type="psc_ta" required="true">
+			<ask value="¿La fecha registrada de solución está acorde con la fecha de la implementación de la solución?"/>
+		</question>
+		<question number="172" type="psc_ta" required="true">
+			<ask value="¿Una solución temporal que restaure el servicio resuelve el incidente?"/>
+		</question>
+		<question number="173" type="psc_ta" required="true">
+			<ask value="¿Existen procedimientos para la solución de un incidente?"/>
+		</question>
+		<question type="title" value="Confirmación y Cierre"></question>
+		<question number="174" type="psc_ta" required="true">
+			<ask value="¿Se categoriza el motivo del cierre (Código de Cierre)?"/>
+		</question>
+		<question number="175" type="psc_ta" required="true">
+			<ask value="¿Se verifica la correcta documentación del incidente en cuanto a (Categoría, Clasificación, Descripción, Elemento de Configuración, SLA, Prioridad, Solución, Código de Cierre)?"/>
+		</question>
+		<question number="176" type="psc_ta" required="true">
+			<ask value="¿Se identifican los casos que son FAQs?"/>
+		</question>
+		<question number="177" type="psc_ta" required="true">
+			<ask value="¿Se identifican nuevas plantillas para documentación de Incidentes y se solicita su creación?"/>
+		</question>
+		<question type="title" value="Confirmación y Cierre"></question>
+		<question number="178" type="psc_ta" required="true">
+			<ask value="¿Se notifica al service Desk cuando el incidente queda pendiente de una acción de por parte de él?"/>
+		</question>
+		<question number="179" type="psc_ta" required="true">
+			<ask value="¿Los reportes de gestión son divulgados al Cliente?"/>
+		</question>
+		<question number="180" type="psc_ta" required="true">
+			<ask value="¿El Incidente Manager detecta y escala fallas del proceso?"/>
+		</question>
+		<question number="181" type="psc_ta" required="true">
+			<ask value="¿Se notifica al usuario el cierre del incidente ?"/>
+		</question>
+		<question number="182" type="psc_ta" required="true">
+			<ask value="¿Los cambios en los alcances de los servicios son notificados a los usuario finales?"/>
+		</question>
+		<question number="183" type="psc_ta" required="true">
+			<ask value="¿Los analistas de primer nivel realizan el seguimiento a todos los incidentes desde el registro hasta el cierre?"/>
+		</question>
+		<question number="184" type="psc_ta" required="true">
+			<ask value="¿El cierre de todos los incidentes es realizado con autorización del Incident Manager?"/>
+		</question>
+		<question type="title" value="Organización"></question>
+		<question number="185" type="psc_ta" required="true">
+			<ask value="¿Existe un Dueño de Proceso de Incident Management?"/>
+		</question>
+		<question number="186" type="psc_ta" required="true">
+			<ask value="¿Esta identificado el rol Administrador de Incidentes?"/>
+		</question>
+		<question number="187" type="psc_ta" required="true">
+			<ask value="¿Están identificados los grupos y especialistas solucionadores para todos los servicios soportados?"/>
+		</question>
+		<question number="188" type="psc_ta" required="true">
+			<ask value="¿Está documentada la Matriz de Escalamiento funcional (por Impacto, con Tiempos escalamiento entre niveles) para el proceso de IM?"/>
+		</question>
+		<question number="189" type="psc_ta" required="true">
+			<ask value="¿Está documentada la Matriz de Escalamiento Jerárquico (por Impacto, con Tiempo de escalamiento entre niveles)?"/>
+		</question>
+		<question number="190" type="psc_ta" required="true">
+			<ask value="¿Está documentada la Matriz de Escalamiento Jerárquico (por Impacto, con Tiempo de escalamiento entre niveles)?"/>
+		</question>
+		<question number="191" type="psc_ta" required="true">
+			<ask value="¿Están identificados los Usuarios Autorizados por Servicio?"/>
+		</question>
+		<question number="192" type="psc_ta" required="true">
+			<ask value="¿Están identificados los usuarios VIP's dentro de la organización del cliente y documentados en la herramienta de gestión?"/>
+		</question>
+		<question number="193" type="psc_ta" required="true">
+			<ask value="¿Las responsabilidades de cada rol están definidas y son conocidas por cada persona involucrada?"/>
+		</question>
+		<question number="194" type="psc_ta" required="true">
+			<ask value="¿El Administrador de Incidentes está entrenado en el proceso de Administración de Incidentes y los procesos relacionados?"/>
+		</question>
+		<question number="195" type="psc_ta" required="true">
+			<ask value="¿Los analistas y especialistas están entrenados en el proceso de administración de incidentes y los procesos relacionados?"/>
+		</question>
+		<question number="196" type="psc_ta" required="true">
+			<ask value="¿Existen métricas de productividad individual para los roles Administrador de Incidentes, Especialistas y Analistas?"/>
+		</question>
+		<question number="197" type="psc_ta" required="true">
+			<ask value="¿El porcentaje de asignación a la administración de incidentes es evaluado para cada rol?"/>
+		</question>
+		<question number="198" type="psc_ta" required="true">
+			<ask value="¿Existe un plan de carrera para cada rol ?"/>
+		</question>
+		<question number="199" type="psc_ta" required="true">
+			<ask value="¿El personal de administración de incidentes está motivado?"/>
+		</question>
+		<question number="200" type="psc_ta" required="true">
+			<ask value="¿Se realizan reuniones quincenales con el grupo de IM y los especialistas para dar retroalimentación de la operación de administración de Incidentes?"/>
+		</question>
+		<question type="title" value="Métricas y Reportes"></question>
+		<question number="201" type="psc_ta" required="true">
+			<ask value="¿Existen métricas de productividad individual para el rol de Administración de Incidentes?"/>
+		</question>
+		<question number="202" type="psc_ta" required="true">
+			<ask value="¿Se tienen reuniones periódicas para revisar las métricas que existen actualmente?"/>
+		</question>
+		<question number="203" type="psc_ta" required="true">
+			<ask value="¿Se analiza la carga laboral para los roles del proceso de Administración de Incidentes regularmente?"/>
+		</question>
+		<question number="204" type="psc_ta" required="true">
+			<ask value="¿Se tienen estadísticas por número de incidentes identificados mensualmente?"/>
+		</question>
+		<question number="205" type="psc_ta" required="true">
+			<ask value="¿Se tienen estadísticas por número total de incidentes abiertos?"/>
+		</question>
+		<question number="206" type="psc_ta" required="true">
+			<ask value="¿Se tienen estadísticas por número de incidentes cerrados mensualmente?"/>
+		</question>
+		<question number="207" type="psc_ta" required="true">
+			<ask value="¿Se tienen estadísticas por número de incidentes escalados con su owner?"/>
+		</question>
+		<question number="208" type="psc_ta" required="true">
+			<ask value="¿Se tienen estadísticas por número de Requerimientos de Cambios creados por el Administrador de Incidentes para ser evaluados por el Administrador de Cambios?"/>
+		</question>
+		<question number="209" type="psc_ta" required="true">
+			<ask value="¿Se tienen estadísticas por porcentaje de incidentes que fueron evitados por cumplimiento de labores proactivas?"/>
+		</question>
+		<question number="210" type="psc_ta" required="true">
+			<ask value="¿Se trazan metas y objetivos para el proceso de Administración de Incidentes?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Operación (Relación entre procesos)" name="Operación de los servicios IT (Relación entre procesos) Cauntitativa" namePage="operacion_cuantitativa_procesos" detail="Esta encuesta ITIL evalúa las actividades de la fase de operación para los servicios de tecnologías de información de los servicios">
+	    <question type="title" value="Service Desk"></question>
+	    <question number="3" type="eru_rb" required="true">
+			<ask value="¿El proceso de service Desk reporta todos los incidentes de forma manual o automática?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿El service Desk suministra todos los detalles básicos de los incidentes reportados?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿Asigna el impacto y la prioridad inicial a los incidentes que son escalados al grupo de Incident Management?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿El service Desk realiza una investigación inicial del incidente?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿El service Desk monitorea y escala los incidentes al grupo de Incident Management?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿El grupo de service Desk cierra y actualiza el registro de los incidentes solucionados por el grupo de Incident Management?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿El service Desk mantiene informado al cliente acerca de los escalamientos que realiza al proceso de Incident Management?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿El service Desk realiza un soporte de primer nivel de los incidentes reportados?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question type="title" value="Change Management"></question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿Existe un proceso formal de RFC para la solución de un Incidente (Cambio Urgente) cuando es requerido?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿El grupo de IM asigna al proceso de Cambios los requerimientos de Cambio (RFC) solicitados por el usuario para su gestión?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿El proceso de cambios Notifica al proceso de Administración de Incidentes la programación y ejecución de los cambios solicitados sean urgentes o estándar?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿Los incidentes causados por cambios implementados son relacionados con el registro de Cambio?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿En el comité de evaluación de cambios críticos se encuentra el Administrador de Incidentes involucrado?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿Los registros de cambio creados a partir de una llamada de servicio son relacionados con el registro de llamada correspondiente?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question type="title" value="Configuration Management "></question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿Todos los elementos de configuración se encuentran en la base de datos de configuración (CMDB)?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿Todos los incidentes están relacionados con su correspondiente elemento de configuración?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿Las inconsistencias encontradas en la CMDB por proceso de Administración de Incidentes son reportadas a la administración de Configuración?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿La base de datos de personas se encuentra actualizada?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿Las personas registradas en la CMDB están relacionadas con sus elementos de configuración?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question type="title" value="Problem Management"></question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿Todo nuevo error conocido es reportado al proceso de Administración de Incidentes?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿Existe una base de datos de Errores conocidos y Problemas - KEDB?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿Todos los errores conocidos contienen una Solución temporal registrada con acceso al proceso de IM?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿El proceso de Administración de incidentes genera reportes de tendencias para el análisis de problemas?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿Los incidentes críticos son escalados a la Administración de Problemas?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿Los incidentes con causa raíz desconocida son escalados a la Administración de Problemas?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		<question number="3" type="eru_rb" required="true">
+			<ask value="¿Las soluciones temporales son suministradas siempre por la Administración de Problemas?"/>
+			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+		
+	</poll>
 </polls>
