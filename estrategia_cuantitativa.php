@@ -27,7 +27,7 @@
 	</header>
 	<div class="container">
 		<form action="estrategia_cuantitativa_process.php" method="GET">
-			<br><h1>Gesti&oacute;n del portafolio de servicios</h1>
+			<br><h1>Gestión del portafolio de servicios</h1>
 <div class="form-group">
 	<div id="panel_eru_rb_1" class="panel panel-primary">
 		<div id="panel_head_eru_rb_1" class="panel-heading">
@@ -64,7 +64,7 @@
 <div class="form-group">
 	<div id="panel_eru_rb_2" class="panel panel-primary">
 		<div id="panel_head_eru_rb_2" class="panel-heading">
-			<h4>¿Existe definici&oacute;n y documentaci&oacute;n de la cartera de servicios?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿Existe definición y documentación de la cartera de servicios?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_eru_rb_2" class="panel-body">						
 			<div class="table-responsive">
@@ -325,7 +325,7 @@
 		</div>
 	</div>
 </div>
-<br><h1>Gesti&oacute;n Financiera</h1>
+<br><h1>Gestión Financiera</h1>
 <div class="form-group">
 	<div id="panel_eru_rb_10" class="panel panel-primary">
 		<div id="panel_head_eru_rb_10" class="panel-heading">
@@ -491,7 +491,7 @@
 		</div>
 	</div>
 </div>
-<br><h1>Gesti&oacute;n de la demanda</h1>
+<br><h1>Gestión de la demanda</h1>
 <div class="form-group">
 	<div id="panel_eru_rb_15" class="panel panel-primary">
 		<div id="panel_head_eru_rb_15" class="panel-heading">

@@ -27,7 +27,7 @@
 	</header>
 	<div class="container">
 		<form action="estrategia_cualitativa_process.php" method="GET">
-			<br><h1>Gesti&oacute;n del portafolio de servicios</h1>
+			<br><h1>Gestión del portafolio de servicios</h1>
 <div class="form-group">
 	<div id="panel_psc_ta_21" class="panel panel-primary">
 		<div id="panel_head_psc_ta_21" class="panel-heading">
@@ -41,7 +41,7 @@
 <div class="form-group">
 	<div id="panel_psc_ta_22" class="panel panel-primary">
 		<div id="panel_head_psc_ta_22" class="panel-heading">
-			<h4>¿Existe definici&oacute;n y documentaci&oacute;n de la cartera de servicios?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿Existe definición y documentación de la cartera de servicios?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psc_ta_22" class="panel-body">
 			<textarea name="psc_ta_22" id="psc_ta_22" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
@@ -118,7 +118,7 @@
 		</div>
 	</div>
 </div>
-<br><h1>Gesti&oacute;n Financiera</h1>
+<br><h1>Gestión Financiera</h1>
 <div class="form-group">
 	<div id="panel_psc_ta_30" class="panel panel-primary">
 		<div id="panel_head_psc_ta_30" class="panel-heading">
@@ -169,7 +169,7 @@
 		</div>
 	</div>
 </div>
-<br><h1>Gesti&oacute;n de la demanda</h1>
+<br><h1>Gestión de la demanda</h1>
 <div class="form-group">
 	<div id="panel_psc_ta_35" class="panel panel-primary">
 		<div id="panel_head_psc_ta_35" class="panel-heading">
