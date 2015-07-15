@@ -1649,7 +1649,5 @@
 			<ask value="¿Las soluciones temporales son suministradas siempre por la Administración de Problemas?"/>
 			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
-		
-	</poll>
-	
+	</poll>	
 </polls>
