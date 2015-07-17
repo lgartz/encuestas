@@ -443,7 +443,7 @@
 						<td class="td-center"><input id="mmr_rb_427_1_6" name="mmr_rb_427_1" type="radio"  value="mmr_rb_427_1_6" class="form-control"></td>
 					</tr>
 					<tr>
-						<th>¿El proceso de Incident Management entrega información al proceso de Availability acerca de la disponibilidad de los niveles de servicio pactados en los SLA's ?</th>
+						<th>¿El proceso de Incident Management entrega información al proceso de Availability acerca de la disponibilidad de los niveles de servicio pactados en los SLAs ?</th>
 						<td class="td-center"><input id="mmr_rb_427_2_1" name="mmr_rb_427_2" type="radio"  value="mmr_rb_427_2_1" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_427_2_2" name="mmr_rb_427_2" type="radio"  value="mmr_rb_427_2_2" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_427_2_3" name="mmr_rb_427_2" type="radio"  value="mmr_rb_427_2_3" class="form-control"></td>
@@ -501,7 +501,7 @@
 						<td class="td-center"><input id="mmr_rb_428_2_6" name="mmr_rb_428_2" type="radio"  value="mmr_rb_428_2_6" class="form-control"></td>
 					</tr>
 					<tr>
-						<th>¿El proceso de Incident Management asegura que los incidentes son solucionados dentro de los niveles de capacidad mencionados en los SLA's?</th>
+						<th>¿El proceso de Incident Management asegura que los incidentes son solucionados dentro de los niveles de capacidad mencionados en los SLAs?</th>
 						<td class="td-center"><input id="mmr_rb_428_3_1" name="mmr_rb_428_3" type="radio"  value="mmr_rb_428_3_1" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_428_3_2" name="mmr_rb_428_3" type="radio"  value="mmr_rb_428_3_2" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_428_3_3" name="mmr_rb_428_3" type="radio"  value="mmr_rb_428_3_3" class="form-control"></td>
@@ -612,7 +612,7 @@
 						<th class="th-center">Muy Factible</th>
 					</tr>
 					<tr>
-						<th>¿El proceso de IM proporciona reportes que permiten al grupo de niveles de servicio revisar objetivamente y regularmente los SLA's pactados ?</th>
+						<th>¿El proceso de IM proporciona reportes que permiten al grupo de niveles de servicio revisar objetivamente y regularmente los SLAs pactados ?</th>
 						<td class="td-center"><input id="mmr_rb_431_1_1" name="mmr_rb_431_1" type="radio"  value="mmr_rb_431_1_1" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_431_1_2" name="mmr_rb_431_1" type="radio"  value="mmr_rb_431_1_2" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_431_1_3" name="mmr_rb_431_1" type="radio"  value="mmr_rb_431_1_3" class="form-control"></td>
@@ -621,7 +621,7 @@
 						<td class="td-center"><input id="mmr_rb_431_1_6" name="mmr_rb_431_1" type="radio"  value="mmr_rb_431_1_6" class="form-control"></td>
 					</tr>
 					<tr>
-						<th>¿El proceso de IM retroalimenta al proceso de Service Level Management acerca de inconsistencias, incumplimientos o acuerdos no alcanzables de los SLA's, OLA's y UCs?</th>
+						<th>¿El proceso de IM retroalimenta al proceso de Service Level Management acerca de inconsistencias, incumplimientos o acuerdos no alcanzables de los SLAs, OLAs y UCs?</th>
 						<td class="td-center"><input id="mmr_rb_431_2_1" name="mmr_rb_431_2" type="radio"  value="mmr_rb_431_2_1" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_431_2_2" name="mmr_rb_431_2" type="radio"  value="mmr_rb_431_2_2" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_431_2_3" name="mmr_rb_431_2" type="radio"  value="mmr_rb_431_2_3" class="form-control"></td>

@@ -69,12 +69,12 @@
 	</div>
 </div>
 <div class="form-group">
-	<div id="panel_psc_ta_380" class="panel panel-primary">
-		<div id="panel_head_psc_ta_380" class="panel-heading">
+	<div id="panel_psc_ta_510" class="panel panel-primary">
+		<div id="panel_head_psc_ta_510" class="panel-heading">
 			<h4>¿El service Desk monitorea y escala los incidentes al grupo de Incident Management?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
-		<div id="panel_body_psc_ta_380" class="panel-body">
-			<textarea name="psc_ta_380" id="psc_ta_380" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
+		<div id="panel_body_psc_ta_510" class="panel-body">
+			<textarea name="psc_ta_510" id="psc_ta_510" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
 		</div>
 	</div>
 </div>
@@ -356,7 +356,7 @@
 <div class="form-group">
 	<div id="panel_psc_ta_408" class="panel panel-primary">
 		<div id="panel_head_psc_ta_408" class="panel-heading">
-			<h4>¿El proceso de Incident Management entrega información al proceso de Availability acerca de la disponibilidad de los niveles de servicio pactados en los SLA's ?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿El proceso de Incident Management entrega información al proceso de Availability acerca de la disponibilidad de los niveles de servicio pactados en los SLAs ?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psc_ta_408" class="panel-body">
 			<textarea name="psc_ta_408" id="psc_ta_408" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
@@ -397,7 +397,7 @@
 <div class="form-group">
 	<div id="panel_psc_ta_412" class="panel panel-primary">
 		<div id="panel_head_psc_ta_412" class="panel-heading">
-			<h4>¿El proceso de Incident Management asegura que los incidentes son solucionados dentro de los niveles de capacidad mencionados en los SLA's?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿El proceso de Incident Management asegura que los incidentes son solucionados dentro de los niveles de capacidad mencionados en los SLAs?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psc_ta_412" class="panel-body">
 			<textarea name="psc_ta_412" id="psc_ta_412" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
@@ -450,7 +450,7 @@
 <div class="form-group">
 	<div id="panel_psc_ta_417" class="panel panel-primary">
 		<div id="panel_head_psc_ta_417" class="panel-heading">
-			<h4>¿El proceso de IM proporciona reportes que permiten al grupo de niveles de servicio revisar objetivamente y regularmente los SLA's pactados ?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿El proceso de IM proporciona reportes que permiten al grupo de niveles de servicio revisar objetivamente y regularmente los SLAs pactados ?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psc_ta_417" class="panel-body">
 			<textarea name="psc_ta_417" id="psc_ta_417" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
@@ -460,7 +460,7 @@
 <div class="form-group">
 	<div id="panel_psc_ta_418" class="panel panel-primary">
 		<div id="panel_head_psc_ta_418" class="panel-heading">
-			<h4>¿El proceso de IM retroalimenta al proceso de Service Level Management acerca de inconsistencias, incumplimientos o acuerdos no alcanzables de los SLA's, OLA's y UCs?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿El proceso de IM retroalimenta al proceso de Service Level Management acerca de inconsistencias, incumplimientos o acuerdos no alcanzables de los SLAs, OLAs y UCs?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psc_ta_418" class="panel-body">
 			<textarea name="psc_ta_418" id="psc_ta_418" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>

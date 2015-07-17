@@ -243,7 +243,7 @@
 <div class="form-group">
 	<div id="panel_psc_ta_128" class="panel panel-primary">
 		<div id="panel_head_psc_ta_128" class="panel-heading">
-			<h4>¿Se tienen definidos indicadores clave de rendimiento (KPI's) para la gestión del cambio?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿Se tienen definidos indicadores clave de rendimiento (KPIs) para la gestión del cambio?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psc_ta_128" class="panel-body">
 			<textarea name="psc_ta_128" id="psc_ta_128" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>

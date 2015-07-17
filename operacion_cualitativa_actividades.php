@@ -182,7 +182,7 @@
 <div class="form-group">
 	<div id="panel_psc_ta_254" class="panel panel-primary">
 		<div id="panel_head_psc_ta_254" class="panel-heading">
-			<h4>¿Los SLA's de los servicios prestados están claramente definidos y entendidos por los diferentes grupos de soporte?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿Los SLAs de los servicios prestados están claramente definidos y entendidos por los diferentes grupos de soporte?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psc_ta_254" class="panel-body">
 			<textarea name="psc_ta_254" id="psc_ta_254" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
@@ -192,7 +192,7 @@
 <div class="form-group">
 	<div id="panel_psc_ta_255" class="panel panel-primary">
 		<div id="panel_head_psc_ta_255" class="panel-heading">
-			<h4>¿Los SLA's están parametrizados correctamente en la herramienta de gestión?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿Los SLAs están parametrizados correctamente en la herramienta de gestión?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psc_ta_255" class="panel-body">
 			<textarea name="psc_ta_255" id="psc_ta_255" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
@@ -433,7 +433,7 @@
 <div class="form-group">
 	<div id="panel_psc_ta_279" class="panel panel-primary">
 		<div id="panel_head_psc_ta_279" class="panel-heading">
-			<h4>¿Si es requerido, el único punto de contacto re-evalúa el impacto y prioridad asignada acorde con los SLA's?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿Si es requerido, el único punto de contacto re-evalúa el impacto y prioridad asignada acorde con los SLAs?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psc_ta_279" class="panel-body">
 			<textarea name="psc_ta_279" id="psc_ta_279" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
@@ -443,7 +443,7 @@
 <div class="form-group">
 	<div id="panel_psc_ta_280" class="panel panel-primary">
 		<div id="panel_head_psc_ta_280" class="panel-heading">
-			<h4>¿El único punto de contacto realiza un monitoreo continuo a la solución del incidente y notifica al Incidente Manager incumplimiento en los tiempos de solución según los SLA's?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿El único punto de contacto realiza un monitoreo continuo a la solución del incidente y notifica al Incidente Manager incumplimiento en los tiempos de solución según los SLAs?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psc_ta_280" class="panel-body">
 			<textarea name="psc_ta_280" id="psc_ta_280" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
@@ -453,7 +453,7 @@
 <div class="form-group">
 	<div id="panel_psc_ta_281" class="panel panel-primary">
 		<div id="panel_head_psc_ta_281" class="panel-heading">
-			<h4>¿El Inicident Manager vigila el cumplimiento de los tiempos de solución de los incidentes según los SLA's?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿El Inicident Manager vigila el cumplimiento de los tiempos de solución de los incidentes según los SLAs?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psc_ta_281" class="panel-body">
 			<textarea name="psc_ta_281" id="psc_ta_281" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
@@ -767,7 +767,7 @@
 <div class="form-group">
 	<div id="panel_psc_ta_312" class="panel panel-primary">
 		<div id="panel_head_psc_ta_312" class="panel-heading">
-			<h4>¿Están identificados los usuarios VIP's dentro de la organización del cliente y documentados en la herramienta de gestión?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿Están identificados los usuarios VIPs dentro de la organización del cliente y documentados en la herramienta de gestión?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psc_ta_312" class="panel-body">
 			<textarea name="psc_ta_312" id="psc_ta_312" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>

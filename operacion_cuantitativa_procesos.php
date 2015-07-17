@@ -1092,7 +1092,7 @@
 <div class="form-group">
 	<div id="panel_eru_rb_363" class="panel panel-primary">
 		<div id="panel_head_eru_rb_363" class="panel-heading">
-			<h4>¿El proceso de Incident Management entrega información al proceso de Availability acerca de la disponibilidad de los niveles de servicio pactados en los SLA's ?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿El proceso de Incident Management entrega información al proceso de Availability acerca de la disponibilidad de los niveles de servicio pactados en los SLAs ?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_eru_rb_363" class="panel-body">						
 			<div class="table-responsive">
@@ -1225,7 +1225,7 @@
 <div class="form-group">
 	<div id="panel_eru_rb_367" class="panel panel-primary">
 		<div id="panel_head_eru_rb_367" class="panel-heading">
-			<h4>¿El proceso de Incident Management asegura que los incidentes son solucionados dentro de los niveles de capacidad mencionados en los SLA's?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿El proceso de Incident Management asegura que los incidentes son solucionados dentro de los niveles de capacidad mencionados en los SLAs?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_eru_rb_367" class="panel-body">						
 			<div class="table-responsive">
@@ -1393,7 +1393,7 @@
 <div class="form-group">
 	<div id="panel_eru_rb_372" class="panel panel-primary">
 		<div id="panel_head_eru_rb_372" class="panel-heading">
-			<h4>¿El proceso de IM proporciona reportes que permiten al grupo de niveles de servicio revisar objetivamente y regularmente los SLA's pactados ?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿El proceso de IM proporciona reportes que permiten al grupo de niveles de servicio revisar objetivamente y regularmente los SLAs pactados ?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_eru_rb_372" class="panel-body">						
 			<div class="table-responsive">
@@ -1426,7 +1426,7 @@
 <div class="form-group">
 	<div id="panel_eru_rb_373" class="panel panel-primary">
 		<div id="panel_head_eru_rb_373" class="panel-heading">
-			<h4>¿El proceso de IM retroalimenta al proceso de Service Level Management acerca de inconsistencias, incumplimientos o acuerdos no alcanzables de los SLA's, OLA's y UCs?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿El proceso de IM retroalimenta al proceso de Service Level Management acerca de inconsistencias, incumplimientos o acuerdos no alcanzables de los SLAs, OLAs y UCs?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_eru_rb_373" class="panel-body">						
 			<div class="table-responsive">

@@ -726,7 +726,7 @@
 <div class="form-group">
 	<div id="panel_eru_rb_100" class="panel panel-primary">
 		<div id="panel_head_eru_rb_100" class="panel-heading">
-			<h4>¿Se tienen definidos indicadores clave de rendimiento (KPI's) para la gestión del cambio?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿Se tienen definidos indicadores clave de rendimiento (KPIs) para la gestión del cambio?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_eru_rb_100" class="panel-body">						
 			<div class="table-responsive">

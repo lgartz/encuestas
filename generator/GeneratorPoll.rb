@@ -30,7 +30,7 @@ def readPollFileXml ( pathFile )
         number = questionChild.attributes["number"]
         listQuestionId.push("#{type}_#{number}")
         required = questionChild.attributes["required"]
-        ask = questionChild.elements["ask"].attributes["value"]
+        ask = questionChild.elements["ask"].attributes["value"]       
         resultado = getResultElementForm(questionChild,type,number,ask,listDatesId,hashNames)
         body << "#{resultado}\n"
         resultSQL = getResultSQL(ask,type,number,questionChild)
@@ -50,8 +50,8 @@ def readPollFileXml ( pathFile )
     createFile("../encuestas/",".php",namePhp,erbPhp)
     idPoll += 1
   end
-    erbSQL = getTemplate("../encuestas/templates/sql.template",binding)
-    createFile("../encuestas/sql/",".sql","encuestas",erbSQL)
+  erbSQL = getTemplate("../encuestas/templates/sql.template",binding)
+  createFile("../encuestas/sql/",".sql","encuestas",erbSQL)
 end
 
 # Metodo encargado de retornar el codigo sql para cada una de las preguntas generadas

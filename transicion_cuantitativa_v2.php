@@ -278,7 +278,7 @@
 						<td class="td-center"><input id="mmr_rb_137_12_6" name="mmr_rb_137_12" type="radio"  value="mmr_rb_137_12_6" class="form-control"></td>
 					</tr>
 					<tr>
-						<th>¿Se tienen definidos indicadores clave de rendimiento (KPI's) para la gestión del cambio?</th>
+						<th>¿Se tienen definidos indicadores clave de rendimiento (KPIs) para la gestión del cambio?</th>
 						<td class="td-center"><input id="mmr_rb_137_13_1" name="mmr_rb_137_13" type="radio"  value="mmr_rb_137_13_1" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_137_13_2" name="mmr_rb_137_13" type="radio"  value="mmr_rb_137_13_2" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_137_13_3" name="mmr_rb_137_13" type="radio"  value="mmr_rb_137_13_3" class="form-control"></td>

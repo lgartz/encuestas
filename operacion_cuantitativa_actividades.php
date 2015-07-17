@@ -527,7 +527,7 @@
 <div class="form-group">
 	<div id="panel_eru_rb_154" class="panel panel-primary">
 		<div id="panel_head_eru_rb_154" class="panel-heading">
-			<h4>¿Los SLA's de los servicios prestados están claramente definidos y entendidos por los diferentes grupos de soporte?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿Los SLAs de los servicios prestados están claramente definidos y entendidos por los diferentes grupos de soporte?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_eru_rb_154" class="panel-body">						
 			<div class="table-responsive">
@@ -560,7 +560,7 @@
 <div class="form-group">
 	<div id="panel_eru_rb_155" class="panel panel-primary">
 		<div id="panel_head_eru_rb_155" class="panel-heading">
-			<h4>¿Los SLA's están parametrizados correctamente en la herramienta de gestión?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿Los SLAs están parametrizados correctamente en la herramienta de gestión?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_eru_rb_155" class="panel-body">						
 			<div class="table-responsive">
@@ -1353,7 +1353,7 @@
 <div class="form-group">
 	<div id="panel_eru_rb_179" class="panel panel-primary">
 		<div id="panel_head_eru_rb_179" class="panel-heading">
-			<h4>¿Si es requerido, el único punto de contacto re-evalúa el impacto y prioridad asignada acorde con los SLA's?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿Si es requerido, el único punto de contacto re-evalúa el impacto y prioridad asignada acorde con los SLAs?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_eru_rb_179" class="panel-body">						
 			<div class="table-responsive">
@@ -1386,7 +1386,7 @@
 <div class="form-group">
 	<div id="panel_eru_rb_180" class="panel panel-primary">
 		<div id="panel_head_eru_rb_180" class="panel-heading">
-			<h4>¿El único punto de contacto realiza un monitoreo continuo a la solución del incidente y notifica al Incidente Manager incumplimiento en los tiempos de solución según los SLA's?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿El único punto de contacto realiza un monitoreo continuo a la solución del incidente y notifica al Incidente Manager incumplimiento en los tiempos de solución según los SLAs?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_eru_rb_180" class="panel-body">						
 			<div class="table-responsive">
@@ -1419,7 +1419,7 @@
 <div class="form-group">
 	<div id="panel_eru_rb_181" class="panel panel-primary">
 		<div id="panel_head_eru_rb_181" class="panel-heading">
-			<h4>¿El Inicident Manager vigila el cumplimiento de los tiempos de solución de los incidentes según los SLA's?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿El Inicident Manager vigila el cumplimiento de los tiempos de solución de los incidentes según los SLAs?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_eru_rb_181" class="panel-body">						
 			<div class="table-responsive">
@@ -2446,7 +2446,7 @@
 <div class="form-group">
 	<div id="panel_eru_rb_212" class="panel panel-primary">
 		<div id="panel_head_eru_rb_212" class="panel-heading">
-			<h4>¿Están identificados los usuarios VIP's dentro de la organización del cliente y documentados en la herramienta de gestión?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿Están identificados los usuarios VIPs dentro de la organización del cliente y documentados en la herramienta de gestión?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_eru_rb_212" class="panel-body">						
 			<div class="table-responsive">

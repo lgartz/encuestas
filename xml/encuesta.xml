@@ -1752,7 +1752,7 @@
 		<question number="380" type="psc_ta" required="true">
 			<ask value="¿El service Desk realiza una investigación inicial del incidente?"/>
 		</question>
-		<question number="380" type="psc_ta" required="true">
+		<question number="510" type="psc_ta" required="true">
 			<ask value="¿El service Desk monitorea y escala los incidentes al grupo de Incident Management?"/>
 		</question>
 		<question number="381" type="psc_ta" required="true">
@@ -2195,7 +2195,7 @@
 				<option value="Bastante Factible" />
 				<option value="Muy Factible" />
 			</columns>
-		</question>		
+		</question>
 	</poll>
 	<poll title="ITIL - Mejora" name="Mejora Continua de los Servicios TI Cuantitativa" namePage="mejora_cuantitativa" detail="Esta encuesta ITIL evalúa las actividades de la fase de mejora para los servicios de tecnologías de información de los servicios">
 		<question type="title" value="Objetivos"></question>
@@ -2211,7 +2211,7 @@
 			<ask value="¿Se evalúan los logros de los niveles de servicio?"/>
 			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
-		<question number="460" type="eru_rb" required="true">
+		<question number="511" type="eru_rb" required="true">
 			<ask value="¿Existen planes de mejoramiento para la calidad de los servicios de TI, la eficiencia, y el costo de la entrega de los servicios?"/>
 			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
@@ -2298,6 +2298,176 @@
 		<question number="480" type="eru_rb" required="true">
 			<ask value="¿Se presentan planes de acción de mejoramiento basados en las métricas?"/>
 			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Mejora" name="Mejora Continua de los Servicios TI Cualitativa" namePage="mejora_cualitativa" detail="Esta encuesta ITIL evalúa las actividades de la fase de mejora para los servicios de tecnologías de información de los servicios">
+		<question type="title" value="Objetivos"></question>
+		<question number="481" type="psc_ta" required="true">
+			<ask value="¿Constantemente se aprende las lecciones aprendidas en todos los procesos, con el fin de alinear los servicios de TI con los cambios que el negocio necesite ?"/>
+		</question>
+		<question number="482" type="psc_ta" required="true">
+			<ask value="¿Se revisa, analiza y se ejecutan recomendaciones sobre las oportunidades de mejora en cada fase del ciclo de vida?"/>
+		</question>
+		<question number="483" type="psc_ta" required="true">
+			<ask value="¿Se evalúan los logros de los niveles de servicio?"/>
+		</question>
+		<question number="484" type="psc_ta" required="true">
+			<ask value="¿Existen planes de mejoramiento para la calidad de los servicios de TI, la eficiencia, y el costo de la entrega de los servicios?"/>
+		</question>
+		<question number="485" type="psc_ta" required="true">
+			<ask value="¿Las mediciones realizadas a los procesos y servicios permite realizar estrategias de mejora para los servicios?"/>
+		</question>
+		<question type="title" value="Enfoque de la mejora continua"></question>
+		<question number="486" type="psc_ta" required="true">
+			<ask value="¿Para realizar un control de la calidad continua, permanentemente se planea, se hace, se verifica y se actúa (Ciclo Deaming PHVA) ?"/>
+		</question>
+		<question number="487" type="psc_ta" required="true">
+			<ask value="¿El personal interno y externo tienen clara la visión de la institución con el fin de enfocar sus estrategias y actividades al cumplimiento de los logros ?"/>
+		</question>
+		<question number="488" type="psc_ta" required="true">
+			<ask value="¿El equipo de trabajo se reúne con frecuencia para evaluar el cumplimiento de objetivos (en donde estamos ahora?) , definir iniciativas y planes de acción para mejorar la prestación del servicio?"/>
+		</question>
+		<question number="489" type="psc_ta" required="true">
+			<ask value="¿Se tienen definidos los objetivos donde se defina con claridad donde quieren estar?"/>
+		</question>
+		<question number="490" type="psc_ta" required="true">
+			<ask value="¿Existen planes estratégicos donde se definan los planes para apoyar el logro de los objetivos del área y del negocio?"/>
+		</question>
+		<question type="title" value="Valor del negocio"></question>
+		<question number="491" type="psc_ta" required="true">
+			<ask value="¿Los objetivos son medidos por medio de métricas bien definida?"/>
+		</question>
+		<question number="492" type="psc_ta" required="true">
+			<ask value="¿Las acciones correctivas y cambios se ejecutan basadas en los resultados de las métricas?"/>
+		</question>
+		<question number="493" type="psc_ta" required="true">
+			<ask value="¿Existen evidencias que faciliten evaluar los resultados y justificar las acciones de mejora?"/>
+		</question>
+		<question type="title" value="Línea Base"></question>
+		<question number="494" type="psc_ta" required="true">
+			<ask value="¿Existen evidencias y registros históricos a manera de marcas de referencia o puntos de partida, con los cuales se puedan observar los cambios?"/>
+		</question>
+		<question number="495" type="psc_ta" required="true">
+			<ask value="¿Los datos históricos contienen información estratégica?"/>
+		</question>
+		<question number="496" type="psc_ta" required="true">
+			<ask value="¿Los datos históricos contienen información táctica?"/>
+		</question>
+		<question number="497" type="psc_ta" required="true">
+			<ask value="¿Los datos históricos contienen información operacional?"/>
+		</question>
+		<question type="title" value="Métricas y medidas"></question>
+		<question number="498" type="psc_ta" required="true">
+			<ask value="¿Se cuentan con métricas de tecnología existente en el negocio (índice de sistematización, nivel de automatización de procesos, inversión en tecnología, etc)?"/>
+		</question>
+		<question number="499" type="psc_ta" required="true">
+			<ask value="¿Están definidas las métricas de servicio ?"/>
+		</question>
+		<question number="500" type="psc_ta" required="true">
+			<ask value="¿Existen métricas de procesos y métricas de actividades para los procesos de la gestión de servicios?"/>
+		</question>
+		<question number="501" type="psc_ta" required="true">
+			<ask value="Para reunir y procesar los datos se tiene definido: ¿Quien lo hace? ¿Cómo? ¿ Cuando? ¿Integridad de los datos?"/>
+		</question>
+		<question number="502" type="psc_ta" required="true">
+			<ask value="¿En el procesamiento de datos está definido: la frecuencia, los formatos, el sistema y la precisión?"/>
+		</question>
+		<question number="503" type="psc_ta" required="true">
+			<ask value="¿En el análisis de los datos se tienen definidos las relaciones, tendencias, objetivos alcanzados y acciones correctivas?"/>
+		</question>
+		<question number="504" type="psc_ta" required="true">
+			<ask value="¿Se presentan planes de acción de mejoramiento basados en las métricas?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Mejora" name="Mejora Continua de los Servicios TI Cuantitativa" namePage="mejora_cuantitativa_v2" detail="Esta encuesta ITIL evalúa las actividades de la fase de mejora para los servicios de tecnologías de información de los servicios">
+		<question number="505" type="mmr_rb" required="true">
+		    <ask value="Objetivos"/>
+		    <rows>
+				<option value="¿Constantemente se aprende las lecciones aprendidas en todos los procesos, con el fin de alinear los servicios de TI con los cambios que el negocio necesite ?"/>
+				<option value="¿Se revisa, analiza y se ejecutan recomendaciones sobre las oportunidades de mejora en cada fase del ciclo de vida?"/>
+				<option value="¿Se evalúan los logros de los niveles de servicio?"/>
+				<option value="¿Existen planes de mejoramiento para la calidad de los servicios de TI, la eficiencia, y el costo de la entrega de los servicios?"/>
+				<option value="¿Las mediciones realizadas a los procesos y servicios permite realizar estrategias de mejora para los servicios?"/>		
+		    </rows>
+		    <columns>
+				<option value="Nada Factible" />
+				<option value="Poco Factible" />
+				<option value="Algo Factible" />
+				<option value="Factible" />
+				<option value="Bastante Factible" />
+				<option value="Muy Factible" />
+			</columns>
+		</question>
+		<question number="506" type="mmr_rb" required="true">
+		    <ask value="Enfoque de la mejora continua"/>
+		    <rows>
+				<option value="¿Para realizar un control de la calidad continua, permanentemente se planea, se hace, se verifica y se actúa (Ciclo Deaming PHVA) ?"/>
+				<option value="¿El personal interno y externo tienen clara la visión de la institución con el fin de enfocar sus estrategias y actividades al cumplimiento de los logros ?"/>
+				<option value="¿El equipo de trabajo se reúne con frecuencia para evaluar el cumplimiento de objetivos (en donde estamos ahora?) , definir iniciativas y planes de acción para mejorar la prestación del servicio?"/>
+				<option value="¿Se tienen definidos los objetivos donde se defina con claridad donde quieren estar?"/>
+				<option value="¿Existen planes estratégicos donde se definan los planes para apoyar el logro de los objetivos del área y del negocio?"/>		
+		    </rows>
+		    <columns>
+				<option value="Nada Factible" />
+				<option value="Poco Factible" />
+				<option value="Algo Factible" />
+				<option value="Factible" />
+				<option value="Bastante Factible" />
+				<option value="Muy Factible" />
+			</columns>
+		</question>
+		<question number="507" type="mmr_rb" required="true">
+		    <ask value="Valor del negocio"/>
+		    <rows>
+				<option value="¿Los objetivos son medidos por medio de métricas bien definida?"/>
+				<option value="¿Las acciones correctivas y cambios se ejecutan basadas en los resultados de las métricas?"/>
+				<option value="¿Existen evidencias que faciliten evaluar los resultados y justificar las acciones de mejora?"/>				
+		    </rows>
+		    <columns>
+				<option value="Nada Factible" />
+				<option value="Poco Factible" />
+				<option value="Algo Factible" />
+				<option value="Factible" />
+				<option value="Bastante Factible" />
+				<option value="Muy Factible" />
+			</columns>
+		</question>
+		<question number="508" type="mmr_rb" required="true">
+		    <ask value="Línea Base"/>
+		    <rows>
+				<option value="¿Existen evidencias y registros históricos a manera de marcas de referencia o puntos de partida, con los cuales se puedan observar los cambios?"/>
+				<option value="¿Los datos históricos contienen información estratégica?"/>
+				<option value="¿Los datos históricos contienen información táctica?"/>
+				<option value="¿Los datos históricos contienen información operacional?"/>		
+		    </rows>
+		    <columns>
+				<option value="Nada Factible" />
+				<option value="Poco Factible" />
+				<option value="Algo Factible" />
+				<option value="Factible" />
+				<option value="Bastante Factible" />
+				<option value="Muy Factible" />
+			</columns>
+		</question>
+		<question number="509" type="mmr_rb" required="true">
+		    <ask value="Métricas y medidas"/>
+		    <rows>
+				<option value="¿Se cuentan con métricas de tecnología existente en el negocio (índice de sistematización, nivel de automatización de procesos, inversión en tecnología, etc)?"/>
+				<option value="¿Están definidas las métricas de servicio ?"/>
+				<option value="¿Existen métricas de procesos y métricas de actividades para los procesos de la gestión de servicios?"/>
+				<option value="Para reunir y procesar los datos se tiene definido: ¿Quien lo hace? ¿Cómo? ¿ Cuando? ¿Integridad de los datos?"/>
+				<option value="¿En el procesamiento de datos está definido: la frecuencia, los formatos, el sistema y la precisión?"/>
+				<option value="¿En el análisis de los datos se tienen definidos las relaciones, tendencias, objetivos alcanzados y acciones correctivas?"/>
+				<option value="¿Se presentan planes de acción de mejoramiento basados en las métricas?"/>		
+		    </rows>
+		    <columns>
+				<option value="Nada Factible" />
+				<option value="Poco Factible" />
+				<option value="Algo Factible" />
+				<option value="Factible" />
+				<option value="Bastante Factible" />
+				<option value="Muy Factible" />
+			</columns>
 		</question>
 	</poll>
 </polls>

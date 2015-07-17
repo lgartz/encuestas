@@ -72,15 +72,15 @@ $(function(){
 	      	$("#panel_psc_ta_380").addClass( "panel-primary" );
 	      	$("#panel_head_psc_ta_380 h4 small b").addClass("message_error");
 	   	}
-	   	if ($("textarea[name='psc_ta_380']").val().trim() == "") {
-	      	$("#panel_psc_ta_380").removeClass( "panel-primary" );
-	      	$("#panel_psc_ta_380").addClass( "panel-danger" );
-	      	$("#panel_head_psc_ta_380 h4 small b").removeClass("message_error");
+	   	if ($("textarea[name='psc_ta_510']").val().trim() == "") {
+	      	$("#panel_psc_ta_510").removeClass( "panel-primary" );
+	      	$("#panel_psc_ta_510").addClass( "panel-danger" );
+	      	$("#panel_head_psc_ta_510 h4 small b").removeClass("message_error");
 	      	resultado = false;
 	   	}else{
-	   		$("#panel_psc_ta_380").removeClass( "panel-danger" );
-	      	$("#panel_psc_ta_380").addClass( "panel-primary" );
-	      	$("#panel_head_psc_ta_380 h4 small b").addClass("message_error");
+	   		$("#panel_psc_ta_510").removeClass( "panel-danger" );
+	      	$("#panel_psc_ta_510").addClass( "panel-primary" );
+	      	$("#panel_head_psc_ta_510 h4 small b").addClass("message_error");
 	   	}
 	   	if ($("textarea[name='psc_ta_381']").val().trim() == "") {
 	      	$("#panel_psc_ta_381").removeClass( "panel-primary" );

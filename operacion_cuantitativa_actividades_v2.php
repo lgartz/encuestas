@@ -202,7 +202,7 @@
 						<th class="th-center">Muy Factible</th>
 					</tr>
 					<tr>
-						<th>Los SLA's de los servicios prestados están claramente definidos y entendidos por los diferentes grupos de soporte</th>
+						<th>Los SLAs de los servicios prestados están claramente definidos y entendidos por los diferentes grupos de soporte</th>
 						<td class="td-center"><input id="mmr_rb_232_1_1" name="mmr_rb_232_1" type="radio"  value="mmr_rb_232_1_1" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_232_1_2" name="mmr_rb_232_1" type="radio"  value="mmr_rb_232_1_2" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_232_1_3" name="mmr_rb_232_1" type="radio"  value="mmr_rb_232_1_3" class="form-control"></td>
@@ -211,7 +211,7 @@
 						<td class="td-center"><input id="mmr_rb_232_1_6" name="mmr_rb_232_1" type="radio"  value="mmr_rb_232_1_6" class="form-control"></td>
 					</tr>
 					<tr>
-						<th>Los SLA's están parametrizados correctamente en la herramienta de gestión</th>
+						<th>Los SLAs están parametrizados correctamente en la herramienta de gestión</th>
 						<td class="td-center"><input id="mmr_rb_232_2_1" name="mmr_rb_232_2" type="radio"  value="mmr_rb_232_2_1" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_232_2_2" name="mmr_rb_232_2" type="radio"  value="mmr_rb_232_2_2" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_232_2_3" name="mmr_rb_232_2" type="radio"  value="mmr_rb_232_2_3" class="form-control"></td>
@@ -440,7 +440,7 @@
 						<td class="td-center"><input id="mmr_rb_233_5_6" name="mmr_rb_233_5" type="radio"  value="mmr_rb_233_5_6" class="form-control"></td>
 					</tr>
 					<tr>
-						<th>¿Si es requerido, el único punto de contacto re-evalúa el impacto y prioridad asignada acorde con los SLA's?</th>
+						<th>¿Si es requerido, el único punto de contacto re-evalúa el impacto y prioridad asignada acorde con los SLAs?</th>
 						<td class="td-center"><input id="mmr_rb_233_6_1" name="mmr_rb_233_6" type="radio"  value="mmr_rb_233_6_1" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_233_6_2" name="mmr_rb_233_6" type="radio"  value="mmr_rb_233_6_2" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_233_6_3" name="mmr_rb_233_6" type="radio"  value="mmr_rb_233_6_3" class="form-control"></td>
@@ -449,7 +449,7 @@
 						<td class="td-center"><input id="mmr_rb_233_6_6" name="mmr_rb_233_6" type="radio"  value="mmr_rb_233_6_6" class="form-control"></td>
 					</tr>
 					<tr>
-						<th>¿El único punto de contacto realiza un monitoreo continuo a la solución del incidente y notifica al Incidente Manager incumplimiento en los tiempos de solución según los SLA's?</th>
+						<th>¿El único punto de contacto realiza un monitoreo continuo a la solución del incidente y notifica al Incidente Manager incumplimiento en los tiempos de solución según los SLAs?</th>
 						<td class="td-center"><input id="mmr_rb_233_7_1" name="mmr_rb_233_7" type="radio"  value="mmr_rb_233_7_1" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_233_7_2" name="mmr_rb_233_7" type="radio"  value="mmr_rb_233_7_2" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_233_7_3" name="mmr_rb_233_7" type="radio"  value="mmr_rb_233_7_3" class="form-control"></td>
@@ -458,7 +458,7 @@
 						<td class="td-center"><input id="mmr_rb_233_7_6" name="mmr_rb_233_7" type="radio"  value="mmr_rb_233_7_6" class="form-control"></td>
 					</tr>
 					<tr>
-						<th>¿El Inicident Manager vigila el cumplimiento de los tiempos de solución de los incidentes según los SLA's?</th>
+						<th>¿El Inicident Manager vigila el cumplimiento de los tiempos de solución de los incidentes según los SLAs?</th>
 						<td class="td-center"><input id="mmr_rb_233_8_1" name="mmr_rb_233_8" type="radio"  value="mmr_rb_233_8_1" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_233_8_2" name="mmr_rb_233_8" type="radio"  value="mmr_rb_233_8_2" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_233_8_3" name="mmr_rb_233_8" type="radio"  value="mmr_rb_233_8_3" class="form-control"></td>
@@ -816,7 +816,7 @@
 						<td class="td-center"><input id="mmr_rb_237_6_6" name="mmr_rb_237_6" type="radio"  value="mmr_rb_237_6_6" class="form-control"></td>
 					</tr>
 					<tr>
-						<th>¿Están identificados los usuarios VIP's dentro de la organización del cliente y documentados en la herramienta de gestión?</th>
+						<th>¿Están identificados los usuarios VIPs dentro de la organización del cliente y documentados en la herramienta de gestión?</th>
 						<td class="td-center"><input id="mmr_rb_237_7_1" name="mmr_rb_237_7" type="radio"  value="mmr_rb_237_7_1" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_237_7_2" name="mmr_rb_237_7" type="radio"  value="mmr_rb_237_7_2" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_237_7_3" name="mmr_rb_237_7" type="radio"  value="mmr_rb_237_7_3" class="form-control"></td>

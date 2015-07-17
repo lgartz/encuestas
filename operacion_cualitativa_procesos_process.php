@@ -19,9 +19,9 @@
 	$psc_ta_380 = $_GET["psc_ta_380"];
 	$id_psc_ta_380 = "psc_ta_380";
 	getSqlInsertPsu($encuestado,$id_psc_ta_380,$psc_ta_380);
-	$psc_ta_380 = $_GET["psc_ta_380"];
-	$id_psc_ta_380 = "psc_ta_380";
-	getSqlInsertPsu($encuestado,$id_psc_ta_380,$psc_ta_380);
+	$psc_ta_510 = $_GET["psc_ta_510"];
+	$id_psc_ta_510 = "psc_ta_510";
+	getSqlInsertPsu($encuestado,$id_psc_ta_510,$psc_ta_510);
 	$psc_ta_381 = $_GET["psc_ta_381"];
 	$id_psc_ta_381 = "psc_ta_381";
 	getSqlInsertPsu($encuestado,$id_psc_ta_381,$psc_ta_381);
