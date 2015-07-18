@@ -5,6 +5,7 @@
 	*/
 	function connect_with_mysql ($servername, $username, $passbd, $dbname){
 		$conn = mysql_connect($servername,$username,$passbd);
+		mysql_set_charset("utf8");
 		if (!$conn) {
 			die('No pudo conectarse: '.mysql_error());
 			exit();
