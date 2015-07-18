@@ -313,8 +313,19 @@
 </div>
 
 		<div class="form-group">
-			<button id="enviar" type="submit" class="btn btn-primary">Enviar</button>
-			<button id="cancelar" type="reset" class="btn btn-primary">Cancelar</button>
+			<div class="row">
+				<div class="col col-xs-3"></div>
+				<div class="col col-xs-2">
+					<button id="enviar" type="submit" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;Enviar</button>
+				</div>
+				<div class="col col-xs-2">
+					<button id="cancelar" type="reset" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-erase" aria-hidden="true"></span>&nbsp;Limpiar</button>
+				</div>
+				<div class="col col-xs-2">
+					<a href="encuestas.php" class="btn btn-warning btn-lg" role="button"><span class="glyphicon glyphicon-road" aria-hidden="true"></span>&nbsp;Regresar</a>
+				</div>
+				<div class="col col-xs-3"></div>
+			</div>
 		</div>
 		</form>
 	</div>
