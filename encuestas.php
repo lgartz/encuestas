@@ -76,7 +76,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href=""><?php echo "".$nombre; ?></a>
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo "".$nombre; ?><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="session_off.php"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;Cerrar Sesi&oacute;n</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
