@@ -33,7 +33,7 @@
             $pass = $_SESSION['pass'];
         }
         include("conexion.php");
-        $conn = connect_with_mysql("localhost","root","","encuestas");
+        $conn = connect_with_mysql("mysql.hostinger.es","u391829043_admin","Qwer1234$","u391829043_encue");
         $sql = "SELECT encuestado_id,encuestado_nombres,encuestado_apellidos,encuestado_email,encuestado_password FROM encuestado WHERE encuestado_email = '".$email."' AND encuestado_password = '".$pass."'";
         $result = mysql_query($sql);
         $nombre="";
