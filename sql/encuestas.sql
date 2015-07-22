@@ -3097,7 +3097,17 @@ INSERT INTO encuesta_has_pregunta(pregunta_id, encuesta_id) VALUES ('psu_t_555',
 INSERT INTO encuesta_has_pregunta(pregunta_id, encuesta_id) VALUES ('psu_t_556','28');
 INSERT INTO encuesta_has_pregunta(pregunta_id, encuesta_id) VALUES ('psu_t_557','28');
 INSERT INTO encuesta_has_pregunta(pregunta_id, encuesta_id) VALUES ('psu_t_558','28');
-INSERT INTO encuesta_has_pregunta(pregunta_id, encuesta_id) VALUES ('psu_t_559','28');
+INSERT INTO encuesta_has_pregunta(pregunta_id, encuesta_id) VALUES ('psu_t_559','28');INSERT INTO pregunta (pregunta_id, pregunta_descripcion, pregunta_tipo) VALUES ('psu_t_560','Los informes generados en el proceso incluye an谩lisis sobre nuevos riesgos y evaluaci贸n de su impacto','psu_t');
+INSERT INTO pregunta (pregunta_id, pregunta_descripcion, pregunta_tipo) VALUES ('psu_t_561','Los informes generados en el proceso incluye evaluaci贸n de los simulacros de desastre realizados','psu_t');
+INSERT INTO pregunta (pregunta_id, pregunta_descripcion, pregunta_tipo) VALUES ('psu_t_562','Los informes generados en el proceso incluye actividades de prevenci贸n y recuperaci贸n realizadas','psu_t');
+INSERT INTO pregunta (pregunta_id, pregunta_descripcion, pregunta_tipo) VALUES ('psu_t_563','Los informes generados en el proceso incluye costes asociados a los planes de prevenci贸n y recuperaci贸n','psu_t');
+INSERT INTO pregunta (pregunta_id, pregunta_descripcion, pregunta_tipo) VALUES ('psu_t_564','Los informes generados en el proceso incluye preparaci贸n y capacitaci贸n del personal TI respecto a los planes y procedimientos de prevenci贸n y recuperaci贸n','psu_t');
+INSERT INTO encuesta(encuesta_id, encuesta_nombre, encuesta_descripcion, encuesta_page) VALUES ('29','Control Proceso - Gesti贸n de la Continuidad de Servicios TI - Cualitativo','Esta encuesta permite evaluar el control de proceso de la Gesti贸n de la Continuidad de Servicios TI de la fase de Dise帽o','control_gestion_continuidad_servicios_cualitativo.php');
+INSERT INTO encuesta_has_pregunta(pregunta_id, encuesta_id) VALUES ('psu_t_560','29');
+INSERT INTO encuesta_has_pregunta(pregunta_id, encuesta_id) VALUES ('psu_t_561','29');
+INSERT INTO encuesta_has_pregunta(pregunta_id, encuesta_id) VALUES ('psu_t_562','29');
+INSERT INTO encuesta_has_pregunta(pregunta_id, encuesta_id) VALUES ('psu_t_563','29');
+INSERT INTO encuesta_has_pregunta(pregunta_id, encuesta_id) VALUES ('psu_t_564','29');
 INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password) VALUES ('1','Luis Arturo','Zarate Ayala','luisarturo1989@gmail.com','827ccb0eea8a706c4c34a16891f84e7b');
 INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password) VALUES ('2','Juan Lu韘','Rubio S醤chez','juanluis.rubio@udima.es','827ccb0eea8a706c4c34a16891f84e7b');
 INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('1','1');
@@ -3156,3 +3166,5 @@ INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('1','27'
 INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('2','27');
 INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('1','28');
 INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('2','28');
+INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('1','29');
+INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('2','29');
