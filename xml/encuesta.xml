@@ -396,7 +396,7 @@
 			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
 		<question number="80" type="eru_rb" required="true">
-			<ask value="¿Se encuentran debidamente registrados todos los elementos de configuración en la CMDB (hardware, software, documentación, personal de soporte, módulo de software, etc.)?"/>
+			<ask value="¿Se encuentran debidamente registrados todos los elementos de configuración en la CMDB (hardware, software, documentación, personal de soporte, módulo de software, etc)?"/>
 			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
 		<question number="81" type="eru_rb" required="true">
@@ -513,7 +513,7 @@
 			<ask value="¿Existe una base de datos de configuración (CMDB) debidamente actualizada?"/>
 		</question>
 		<question number="108" type="psc_ta" required="true">
-			<ask value="¿Se encuentran debidamente registrados todos los elementos de configuración en la CMDB (hardware, software, documentación, personal de soporte, módulo de software, etc.)?"/>
+			<ask value="¿Se encuentran debidamente registrados todos los elementos de configuración en la CMDB (hardware, software, documentación, personal de soporte, módulo de software, etc)?"/>
 		</question>
 		<question number="109" type="psc_ta" required="true">
 			<ask value="¿El sistema de gestión de la configuración permite fácilmente evaluar el impacto de los cambios propuestos?"/>
@@ -602,7 +602,7 @@
 			<ask value="Activos del Servicio y Gestión de la Configuración" />
 			<rows>
 				<option value="¿Existe una base de datos de configuración (CMDB) debidamente actualizada?"/>	
-				<option value="¿Se encuentran debidamente registrados todos los elementos de configuración en la CMDB (hardware, software, documentación, personal de soporte, módulo de software, etc.)?"/>	
+				<option value="¿Se encuentran debidamente registrados todos los elementos de configuración en la CMDB (hardware, software, documentación, personal de soporte, módulo de software, etc)?"/>	
 				<option value="¿El sistema de gestión de la configuración permite fácilmente evaluar el impacto de los cambios propuestos?"/>	
 				<option value="¿El sistema de gestión de la configuración es actualizado durante el ciclo de los cambios ejecutados?"/>	
 				<option value="¿El área de TI cuenta con una Biblioteca definitiva de medios- DML donde se almacena las licencias, versiones definitivas y aprobadas de todo el software de los elementos de configuración?"/>	
@@ -691,7 +691,7 @@
 			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
 		<question number="141" type="eru_rb" required="true">
-			<ask value="¿La documentación registrada de Incidentes esta estandarizada (Ej.: Descripción, Información, historial)?" />
+			<ask value="¿La documentación registrada de Incidentes esta estandarizada (Ej: Descripción, Información, historial)?" />
 			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
 		<question number="142" type="eru_rb" required="true">
@@ -1064,7 +1064,7 @@
 			<rows>
 				<option value="¿Existe una Base de Datos única para el registro de Incidentes?" />
 				<option value="¿Existe un identificador único para cada incidente?"/>
-				<option value="¿La documentación registrada de Incidentes esta estandarizada (Ej.: Descripción, Información, historial)?"/>
+				<option value="¿La documentación registrada de Incidentes esta estandarizada (Ej: Descripción, Información, historial)?"/>
 				<option value="¿Existe un único punto de contacto para el reporte de todos los incidentes?"/>
 				<option value="¿Todos los incidentes son reportados al único punto de contacto?"/>
 				<option value="¿Los medios de acceso al único punto de contacto están al alcance de todos los usuarios?"/>
@@ -1263,7 +1263,7 @@
 			<ask value="¿Existe un identificador único para cada incidente?" />
 		</question>
 		<question number="241" type="psc_ta" required="true">
-			<ask value="¿La documentación registrada de Incidentes esta estandarizada (Ej.: Descripción, Información, historial)?" />
+			<ask value="¿La documentación registrada de Incidentes esta estandarizada (Ej: Descripción, Información, historial)?" />
 		</question>
 		<question number="242" type="psc_ta" required="true">
 			<ask value="¿Existe un único punto de contacto para el reporte de todos los incidentes?" />
@@ -1697,7 +1697,7 @@
 			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
 		<question number="368" type="eru_rb" required="true">
-			<ask value="¿El proceso de Incident Management proporciona al proceso de capacidad información acerca de la relación de capacidad de incidentes. Por ejemplo: listados no disponibles debido a la escasez de impresoras, o información no almacenada en discos ?"/>
+			<ask value="¿El proceso de Incident Management proporciona al proceso de capacidad información acerca de la relación de capacidad de incidentes Por ejemplo: listados no disponibles debido a la escasez de impresoras, o información no almacenada en discos ?"/>
 			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
 		<question type="title" value="Continuity Management"></question>
@@ -1858,7 +1858,7 @@
 			<ask value="¿El proceso de Incident Management asegura que los incidentes son solucionados dentro de los niveles de capacidad mencionados en los SLAs?"/>
 		</question>
 		<question number="413" type="psc_ta" required="true">
-			<ask value="¿El proceso de Incident Management proporciona al proceso de capacidad información acerca de la relación de capacidad de incidentes. Por ejemplo: listados no disponibles debido a la escasez de impresoras, o información no almacenada en discos ?"/>
+			<ask value="¿El proceso de Incident Management proporciona al proceso de capacidad información acerca de la relación de capacidad de incidentes Por ejemplo: listados no disponibles debido a la escasez de impresoras, o información no almacenada en discos ?"/>
 		</question>
 		<question type="title" value="Continuity Management"></question>
 		<question number="414" type="psc_ta" required="true">
@@ -2008,7 +2008,7 @@
 				<option value="¿El proceso de Incident Management proporciona un índice de desempeño al proceso de Capacity, monitoreando los incidentes cuando estos aparecen?"/>
 				<option value="¿El proceso de Capacity proporciona información relacionada con las herramientas de diagnóstico como modelos y scripts de la simulación para solucionar incidentes?"/>
 				<option value="¿El proceso de Incident Management asegura que los incidentes son solucionados dentro de los niveles de capacidad mencionados en los SLAs?"/>
-				<option value="¿El proceso de Incident Management proporciona al proceso de capacidad información acerca de la relación de capacidad de incidentes. Por ejemplo: listados no disponibles debido a la escasez de impresoras, o información no almacenada en discos ?"/>
+				<option value="¿El proceso de Incident Management proporciona al proceso de capacidad información acerca de la relación de capacidad de incidentes Por ejemplo: listados no disponibles debido a la escasez de impresoras, o información no almacenada en discos ?"/>
 		    </rows>
 		    <columns>
 				<option value="Nada Factible" />
@@ -2325,7 +2325,7 @@
 			<ask value="¿El personal interno y externo tienen clara la visión de la institución con el fin de enfocar sus estrategias y actividades al cumplimiento de los logros ?"/>
 		</question>
 		<question number="488" type="psc_ta" required="true">
-			<ask value="¿El equipo de trabajo se reúne con frecuencia para evaluar el cumplimiento de objetivos (en donde estamos ahora?) , definir iniciativas y planes de acción para mejorar la prestación del servicio?"/>
+ - Cualitativo			<ask value="¿El equipo de trabajo se reúne con frecuencia para evaluar el cumplimiento de objetivos (en donde estamos ahora?) , definir iniciativas y planes de acción para mejorar la prestación del servicio?"/>
 		</question>
 		<question number="489" type="psc_ta" required="true">
 			<ask value="¿Se tienen definidos los objetivos donde se defina con claridad donde quieren estar?"/>
@@ -2469,5 +2469,205 @@
 				<option value="Muy Factible" />
 			</columns>
 		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión Financiera - Cualitativo" name="Control Proceso - Gestión Financiera - Cualitativo" namePage="control_gestion_financiera_cualitativo" detail="Esta encuesta permite evaluar el control de proceso de la Gestión Financiera de la fase de Estrategía">
+		<question type="title" value="Criterios de éxito y rendimiento"></question>
+		<question number="510" type="psu_t" required="true">
+			<ask value="¿Conoce de la organización los costes reales de los servicios TI?"/>
+		</question>
+		<question number="511" type="psu_t" required="true">
+			<ask value="¿Los clientes perciben la política de precios como coherente y ajustada al mercado?"/>
+		</question>
+		<question number="512" type="psu_t" required="true">
+			<ask value="¿Colaboran los responsables de los otros procesos TI con la Gestión Financiera?"/>
+		</question>
+		<question number="513" type="psu_t" required="true">
+			<ask value="¿Están los gastos en servicios e infraestructuras TI realmente alineados con los procesos de negocio?"/>
+		</question>
+		<question number="514" type="psu_t" required="true">
+			<ask value="¿Opera la organización TI como una verdadera unidad de negocio?"/>
+		</question>
+		<question number="515" type="psu_t" required="true">
+			<ask value="¿Los gastos TI están correctamente planificados y presupuestados?"/>
+		</question>
+		<question number="516" type="psu_t" required="true">
+			<ask value="¿Se cumplen los objetivos de costes e ingresos?"/>
+		</question>
+		<question number="517" type="psu_t" required="true">
+			<ask value="¿Se lleva a cabo una contabilidad precisa asociada a cada servicio?"/>
+		</question>
+		<question number="518" type="psu_t" required="true">
+			<ask value="¿Se conoce el ROI de las inversiones TI?"/>
+		</question>
+		<question number="519" type="psu_t" required="true">
+			<ask value="¿La organización TI funciona de manera 'rentable'?"/>
+		</question>
+		<question type="title" value="Documentación"></question>
+		<question number="520" type="psu_t" required="true">
+			<ask value="¿Existen los documentos de los Resúmenes contables?"/>
+		</question>
+		<question number="521" type="psu_t" required="true">
+			<ask value="¿Existe un análisis de eficiencia de cada uno de los servicios TI documentados?"/>
+		</question>
+		<question number="522" type="psu_t" required="true">
+			<ask value="¿Existe documentación de los planes de inversión TI basados en el histórico del negocio y en previsiones de evolución de la tecnología?"/>
+		</question>
+		<question number="523" type="psu_t" required="true">
+			<ask value="¿Existe documentación de  los planes de reducción de costes por servicio?"/>
+		</question>
+		<question number="524" type="psu_t" required="true">
+			<ask value="¿Existe un análisis de impacto en el negocio (BIA) en caso de producirse una interrupción de las operaciones debidamente documentado?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión del Portfolio de Servicios - Cualitativo" name="Control Proceso - Gestión del Portfolio de Servicios - Cualitativo" namePage="control_gestion_portafolio_servicios_cualitativo" detail="Esta encuesta permite evaluar el control de proceso de la Gestión del Portfolio de Servicios de la fase de Estrategía">
+		<question type="title" value="Criterios de eficiencia"></question>
+		<question number="525" type="psu_t" required="true">
+			<ask value="¿Cual es el porcentaje de nuevos servicios planeados (que han sido desarrollados desde la Gestión del Portfolio de Servicios)?"/>
+		</question>
+		<question number="526" type="psu_t" required="true">
+			<ask value="¿Cual es porcentaje de nuevos servicios no planeados (que han sido desarrollados sin la intervención de la Gestión del Portfolio de Servicios)?"/>
+		</question>
+		<question number="527" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de iniciativas estratégicas lanzadas desde la Gestión del Portfolio de Servicios?"/>
+		</question>
+		<question number="528" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de clientes adquiridos?"/>
+		</question>
+		<question number="529" type="psu_t" required="true">
+			<ask value="¿Cúal es la cantidad de clientes que se han cambiado a la competencia?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión de la Demanda - Cualitativo" name="Control Proceso - Gestión de la Demanda - Cualitativo" namePage="control_gestion_demanda_cualitativo" detail="Esta encuesta permite evaluar el control de proceso de la Gestión de la Demanda de la fase de Estrategía">
+		<question type="title" value="Indicadores"></question>
+		<question number="530" type="psu_t" required="true">
+			<ask value="¿Cúal es la desviación de la actividad prevista en los PBAs respecto a la que se registró realmente?"/>
+		</question>
+		<question number="531" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de interrupciones del servicio ocasionadas por picos de la demanda no previstos?"/>
+		</question>
+		<question number="532" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de cambios planificados desde Gestión de la Demanda que se han efectuado en el servicio con el fin de ajustarse a la demanda?"/>
+		</question>
+		<question number="533" type="psu_t" required="true">
+			<ask value="¿Cúal es el número cambios no planificados que se han efectuado en el servicio con el fin de ajustarse a la demanda?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión del Catálogo de Servicios - Cualitativo" name="Control Proceso - Gestión del Catálogo de Servicios - Cualitativo" namePage="control_gestion_catalogo_servicios_cualitativo" detail="Esta encuesta permite evaluar el control de proceso de la Gestión del Catálogo de Servicios de la fase de Diseño">
+		<question type="title" value="Indicadores"></question>
+		<question number="534" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de actualizaciones enviadas al Portfolio de Servicios?"/>
+		</question>
+		<question number="535" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de modificaciones efectuadas en el Catálogo de Servicios en un periodo determinado?"/>
+		</question>
+		<question number="536" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de accesos o solicitudes de consulta del Catálogo dentro de la organización TI?"/>
+		</question>
+		<question number="536" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de accesos o solicitudes de consulta del Catálogo dentro de la organización TI?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión de Niveles de Servicio - Cualitativo" name="Control Proceso - Gestión de Niveles de Servicio - Cualitativo" namePage="control_gestion_niveles_servicio_cualitativo" detail="Esta encuesta permite evaluar el control de proceso de la Gestión de Niveles de Servicio de la fase de Diseño">
+		<question type="title" value="Indicadores"></question>
+		<question number="537" type="psu_t" required="true">
+			<ask value="¿Dispone de unos objetivos claros y contrastables?"/>
+		</question>
+		<question number="538" type="psu_t" required="true">
+			<ask value="¿Dispone de un equipo con experiencia liderado por un Gestor del Nivel de Servicio con la cualificación y experiencia necesarios?"/>
+		</question>
+		<question number="539" type="psu_t" required="true">
+			<ask value="¿Dispone de una asignación clara de tareas y responsabilidades?"/>
+		</question>
+		<question number="540" type="psu_t" required="true">
+			<ask value="¿Dispone de una asignación clara de tareas y responsabilidades?"/>
+		</question>
+		<question number="541" type="psc_ta" required="true">
+			<ask value="¿Dispone de indicadores específicos de rendimiento (Porcentaje de servicios amparados bajo SLAs, Porcentaje de incumplimiento de los SLAs clasificados por su impacto en la calidad del servicio, SIPs elaborados e impacto de los mismos en la calidad del servicio, Encuestas de satisfacción del cliente)?"/>
+		</question>
+		<question type="title" value="Documentación"></question>
+		<question number="542" type="psu_t" required="true">
+			<ask value="¿Genera informes estadísticos de rendimiento donde se detallen los SLAs, OLAs y UCs elaborados y el nivel de cumplimiento de los mismos, costes promedio asociados al proceso, etc..?"/>
+		</question>
+		<question number="543" type="psu_t" required="true">
+			<ask value="¿Genera informes de Seguimiento donde se especifiquen las acciones de monitorización realizadas, sus resultados y el grado de satisfacción de los clientes con el servicio prestado?"/>
+		</question>
+		<question number="544" type="psu_t" required="true">
+			<ask value="¿Genera planes de Mejora (SIP): donde se especifiquen las acciones propuestas para la mejora del servicio TI y el impacto que estas han tenido en la calidad del servicio.?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión de la Capacidad - Cualitativo" name="Control Proceso - Gestión de la Capacidad - Cualitativo" namePage="control_gestion_capacidad_cualitativo" detail="Esta encuesta permite evaluar el control de proceso de la Gestión de la Capacidad de la fase de Diseño">
+		<question type="title" value="Documentación"></question>
+		<question number="545" type="psu_t" required="true">
+			<ask value="¿Los documentos generados en el proceso de gestión de la capacidad incluyen informacion sobre el uso de recursos?"/>
+		</question>
+		<question number="546" type="psu_t" required="true">
+			<ask value="¿Los documentos generados en el proceso de gestión de la capacidad incluyen informacion sobre desviaciones de la capacidad real sobre la planificada?"/>
+		</question>
+		<question number="547" type="psu_t" required="true">
+			<ask value="¿Los documentos generados en el proceso de gestión de la capacidad incluyen informacion sobre análisis de tendencias en el uso de la capacidad?"/>
+		</question>
+		<question number="548" type="psu_t" required="true">
+			<ask value="¿Los documentos generados en el proceso de gestión de la capacidad incluyen informacion sobre métricas establecidas para el análisis de la capacidad y monitorización del rendimiento?"/>
+		</question>
+		<question number="549" type="psu_t" required="true">
+			<ask value="¿Los documentos generados en el proceso de gestión de la capacidad incluyen informacion sobre el impacto en la calidad del servicio, disponibilidad y otros procesos TI?"/>
+		</question>
+		<question type="title" value="Indicadores"></question>
+		<question number="550" type="psu_t" required="true">
+			<ask value="Dispone de una correcta previsión de las necesidades de capacidad"/>
+		</question>
+		<question number="551" type="psu_t" required="true">
+			<ask value="Dispone de reducción en los costes asociados a la capacidad"/>
+		</question>
+		<question number="552" type="psu_t" required="true">
+			<ask value="Dispone de los más altos niveles de disponibilidad y seguridad"/>
+		</question>
+		<question number="553" type="psu_t" required="true">
+			<ask value="Dispone de una mayor satisfacción de los usuarios y clientes"/>
+		</question>
+		<question number="554" type="psu_t" required="true">
+			<ask value="Dispone de cumplimiento de los SLAs"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión de la Disponibilidad - Cualitativo" name="Control Proceso - Gestión de la Disponibilidad - Cualitativo" namePage="control_gestion_disponibilidad_cualitativo" detail="Esta encuesta permite evaluar el control de proceso de la Gestión de la Disponibilidad de la fase de Diseño">
+		<question type="title" value="Documentación"></question>
+		<question number="555" type="psu_t" required="true">
+			<ask value="Los informes generados en el proceso incluye técnicas y métodos utilizados para la prevención y el análisis de fallos."/>
+		</question>
+		<question number="556" type="psu_t" required="true">
+			<ask value="Los informes generados en el proceso incluye información estadística sobre tiempos de detección y respuesta a los fallos, tiempos de reparación y recuperación del servicio, tiempo medio de servicio entre fallos"/>
+		</question>
+		<question number="557" type="psu_t" required="true">
+			<ask value="Los informes generados en el proceso incluye disponibilidad real de los diferentes servicios"/>
+		</question>
+		<question number="558" type="psu_t" required="true">
+			<ask value="Los informes generados en el proceso incluye cumplimiento de los SLAs en todo lo referente a la disponibilidad y fiabilidad del servicio"/>
+		</question>
+		<question number="559" type="psu_t" required="true">
+			<ask value="Los informes generados en el proceso incluye cumplimiento de los OLAs y UCs en todo lo referente a la capacidad de servicio prestada por los proveedores internos y externos"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión de la Continuidad de Servicios TI - Cualitativo" name="Control Proceso - Gestión de la Continuidad de Servicios TI - Cualitativo" namePage="control_gestion_continuidad_servicios_cualitativo" detail="Esta encuesta permite evaluar el control de proceso de la Gestión de la Continuidad de Servicios TI de la fase de Diseño">
+		<question type="title" value="Documentación"></question>
+		<question number="560" type="psu_t" required="true">
+			<ask value="Los informes generados en el proceso incluye análisis sobre nuevos riesgos y evaluación de su impacto"/>
+		</question>
+		<question number="561" type="psu_t" required="true">
+			<ask value="Los informes generados en el proceso incluye evaluación de los simulacros de desastre realizados"/>
+		</question>
+		<question number="562" type="psu_t" required="true">
+			<ask value="Los informes generados en el proceso incluye actividades de prevención y recuperación realizadas"/>
+		</question>
+		<question number="563" type="psu_t" required="true">
+			<ask value="Los informes generados en el proceso incluye costes asociados a los planes de prevención y recuperación"/>
+		</question>
+		<question number="564" type="psu_t" required="true">
+			<ask value="Los informes generados en el proceso incluye preparación y capacitación del personal TI respecto a los planes y procedimientos de prevención y recuperación"/>
+		</question>
+		
+		
+		
+		
+		
 	</poll>
 </polls>

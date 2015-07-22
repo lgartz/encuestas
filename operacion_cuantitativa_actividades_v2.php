@@ -63,7 +63,7 @@
 						<td class="td-center"><input id="mmr_rb_231_2_6" name="mmr_rb_231_2" type="radio"  value="mmr_rb_231_2_6" class="form-control"></td>
 					</tr>
 					<tr>
-						<th>¿La documentación registrada de Incidentes esta estandarizada (Ej.: Descripción, Información, historial)?</th>
+						<th>¿La documentación registrada de Incidentes esta estandarizada (Ej: Descripción, Información, historial)?</th>
 						<td class="td-center"><input id="mmr_rb_231_3_1" name="mmr_rb_231_3" type="radio"  value="mmr_rb_231_3_1" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_231_3_2" name="mmr_rb_231_3" type="radio"  value="mmr_rb_231_3_2" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_231_3_3" name="mmr_rb_231_3" type="radio"  value="mmr_rb_231_3_3" class="form-control"></td>

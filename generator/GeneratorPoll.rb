@@ -20,6 +20,7 @@ def readPollFileXml ( pathFile )
     listQuestionId = []
     hashValidate = Hash.new
     hashNames = Hash.new
+    #hashId = Hash.new
     # Se realiza la lectura de cada una las preguntas
     pollChild.each_element("question") do | questionChild |
       type = questionChild.attributes["type"]
@@ -28,6 +29,11 @@ def readPollFileXml ( pathFile )
         body << "<br><h1>#{val}</h1>\n"
       else
         number = questionChild.attributes["number"]
+       # if hashId[number]
+       #   print "Lo contiene: #{number}\n"
+       # else
+       #   hashId[number] = number
+       # end
         listQuestionId.push("#{type}_#{number}")
         required = questionChild.attributes["required"]
         ask = questionChild.elements["ask"].attributes["value"]       

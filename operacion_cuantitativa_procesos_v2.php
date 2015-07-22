@@ -510,7 +510,7 @@
 						<td class="td-center"><input id="mmr_rb_428_3_6" name="mmr_rb_428_3" type="radio"  value="mmr_rb_428_3_6" class="form-control"></td>
 					</tr>
 					<tr>
-						<th>¿El proceso de Incident Management proporciona al proceso de capacidad información acerca de la relación de capacidad de incidentes. Por ejemplo: listados no disponibles debido a la escasez de impresoras, o información no almacenada en discos ?</th>
+						<th>¿El proceso de Incident Management proporciona al proceso de capacidad información acerca de la relación de capacidad de incidentes Por ejemplo: listados no disponibles debido a la escasez de impresoras, o información no almacenada en discos ?</th>
 						<td class="td-center"><input id="mmr_rb_428_4_1" name="mmr_rb_428_4" type="radio"  value="mmr_rb_428_4_1" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_428_4_2" name="mmr_rb_428_4" type="radio"  value="mmr_rb_428_4_2" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_428_4_3" name="mmr_rb_428_4" type="radio"  value="mmr_rb_428_4_3" class="form-control"></td>

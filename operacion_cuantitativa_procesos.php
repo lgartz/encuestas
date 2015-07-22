@@ -1258,7 +1258,7 @@
 <div class="form-group">
 	<div id="panel_eru_rb_368" class="panel panel-primary">
 		<div id="panel_head_eru_rb_368" class="panel-heading">
-			<h4>¿El proceso de Incident Management proporciona al proceso de capacidad información acerca de la relación de capacidad de incidentes. Por ejemplo: listados no disponibles debido a la escasez de impresoras, o información no almacenada en discos ?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿El proceso de Incident Management proporciona al proceso de capacidad información acerca de la relación de capacidad de incidentes Por ejemplo: listados no disponibles debido a la escasez de impresoras, o información no almacenada en discos ?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_eru_rb_368" class="panel-body">						
 			<div class="table-responsive">

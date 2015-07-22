@@ -54,7 +54,7 @@
 						<td class="td-center"><input id="mmr_rb_135_1_6" name="mmr_rb_135_1" type="radio"  value="mmr_rb_135_1_6" class="form-control"></td>
 					</tr>
 					<tr>
-						<th>¿Se encuentran debidamente registrados todos los elementos de configuración en la CMDB (hardware, software, documentación, personal de soporte, módulo de software, etc.)?</th>
+						<th>¿Se encuentran debidamente registrados todos los elementos de configuración en la CMDB (hardware, software, documentación, personal de soporte, módulo de software, etc)?</th>
 						<td class="td-center"><input id="mmr_rb_135_2_1" name="mmr_rb_135_2" type="radio"  value="mmr_rb_135_2_1" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_135_2_2" name="mmr_rb_135_2" type="radio"  value="mmr_rb_135_2_2" class="form-control"></td>
 						<td class="td-center"><input id="mmr_rb_135_2_3" name="mmr_rb_135_2" type="radio"  value="mmr_rb_135_2_3" class="form-control"></td>

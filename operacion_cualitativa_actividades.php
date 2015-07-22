@@ -51,7 +51,7 @@
 <div class="form-group">
 	<div id="panel_psc_ta_241" class="panel panel-primary">
 		<div id="panel_head_psc_ta_241" class="panel-heading">
-			<h4>¿La documentación registrada de Incidentes esta estandarizada (Ej.: Descripción, Información, historial)?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿La documentación registrada de Incidentes esta estandarizada (Ej: Descripción, Información, historial)?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psc_ta_241" class="panel-body">
 			<textarea name="psc_ta_241" id="psc_ta_241" cols="30" rows="10" class="form-control" placeholder="Escriba su comentario..."></textarea>
