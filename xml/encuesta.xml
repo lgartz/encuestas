@@ -2648,6 +2648,18 @@
 		</question>
 	</poll>
 	<poll title="ITIL - Control Proceso - Gestión de la Continuidad de Servicios TI - Cualitativo" name="Control Proceso - Gestión de la Continuidad de Servicios TI - Cualitativo" namePage="control_gestion_continuidad_servicios_cualitativo" detail="Esta encuesta permite evaluar el control de proceso de la Gestión de la Continuidad de Servicios TI de la fase de Diseño">
+		<question number="565" type="psu_t" required="true">
+			<ask value="La gestión de la continuidad de servicios TI de su compañia garantiza la puesta en marcha de los planes preestablecidos"/>
+		</question>
+		<question number="566" type="psu_t" required="true">
+			<ask value="La gestión de la continuidad de servicios TI de su compañia garantiza la supervisión de los planes preestablecidos"/>
+		</question>
+		<question number="567" type="psu_t" required="true">
+			<ask value="La gestión de la continuidad de servicios TI de su compañia garantiza la coordinación con la gestión de continuidad del negocio"/>
+		</question>
+		<question number="568" type="psu_t" required="true">
+			<ask value="La gestión de la continuidad de servicios TI de su compañia garantiza la asignación de recursos necesarios"/>
+		</question>		
 		<question type="title" value="Documentación"></question>
 		<question number="560" type="psu_t" required="true">
 			<ask value="Los informes generados en el proceso incluye análisis sobre nuevos riesgos y evaluación de su impacto"/>
@@ -2667,7 +2679,6 @@
 		
 		
 		
-		
-		
 	</poll>
+
 </polls>
