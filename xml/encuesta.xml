@@ -1,4 +1,4 @@
-<polls>
+﻿<polls>
 	<poll title="ITIL - Estrategia" name="Estrategia para los servicios IT Cauntitativa" namePage="estrategia_cuantitativa" detail="Esta encuesta ITIL evalúa las actividades de la fase de estrategía para los servicios de tecnologí;as de información de los servicios">
 		<question type="title" value="Gestión del portafolio de servicios"></question>
 		<question number="1" type="eru_rb" required="true">
@@ -2648,37 +2648,81 @@
 		</question>
 	</poll>
 	<poll title="ITIL - Control Proceso - Gestión de la Continuidad de Servicios TI - Cualitativo" name="Control Proceso - Gestión de la Continuidad de Servicios TI - Cualitativo" namePage="control_gestion_continuidad_servicios_cualitativo" detail="Esta encuesta permite evaluar el control de proceso de la Gestión de la Continuidad de Servicios TI de la fase de Diseño">
-		<question number="565" type="psu_t" required="true">
+		<question number="560" type="psu_t" required="true">
 			<ask value="La gestión de la continuidad de servicios TI de su compañia garantiza la puesta en marcha de los planes preestablecidos"/>
 		</question>
-		<question number="566" type="psu_t" required="true">
+		<question number="561" type="psu_t" required="true">
 			<ask value="La gestión de la continuidad de servicios TI de su compañia garantiza la supervisión de los planes preestablecidos"/>
 		</question>
-		<question number="567" type="psu_t" required="true">
+		<question number="562" type="psu_t" required="true">
 			<ask value="La gestión de la continuidad de servicios TI de su compañia garantiza la coordinación con la gestión de continuidad del negocio"/>
 		</question>
-		<question number="568" type="psu_t" required="true">
+		<question number="563" type="psu_t" required="true">
 			<ask value="La gestión de la continuidad de servicios TI de su compañia garantiza la asignación de recursos necesarios"/>
 		</question>		
 		<question type="title" value="Documentación"></question>
-		<question number="560" type="psu_t" required="true">
-			<ask value="Los informes generados en el proceso incluye análisis sobre nuevos riesgos y evaluación de su impacto"/>
+		<question number="564" type="psu_t" required="true">
+			<ask value="¿Los informes generados en el proceso incluye análisis sobre nuevos riesgos y evaluación de su impacto?"/>
 		</question>
-		<question number="561" type="psu_t" required="true">
+		<question number="565" type="psu_t" required="true">
 			<ask value="Los informes generados en el proceso incluye evaluación de los simulacros de desastre realizados"/>
 		</question>
-		<question number="562" type="psu_t" required="true">
+		<question number="566" type="psu_t" required="true">
 			<ask value="Los informes generados en el proceso incluye actividades de prevención y recuperación realizadas"/>
 		</question>
-		<question number="563" type="psu_t" required="true">
+		<question number="567" type="psu_t" required="true">
 			<ask value="Los informes generados en el proceso incluye costes asociados a los planes de prevención y recuperación"/>
 		</question>
-		<question number="564" type="psu_t" required="true">
+		<question number="568" type="psu_t" required="true">
 			<ask value="Los informes generados en el proceso incluye preparación y capacitación del personal TI respecto a los planes y procedimientos de prevención y recuperación"/>
 		</question>
-		
-		
-		
 	</poll>
-
+	<poll title="ITIL - Control Proceso - Gestión de la Seguridad de la Información - Cualitativo" name="Control Proceso - Gestión de la Seguridad de la Información - Cualitativo" namePage="control_gestion_seguridad_informacion_cualitativo" detail="Esta encuesta permite evaluar el control de proceso de la Gestión de la Seguridad de la Información de la fase de Diseño">
+		<question type="title" value="Pilares"></question>
+		<question number="569" type="psu_t" required="true">
+			<ask value="¿La información que manipula la compañia es  sólo accesible a sus destinatarios predeterminados?"/>
+		</question>
+		<question number="570" type="psu_t" required="true">
+			<ask value="¿La información que manipula la compañia es integra (es decir correcta y completa)?"/>
+		</question>
+		<question number="571" type="psu_t" required="true">
+			<ask value="¿La informacion esta disponible en cualquier momento, cuando la necesitamos?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión de Proveedores - Cualitativo" name="Control Proceso - Gestión de Proveedores - Cualitativo" namePage="control_gestion_proveedores" detail="Esta encuesta permite evaluar el control de proceso de la Gestión de Proveedores de la fase de Diseño">
+		<question type="title" value="Indicadores del nivel de calidad en los servicios"></question>
+		<question number="572" type="psu_t" required="true">
+			<ask value="¿Ha evidenciado un incremento en el número de proveedores que alcanzan los objetivos establecidos en el contrato?"/>
+		</question>
+		<question number="573" type="psu_t" required="true">
+			<ask value="¿Se han reducción el número de incumplimientos de objetivos contractuales?"/>
+		</question>
+		<question type="title" value="Indicadores de las necesidades y objetivos"></question>
+		<question number="574" type="psu_t" required="true">
+			<ask value="¿Ha incrementado el número de servicios y revisiones de contrato?"/>
+		</question>
+		<question number="575" type="psu_t" required="true">
+			<ask value="¿Ha notado un incremento en el número de proveedores y objetivos contractuales alineados con los objetivos contenidos en los SLA y SLR?"/>
+		</question>
+ 		<question type="title" value="Indicadores de disponibilidad"></question>	
+ 		<question number="575" type="psu_t" required="true">
+			<ask value="¿Ha reducido el número de interrupciones de servicio provocadas por los proveedores?"/>
+		</question>
+		<question number="576" type="psu_t" required="true">
+			<ask value="¿Ha reducido el número de amenazas de interrupción de servicio provocadas por proveedores?"/>
+		</question>	
+		<question type="title" value="Indicadores de problemas en la gestión de proveedores"></question>
+		<question number="577" type="psu_t" required="true">
+			<ask value="¿Ha evidenciado un incremento en el número de proveedores para los que se ha asignado un responsable?"/>
+		</question>	
+		<question number="578" type="psu_t" required="true">
+			<ask value="¿Ha evidenciado incremento en el número de contratos en los que figura un responsable?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Planificación y Soporte a la Transición - Cualitativo" name="Control Proceso - Planificación y Soporte a la Transición - Cualitativo" namePage="control_planificación_soporte_transición" detail="Esta encuesta permite evaluar el control de preceso de planificación y soporte a la transición de la fase de transicíon">
+		<question type="title" value="Indicadores"></question>	
+ 		<question number="579" type="psu_t" required="true">
+			<ask value="¿Ha evidenciado un incremento en el número de proveedores que alcanzan los objetivos establecidos en el contrato?"/>
+		</question>
+	</poll>	
 </polls>
