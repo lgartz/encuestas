@@ -2522,10 +2522,10 @@
 	<poll title="ITIL - Control Proceso - Gestión del Portfolio de Servicios - Cualitativo" name="Control Proceso - Gestión del Portfolio de Servicios - Cualitativo" namePage="control_gestion_portafolio_servicios_cualitativo" detail="Esta encuesta permite evaluar el control de proceso de la Gestión del Portfolio de Servicios de la fase de Estrategía">
 		<question type="title" value="Criterios de eficiencia"></question>
 		<question number="525" type="psu_t" required="true">
-			<ask value="¿Cual es el porcentaje de nuevos servicios planeados (que han sido desarrollados desde la Gestión del Portfolio de Servicios)?"/>
+			<ask value="¿Cúal es el porcentaje de nuevos servicios planeados (que han sido desarrollados desde la Gestión del Portfolio de Servicios)?"/>
 		</question>
 		<question number="526" type="psu_t" required="true">
-			<ask value="¿Cual es porcentaje de nuevos servicios no planeados (que han sido desarrollados sin la intervención de la Gestión del Portfolio de Servicios)?"/>
+			<ask value="¿Cúal es porcentaje de nuevos servicios no planeados (que han sido desarrollados sin la intervención de la Gestión del Portfolio de Servicios)?"/>
 		</question>
 		<question number="527" type="psu_t" required="true">
 			<ask value="¿Cúal es el número de iniciativas estratégicas lanzadas desde la Gestión del Portfolio de Servicios?"/>
@@ -2720,9 +2720,405 @@
 		</question>
 	</poll>
 	<poll title="ITIL - Control Proceso - Planificación y Soporte a la Transición - Cualitativo" name="Control Proceso - Planificación y Soporte a la Transición - Cualitativo" namePage="control_planificación_soporte_transición" detail="Esta encuesta permite evaluar el control de preceso de planificación y soporte a la transición de la fase de transicíon">
-		<question type="title" value="Indicadores"></question>	
+		<question type="title" value="Indicadores"></question>
  		<question number="579" type="psu_t" required="true">
-			<ask value="¿Ha evidenciado un incremento en el número de proveedores que alcanzan los objetivos establecidos en el contrato?"/>
+			<ask value="¿El jefe de proyecto controla y mide el número de proyectos gestionados es decir, el número de versiones desplegadas (rollout) que han sido objeto de planificación y soporte?"/>
+		</question>
+		<question number="580" type="psu_t" required="true">
+			<ask value="¿El jefe de proyecto controla y mide el número de proyectos gestionados es decir, el número de versiones desplegadas (rollout) que han sido objeto de planificación y soporte?"/>
+		</question>
+		<question number="581" type="psu_t" required="true">
+			<ask value="¿El jefe de proyecto controla y mide el porcentaje de entregas que se ajustaron a lo acordado con el cliente en cuanto a coste, calidad y alcance?"/>
+		</question>
+		<question number="582" type="psu_t" required="true">
+			<ask value="¿El jefe de proyecto controla y mide el ajuste al presupuesto del proyecto, comparando el consumo de recursos humanos y financieros previstos con los que se usaron realmente?"/>
+		</question>
+		<question number="583" type="psu_t" required="true">
+			<ask value="¿El jefe de proyecto controla y mide el retrasos en proyectos, comparando las fechas de entrega reales con las que en un principio se habían definido en la planificación?"/>
 		</question>
 	</poll>	
+	<poll title="ITIL - Control Proceso - Gestión de Cambios - Cualitativo" name="Control Proceso - Gestión de Cambios - Cualitativo" namePage="control_gestion_cambios_transición" detail="Esta encuesta permite evaluar el control de preceso de gestión de cambios de la fase de transicíon">
+		<question type="title" value="Documentación"></question>
+		<question number="584" type="psu_t" required="true">
+			<ask value="Genera informes que indiquen, los RFC's solicitados?"/>
+		</question>
+		<question number="585" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, los RFC's ha sido aceptados y aprobados?"/>
+		</question>
+		<question number="586" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, como clasifica los cambios realizados por impacto, prioridad?"/>
+		</question>
+		<question number="587" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, el tiempo promedio de los cambios dependiendo su impacto, prioridad?"/>
+		</question>
+		<question number="588" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, la cantidad de cambios de emergencia realizados?"/>
+		</question>
+		<question number="589" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, la cantidad de cambios de emergencia realizados?"/>
+		</question>
+		<question number="590" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, el porcentaje de cambios exitosos?"/>
+		</question>
+		<question number="591" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, el porcentaje de cambios exitosos?"/>
+		</question>
+		<question number="592" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, el númerode back-outs con una detallada explicación de los mismos?"/>
+		</question>
+		<question number="593" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, las evaluaciones post-implementación?"/>
+		</question>
+		<question number="594" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, el porcentajes de cambios cerrados sin incidencias ulteriores?"/>
+		</question>
+		<question number="595" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, las incidencias asociadas a cambios realizados?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión de la Configuración y Activos del Servicio - Cualitativo" name="Control Proceso - Gestión de la Configuración y Activos del Servicio - Cualitativo" namePage="control_gestion_configuracion_activos_transición" detail="Esta encuesta permite evaluar el control de preceso de gestión de la configuración y activos del servicio de la fase de transicíon">
+		<question type="title" value="Documentación"></question>
+		<question number="596" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen,el alcance y nivel de detalle de la CMDB?"/>
+		</question>
+		<question number="597" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, las desviaciones entre la información almacenada en la CMDB y la obtenida de las auditorias de configuración?"/>
+		</question>
+		<question number="598" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, la información sobre CIs que han estado involucrados en incidentes?"/>
+		</question>
+		<question number="599" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, los costes asociados al proceso?"/>
+		</question>
+		<question number="600" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, los Sistemas de clasificación y nomenclatura utilizados?"/>
+		</question>
+		<question number="601" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, los informes sobre configuraciones no autorizadas y/o sin licencias?"/>
+		</question>
+		<question number="602" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, la calidad del proceso de registro y clasificación?"/>
+		</question>
+		<question number="603" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, la información estadística y composición de la estructura TI?"/>
+		</question>	
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión de Entregas y Despliegues - Cualitativo" name="Control Proceso - Gestión de Entregas y Despliegues - Cualitativo" namePage="control_gestion_entregas_despliegues" detail="Esta encuesta permite evaluar el control de preceso de gestión de entregas y despliegues de la fase de transicíon">
+		<question type="title" value="Documentación"></question>
+		<question number="604" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, lanzamientos de nuevas versiones?"/>
+		</question>
+		<question number="605" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, back-outs y razones de los mismos?"/>
+		</question>
+		<question number="606" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, incidencias asociadas a nuevas versiones?"/>
+		</question>
+		<question number="607" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, cumplimientos de los plazos previstos para cada despliegue?"/>
+		</question>
+		<question number="608" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, asignación de recursos en cada caso?"/>
+		</question>
+		<question number="609" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, corrección y alcance de la CMDB y la DS?"/>
+		</question>
+		<question number="610" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, existencia de versiones ilegales de software?"/>
+		</question>
+		<question number="611" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, adecuado registro de las nuevas versiones en la CMDB?"/>
+		</question>
+		<question number="612" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, incidencias provocadas por uso incorrecto (formación inadecuada) de la nueva versión por parte de los usuarios?"/>
+		</question>
+		<question number="613" type="psu_t" required="true">
+			<ask value="¿Genera informes que indiquen, disponibilidad del servicio durante y tras el proceso de lanzamiento de la nueva versión?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Validación y Pruebas - Cualitativo" name="Control Proceso - Validación y Pruebas - Cualitativo" namePage="control_validacion_pruebas" detail="Esta encuesta permite evaluar el control de preceso de validación y pruebas de la fase de transicíon">
+		<question type="title" value="Indicadores"></question>
+		<question number="614" type="psu_t" required="true">
+			<ask value="¿Cúal es el porcentaje de componentes que no superan los test de aceptación?"/>
+		</question>
+		<question number="615" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de errores conocidos que se registran durante la etapa de pruebas?"/>
+		</question>
+		<question number="616" type="psu_t" required="true">
+			<ask value="¿Cúal es el tiempo de demora en la subsanación de errores?"/>
+		</question>
+		<question number="617" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de incidentes atribuibles a las nuevas versiones?"/>
+		</question>
+		<question number="618" type="psu_t" required="true">
+			<ask value="¿Cúal es el porcentaje de test de aceptación del servicio que no obtienen la aprobación del cliente?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Evaluación - Cualitativo" name="Control Proceso - Evaluación - Cualitativo" namePage="control_evaluacion" detail="Esta encuesta permite evaluar el control de preceso de evaluación de la fase de transicíon">
+		<question type="title" value="Indicadores"></question>
+		<question number="619" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de evaluaciones solicitadas para nuevos servicios o cambios en un periodo determinado?"/>
+		</question>
+		<question number="620" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de evaluaciones entregadas en un periodo determinado?"/>
+		</question>
+		<question number="621" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de evaluaciones que permanecen en la cola de tareas?"/>
+		</question>
+		<question number="622" type="psu_t" required="true">
+			<ask value="¿Cúal es el Tiempo medio de elaboración de una evaluación desde que ésta es solicitada hasta que se entrega?"/>
+		</question>
+		<question number="623" type="psu_t" required="true">
+			<ask value="¿Cúal es el Desviación de las evaluaciones de rendimiento previsto respecto de las evaluaciones reales?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión del Conocimiento - Cualitativo" name="Control Proceso - Gestión del Conocimiento - Cualitativo" namePage="control_gestion_conocimiento" detail="Esta encuesta permite evaluar el control de preceso de gestión del conocimiento de la fase de transicíon">
+		<question type="title" value="Métricas"></question>
+		<question number="624" type="psu_t" required="true">
+			<ask value="¿Cúal es número de solicitudes de entradas nuevas recibidas en un periodo específico?"/>
+		</question>
+		<question number="625" type="psu_t" required="true">
+			<ask value="¿Cúal es número de solicitudes de modificaciones/actualizaciones enviadas en un periodo específico?"/>
+		</question>
+		<question number="626" type="psu_t" required="true">
+			<ask value="¿Cúal es número de entradas nuevas publicadas en la base de datos del SKMS en un periodo específico?"/>
+		</question>
+		<question number="627" type="psu_t" required="true">
+			<ask value="¿Cúal es número de entradas modificadas en la base de conocimiento en un periodo específico?"/>
+		</question>
+		<question number="628" type="psu_t" required="true">
+			<ask value="¿Cúal es número de incidentes que recurrieron a entradas existentes en la base de conocimiento en un periodo específico?"/>
+		</question>
+		<question number="629" type="psu_t" required="true">
+			<ask value="¿Cúal es tiempo ahorrado gracias al uso de la base de conocimiento. Se calcula comparando el tiempo medio de resolución de incidentes que se cerraron empleando la base de conocimiento con los que no la usaron?"/>
+		</question>
+		<question number="630" type="psu_t" required="true">
+			<ask value="¿Cúal es número de peticiones de autoayuda que declararon que la base de conocimiento ayudó en la resolución de un asunto en un periodo determinado?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión de Eventos - Cualitativo" name="Control Proceso - Gestión de Eventos - Cualitativo" namePage="control_gestion_eventos" detail="Esta encuesta permite evaluar el control de preceso de gestión de eventos de la fase de operación">
+		<question type="title" value="Indicadores"></question>
+		<question number="631" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de eventos, por categorías?"/>
+		</question>
+		<question number="632" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de eventos, por importancia?"/>
+		</question>
+		<question number="633" type="psu_t" required="true">
+			<ask value="¿Cúal es el Número y porcentaje de eventos que requirieron de intervención humana y cómo fue esa intervención?"/>
+		</question>
+		<question number="634" type="psu_t" required="true">
+			<ask value="¿Cúal es el número y porcentaje de eventos que desembocaron en el registro de una nueva incidencia o solicitud de cambio?"/>
+		</question>
+		<question number="635" type="psu_t" required="true">
+			<ask value="¿Cúal es el número y porcentaje de eventos ocasionados por problemas ya existentes o errores conocidos?"/>
+		</question>
+		<question number="636" type="psu_t" required="true">
+			<ask value="¿Cúal es el número y porcentaje de eventos repetidos o duplicados. Esto es relevante para optimizar la función de Correlación?"/>
+		</question>
+		<question number="637" type="psu_t" required="true">
+			<ask value="¿Cúal es el número y porcentaje de eventos relacionados con problemas de rendimiento?"/>
+		</question>
+		<question number="638" type="psu_t" required="true">
+			<ask value="¿Cúal es el número y porcentaje de eventos que indican futuros problemas de disponibilidad?"/>
+		</question>
+		<question number="639" type="psu_t" required="true">
+			<ask value="¿Cúal es el número y porcentaje de cada tipo de evento, por plataforma o aplicación?"/>
+		</question>
+		<question number="640" type="psu_t" required="true">
+			<ask value="¿Cúal es el número y ratio de eventos por comparación al número de incidentes?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión de Incidencias - Cualitativo" name="Control Proceso - Gestión de Incidencias - Cualitativo" namePage="control_gestion_incidencias" detail="Esta encuesta permite evaluar el control de preceso de gestión de incidencias de la fase de operación">
+		<question type="title" value="Documentación"></question>
+		<question number="641" type="psu_t" required="true">
+			<ask value="¿Los clientes disponen de información puntual sobre los niveles de cumplimiento de los SLAs y que se adopten medidas correctivas en caso de incumplimiento?"/>
+		</question>
+		<question number="642" type="psu_t" required="true">
+			<ask value="¿Existe informacion que permite conocer el grado de satisfacción del cliente por el servicio prestado ?"/>
+		</question>
+		<question number="643" type="psu_t" required="true">
+			<ask value="¿Existe informacion que permita supervisar el correcto funcionamiento de la primera línea de soporte y atención al cliente?"/>
+		</question>
+		<question number="644" type="psu_t" required="true">
+			<ask value="¿Existe informacion que permita conocer si el proceso de escalado ha sido fiel a los protocolos preestablecidos y si se han evitado duplicidades en el proceso de gestión?"/>
+		</question>
+		<question number="645" type="psu_t" required="true">
+			<ask value="¿Se dispone de información estadística que puede ser utilizada para hacer proyecciones futuras sobre asignación de recursos, costes asociados al servicio, etc?"/>
+		</question>
+		<question type="title" value="Infraestructura"></question>
+		<question number="646" type="psu_t" required="true">
+			<ask value="¿Cuenta con un correcto sistema automatizado de registro de incidentes y relación con los clientes?"/>
+		</question>
+		<question number="647" type="psu_t" required="true">
+			<ask value="¿Cuenta con un SKMS que permita comparar nuevos incidentes con incidentes ya registrados y resueltos?"/>
+		</question>
+		<question number="648" type="psu_t" required="true">
+			<ask value="¿Cuenta con un SKMS actualizado que permita evitar escalados innecesarios, convertir el know how de los técnicos en un activo duradero de la empresa, poner directamente a disposición del cliente parte o la totalidad de estos datos (a la manera de FAQs) en una extranet, lo que puede permitir que a veces el usuario no necesite siquiera notificar la incidencia?"/>
+		</question>
+		<question number="649" type="psu_t" required="true">
+			<ask value="¿Cuenta con un CMDB que permita conocer todas las configuraciones actuales y el impacto que éstas puedan tener en la resolución del incidente?"/>
+		</question>
+		<question type="title" value="Métricas"></question>
+		<question number="650" type="psc_ta" required="true">
+			<ask value="¿Cúal es el número de incidentes clasificados temporalmente y por prioridades?"/>
+		</question>
+		<question number="651" type="psc_ta" required="true">
+			<ask value="¿Cúal es el tiempo de resolución clasificados en función del impacto y la urgencia de los incidentes?"/>
+		</question>
+		<question number="652" type="psu_t" required="true">
+			<ask value="¿Cúal es el nivel de cumplimiento de los SLAs?"/>
+		</question>
+		<question number="653" type="psu_t" required="true">
+			<ask value="¿Cuales son los costes asociados?"/>
+		</question>
+		<question number="654" type="psu_t" required="true">
+			<ask value="¿Cúal es el uso de los recursos disponibles en el Centro de Servicios?"/>
+		</question>
+		<question number="654" type="psu_t" required="true">
+			<ask value="¿Cúal es el porcentaje de incidentes, clasificados por prioridades, resueltos en primera instancia por el Centro de Servicios?"/>
+		</question>
+		<question number="655" type="psu_t" required="true">
+			<ask value="¿Cúal es el grado de satisfacción del cliente?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión de Peticiones - Cualitativo" name="Control Proceso - Gestión de Peticiones - Cualitativo" namePage="control_gestion_peticiones" detail="Esta encuesta permite evaluar el control de preceso de gestión de peticiones de la fase de operación">
+		<question number="656" type="psu_t" required="true">
+			<ask value="¿Cúal es el número total de peticiones de servicio?"/>
+		</question>
+		<question number="657" type="psc_ta" required="true">
+			<ask value="¿Cúal es el número de ruptura de peticiones de servicio en cada etapa?"/>
+		</question>
+		<question number="658" type="psu_t" required="true">
+			<ask value="¿Cúal es el tamaño de la copia de seguridad de las peticiones más destacadas?"/>
+		</question>
+		<question number="659" type="psc_ta" required="true">
+			<ask value="¿Cúal es el tiempo medio que dura la gestión de cada tipo de petición de servicio?"/>
+		</question>
+		<question number="660" type="psu_t" required="true">
+			<ask value="¿Cúal es el número y porcentaje de peticiones de servicio completadas en los tiempos acordados?"/>
+		</question>
+		<question number="661" type="psc_ta" required="true">
+			<ask value="¿Cúal es el coste medio de cada tipo de petición de servicio?"/>
+		</question>
+		<question number="662" type="psu_t" required="true">
+			<ask value="¿Cúal es el nivel de satisfacción del cliente con la gestión de las peticiones de servicio?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión de Problemas - Cualitativo" name="Control Proceso - Gestión de Problemas - Cualitativo" namePage="control_gestion_problemas" detail="Esta encuesta permite evaluar el control de preceso de gestión de problemas de la fase de operación">
+		<question type="title" value="Indicadores"></question>
+		<question number="663" type="psu_t" required="true">
+			<ask value="¿Con el pasar del tiempo se genera una disminución del número de incidentes y una más rápida resolución de los mismos?"/>
+		</question>
+		<question number="664" type="psu_t" required="true">
+			<ask value="¿Con el pasar del tiempo se genera una mayor eficacia en la resolución de problemas?"/>
+		</question>
+		<question number="665" type="psu_t" required="true">
+			<ask value="¿Existe una gestión proactiva que permita identificar problemas potenciales antes de que éstos se manifiesten o provoquen una seria degradación de la calidad del servicio?"/>
+		</question>
+		<question type="title" value="Documentación"></question>
+		<question number="666" type="psu_t" required="true">
+			<ask value="¿Se generan informes de rendimiento de la gestión de problemas, donde se detalle el número de errores resueltos, la eficacia de las soluciones propuestas, los tiempos de respuesta y el impacto en la Gestión de Incidencias?"/>
+		</question>
+		<question number="667" type="psu_t" required="true">
+			<ask value="¿Se generan informes de gestión proactiva, donde se especifiquen las acciones ejercidas para la prevención de nuevos problemas y los resultados de los análisis realizados sobre la adecuación de las estructuras TI a las necesidades de la empresa?"/>
+		</question>
+		<question number="668" type="psu_t" required="true">
+			<ask value="¿Se generan informes de calidad de productos y servicios, donde se evalúe el impacto en la calidad del servicio de los productos y servicios contratados y que eventualmente pueda permitir adoptar decisiones informadas sobre cambios de proveedores, etc?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Gestión de Acceso - Cualitativo" name="Control Proceso - Gestión de Acceso - Cualitativo" namePage="control_gestion_acceso" detail="Esta encuesta permite evaluar el control de preceso de gestión de acceso de la fase de operación">
+		<question number="669" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de peticiones de acceso?"/>
+		</question>
+		<question number="670" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de instancias de acceso garantizado, por servicio, usuario, departamento, etc?"/>
+		</question>
+		<question number="671" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de instancias de acceso garantizado por derechos de acceso de departamento o individuo?"/>
+		</question>
+		<question number="672" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de incidentes que requirieron la revocación de los permisos de acceso?"/>
+		</question>
+		<question number="673" type="psu_t" required="true">
+			<ask value="¿Cúal es el número de incidentes causados por una configuración incorrecta de los accesos?"/>
+		</question>
+	</poll>
+	<poll title="ITIL - Control Proceso - Proceso de Mejora CSI - Cualitativo" name="Control Proceso - proceso de mejora CSI - Cualitativo" namePage="control_proceso_mejora_csi" detail="Esta encuesta permite evaluar el control de preceso de Proceso de Mejora CSI de la fase de operación">
+		<question number="674" type="psu_t" required="true">
+			<ask value="¿Para el proceso de mejora CSI conoce los objetivos de los propios planes de mejora?"/>
+		</question>
+		<question number="675" type="psu_t" required="true">
+			<ask value="¿Para el proceso de mejora CSI conoce las métricas que se aplicaran para evaluar dicho proceso?"/>
+		</question>
+		<question number="676" type="psu_t" required="true">
+			<ask value="¿Para el proceso de mejora CSI sabe cuales son los datos que son necesarios recopilar?"/>
+		</question>
+		<question number="677" type="psu_t" required="true">
+			<ask value="¿Para el proceso de mejora CSI sabe cual es la información y conocimiento que se generan de ellos?"/>
+		</question>
+		<question number="678" type="psu_t" required="true">
+			<ask value="¿Para el proceso de mejora CSI sabe cuales son los informes o inteligencia que se esperan generar?"/>
+		</question>
+		<question number="679" type="psu_t" required="true">
+			<ask value="¿Para el proceso de mejora CSI sabe como se implementarán dichos cambios?"/>
+		</question>
+		<question number="680" type="psu_t" required="true">
+			<ask value="¿Genera documentación del proceso de mejora CSI?"/>
+		</question>
+		<question number="681" type="psu_t" required="true">
+			<ask value="¿El responsable (gestor del CSI) gestionar toda la comunicación asociada al proceso?"/>
+		</question>
+		<question number="682" type="psu_t" required="true">
+			<ask value="¿El responsable (gestor del CSI) asigna y monitoriza los recursos disponibles?"/>
+		</question>
+		<question number="683" type="psu_t" required="true">
+			<ask value="¿El responsable (gestor del CSI) asigna y monitoriza los recursos disponibles?"/>
+		</question>
+		<question number="684" type="psu_t" required="true">
+			<ask value="¿El responsable (gestor del CSI) determina las principales áreas de mejora en colaboración con la dirección y los propietarios de los diferentes servicios?"/>
+		</question>
+		<question number="685" type="psu_t" required="true">
+			<ask value="¿El responsable (gestor del CSI) elabora el plan de mejora del servicio en colaboración con la Gestión de Niveles de Servicio?"/>
+		</question>
+		<question number="686" type="psu_t" required="true">
+			<ask value="¿El responsable (gestor del CSI) supervisa todo el proceso y garantiza que se adecúa a los objetivos propuesto en concepto y forma?"/>
+		</question>	
+	</poll>
+	<poll title="ITIL - Control Proceso - Informes de Servicios TI - Cualitativo" name="Control Proceso - Informes de Servicios TI - Cualitativo" namePage="control_informes_de_servicios" detail="Esta encuesta permite evaluar el control de preceso de Informes de Servicios TI de la fase de operación">
+		<question type="title" value="Documentación"></question>
+		<question number="687" type="psu_t" required="true">
+			<ask value="¿Los documetos generados incluyen calendarios de entrega de toda la documentación aportada, descripción individual de los informes generados, destinatarios?"/>
+		</question>
+		<question number="688" type="psu_t" required="true">
+			<ask value="¿Los documetos generados incluyen informes sobre las características y calidad de los datos recogidos, origen, calidad de los mismos, periodicidad (continua, diaria, semanal, mensual), recogida manual o automática?"/>
+		</question>
+		<question number="689" type="psu_t" required="true">
+			<ask value="¿Los documetos generados incluyen metodologías utilizadas para el procesado y análisis de los datos?"/>
+		</question>
+		<question number="690" type="psu_t" required="true">
+			<ask value="¿Los documetos generados incluyen recursos utilizados?"/>
+		</question>
+		<question number="691" type="psu_t" required="true">
+			<ask value="¿Los documetos generados incluyen feedback recibido (dirección, gestores y propietarios de servicios y procesos, personal técnico)?"/>
+		</question>
+		<question number="692" type="psu_t" required="true">
+			<ask value="¿Los documetos generados incluyen propuestas de mejora?"/>
+		</question>
+		<question number="693" type="psu_t" required="true">
+			<ask value="¿Se verifica que los informes estén correctamente escritos en un lenguaje sencillo y directo?"/>
+		</question>
+		<question number="694" type="psu_t" required="true">
+			<ask value="¿Se verifica que los informes contengan toda la información necesaria?"/>
+		</question>
+		<question number="695" type="psu_t" required="true">
+			<ask value="¿Se verifica que los informes contengan gráficos y diagramas que faciliten el entendimiento de la información?"/>
+		</question>
+		<question number="696" type="psu_t" required="true">
+			<ask value="¿Se verifica que los informes tengan una dimensión y profundidad acorde con las necesidades y conocimientos de sus destinatarios?"/>
+		</question>
+		<question number="697" type="psu_t" required="true">
+			<ask value="¿Se verifica que los informes sean fácilmente accesibles a todas las personas a las que van dirigidos?"/>
+		</question>
+	</poll>
 </polls>
