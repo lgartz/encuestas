@@ -1,8 +1,6 @@
 require "erb"
 require "rexml/document"
 
-ARGV[0] = "../encuestas/xml/encuesta.xml"
-
 def readPollFileXml ( pathFile )
   # Se realiza la lectura del documento XML base para realizar las encuestas
   xml = REXML::Document.new(File.open(pathFile))
@@ -465,8 +463,4 @@ def createFile (pathFile,extension,nameFile, erb)
   newFile = File.open(fileName,"w")
   newFile.print erb
   newFile.close
-end
-
-if ARGV[0]
-  readPollFileXml ( ARGV[0] )
 end
