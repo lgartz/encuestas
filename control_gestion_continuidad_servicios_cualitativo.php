@@ -27,11 +27,10 @@
 	</header>
 	<div class="container">
 		<form action="control_gestion_continuidad_servicios_cualitativo_process.php" method="GET">
-			<br><h1>Documentación</h1>
-<div class="form-group">
+			<div class="form-group">
 	<div id="panel_psu_t_560" class="panel panel-primary">
 		<div id="panel_head_psu_t_560" class="panel-heading">
-			<h4>Los informes generados en el proceso incluye análisis sobre nuevos riesgos y evaluación de su impacto<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>La gestión de la continuidad de servicios TI de su compañia garantiza la puesta en marcha de los planes preestablecidos<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psu_t_560" class="panel-body">
 			<input id="psu_t_560" name="psu_t_560" type="text" class="form-control" placeholder="Escriba su respuesta...">
@@ -41,7 +40,7 @@
 <div class="form-group">
 	<div id="panel_psu_t_561" class="panel panel-primary">
 		<div id="panel_head_psu_t_561" class="panel-heading">
-			<h4>Los informes generados en el proceso incluye evaluación de los simulacros de desastre realizados<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>La gestión de la continuidad de servicios TI de su compañia garantiza la supervisión de los planes preestablecidos<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psu_t_561" class="panel-body">
 			<input id="psu_t_561" name="psu_t_561" type="text" class="form-control" placeholder="Escriba su respuesta...">
@@ -51,7 +50,7 @@
 <div class="form-group">
 	<div id="panel_psu_t_562" class="panel panel-primary">
 		<div id="panel_head_psu_t_562" class="panel-heading">
-			<h4>Los informes generados en el proceso incluye actividades de prevención y recuperación realizadas<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>La gestión de la continuidad de servicios TI de su compañia garantiza la coordinación con la gestión de continuidad del negocio<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psu_t_562" class="panel-body">
 			<input id="psu_t_562" name="psu_t_562" type="text" class="form-control" placeholder="Escriba su respuesta...">
@@ -61,20 +60,61 @@
 <div class="form-group">
 	<div id="panel_psu_t_563" class="panel panel-primary">
 		<div id="panel_head_psu_t_563" class="panel-heading">
-			<h4>Los informes generados en el proceso incluye costes asociados a los planes de prevención y recuperación<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>La gestión de la continuidad de servicios TI de su compañia garantiza la asignación de recursos necesarios<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psu_t_563" class="panel-body">
 			<input id="psu_t_563" name="psu_t_563" type="text" class="form-control" placeholder="Escriba su respuesta...">
 		</div>
 	</div>
 </div>
+<br><h1>Documentación</h1>
 <div class="form-group">
 	<div id="panel_psu_t_564" class="panel panel-primary">
 		<div id="panel_head_psu_t_564" class="panel-heading">
-			<h4>Los informes generados en el proceso incluye preparación y capacitación del personal TI respecto a los planes y procedimientos de prevención y recuperación<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿Los informes generados en el proceso incluye análisis sobre nuevos riesgos y evaluación de su impacto?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psu_t_564" class="panel-body">
 			<input id="psu_t_564" name="psu_t_564" type="text" class="form-control" placeholder="Escriba su respuesta...">
+		</div>
+	</div>
+</div>
+<div class="form-group">
+	<div id="panel_psu_t_565" class="panel panel-primary">
+		<div id="panel_head_psu_t_565" class="panel-heading">
+			<h4>Los informes generados en el proceso incluye evaluación de los simulacros de desastre realizados<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+		</div>
+		<div id="panel_body_psu_t_565" class="panel-body">
+			<input id="psu_t_565" name="psu_t_565" type="text" class="form-control" placeholder="Escriba su respuesta...">
+		</div>
+	</div>
+</div>
+<div class="form-group">
+	<div id="panel_psu_t_566" class="panel panel-primary">
+		<div id="panel_head_psu_t_566" class="panel-heading">
+			<h4>Los informes generados en el proceso incluye actividades de prevención y recuperación realizadas<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+		</div>
+		<div id="panel_body_psu_t_566" class="panel-body">
+			<input id="psu_t_566" name="psu_t_566" type="text" class="form-control" placeholder="Escriba su respuesta...">
+		</div>
+	</div>
+</div>
+<div class="form-group">
+	<div id="panel_psu_t_567" class="panel panel-primary">
+		<div id="panel_head_psu_t_567" class="panel-heading">
+			<h4>Los informes generados en el proceso incluye costes asociados a los planes de prevención y recuperación<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+		</div>
+		<div id="panel_body_psu_t_567" class="panel-body">
+			<input id="psu_t_567" name="psu_t_567" type="text" class="form-control" placeholder="Escriba su respuesta...">
+		</div>
+	</div>
+</div>
+<div class="form-group">
+	<div id="panel_psu_t_568" class="panel panel-primary">
+		<div id="panel_head_psu_t_568" class="panel-heading">
+			<h4>Los informes generados en el proceso incluye preparación y capacitación del personal TI respecto a los planes y procedimientos de prevención y recuperación<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+		</div>
+		<div id="panel_body_psu_t_568" class="panel-body">
+			<input id="psu_t_568" name="psu_t_568" type="text" class="form-control" placeholder="Escriba su respuesta...">
 		</div>
 	</div>
 </div>

@@ -82,6 +82,46 @@ $(function(){
 	      	$("#panel_psu_t_564").addClass( "panel-primary" );
 	      	$("#panel_head_psu_t_564 h4 small b").addClass("message_error");
 	   	}
+		if ($("input[name='psu_t_565']").val().trim() == "") {
+	      	$("#panel_psu_t_565").removeClass( "panel-primary" );
+	      	$("#panel_psu_t_565").addClass( "panel-danger" );
+	      	$("#panel_head_psu_t_565 h4 small b").removeClass("message_error");
+	      	resultado = false;
+	   	}else{
+	   		$("#panel_psu_t_565").removeClass( "panel-danger" );
+	      	$("#panel_psu_t_565").addClass( "panel-primary" );
+	      	$("#panel_head_psu_t_565 h4 small b").addClass("message_error");
+	   	}
+		if ($("input[name='psu_t_566']").val().trim() == "") {
+	      	$("#panel_psu_t_566").removeClass( "panel-primary" );
+	      	$("#panel_psu_t_566").addClass( "panel-danger" );
+	      	$("#panel_head_psu_t_566 h4 small b").removeClass("message_error");
+	      	resultado = false;
+	   	}else{
+	   		$("#panel_psu_t_566").removeClass( "panel-danger" );
+	      	$("#panel_psu_t_566").addClass( "panel-primary" );
+	      	$("#panel_head_psu_t_566 h4 small b").addClass("message_error");
+	   	}
+		if ($("input[name='psu_t_567']").val().trim() == "") {
+	      	$("#panel_psu_t_567").removeClass( "panel-primary" );
+	      	$("#panel_psu_t_567").addClass( "panel-danger" );
+	      	$("#panel_head_psu_t_567 h4 small b").removeClass("message_error");
+	      	resultado = false;
+	   	}else{
+	   		$("#panel_psu_t_567").removeClass( "panel-danger" );
+	      	$("#panel_psu_t_567").addClass( "panel-primary" );
+	      	$("#panel_head_psu_t_567 h4 small b").addClass("message_error");
+	   	}
+		if ($("input[name='psu_t_568']").val().trim() == "") {
+	      	$("#panel_psu_t_568").removeClass( "panel-primary" );
+	      	$("#panel_psu_t_568").addClass( "panel-danger" );
+	      	$("#panel_head_psu_t_568 h4 small b").removeClass("message_error");
+	      	resultado = false;
+	   	}else{
+	   		$("#panel_psu_t_568").removeClass( "panel-danger" );
+	      	$("#panel_psu_t_568").addClass( "panel-primary" );
+	      	$("#panel_head_psu_t_568 h4 small b").addClass("message_error");
+	   	}
 		return resultado;
 	}   
     

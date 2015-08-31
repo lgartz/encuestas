@@ -21,7 +21,19 @@
 	getSqlInsertPsu($encuestado,$id_psu_t_563,$psu_t_563);
 	$psu_t_564 = $_GET["psu_t_564"];
 	$id_psu_t_564 = "psu_t_564";
-	getSqlInsertPsu($encuestado,$id_psu_t_564,$psu_t_564);	
+	getSqlInsertPsu($encuestado,$id_psu_t_564,$psu_t_564);
+	$psu_t_565 = $_GET["psu_t_565"];
+	$id_psu_t_565 = "psu_t_565";
+	getSqlInsertPsu($encuestado,$id_psu_t_565,$psu_t_565);
+	$psu_t_566 = $_GET["psu_t_566"];
+	$id_psu_t_566 = "psu_t_566";
+	getSqlInsertPsu($encuestado,$id_psu_t_566,$psu_t_566);
+	$psu_t_567 = $_GET["psu_t_567"];
+	$id_psu_t_567 = "psu_t_567";
+	getSqlInsertPsu($encuestado,$id_psu_t_567,$psu_t_567);
+	$psu_t_568 = $_GET["psu_t_568"];
+	$id_psu_t_568 = "psu_t_568";
+	getSqlInsertPsu($encuestado,$id_psu_t_568,$psu_t_568);	
 	// Cerrar Conexion
 	$sql = "UPDATE encuestado_has_encuesta SET encuestado_has_encuesta_respuesta = '1' WHERE encuestado_id = '".$encuestado."' AND encuesta_id = '".$encuesta."';";
 	insert($sql);
