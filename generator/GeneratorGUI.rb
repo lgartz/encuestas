@@ -1,6 +1,7 @@
 require 'gtk2'
 require 'erb'
 require 'rexml/document'
+require 'fileutils'
 
 class GeneratorGUI < Gtk::Window
   def initialize
@@ -34,20 +35,26 @@ class GeneratorGUI < Gtk::Window
     button.add_filter(filter)
     button.signal_connect('selection_changed') do |w|
       pathFile = w.filename.to_s
-      readPollFileXml(pathFile)
-      mensajeExitoso = Gtk::MessageDialog.new(nil,
-                Gtk::MessageDialog::DESTROY_WITH_PARENT,
-                Gtk::MessageDialog::INFO, Gtk::MessageDialog::BUTTONS_CLOSE,
-                "Se ha creado el formulario Satisfactoriamente")
+      arrayPath = pathFile.split('\\')
+      pathCreate = ""
+      for i in 0..arrayPath.length-2
+        pathCreate+=arrayPath[i]+"\\"
+      end
+      pathCreate+="files\\"
+      readPollFileXml(pathFile,pathCreate)
+      mensajeExitoso = Gtk::MessageDialog.new(self,
+      Gtk::MessageDialog::DESTROY_WITH_PARENT,
+      Gtk::MessageDialog::INFO, Gtk::MessageDialog::BUTTONS_OK,
+      "Se ha creado el formulario Satisfactoriamente en la ruta: "+pathCreate)
       mensajeExitoso.run
       mensajeExitoso.destroy
-      Gtk.main_quit      
+      Gtk.main_quit
     end
     fixed.put label,10,10
     fixed.put button,105,10
   end
 
-  def readPollFileXml ( pathFile )
+  def readPollFileXml ( pathFile, pathCreate )
     # Se realiza la lectura del documento XML base para realizar las encuestas
     xml = REXML::Document.new(File.open(pathFile))
     # Se realiza la lectura de cada una las encuestas
@@ -93,15 +100,32 @@ class GeneratorGUI < Gtk::Window
       erbSQLPoll = getTemplate("../encuestas/templates/sql_poll.template",binding)
       sql << erbSQLPoll.to_s
       erbJavaScript = getTemplate("../encuestas/templates/poll_script.template",binding)
-      createFile("../encuestas/javascript/",".js",namePage,erbJavaScript)
+      createFile(pathCreate+"javascript\\",".js",namePage,erbJavaScript)
       erbHtml = getTemplate("../encuestas/templates/poll.template",binding)
-      createFile("../encuestas/",".php",namePage,erbHtml)
+      createFile(pathCreate,".php",namePage,erbHtml)
       erbPhp = getTemplate("../encuestas/templates/process.template",binding)
-      createFile("../encuestas/",".php",namePhp,erbPhp)
+      createFile(pathCreate,".php",namePhp,erbPhp)
       idPoll += 1
     end
     erbSQL = getTemplate("../encuestas/templates/sql.template",binding)
-    createFile("../encuestas/sql/",".sql","encuestas",erbSQL)
+    createFile(pathCreate+"sql\\",".sql","encuestas",erbSQL)
+    copyFiles(pathCreate)
+  end
+
+  #Método encargado de copiar los archivos necesarios para incluir en las paginas generadas
+  def copyFiles(pathCreate)
+    FileUtils.mkdir_p(pathCreate+"css\\")
+    FileUtils.cp(Dir["../encuestas/css/**"],pathCreate+"css")
+    FileUtils.mkdir_p(pathCreate+"fonts\\")
+    FileUtils.cp(Dir["../encuestas/fonts/**"],pathCreate+"fonts")
+    FileUtils.mkdir_p(pathCreate+"font-awesome\\css\\")
+    FileUtils.cp(Dir["../encuestas/font-awesome/css/**"],pathCreate+"font-awesome\\css")
+    FileUtils.mkdir_p(pathCreate+"font-awesome\\fonts\\")
+    FileUtils.cp(Dir["../encuestas/font-awesome/fonts/**"],pathCreate+"font-awesome\\fonts")
+    FileUtils.mkdir_p(pathCreate+"font-awesome\\less\\")
+    FileUtils.cp(Dir["../encuestas/font-awesome/less/**"],pathCreate+"font-awesome\\less")
+    FileUtils.mkdir_p(pathCreate+"font-awesome\\scss\\")
+    FileUtils.cp(Dir["../encuestas/font-awesome/scss/**"],pathCreate+"font-awesome\\scss")
   end
 
   # Metodo encargado de retornar el codigo sql para cada una de las preguntas generadas
@@ -506,6 +530,7 @@ class GeneratorGUI < Gtk::Window
   # Metodo encargado de crear el archivo generado
   def createFile (pathFile,extension,nameFile, erb)
     print erb.to_s
+    FileUtils.mkdir_p(pathFile)
     fileName = pathFile+nameFile+extension
     newFile = File.open(fileName,"w")
     newFile.print erb
