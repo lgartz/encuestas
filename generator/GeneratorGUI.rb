@@ -11,7 +11,7 @@ class GeneratorGUI < Gtk::Window
 
   def inicializar_ventana
     set_title "Php - Generator Polls"
-    set_default_size 400, 300
+    set_default_size 400, 270
     set_window_position Gtk::Window::Position::CENTER
     signal_connect "delete_event" do
       Gtk.main_quit
@@ -56,16 +56,26 @@ class GeneratorGUI < Gtk::Window
     labelDBPass = Gtk::Label.new("Pass Database:")
     entryDBPass = Gtk::Entry.new
     entryDBPass.set_width_chars 45
+    entryDBPass.visibility = false
+    entryDBPass.invisible_char = 42 
     btGenerate = Gtk::Button.new "Generate"
     btGenerate.signal_connect "clicked" do
-      readPollFileXml(pathFile,pathCreate)      
-      mensajeExitoso = Gtk::MessageDialog.new(self,
-      Gtk::MessageDialog::DESTROY_WITH_PARENT,
-      Gtk::MessageDialog::INFO, Gtk::MessageDialog::BUTTONS_OK,
-      "Se ha creado el formulario Satisfactoriamente en la ruta: "+pathCreate)
-      mensajeExitoso.run
-      mensajeExitoso.destroy
-      Gtk.main_quit
+      if pathFile == "" or pathCreate == ""
+        showMessage("Debe seleccionar el archivo de origen",Gtk::MessageDialog::ERROR,self)
+      elsif entryDB.text.strip == ""
+        showMessage("Debe Ingresar el nombre de la base de datos",Gtk::MessageDialog::ERROR,self)
+      elsif entryDBServer.text.strip == ""
+        showMessage("Debe Ingresar el servidor de la base de datos",Gtk::MessageDialog::ERROR,self)
+      elsif entryDBUser.text.strip == ""
+        showMessage("Debe Ingresar el nombre de usuario de la base de datos",Gtk::MessageDialog::ERROR,self)
+      elsif entryDBPass.text.strip == ""
+        showMessage("Debe Ingresar la contraseña de la base de datos",Gtk::MessageDialog::ERROR,self)
+      else
+
+        readPollFileXml(pathFile,pathCreate,entryDB.text.strip, entryDBServer.text.strip,entryDBUser.text.strip,entryDBPass.text.strip)
+        showMessage("Se ha creado el formulario Satisfactoriamente en la ruta: "+pathCreate,Gtk::MessageDialog::INFO,self)
+        Gtk.main_quit
+      end
     end
     btCancel = Gtk::Button.new "Cancel"
     btCancel.signal_connect "clicked" do
@@ -85,7 +95,16 @@ class GeneratorGUI < Gtk::Window
     fixed.put btCancel,205,235
   end
 
-  def readPollFileXml ( pathFile, pathCreate )
+  def showMessage (message, type, this)
+    mensaje = Gtk::MessageDialog.new(this,
+    Gtk::MessageDialog::DESTROY_WITH_PARENT,
+    type, Gtk::MessageDialog::BUTTONS_OK,
+    message)
+    mensaje.run
+    mensaje.destroy
+  end
+
+  def readPollFileXml ( pathFile, pathCreate, dbName, dbServer, dbUser, dbPass )
     # Se realiza la lectura del documento XML base para realizar las encuestas
     xml = REXML::Document.new(File.open(pathFile))
     # Se realiza la lectura de cada una las encuestas
@@ -102,7 +121,6 @@ class GeneratorGUI < Gtk::Window
       listQuestionId = []
       hashValidate = Hash.new
       hashNames = Hash.new
-      #hashId = Hash.new
       # Se realiza la lectura de cada una las preguntas
       pollChild.each_element("question") do | questionChild |
         type = questionChild.attributes["type"]
@@ -111,11 +129,6 @@ class GeneratorGUI < Gtk::Window
           body << "<br><h1>#{val}</h1>\n"
         else
           number = questionChild.attributes["number"]
-          # if hashId[number]
-          #   print "Lo contiene: #{number}\n"
-          # else
-          #   hashId[number] = number
-          # end
           listQuestionId.push("#{type}_#{number}")
           required = questionChild.attributes["required"]
           ask = questionChild.elements["ask"].attributes["value"]
@@ -140,6 +153,8 @@ class GeneratorGUI < Gtk::Window
     end
     erbSQL = getTemplate("../encuestas/templates/sql.template",binding)
     createFile(pathCreate+"sql\\",".sql","encuestas",erbSQL)
+    erbBase = getTemplate("../encuestas/templates/base.template",binding)
+    createFile(pathCreate,".php","encuestas",erbBase)
     copyFiles(pathCreate)
   end
 
@@ -157,6 +172,13 @@ class GeneratorGUI < Gtk::Window
     FileUtils.cp(Dir["../encuestas/font-awesome/less/**"],pathCreate+"font-awesome\\less")
     FileUtils.mkdir_p(pathCreate+"font-awesome\\scss\\")
     FileUtils.cp(Dir["../encuestas/font-awesome/scss/**"],pathCreate+"font-awesome\\scss")
+    FileUtils.cp("../encuestas/conexion.php",pathCreate)
+    FileUtils.cp("../encuestas/fail.php",pathCreate)
+    FileUtils.cp("../encuestas/index.php",pathCreate)
+    FileUtils.cp("../encuestas/mail.php",pathCreate)
+    FileUtils.cp("../encuestas/session_off.php",pathCreate)
+    FileUtils.cp("../encuestas/sucess.php",pathCreate)
+    FileUtils.cp(Dir["../encuestas/javascript/**"],pathCreate+"javascript\\")
   end
 
   # Metodo encargado de retornar el codigo sql para cada una de las preguntas generadas
