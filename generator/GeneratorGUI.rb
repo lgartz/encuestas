@@ -10,8 +10,8 @@ class GeneratorGUI < Gtk::Window
   end
 
   def inicializar_ventana
-    set_title "Generador de Formularios Php"
-    set_default_size 400, 50
+    set_title "Php - Generator Polls"
+    set_default_size 400, 300
     set_window_position Gtk::Window::Position::CENTER
     signal_connect "delete_event" do
       Gtk.main_quit
@@ -24,11 +24,13 @@ class GeneratorGUI < Gtk::Window
   end
 
   def init_gui
+    pathFile = ""
+    pathCreate = ""
     fixed = Gtk::Fixed.new
     add fixed
-    label = Gtk::Label.new("Ruta Archivo:")
+    label = Gtk::Label.new("Xml - File Path:")
     label.set_size_request 100,30
-    button = Gtk::FileChooserButton.new("Buscar", Gtk::FileChooser::ACTION_OPEN)
+    button = Gtk::FileChooserButton.new("Search", Gtk::FileChooser::ACTION_OPEN)
     button.set_size_request 280,30
     filter = Gtk::FileFilter.new
     filter.add_pattern('*.xml')
@@ -41,7 +43,22 @@ class GeneratorGUI < Gtk::Window
         pathCreate+=arrayPath[i]+"\\"
       end
       pathCreate+="files\\"
-      readPollFileXml(pathFile,pathCreate)
+    end
+    labelDB = Gtk::Label.new("Name Database:")
+    entryDB = Gtk::Entry.new
+    entryDB.set_width_chars 45
+    labelDBServer = Gtk::Label.new("Server Database:")
+    entryDBServer = Gtk::Entry.new
+    entryDBServer.set_width_chars 45
+    labelDBUser = Gtk::Label.new("User Database:")
+    entryDBUser = Gtk::Entry.new
+    entryDBUser.set_width_chars 45
+    labelDBPass = Gtk::Label.new("Pass Database:")
+    entryDBPass = Gtk::Entry.new
+    entryDBPass.set_width_chars 45
+    btGenerate = Gtk::Button.new "Generate"
+    btGenerate.signal_connect "clicked" do
+      readPollFileXml(pathFile,pathCreate)      
       mensajeExitoso = Gtk::MessageDialog.new(self,
       Gtk::MessageDialog::DESTROY_WITH_PARENT,
       Gtk::MessageDialog::INFO, Gtk::MessageDialog::BUTTONS_OK,
@@ -50,8 +67,22 @@ class GeneratorGUI < Gtk::Window
       mensajeExitoso.destroy
       Gtk.main_quit
     end
+    btCancel = Gtk::Button.new "Cancel"
+    btCancel.signal_connect "clicked" do
+      Gtk.main_quit
+    end
     fixed.put label,10,10
+    fixed.put labelDB,15,58
+    fixed.put labelDBServer,15,103
+    fixed.put labelDBUser,24,148
+    fixed.put labelDBPass,24,193
     fixed.put button,105,10
+    fixed.put entryDB,105,55
+    fixed.put entryDBServer,105,100
+    fixed.put entryDBUser,105,145
+    fixed.put entryDBPass,105,190
+    fixed.put btGenerate,145,235
+    fixed.put btCancel,205,235
   end
 
   def readPollFileXml ( pathFile, pathCreate )
