@@ -6,34 +6,34 @@
 	session_start();
 	$encuesta = $_SESSION['idEncuesta'];
 	$encuestado = $_SESSION['idEncuestado'];
-	<%hashNames.each{|key,list|%><% if key == "smu_rb" or key == "smu_s"%><%list.each{|name|%>
-	$<%=name%> = $_GET["<%=name%>"];
-	getSqlInsertSmu($encuestado,$<%=name%>);<%}%><%elsif key == "smr_cb" or key == "smr_sm"%><%list.each{|name|%>
-	$<%=name%> = $_GET["<%=name%>"];
-	getSqlInsertSmr($encuestado, $<%=name%>);<%}%><%elsif key == "eru_rb"%><%list.each{|name|%>
-	$<%=name%> = $_GET["<%=name%>"];
-	getSqlInsertEru($encuestado,$<%=name%>);<%}%><%elsif key == "psu_t"%><%list.each{|name|%>
-	$<%=name%> = $_GET["<%=name%>"];
-	$id_<%=name%> = "<%=name%>";
-	getSqlInsertPsu($encuestado,$id_<%=name%>,$<%=name%>);<%}%><%elsif key == "psm_t"%><%list.each{|name|%>
-	$<%=name%> = $_GET["<%=name%>"];
-	$id_<%=name%> = "<%=name%>";
-	getSqlInsertPsm ($encuestado, $id_<%=name%>, $<%=name%>);<%}%><%elsif key == "psc_ta"%><%list.each{|name|%>
-	$<%=name%> = $_GET["<%=name%>"];
-	$id_<%=name%> = "<%=name%>";
-	getSqlInsertPsu($encuestado,$id_<%=name%>,$<%=name%>);<%}%><%elsif key == "pfh_s"%><%list.each{|name|%>
-	$id_<%=name%> = "<%=name%>";
-	getSqlInsertPfh ($encuestado, $id_<%=name%>);<%}%><%elsif key == "psf_s"%><%list.each{|name|%>
-	$id_<%=name%> = "<%=name%>";
-	getSqlInsertPsf ($encuestado, $id_<%=name%>);<%}%><%elsif key == "psh_s"%><%list.each{|name|%>
-	$id_<%=name%> = "<%=name%>";
-	getSqlInsertPsh ($encuestado, $id_<%=name%>);<%}%><%elsif key == "mmr_rb"%><%list.each{|name|%>
-	$<%=name%> = $_GET["<%=name%>"];
-	getSqlInsertMmr ($encuestado, $<%=name%>);<%}%><%elsif key == "mmr_cb"%><%list.each{|name|%>
-	$<%=name%> = $_GET["<%=name%>"];
-	getSqlInsertMmrCb($encuestado, $<%=name%>);<%}%><%elsif key == "mmr_s"%><%list.each{|name|%>
-	$<%=name%> = $_GET["<%=name%>"];
-	getSqlInsertMmrS($encuestado, $<%=name%>);<%}%><%end%><%}%>	
+	
+	$psu_t_560 = $_GET["psu_t_560"];
+	$id_psu_t_560 = "psu_t_560";
+	getSqlInsertPsu($encuestado,$id_psu_t_560,$psu_t_560);
+	$psu_t_561 = $_GET["psu_t_561"];
+	$id_psu_t_561 = "psu_t_561";
+	getSqlInsertPsu($encuestado,$id_psu_t_561,$psu_t_561);
+	$psu_t_562 = $_GET["psu_t_562"];
+	$id_psu_t_562 = "psu_t_562";
+	getSqlInsertPsu($encuestado,$id_psu_t_562,$psu_t_562);
+	$psu_t_563 = $_GET["psu_t_563"];
+	$id_psu_t_563 = "psu_t_563";
+	getSqlInsertPsu($encuestado,$id_psu_t_563,$psu_t_563);
+	$psu_t_564 = $_GET["psu_t_564"];
+	$id_psu_t_564 = "psu_t_564";
+	getSqlInsertPsu($encuestado,$id_psu_t_564,$psu_t_564);
+	$psu_t_565 = $_GET["psu_t_565"];
+	$id_psu_t_565 = "psu_t_565";
+	getSqlInsertPsu($encuestado,$id_psu_t_565,$psu_t_565);
+	$psu_t_566 = $_GET["psu_t_566"];
+	$id_psu_t_566 = "psu_t_566";
+	getSqlInsertPsu($encuestado,$id_psu_t_566,$psu_t_566);
+	$psu_t_567 = $_GET["psu_t_567"];
+	$id_psu_t_567 = "psu_t_567";
+	getSqlInsertPsu($encuestado,$id_psu_t_567,$psu_t_567);
+	$psu_t_568 = $_GET["psu_t_568"];
+	$id_psu_t_568 = "psu_t_568";
+	getSqlInsertPsu($encuestado,$id_psu_t_568,$psu_t_568);	
 	// Cerrar Conexion
 	$sql = "UPDATE encuestado_has_encuesta SET encuestado_has_encuesta_respuesta = '1' WHERE encuestado_id = '".$encuestado."' AND encuesta_id = '".$encuesta."';";
 	insert($sql);
