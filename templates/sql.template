@@ -25,6 +25,17 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
+-- Table `u391829043_encue`.`rol`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `u391829043_encue`.`rol` (
+  `rol_id` INT NOT NULL AUTO_INCREMENT COMMENT '',
+  `rol_nombre` VARCHAR(50) NOT NULL COMMENT '',
+  `rol_descripcion` VARCHAR(500) NOT NULL COMMENT '',
+  PRIMARY KEY (`rol_id`)  COMMENT '')
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `u391829043_encue`.`encuestado`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `u391829043_encue`.`encuestado` (
@@ -33,7 +44,14 @@ CREATE TABLE IF NOT EXISTS `u391829043_encue`.`encuestado` (
   `encuestado_apellidos` VARCHAR(100) NOT NULL COMMENT '',
   `encuestado_email` VARCHAR(45) NOT NULL COMMENT '',
   `encuestado_password` VARCHAR(50) NOT NULL COMMENT '',
-  PRIMARY KEY (`encuestado_id`)  COMMENT '')
+  `encuestado_rol_id` INT NOT NULL COMMENT '',
+  PRIMARY KEY (`encuestado_id`)  COMMENT '',
+  INDEX `fk_encuestado_rol_encuestado1_idx` (`encuestado_rol_id` ASC)  COMMENT '',
+  CONSTRAINT `fk_encuestado_rol_encuestado1`
+    FOREIGN KEY (`encuestado_rol_id`)
+    REFERENCES `u391829043_encue`.`rol` (`rol_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
@@ -320,9 +338,16 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
-
+-- -----------------------------------------------------
+-- inserts autogenerados
+-- -----------------------------------------------------
 <%=sql%>
-INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password) VALUES ('1','Luis Arturo','Zarate Ayala','luisarturo1989@gmail.com','827ccb0eea8a706c4c34a16891f84e7b');
-INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password) VALUES ('2','Juan Luís','Rubio Sánchez','juanluis.rubio@udima.es','827ccb0eea8a706c4c34a16891f84e7b');<%for i in 1..idPoll-1%>
+-- -----------------------------------------------------
+-- inserts programados
+-- -----------------------------------------------------
+INSERT INTO rol (rol_id, rol_nombre, rol_descripcion) VALUES ('1','Administrador','Representa el administrador del sistema de encuestas');
+INSERT INTO rol (rol_id, rol_nombre, rol_descripcion) VALUES ('2','Invitado','Representa el invitado a resolver las encuestas');
+INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password, encuestado_rol_id) VALUES ('1','Luis Arturo','Zarate Ayala','luisarturo1989@gmail.com','827ccb0eea8a706c4c34a16891f84e7b','1');
+INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password, encuestado_rol_id) VALUES ('2','Juan Luís','Rubio Sánchez','juanluis.rubio@udima.es','827ccb0eea8a706c4c34a16891f84e7b','2');<%for i in 1..idPoll-1%>
 INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('1','<%=i%>');
 INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('2','<%=i%>');<%end%>

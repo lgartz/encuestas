@@ -33,11 +33,12 @@
             $pass = $_SESSION['pass'];
         }
         include("conexion.php");
-        $conn = connect_with_mysql("mysql.hostinger.es","u391829043_admin","Qwer1234$","u391829043_encue");
-        $sql = "SELECT encuestado_id,encuestado_nombres,encuestado_apellidos,encuestado_email,encuestado_password FROM encuestado WHERE encuestado_email = '".$email."' AND encuestado_password = '".$pass."'";
+        $conn = connect_with_mysql();
+        $sql = "SELECT encuestado_id,encuestado_nombres,encuestado_apellidos,encuestado_email,encuestado_password,encuestado_rol_id FROM encuestado WHERE encuestado_email = '".$email."' AND encuestado_password = '".$pass."'";
         $result = mysql_query($sql);
         $nombre="";
-        $idEncuestado="";        
+        $idEncuestado="";
+        $rolEncuestado="";
         if (!$result) {
              $mensaje  = 'Consulta no válida: ' . mysql_error() . "\n";
              $mensaje .= 'Consulta completa: ' . $sql;
@@ -53,11 +54,13 @@
         while ($fila = mysql_fetch_array($result, MYSQL_NUM)) {
             $nombre = "".$fila[1]." ".$fila[2];
             $idEncuestado = "".$fila[0];
+            $rolEncuestado = "".$fila[5];
             break;
         }
 
         if (!isset($_SESSION['idEncuestado'])) {
             $_SESSION['idEncuestado'] = $idEncuestado;
+            $_SESSION['rolEncuestado'] = $rolEncuestado;
         }      
      ?>
     <!-- Navigation -->
@@ -78,6 +81,11 @@
                     <li>
                         <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo "".$nombre; ?><span class="caret"></span></a>
                         <ul class="dropdown-menu">
+                        	<?php 
+                        		if (strcmp($rolEncuestado, "1") === 0) {
+                        			echo '<li><a href="mail.php"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;Enviar Invitaci&oacute;n</a></li>';
+                        		}
+                        	?>                        	
                             <li><a href="session_off.php"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;Cerrar Sesi&oacute;n</a></li>
                         </ul>
                     </li>
@@ -113,17 +121,21 @@
          }
         $i=1;
         while ($fila = mysql_fetch_array($result, MYSQL_NUM)) {
-            echo "<tr>";                            
-            echo "<td>";
-            echo "".$i;
-            echo "</td>";
-            echo "<td>";
-            echo $fila[0];
-            echo "</td>";
-            echo "<td>";
-            echo $fila[1];
-            echo "</td>";
-            echo "<td align=center><a href='".$fila[2]."?idEncuesta=".$fila[3]."'>Contestar</a></td>";
+        	echo "<tr>";
+        	echo "<td>";
+        	echo "".$i;
+        	echo "</td>";
+        	echo "<td>";
+        	echo $fila[0];
+        	echo "</td>";
+        	echo "<td>";
+        	echo $fila[1];
+        	echo "</td>";        	
+        	if (strcmp($rolEncuestado, "1") !== 0) {
+        		echo "<td align=center><a href='".$fila[2]."?idEncuesta=".$fila[3]."'>Contestar</a></td>";
+        	}else{
+        		echo "<td align=center><a href='resultados.php?idEncuesta=".$fila[3]."'>Ver Resultados</a></td>";
+        	}
             echo "</tr>";
             $i++;
         }            
