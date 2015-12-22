@@ -16,6 +16,10 @@
 		}
 		$idEncuesta = $_GET["idEncuesta"];
 		session_start();
+		$rolEncuestado="";
+   		if(isset($_SESSION['rolEncuestado'])){
+	      $rolEncuestado = $_SESSION['rolEncuestado'];
+    	}    
 		$_SESSION['idEncuesta'] = $idEncuesta;
 	?>
 	<header>
@@ -31,7 +35,7 @@
 <div class="form-group">
 	<div id="panel_psu_t_584" class="panel panel-primary">
 		<div id="panel_head_psu_t_584" class="panel-heading">
-			<h4>Genera informes que indiquen, los RFC's solicitados?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>Genera informes que indiquen, los RFCs solicitados?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psu_t_584" class="panel-body">
 			<input id="psu_t_584" name="psu_t_584" type="text" class="form-control" placeholder="Escriba su respuesta...">
@@ -41,7 +45,7 @@
 <div class="form-group">
 	<div id="panel_psu_t_585" class="panel panel-primary">
 		<div id="panel_head_psu_t_585" class="panel-heading">
-			<h4>¿Genera informes que indiquen, los RFC's ha sido aceptados y aprobados?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
+			<h4>¿Genera informes que indiquen, los RFCs ha sido aceptados y aprobados?<small style="color:red;"><b class="message_error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Esta respuesta es obligatoria</b></small></h4>
 		</div>
 		<div id="panel_body_psu_t_585" class="panel-body">
 			<input id="psu_t_585" name="psu_t_585" type="text" class="form-control" placeholder="Escriba su respuesta...">
@@ -151,17 +155,27 @@
 
 		<div class="form-group">
 			<div class="row">
-				<div class="col col-xs-3"></div>
-				<div class="col col-xs-2">
-					<button id="enviar" type="submit" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;Enviar</button>
-				</div>
-				<div class="col col-xs-2">
-					<button id="cancelar" type="reset" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-erase" aria-hidden="true"></span>&nbsp;Limpiar</button>
-				</div>
-				<div class="col col-xs-2">
-					<a href="encuestas.php" class="btn btn-warning btn-lg" role="button"><span class="glyphicon glyphicon-road" aria-hidden="true"></span>&nbsp;Regresar</a>
-				</div>
-				<div class="col col-xs-3"></div>
+			  <?php 
+			    if (strcmp($rolEncuestado, "1") !== 0) {
+			      echo '<div class="col col-xs-3"></div>';
+			      echo '<div class="col col-xs-2">';
+            echo '<button id="enviar" type="submit" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;Enviar</button>';
+            echo '</div>';
+            echo '<div class="col col-xs-2">';
+            echo '<button id="cancelar" type="reset" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-erase" aria-hidden="true"></span>&nbsp;Limpiar</button>';
+            echo '</div>';
+            echo '<div class="col col-xs-2">';
+            echo '<a href="encuestas.php" class="btn btn-warning btn-lg" role="button"><span class="glyphicon glyphicon-road" aria-hidden="true"></span>&nbsp;Regresar</a>';
+            echo '</div>';
+            echo '<div class="col col-xs-3"></div>';
+			    }else{
+            echo '<div class="col col-xs-5"></div>';
+            echo '<div class="col col-xs-2">';
+            echo '<a href="encuestas.php" class="btn btn-warning btn-lg" role="button"><span class="glyphicon glyphicon-road" aria-hidden="true"></span>&nbsp;Regresar</a>';
+            echo '</div>';
+            echo '<div class="col col-xs-5"></div>';
+			    }
+			  ?>				
 			</div>
 		</div>
 		</form>

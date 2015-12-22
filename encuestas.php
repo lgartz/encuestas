@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Encuestas</title>
-    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
-    <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
@@ -33,12 +30,12 @@
             $pass = $_SESSION['pass'];
         }
         include("conexion.php");
-        $conn = connect_with_mysql();
+        $conn = connect_with_mysql("localhost","root","","encuestas");
         $sql = "SELECT encuestado_id,encuestado_nombres,encuestado_apellidos,encuestado_email,encuestado_password,encuestado_rol_id FROM encuestado WHERE encuestado_email = '".$email."' AND encuestado_password = '".$pass."'";
         $result = mysql_query($sql);
         $nombre="";
         $idEncuestado="";
-        $rolEncuestado="";
+        $rolEncuestado="";        
         if (!$result) {
              $mensaje  = 'Consulta no válida: ' . mysql_error() . "\n";
              $mensaje .= 'Consulta completa: ' . $sql;
@@ -54,13 +51,15 @@
         while ($fila = mysql_fetch_array($result, MYSQL_NUM)) {
             $nombre = "".$fila[1]." ".$fila[2];
             $idEncuestado = "".$fila[0];
-            $rolEncuestado = "".$fila[5];
+            $rolEncuestado="".$fila[5];
             break;
         }
 
         if (!isset($_SESSION['idEncuestado'])) {
-            $_SESSION['idEncuestado'] = $idEncuestado;
-            $_SESSION['rolEncuestado'] = $rolEncuestado;
+            $_SESSION['idEncuestado'] = $idEncuestado;                        
+        }
+        if (!isset($_SESSION['rolEncuestado'])) {
+        	$_SESSION['rolEncuestado'] = $rolEncuestado;
         }      
      ?>
     <!-- Navigation -->
@@ -82,10 +81,11 @@
                         <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo "".$nombre; ?><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                         	<?php 
-                        		if (strcmp($rolEncuestado, "1") === 0) {
-                        			echo '<li><a href="mail.php"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;Enviar Invitaci&oacute;n</a></li>';
-                        		}
-                        	?>                        	
+	                        	if (strcmp($rolEncuestado, "1") === 0) {
+	                        		echo "<li><a data-toggle='modal' data-target='#modalMail'><span class='glyphicon glyphicon glyphicon-envelope' aria-hidden='true'></span>&nbsp;Enviar Invitaci&oacute;n</a></li>";
+	                        		echo "<li class='divider'></li>";
+	                        	}
+                        	?>
                             <li><a href="session_off.php"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;Cerrar Sesi&oacute;n</a></li>
                         </ul>
                     </li>
@@ -102,10 +102,15 @@
                     <th class="btn-primary">No.</th>
                     <th class="btn-primary">Nombre</th>
                     <th class="btn-primary">Descripci&oacute;n</th>
+                    <?php 
+                    	if (strcmp($rolEncuestado, "1") === 0) {
+                    		echo "<th class='btn-primary'></th>";
+                    	}
+                    ?>
                     <th class="btn-primary"></th>
                 </tr>
     <?php
-        $sql = "SELECT encuesta.encuesta_nombre, encuesta.encuesta_descripcion, encuesta.encuesta_page, encuesta.encuesta_id FROM encuesta, encuestado, encuestado_has_encuesta WHERE encuesta.encuesta_id = encuestado_has_encuesta.encuesta_id AND encuestado_has_encuesta.encuestado_id = encuestado.encuestado_id AND encuestado_has_encuesta.encuestado_has_encuesta_respuesta = '0' AND encuestado.encuestado_email = '".$email."' AND encuestado.encuestado_password = '".$pass."'";
+        $sql = "SELECT encuesta.encuesta_nombre, encuesta.encuesta_descripcion, encuesta.encuesta_page, encuesta.encuesta_id FROM encuesta, encuestado, encuestado_has_encuesta WHERE encuesta.encuesta_id = encuestado_has_encuesta.encuesta_id AND encuestado_has_encuesta.encuestado_id = encuestado.encuestado_id AND encuestado_has_encuesta.encuestado_has_encuesta_respuesta = '0' AND encuestado.encuestado_email = '".$email."' AND encuestado.encuestado_password = '".$pass."' order by 1";
         $result = mysql_query($sql);
          if (!$result) {
              $mensaje  = 'Consulta no válida: ' . mysql_error() . "\n";
@@ -120,30 +125,72 @@
               }
          }
         $i=1;
+        $values = array();
+        $keys = array();
         while ($fila = mysql_fetch_array($result, MYSQL_NUM)) {
-        	echo "<tr>";
-        	echo "<td>";
-        	echo "".$i;
-        	echo "</td>";
-        	echo "<td>";
-        	echo $fila[0];
-        	echo "</td>";
-        	echo "<td>";
-        	echo $fila[1];
-        	echo "</td>";        	
-        	if (strcmp($rolEncuestado, "1") !== 0) {
-        		echo "<td align=center><a href='".$fila[2]."?idEncuesta=".$fila[3]."'>Contestar</a></td>";
-        	}else{
-        		echo "<td align=center><a href='resultados.php?idEncuesta=".$fila[3]."'>Ver Resultados</a></td>";
-        	}
+            echo "<tr>";                            
+            echo "<td>";
+            echo "".$i;
+            echo "</td>";
+            echo "<td>";
+            echo $fila[0];
+            echo "</td>";
+            echo "<td>";
+            echo $fila[1];
+            echo "</td>";
+            echo "<td align=center><a href='".$fila[2]."?idEncuesta=".$fila[3]."'>Ver</a></td>";
+             if (strcmp($rolEncuestado, "1") === 0) {
+            	echo "<td align=center><a href='resultados.php?idEncuesta=".$fila[3]."'>Resultados</a></td>";
+            }
             echo "</tr>";
             $i++;
+            array_push($values,$fila[0]);
+            array_push($keys,$fila[3]);
         }            
         close_connect_with_mysql($conn);
     ?>
             </table>
 		</div>	
     </div>
+    <!-- Modal -->
+	<div id="modalMail" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="mail.php">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">Enviar invitacion a encuestas</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="txtDestinatarios" class="control-label">Destinatarios:</label>
+							<input type="text" class="form-control" id="txtDestinatarios"
+								name="txtDestinatarios" />
+						</div>
+						<div class="form-group">
+							<label for="selEncuesta" class="control-label">Encuesta:</label>
+							<select class="form-control" id="selEncuesta" name="selEncuesta">
+								<?php
+									for ($i = 0; $i < count($keys); $i++) {
+										echo "<option value='".$keys[$i]."'>".$values[$i]."</option>";
+									}
+								?>
+							</select>
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-primary">Enviar Invitacion</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
     <!-- Footer -->
     <footer>
         <div class="container">

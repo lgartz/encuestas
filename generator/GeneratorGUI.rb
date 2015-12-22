@@ -152,6 +152,8 @@ class GeneratorGUI < Gtk::Window
     createFile(pathCreate+"sql\\",".sql","encuestas",erbSQL)
     erbBase = getTemplate("../encuestas/templates/base.template",binding)
     createFile(pathCreate,".php","encuestas",erbBase)
+    erbMail = getTemplate("../encuestas/templates/mail.template",binding)
+    createFile(pathCreate,".php","mail2",erbMail)
     copyFiles(pathCreate)
   end
 
@@ -174,7 +176,6 @@ class GeneratorGUI < Gtk::Window
     FileUtils.cp("../encuestas/conexion.php",pathCreate)
     FileUtils.cp("../encuestas/fail.php",pathCreate)
     FileUtils.cp("../encuestas/index.php",pathCreate)
-    FileUtils.cp("../encuestas/mail.php",pathCreate)
     FileUtils.cp("../encuestas/session_off.php",pathCreate)
     FileUtils.cp("../encuestas/sucess.php",pathCreate)
     FileUtils.cp(Dir["../encuestas/javascript/**"],pathCreate+"javascript\\")
@@ -581,7 +582,6 @@ class GeneratorGUI < Gtk::Window
 
   # Metodo encargado de crear el archivo generado
   def createFile (pathFile,extension,nameFile, erb)
-    print erb.to_s
     FileUtils.mkdir_p(pathFile)
     fileName = pathFile+nameFile+extension
     newFile = File.open(fileName,"w")

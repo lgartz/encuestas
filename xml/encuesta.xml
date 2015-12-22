@@ -2500,7 +2500,7 @@
 			<ask value="¿Se conoce el ROI de las inversiones TI?"/>
 		</question>
 		<question number="519" type="psu_t" required="true">
-			<ask value="¿La organización TI funciona de manera 'rentable'?"/>
+			<ask value="¿La organización TI funciona de manera rentable?"/>
 		</question>
 		<question type="title" value="Documentación"></question>
 		<question number="520" type="psu_t" required="true">
@@ -2563,7 +2563,7 @@
 		<question number="536" type="psu_t" required="true">
 			<ask value="¿Cúal es el número de accesos o solicitudes de consulta del Catálogo dentro de la organización TI?"/>
 		</question>
-		<question number="536" type="psu_t" required="true">
+		<question number="698" type="psu_t" required="true">
 			<ask value="¿Cúal es el número de accesos o solicitudes de consulta del Catálogo dentro de la organización TI?"/>
 		</question>
 	</poll>
@@ -2705,7 +2705,7 @@
 			<ask value="¿Ha notado un incremento en el número de proveedores y objetivos contractuales alineados con los objetivos contenidos en los SLA y SLR?"/>
 		</question>
  		<question type="title" value="Indicadores de disponibilidad"></question>	
- 		<question number="575" type="psu_t" required="true">
+ 		<question number="699" type="psu_t" required="true">
 			<ask value="¿Ha reducido el número de interrupciones de servicio provocadas por los proveedores?"/>
 		</question>
 		<question number="576" type="psu_t" required="true">
@@ -2719,7 +2719,7 @@
 			<ask value="¿Ha evidenciado incremento en el número de contratos en los que figura un responsable?"/>
 		</question>
 	</poll>
-	<poll title="ITIL - Control Proceso - Planificación y Soporte a la Transición - Cualitativo" name="Control Proceso - Planificación y Soporte a la Transición - Cualitativo" namePage="control_planificación_soporte_transición" detail="Esta encuesta permite evaluar el control de preceso de planificación y soporte a la transición de la fase de transicíon">
+	<poll title="ITIL - Control Proceso - Planificación y Soporte a la Transición - Cualitativo" name="Control Proceso - Planificación y Soporte a la Transición - Cualitativo" namePage="control_planificacion_soporte_transicion" detail="Esta encuesta permite evaluar el control de preceso de planificación y soporte a la transición de la fase de transicíon">
 		<question type="title" value="Indicadores"></question>
  		<question number="579" type="psu_t" required="true">
 			<ask value="¿El jefe de proyecto controla y mide el número de proyectos gestionados es decir, el número de versiones desplegadas (rollout) que han sido objeto de planificación y soporte?"/>
@@ -2737,13 +2737,13 @@
 			<ask value="¿El jefe de proyecto controla y mide el retrasos en proyectos, comparando las fechas de entrega reales con las que en un principio se habían definido en la planificación?"/>
 		</question>
 	</poll>	
-	<poll title="ITIL - Control Proceso - Gestión de Cambios - Cualitativo" name="Control Proceso - Gestión de Cambios - Cualitativo" namePage="control_gestion_cambios_transición" detail="Esta encuesta permite evaluar el control de preceso de gestión de cambios de la fase de transicíon">
+	<poll title="ITIL - Control Proceso - Gestión de Cambios - Cualitativo" name="Control Proceso - Gestión de Cambios - Cualitativo" namePage="control_gestion_cambios_transicion" detail="Esta encuesta permite evaluar el control de preceso de gestión de cambios de la fase de transicíon">
 		<question type="title" value="Documentación"></question>
 		<question number="584" type="psu_t" required="true">
-			<ask value="Genera informes que indiquen, los RFC's solicitados?"/>
+			<ask value="Genera informes que indiquen, los RFCs solicitados?"/>
 		</question>
 		<question number="585" type="psu_t" required="true">
-			<ask value="¿Genera informes que indiquen, los RFC's ha sido aceptados y aprobados?"/>
+			<ask value="¿Genera informes que indiquen, los RFCs ha sido aceptados y aprobados?"/>
 		</question>
 		<question number="586" type="psu_t" required="true">
 			<ask value="¿Genera informes que indiquen, como clasifica los cambios realizados por impacto, prioridad?"/>
@@ -2776,7 +2776,7 @@
 			<ask value="¿Genera informes que indiquen, las incidencias asociadas a cambios realizados?"/>
 		</question>
 	</poll>
-	<poll title="ITIL - Control Proceso - Gestión de la Configuración y Activos del Servicio - Cualitativo" name="Control Proceso - Gestión de la Configuración y Activos del Servicio - Cualitativo" namePage="control_gestion_configuracion_activos_transición" detail="Esta encuesta permite evaluar el control de preceso de gestión de la configuración y activos del servicio de la fase de transicíon">
+	<poll title="ITIL - Control Proceso - Gestión de la Configuración y Activos del Servicio - Cualitativo" name="Control Proceso - Gestión de la Configuración y Activos del Servicio - Cualitativo" namePage="control_gestion_configuracion_activos_transicion" detail="Esta encuesta permite evaluar el control de preceso de gestión de la configuración y activos del servicio de la fase de transicíon">
 		<question type="title" value="Documentación"></question>
 		<question number="596" type="psu_t" required="true">
 			<ask value="¿Genera informes que indiquen,el alcance y nivel de detalle de la CMDB?"/>
@@ -2975,7 +2975,7 @@
 		<question number="654" type="psu_t" required="true">
 			<ask value="¿Cúal es el uso de los recursos disponibles en el Centro de Servicios?"/>
 		</question>
-		<question number="654" type="psu_t" required="true">
+		<question number="700" type="psu_t" required="true">
 			<ask value="¿Cúal es el porcentaje de incidentes, clasificados por prioridades, resueltos en primera instancia por el Centro de Servicios?"/>
 		</question>
 		<question number="655" type="psu_t" required="true">

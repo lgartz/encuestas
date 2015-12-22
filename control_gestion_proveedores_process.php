@@ -2,7 +2,7 @@
 	// Se incluye la conexion
 	include("conexion.php");
 	// Crear connection
-	$conn = connect_with_mysql("mysql.hostinger.es","u391829043_admin","Qwer1234$","u391829043_encue");
+	$conn = connect_with_mysql("localhost","root","","encuestas");
 	session_start();
 	$encuesta = $_SESSION['idEncuesta'];
 	$encuestado = $_SESSION['idEncuestado'];
@@ -19,9 +19,9 @@
 	$psu_t_575 = $_GET["psu_t_575"];
 	$id_psu_t_575 = "psu_t_575";
 	getSqlInsertPsu($encuestado,$id_psu_t_575,$psu_t_575);
-	$psu_t_575 = $_GET["psu_t_575"];
-	$id_psu_t_575 = "psu_t_575";
-	getSqlInsertPsu($encuestado,$id_psu_t_575,$psu_t_575);
+	$psu_t_699 = $_GET["psu_t_699"];
+	$id_psu_t_699 = "psu_t_699";
+	getSqlInsertPsu($encuestado,$id_psu_t_699,$psu_t_699);
 	$psu_t_576 = $_GET["psu_t_576"];
 	$id_psu_t_576 = "psu_t_576";
 	getSqlInsertPsu($encuestado,$id_psu_t_576,$psu_t_576);

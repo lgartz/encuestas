@@ -16,9 +16,9 @@
 		}
 		$idEncuesta = $_GET["idEncuesta"];
 		session_start();
-		$rolEncuentado="";
-   		if(!isset($_SESSION['rolEncuentado'])){
-	      $rolEncuentado = $_SESSION['rolEncuentado'];
+		$rolEncuestado="";
+   		if(isset($_SESSION['rolEncuestado'])){
+	      $rolEncuestado = $_SESSION['rolEncuestado'];
     	}    
 		$_SESSION['idEncuesta'] = $idEncuesta;
 	?>
@@ -35,7 +35,7 @@
 		<div class="form-group">
 			<div class="row">
 			  <?php 
-			    if (strcmp($rolEncuestado, "1") === 0) {
+			    if (strcmp($rolEncuestado, "1") !== 0) {
 			      echo '<div class="col col-xs-3"></div>';
 			      echo '<div class="col col-xs-2">';
             echo '<button id="enviar" type="submit" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp;Enviar</button>';
@@ -48,11 +48,11 @@
             echo '</div>';
             echo '<div class="col col-xs-3"></div>';
 			    }else{
-            echo '<div class="col col-xs-4"></div>';
-            echo '<div class="col col-xs-4">';
+            echo '<div class="col col-xs-5"></div>';
+            echo '<div class="col col-xs-2">';
             echo '<a href="encuestas.php" class="btn btn-warning btn-lg" role="button"><span class="glyphicon glyphicon-road" aria-hidden="true"></span>&nbsp;Regresar</a>';
             echo '</div>';
-            echo '<div class="col col-xs-4"></div>';
+            echo '<div class="col col-xs-5"></div>';
 			    }
 			  ?>				
 			</div>
