@@ -323,6 +323,6 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 <%=sql%>
 INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password) VALUES ('1','Luis Arturo','Zarate Ayala','luisarturo1989@gmail.com','827ccb0eea8a706c4c34a16891f84e7b');
-INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password) VALUES ('2','Juan Luís','Rubio Sánchez','juanluis.rubio@udima.es','827ccb0eea8a706c4c34a16891f84e7b');<%for i in 1..idPoll-1%>
+INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password) VALUES ('2','Juan Luis','Rubio Sanchez','juanluis.rubio@udima.es','827ccb0eea8a706c4c34a16891f84e7b');<%for i in 1..idPoll-1%>
 INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('1','<%=i%>');
 INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('2','<%=i%>');<%end%>
