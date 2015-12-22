@@ -22,6 +22,7 @@
         unset($_SESSION['email']);
         unset($_SESSION['pass']);
         unset($_SESSION['idEncuestado']);
+        unset($_SESSION['rolEncuestado']);
     ?>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
