@@ -3,11 +3,7 @@
 	/**
 	* Funcion encargada de conectar con la base de datos
 	*/
-	function connect_with_mysql (){
-		$servername = "localhost";//"mysql.hostinger.es"
-		$username = "root";//u391829043_admin"
-		$passbd = "";//Qwer1234$
-		$dbname = "";//u391829043_encue
+	function connect_with_mysql ($servername, $username, $passbd, $dbname){
 		$conn = mysql_connect($servername,$username,$passbd);
 		mysql_set_charset("utf8");
 		if (!$conn) {

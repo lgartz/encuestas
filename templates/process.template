@@ -2,7 +2,7 @@
 	// Se incluye la conexion
 	include("conexion.php");
 	// Crear connection
-	$conn = connect_with_mysql();
+	$conn = connect_with_mysql("<%=dbServer%>","<%=dbUser%>","<%=dbPass%>","<%=dbName%>");
 	session_start();
 	$encuesta = $_SESSION['idEncuesta'];
 	$encuestado = $_SESSION['idEncuestado'];
