@@ -68,10 +68,7 @@ class GeneratorGUI < Gtk::Window
         showMessage("Debe Ingresar el servidor de la base de datos",Gtk::MessageDialog::ERROR,self)
       elsif entryDBUser.text.strip == ""
         showMessage("Debe Ingresar el nombre de usuario de la base de datos",Gtk::MessageDialog::ERROR,self)
-      elsif entryDBPass.text.strip == ""
-        showMessage("Debe Ingresar la contraseña de la base de datos",Gtk::MessageDialog::ERROR,self)
       else
-
         readPollFileXml(pathFile,pathCreate,entryDB.text.strip, entryDBServer.text.strip,entryDBUser.text.strip,entryDBPass.text.strip)
         showMessage("Se ha creado el formulario Satisfactoriamente en la ruta: "+pathCreate,Gtk::MessageDialog::INFO,self)
         Gtk.main_quit
@@ -162,6 +159,8 @@ class GeneratorGUI < Gtk::Window
   def copyFiles(pathCreate)
     FileUtils.mkdir_p(pathCreate+"css\\")
     FileUtils.cp(Dir["../encuestas/css/**"],pathCreate+"css")
+    FileUtils.mkdir_p(pathCreate+"img\\")
+    FileUtils.cp(Dir["../encuestas/img/**"],pathCreate+"img")
     FileUtils.mkdir_p(pathCreate+"fonts\\")
     FileUtils.cp(Dir["../encuestas/fonts/**"],pathCreate+"fonts")
     FileUtils.mkdir_p(pathCreate+"font-awesome\\css\\")
