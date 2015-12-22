@@ -83,8 +83,10 @@
                         	<?php 
 	                        	if (strcmp($rolEncuestado, "1") === 0) {
 	                        		echo "<li><a data-toggle='modal' data-target='#modalMail'><span class='glyphicon glyphicon glyphicon-envelope' aria-hidden='true'></span>&nbsp;Enviar Invitaci&oacute;n</a></li>";
-	                        		echo "<li class='divider'></li>";
+	                        	}else{
+	                        		echo "<li><a data-toggle='modal' data-target='#modalCambios'><span class='glyphicon glyphicon glyphicon-user' aria-hidden='true'></span>&nbsp;Modificar Datos Personales</a></li>";
 	                        	}
+	                        	echo "<li class='divider'></li>";
                         	?>
                             <li><a href="session_off.php"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;Cerrar Sesi&oacute;n</a></li>
                         </ul>
