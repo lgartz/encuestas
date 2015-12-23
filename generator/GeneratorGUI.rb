@@ -153,7 +153,9 @@ class GeneratorGUI < Gtk::Window
     erbBase = getTemplate("../encuestas/templates/base.template",binding)
     createFile(pathCreate,".php","encuestas",erbBase)
     erbMail = getTemplate("../encuestas/templates/mail.template",binding)
-    createFile(pathCreate,".php","mail2",erbMail)
+    createFile(pathCreate,".php","mail",erbMail)
+    erbPerData = getTemplate("../encuestas/templates/perdata.template",binding)
+    createFile(pathCreate,".php","perdata",erbPerData)
     copyFiles(pathCreate)
   end
 

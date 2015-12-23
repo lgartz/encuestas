@@ -1,0 +1,21 @@
+<?php
+	$nombres = $_GET["txtNombres"];
+	$apellidos = $_GET["txtApellidos"];
+	$password = md5($_GET["txtPassword"]);
+	session_start();
+	$idEncuestado = $_SESSION['idEncuestado'];
+	include("conexion.php");
+	$conn = connect_with_mysql("localhost","root","","encuestas");
+	$sql = "UPDATE encuestado SET encuestado_nombres='".$nombres."',encuestado_apellidos='".$apellidos."',encuestado_password='".$password."' WHERE encuestado_id='".$idEncuestado."';";
+	insert($sql);
+	$_SESSION['pass']=$password;
+	close_connect_with_mysql($conn);
+	function insert ($sql){
+		if (mysql_query($sql)) {
+			return true;
+		}else{
+			return false;	
+		}			
+	}
+	header('Location: encuestas.php');
+?>

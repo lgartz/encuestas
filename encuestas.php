@@ -17,6 +17,8 @@
         session_start();
         $email = "";
         $pass = "";
+		$nombres="";
+		$apellidos="";
         if (!isset($_SESSION['email'])) {
             $email = $_GET["email"];
             $_SESSION['email'] = $email;
@@ -52,6 +54,8 @@
             $nombre = "".$fila[1]." ".$fila[2];
             $idEncuestado = "".$fila[0];
             $rolEncuestado="".$fila[5];
+			$nombres= "".$fila[1];
+			$apellidos="".$fila[2];
             break;
         }
 
@@ -83,8 +87,10 @@
                         	<?php 
 	                        	if (strcmp($rolEncuestado, "1") === 0) {
 	                        		echo "<li><a data-toggle='modal' data-target='#modalMail'><span class='glyphicon glyphicon glyphicon-envelope' aria-hidden='true'></span>&nbsp;Enviar Invitaci&oacute;n</a></li>";
-	                        		echo "<li class='divider'></li>";
+	                        	}else{
+	                        		echo "<li><a data-toggle='modal' data-target='#modalCambios'><span class='glyphicon glyphicon glyphicon-user' aria-hidden='true'></span>&nbsp;Modificar Datos Personales</a></li>";
 	                        	}
+	                        	echo "<li class='divider'></li>";
                         	?>
                             <li><a href="session_off.php"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;Cerrar Sesi&oacute;n</a></li>
                         </ul>
@@ -191,6 +197,54 @@
 		</div>
 	</div>
 	<!-- Modal -->
+	<!-- Modal -->
+	<div id="modalCambios" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="perdata.php">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">Cambiar Datos Personales</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="txtNombres" class="control-label">Nombres:</label>
+							<input type="text" class="form-control" id="txtNombres"
+								name="txtNombres" value="<?php echo $nombres;?>"/>
+							<label id="message_nombres" class="message-error" style="color:red;"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Complete este campo</label>
+						</div>
+						<div class="form-group">
+							<label for="txtApellidos" class="control-label">Apellidos:</label>
+							<input type="text" class="form-control" id="txtApellidos"
+								name="txtApellidos" value="<?php echo $apellidos;?>"/>
+							<label id="message_apellidos" class="message-error" style="color:red;"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Complete este campo</label>
+						</div>
+						<div class="form-group">
+							<label for="txtPassword" class="control-label">Password:</label>
+							<input type="password" class="form-control" id="txtPassword"
+								name="txtPassword" value=""/>
+							<label id="message_password" class="message-error" style="color:red;"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Complete este campo</label>
+						</div>
+						<div class="form-group">
+							<label for="txtPasswordRepet" class="control-label">Repet Password:</label>
+							<input type="password" class="form-control" id="txtPasswordRepet"
+								name="txtPasswordRepet" value=""/>
+							<label id="message_password_reper" class="message-error" style="color:red;"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>Complete este campo</label>
+							<label id="message_password_reper_no" class="message-error" style="color:red;"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>No coinciden las contrase&ntilde;as</label>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button id="enviarCambios" type="submit" class="btn btn-primary">Cambiar</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -215,6 +269,6 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script type="text/javascript" src="javascript/index.js"></script>
+    <script type="text/javascript" src="javascript/encuestas.js"></script>
 </body>
 </html>
