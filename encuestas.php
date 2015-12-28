@@ -144,9 +144,11 @@
             echo "<td>";
             echo $fila[1];
             echo "</td>";
-            echo "<td align=center><a href='".$fila[2]."?idEncuesta=".$fila[3]."'>Ver</a></td>";
-             if (strcmp($rolEncuestado, "1") === 0) {
-            	echo "<td align=center><a href='resultados.php?idEncuesta=".$fila[3]."'>Resultados</a></td>";
+            if (strcmp($rolEncuestado, "1") === 0) {
+            	echo "<td align=center><a href='".$fila[2]."?idEncuesta=".$fila[3]."'>Ver Encuesta</a></td>";
+            	echo "<td align=center><a href='result.php?idEncuesta=".$fila[3]."'>Revisar Resultados</a></td>";
+            }else{
+            	echo "<td align=center><a href='".$fila[2]."?idEncuesta=".$fila[3]."'>Contestar</a></td>";
             }
             echo "</tr>";
             $i++;

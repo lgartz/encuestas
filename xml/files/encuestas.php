@@ -32,7 +32,7 @@
             $pass = $_SESSION['pass'];
         }
         include("conexion.php");
-        $conn = connect_with_mysql("<%=dbServer%>","<%=dbUser%>","<%=dbPass%>","<%=dbName%>");
+        $conn = connect_with_mysql("localhost","root","","encuestas");
         $sql = "SELECT encuestado_id,encuestado_nombres,encuestado_apellidos,encuestado_email,encuestado_password,encuestado_rol_id FROM encuestado WHERE encuestado_email = '".$email."' AND encuestado_password = '".$pass."'";
         $result = mysql_query($sql);
         $nombre="";
