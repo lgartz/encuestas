@@ -109,11 +109,13 @@ function insert ($sql){
 close_connect_with_mysql ( $conn );
 
 // El mensaje
-$mensaje = "Cordial Saludo\r\n Usted ha sido invitado a contestar una encuesta sobre: \r\n".$nombreEncuesta."\r\n Le pedimos por favor ingrese al sitio web www.resuelva.com para contestarla. \r\n Las credenciales de ingreso son: \r\n su email \r\n y la contraseña: 12345";
+$mensaje = "Cordial Saludo\r\n Usted ha sido invitado a contestar una encuesta sobre: \r\n".$nombreEncuesta."\r\n Le pedimos por favor ingrese al sitio web www.resuelva.com para contestarla. \r\n Las credenciales de ingreso son: \r\n su email \r\n y la contraseï¿½a: 12345";
 
-// Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
+// Si cualquier lï¿½nea es mï¿½s larga de 70 caracteres, se deberï¿½a usar wordwrap()
 $mensaje = wordwrap ( $mensaje, 70, "\r\n" );
 
 // Enviarlo
 mail ( $correos, 'Invitacion a Encuesta', $mensaje );
+
+header('Location: encuestas.php');
 ?>

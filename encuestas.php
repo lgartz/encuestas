@@ -146,7 +146,7 @@
             echo "</td>";
             if (strcmp($rolEncuestado, "1") === 0) {
             	echo "<td align=center><a href='".$fila[2]."?idEncuesta=".$fila[3]."'>Ver Encuesta</a></td>";
-            	echo "<td align=center><a href='result.php?idEncuesta=".$fila[3]."'>Revisar Resultados</a></td>";
+            	echo "<td align=center><a href='".substr($fila[2],0,strlen($fila[2])-4)."_result.php"."'>Revisar Resultados</a></td>";
             }else{
             	echo "<td align=center><a href='".$fila[2]."?idEncuesta=".$fila[3]."'>Contestar</a></td>";
             }

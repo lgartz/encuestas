@@ -57,7 +57,7 @@ class GeneratorGUI < Gtk::Window
     entryDBPass = Gtk::Entry.new
     entryDBPass.set_width_chars 45
     entryDBPass.visibility = false
-    entryDBPass.invisible_char = 42 
+    entryDBPass.invisible_char = 42
     btGenerate = Gtk::Button.new "Generate"
     btGenerate.signal_connect "clicked" do
       if pathFile == "" or pathCreate == ""
@@ -113,7 +113,10 @@ class GeneratorGUI < Gtk::Window
       namePage = pollChild.attributes["namePage"].to_s
       detail = pollChild.attributes["detail"].to_s
       namePhp = namePage+"_process"
+      nameResult = namePage+"_result"
       body = ""
+      resultPhp=""
+      resultScrit=""
       listDatesId = []
       listQuestionId = []
       hashValidate = Hash.new
@@ -124,6 +127,7 @@ class GeneratorGUI < Gtk::Window
         if type == "title"
           val  = questionChild.attributes["value"]
           body << "<br><h1>#{val}</h1>\n"
+          resultPhp << "<h2 align='center'>#{val}</h2><br>\n"
         else
           number = questionChild.attributes["number"]
           listQuestionId.push("#{type}_#{number}")
@@ -131,8 +135,10 @@ class GeneratorGUI < Gtk::Window
           ask = questionChild.elements["ask"].attributes["value"]
           resultado = getResultElementForm(questionChild,type,number,ask,listDatesId,hashNames)
           body << "#{resultado}\n"
-          resultSQL = getResultSQL(ask,type,number,questionChild)
-          sql << "#{resultSQL}\n"
+          dataSQL = getResultSQL(ask,type,number,questionChild)
+          sql << "#{dataSQL}\n"
+          dataResultPhp = getResultPagePhp(ask,type,number,questionChild)
+          resultPhp << "#{dataResultPhp}\n"
           if required == "true"
             getResultHashElementsRequired(type,number,hashValidate,questionChild)
           end
@@ -144,6 +150,8 @@ class GeneratorGUI < Gtk::Window
       createFile(pathCreate+"javascript\\",".js",namePage,erbJavaScript)
       erbHtml = getTemplate("../encuestas/templates/poll.template",binding)
       createFile(pathCreate,".php",namePage,erbHtml)
+      erbHtmlResult = getTemplate("../encuestas/templates/result.template",binding)
+      createFile(pathCreate,".php",nameResult,erbHtmlResult)
       erbPhp = getTemplate("../encuestas/templates/process.template",binding)
       createFile(pathCreate,".php",namePhp,erbPhp)
       idPoll += 1
@@ -156,8 +164,6 @@ class GeneratorGUI < Gtk::Window
     createFile(pathCreate,".php","mail",erbMail)
     erbPerData = getTemplate("../encuestas/templates/perdata.template",binding)
     createFile(pathCreate,".php","perdata",erbPerData)
-    erbResult = getTemplate("../encuestas/templates/result.template",binding)
-    createFile(pathCreate,".php","result",erbResult)
     copyFiles(pathCreate)
   end
 
@@ -183,6 +189,22 @@ class GeneratorGUI < Gtk::Window
     FileUtils.cp("../encuestas/session_off.php",pathCreate)
     FileUtils.cp("../encuestas/sucess.php",pathCreate)
     FileUtils.cp(Dir["../encuestas/javascript/**"],pathCreate+"javascript\\")
+  end
+
+  # Metodo encargado de retornar el codigo php resultado para cada una de las preguntas generadas
+  def getResultPagePhp (ask,type,number,questionChild)
+    resultado = case type
+    when "smu_rb"
+      then getResultPhpSmuRb(ask,type,number,questionChild)
+    end
+    return resultado
+  end
+
+  def getResultPhpSmuRb(ask,type,number,questionChild)
+    name="#{type}_#{number}"
+    listOptions = getListOptions(questionChild,"option")
+    erbTemplate = getTemplate("../encuestas/templates/result_php_smu_rb.template",binding)
+    return erbTemplate.to_s
   end
 
   # Metodo encargado de retornar el codigo sql para cada una de las preguntas generadas

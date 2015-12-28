@@ -344,6 +344,8 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 INSERT INTO rol(rol_id, rol_nombre, rol_descripcion) VALUES ('1','Administrador','Representa el administrador de la aplicacion');
 INSERT INTO rol(rol_id, rol_nombre, rol_descripcion) VALUES ('2','Invitado','Representa un invitado a contestar la encuesta');
 INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password, encuestado_rol_id) VALUES ('1','Luis Arturo','Zarate Ayala','luisarturo1989@gmail.com','827ccb0eea8a706c4c34a16891f84e7b','1');
-INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password, encuestado_rol_id) VALUES ('2','Juan Luis','Rubio Sanchez','juanluis.rubio@udima.es','827ccb0eea8a706c4c34a16891f84e7b','2');<%for i in 1..idPoll-1%>
+INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password, encuestado_rol_id) VALUES ('2','Juan Luis','Rubio Sanchez','juanluis.rubio@udima.es','827ccb0eea8a706c4c34a16891f84e7b','2');
+INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password, encuestado_rol_id) VALUES ('3','Adriana MArgarita Garcia','adriana@gmail.com','827ccb0eea8a706c4c34a16891f84e7b','2');<%for i in 1..idPoll-1%>
 INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('1','<%=i%>');
-INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('2','<%=i%>');<%end%>
+INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('2','<%=i%>');
+INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('3','<%=i%>');<%end%>
