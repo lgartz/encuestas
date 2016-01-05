@@ -11,6 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
@@ -61,11 +62,14 @@
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email..">
-                            </div><br/>
+                            </div>
+                            <label id="message_user" class="message-error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Este campo es obligatorio</label>
+                            <br/>
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-keyboard-o"></i></span>
                                 <input type="password" class="form-control" id="pass" name="pass" placeholder="Ingrese su password..">
                             </div>
+                            <label id="message_password" class="message-error"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Este campo es obligatorio</label>
                         </div>
                     </div>                    
                     <div class="col-md-4"></div>
