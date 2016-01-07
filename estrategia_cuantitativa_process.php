@@ -53,14 +53,14 @@
 	close_connect_with_mysql($conn);
 	
 	function getSqlInsertSmu($encuestado, $opcion){
-		$sql = "INSERT INTO ressmu (ressmu_encuestado_id, ressmu_opsmurb_id) VALUES ('".$encuestado."','".$opcion."');";
+		$sql = "INSERT INTO ressmu (ressmu_encuestado_id, ressmu_opsmu_id) VALUES ('".$encuestado."','".$opcion."');";
 		insert($sql);
 	}
 	
 	function getSqlInsertSmr($encuestado, $opciones){
 		$tam = count($opciones);
 		for($i = 0; $i < $tam; $i++) {
-	    	$sql = "INSERT INTO ressmu (ressmu_encuestado_id, ressmu_opsmurb_id) VALUES ('".$encuestado."','".$opciones[$i]."');";
+	    	$sql = "INSERT INTO ressmu (ressmu_encuestado_id, ressmu_opsmu_id) VALUES ('".$encuestado."','".$opciones[$i]."');";
 	    	insert($sql);
 		}
 	}

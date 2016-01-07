@@ -20,7 +20,14 @@
 	<div class="content-section-b">
 		<div class="container">
 			<h1 align="center">Resultados de la encuesta</h1>
-			<%=resultPhp%>			
+			<%=resultPhp%>
+			<div class="row">
+				<div class="col col-xs-5"></div>
+           		 <div class="col col-xs-2">
+           			 <a href="encuestas.php" class="btn btn-warning btn-lg" role="button"><span class="glyphicon glyphicon-road" aria-hidden="true"></span>&nbsp;Regresar</a>
+           		 </div>
+            	 <div class="col col-xs-5"></div>
+			</div>			
 		</div>
 	</div>
 	<footer>

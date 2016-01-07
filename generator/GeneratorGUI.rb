@@ -216,9 +216,27 @@ class GeneratorGUI < Gtk::Window
       then getResultPhpPfh(ask,type,number,questionChild)
     when "psh_s"
       then getResultPhpPfh(ask,type,number,questionChild)
+    when "mmr_rb"
+      then getResultPhpMmr(ask,type,number,questionChild)
+    when "mmr_cb"
+      then getResultPhpMmr(ask,type,number,questionChild)
+    when "mmr_s"
+      then getResultPhpMmrs(ask,type,number,questionChild)
     end
     return resultado
   end
+  
+  def getResultPhpMmrs(ask,type,number,questionChild)
+    name="#{type}_#{number}"
+    erbTemplate = getTemplate("../encuestas/templates/result_php_mmrs.template",binding)
+    return erbTemplate.to_s
+  end 
+  
+  def getResultPhpMmr(ask,type,number,questionChild)
+    name="#{type}_#{number}"
+    erbTemplate = getTemplate("../encuestas/templates/result_php_mmr.template",binding)
+    return erbTemplate.to_s
+  end 
   
   def getResultPhpPfh(ask,type,number,questionChild)
     name="#{type}_#{number}"
