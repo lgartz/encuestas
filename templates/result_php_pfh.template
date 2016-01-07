@@ -28,7 +28,7 @@
 				            echo "<th>".$num."</th>";
 				            echo "<th>".$fila[1]." ".$fila[2]."</th>";
 				            echo "<th>".$fila[3]."</th>";
-				            echo "<th>".<%if type == "pfh_s"%>$fila[4]."  ".$fila[5]<%elsif type == "psf_s"%>$fila[4]<%elsif type == "psh_s"%>$fila[5]<%end%>."</th>";
+				            echo "<th>".<%if type == "pfh_s"%>$fila[4]." - ".$fila[5]<%elsif type == "psf_s"%>$fila[4]<%elsif type == "psh_s"%>$fila[5]<%end%>."</th>";
 				            echo "</tr>";
 				            $num++;
 				        }
