@@ -127,7 +127,7 @@ class GeneratorGUI < Gtk::Window
         if type == "title"
           val  = questionChild.attributes["value"]
           body << "<br><h1>#{val}</h1>\n"
-          resultPhp << "<h2 align='center'>#{val}</h2><br>\n"
+          resultPhp << "<h4 align='center'>#{val}</h4><br>\n"
         else
           number = questionChild.attributes["number"]
           listQuestionId.push("#{type}_#{number}")
@@ -195,15 +195,28 @@ class GeneratorGUI < Gtk::Window
   def getResultPagePhp (ask,type,number,questionChild)
     resultado = case type
     when "smu_rb"
-      then getResultPhpSmuRb(ask,type,number,questionChild)
+      then getResultPhpSmu(ask,type,number,questionChild)
+    when "smu_s"
+      then getResultPhpSmu(ask,type,number,questionChild)
+    when "smr_cb"
+      then getResultPhpSmr(ask,type,number,questionChild)      
+    when "smr_sm"
+      then getResultPhpSmr(ask,type,number,questionChild)
     end
     return resultado
   end
-
-  def getResultPhpSmuRb(ask,type,number,questionChild)
+  
+def getResultPhpSmr(ask,type,number,questionChild)
     name="#{type}_#{number}"
     listOptions = getListOptions(questionChild,"option")
-    erbTemplate = getTemplate("../encuestas/templates/result_php_smu_rb.template",binding)
+    erbTemplate = getTemplate("../encuestas/templates/result_php_smr.template",binding)
+    return erbTemplate.to_s
+  end
+  
+  def getResultPhpSmu(ask,type,number,questionChild)
+    name="#{type}_#{number}"
+    listOptions = getListOptions(questionChild,"option")
+    erbTemplate = getTemplate("../encuestas/templates/result_php_smu.template",binding)
     return erbTemplate.to_s
   end
 

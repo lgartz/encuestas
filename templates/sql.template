@@ -134,16 +134,16 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `<%=dbName%>`.`ressmu` (
   `ressmu_encuestado_id` INT NOT NULL COMMENT '',
-  `ressmu_opsmurb_id` VARCHAR(20) NOT NULL COMMENT '',
+  `ressmu_opsmu_id` VARCHAR(20) NOT NULL COMMENT '',
   INDEX `fk_ressmurb_encuestado1_idx` (`ressmu_encuestado_id` ASC)  COMMENT '',
-  INDEX `fk_ressmurb_opsmurb1_idx` (`ressmu_opsmurb_id` ASC)  COMMENT '',
+  INDEX `fk_ressmurb_opsmurb1_idx` (`ressmu_opsmu_id` ASC)  COMMENT '',
   CONSTRAINT `fk_ressmurb_encuestado1`
     FOREIGN KEY (`ressmu_encuestado_id`)
     REFERENCES `<%=dbName%>`.`encuestado` (`encuestado_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_ressmurb_opsmurb1`
-    FOREIGN KEY (`ressmu_opsmurb_id`)
+    FOREIGN KEY (`ressmu_opsmu_id`)
     REFERENCES `<%=dbName%>`.`opsmu` (`opsmu_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -345,7 +345,7 @@ INSERT INTO rol(rol_id, rol_nombre, rol_descripcion) VALUES ('1','Administrador'
 INSERT INTO rol(rol_id, rol_nombre, rol_descripcion) VALUES ('2','Invitado','Representa un invitado a contestar la encuesta');
 INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password, encuestado_rol_id) VALUES ('1','Luis Arturo','Zarate Ayala','luisarturo1989@gmail.com','827ccb0eea8a706c4c34a16891f84e7b','1');
 INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password, encuestado_rol_id) VALUES ('2','Juan Luis','Rubio Sanchez','juanluis.rubio@udima.es','827ccb0eea8a706c4c34a16891f84e7b','2');
-INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password, encuestado_rol_id) VALUES ('3','Adriana MArgarita Garcia','adriana@gmail.com','827ccb0eea8a706c4c34a16891f84e7b','2');<%for i in 1..idPoll-1%>
+INSERT INTO encuestado (encuestado_id, encuestado_nombres, encuestado_apellidos, encuestado_email, encuestado_password, encuestado_rol_id) VALUES ('3','Adriana Margarita','Garcia Bernal','adriana@gmail.com','827ccb0eea8a706c4c34a16891f84e7b','2');<%for i in 1..idPoll-1%>
 INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('1','<%=i%>');
 INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('2','<%=i%>');
 INSERT INTO encuestado_has_encuesta(encuestado_id, encuesta_id) VALUES ('3','<%=i%>');<%end%>
