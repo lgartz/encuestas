@@ -1,0 +1,39 @@
+<div class="row">
+	<div class="col-lg-12">
+		<div id="panel_<%=name%>" class="panel panel-success">
+			<div id="panel_head_<%=name%>" class="panel-heading">
+				<h4><%=ask%></h4>
+			</div>
+			<table class="table table-bordered table-hover">
+				<tr>
+					<th>#</th>
+					<th>Nombre</th>
+					<th>Email</th>
+					<th>Respuesta</th>				
+				</tr>
+				<?php
+					$sql = "SELECT pregunta.pregunta_id, encuestado.encuestado_nombres, encuestado.encuestado_apellidos, encuestado.encuestado_email, reseru.reseru_valor FROM reseru, pregunta, encuestado WHERE reseru.reseru_pregunta_id = pregunta.pregunta_id AND reseru.reseru_encuestado_id = encuestado.encuestado_id AND pregunta.pregunta_id = '<%=name%>'";
+					$result = mysql_query($sql);
+					if (!$result) {
+						$mensaje  = 'Consulta no válida: ' . mysql_error() . "\n";
+			            $mensaje .= 'Consulta completa: ' . $sql;
+			            die($mensaje);
+			            close_connect_with_mysql($conn);
+					}
+					if (mysql_num_rows($result)!=0){
+						$num = 1;
+				        while ($fila = mysql_fetch_array($result, MYSQL_NUM)) {
+				        	echo "<tr>";
+				            echo "<th>".$num."</th>";
+				            echo "<th>".$fila[1]." ".$fila[2]."</th>";
+				            echo "<th>".$fila[3]."</th>";
+				            echo "<th>".$fila[4]." / <%=has["maximum"]%></th>";
+				            echo "</tr>";
+				            $num++;
+				        }
+			        }
+				?>
+			</table>
+		</div>
+	</div>
+</div>

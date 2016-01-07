@@ -1,18 +1,19 @@
 <div class="row">
-	<div class="col-lg-12">	
-		<div id="panel_<%=name%>" class="panel panel-success">			
+	<div class="col-lg-12">
+		<div id="panel_<%=name%>" class="panel panel-success">
 			<div id="panel_head_<%=name%>" class="panel-heading">
 				<h4><%=ask%></h4>
-			</div>			
+			</div>
 			<table class="table table-bordered table-hover">
 				<tr>
 					<th>#</th>
 					<th>Nombre</th>
 					<th>Email</th>
-					<th>Respuesta</th>				
+					<th><%if type == "pfh_s"%>Fecha Hora<%elsif type == "psf_s"%>Fecha<%elsif type == "psh_s"%>Hora<%end%></th>			
+										
 				</tr>
 				<?php
-					$sql = "SELECT pregunta.pregunta_id, encuestado.encuestado_nombres, encuestado.encuestado_apellidos, encuestado.encuestado_email, opsmu.opsmu_descripcion FROM ressmu, encuestado, opsmu, pregunta where ressmu.ressmu_encuestado_id = encuestado.encuestado_id AND ressmu.ressmu_opsmu_id = opsmu.opsmu_id AND opsmu.opsmu_pregunta_id = pregunta.pregunta_id AND pregunta.pregunta_id ='<%=name%>'";
+					$sql = "SELECT pregunta.pregunta_id, encuestado.encuestado_nombres, encuestado.encuestado_apellidos, encuestado.encuestado_email, IFNULL(respfh.respfh_fecha,'') as respfh_fecha , IFNULL(respfh.respfh_hora,'') as respfh_hora FROM respfh, pregunta, encuestado WHERE respfh.respfh_pregunta_id = pregunta.pregunta_id AND respfh.respfh_encuestado_id = encuestado.encuestado_id AND pregunta.pregunta_id = '<%=name%>'";
 					$result = mysql_query($sql);
 					if (!$result) {
 						$mensaje  = 'Consulta no válida: ' . mysql_error() . "\n";
@@ -27,7 +28,7 @@
 				            echo "<th>".$num."</th>";
 				            echo "<th>".$fila[1]." ".$fila[2]."</th>";
 				            echo "<th>".$fila[3]."</th>";
-				            echo "<th>".$fila[4]."</th>";
+				            echo "<th>".<%if type == "pfh_s"%>$fila[4]."  ".$fila[5]<%elsif type == "psf_s"%>$fila[4]<%elsif type == "psh_s"%>$fila[5]<%end%>."</th>";
 				            echo "</tr>";
 				            $num++;
 				        }

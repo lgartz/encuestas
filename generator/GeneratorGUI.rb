@@ -195,30 +195,59 @@ class GeneratorGUI < Gtk::Window
   def getResultPagePhp (ask,type,number,questionChild)
     resultado = case type
     when "smu_rb"
-      then getResultPhpSmu(ask,type,number,questionChild)
+      then getResultPhpSmr(ask,type,number,questionChild)
     when "smu_s"
-      then getResultPhpSmu(ask,type,number,questionChild)
+      then getResultPhpSmr(ask,type,number,questionChild)
     when "smr_cb"
       then getResultPhpSmr(ask,type,number,questionChild)      
     when "smr_sm"
       then getResultPhpSmr(ask,type,number,questionChild)
+    when "eru_rb"
+      then getResultPhpEru(ask,type,number,questionChild)
+    when "psu_t"
+      then getResultPhpPsu(ask,type,number,questionChild)
+    when "psc_ta"
+      then getResultPhpPsu(ask,type,number,questionChild)
+    when "psm_t"
+      then getResultPhpPsu(ask,type,number,questionChild)
+    when "pfh_s"
+      then getResultPhpPfh(ask,type,number,questionChild)
+    when "psf_s"
+      then getResultPhpPfh(ask,type,number,questionChild)
+    when "psh_s"
+      then getResultPhpPfh(ask,type,number,questionChild)
     end
     return resultado
   end
   
-def getResultPhpSmr(ask,type,number,questionChild)
+  def getResultPhpPfh(ask,type,number,questionChild)
     name="#{type}_#{number}"
-    listOptions = getListOptions(questionChild,"option")
+    erbTemplate = getTemplate("../encuestas/templates/result_php_pfh.template",binding)
+    return erbTemplate.to_s
+  end 
+  
+  def getResultPhpPsu(ask,type,number,questionChild)
+    name="#{type}_#{number}"
+    erbTemplate = getTemplate("../encuestas/templates/result_php_psu.template",binding)
+    return erbTemplate.to_s
+  end
+  
+  def getResultPhpEru(ask,type,number,questionChild)
+    name="#{type}_#{number}"
+    has = Hash.new
+    questionChild.elements["range"].attributes.each_attribute do |range|
+       has[range.expanded_name] = range.value
+    end
+    erbTemplate = getTemplate("../encuestas/templates/result_php_eru.template",binding)
+    return erbTemplate.to_s
+  end
+  
+  def getResultPhpSmr(ask,type,number,questionChild)
+    name="#{type}_#{number}"
     erbTemplate = getTemplate("../encuestas/templates/result_php_smr.template",binding)
     return erbTemplate.to_s
   end
   
-  def getResultPhpSmu(ask,type,number,questionChild)
-    name="#{type}_#{number}"
-    listOptions = getListOptions(questionChild,"option")
-    erbTemplate = getTemplate("../encuestas/templates/result_php_smu.template",binding)
-    return erbTemplate.to_s
-  end
 
   # Metodo encargado de retornar el codigo sql para cada una de las preguntas generadas
   def getResultSQL(ask,type,number,questionChild)
