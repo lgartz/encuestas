@@ -3,12 +3,15 @@ require 'erb'
 require 'rexml/document'
 require 'fileutils'
 
+#clase encargada de crear el generador de forma visual
 class GeneratorGUI < Gtk::Window
+  #Metodo encargado de inicializar la clase principal
   def initialize
     super
     inicializar_ventana
   end
-
+  
+  #Metodo encargado de inicializar todos los componentes graficos
   def inicializar_ventana
     set_title "Php - Generator Polls"
     set_default_size 400, 315
@@ -23,6 +26,7 @@ class GeneratorGUI < Gtk::Window
     show_all
   end
 
+  #Metodo encargado de crear todos los componentes graficos
   def init_gui
     pathFile = ""
     pathCreate = ""
@@ -102,7 +106,8 @@ class GeneratorGUI < Gtk::Window
     fixed.put btGenerate,145,275
     fixed.put btCancel,205,275
   end
-
+  
+  #Metodo encargado de presentar un mensaje en pantalla
   def showMessage (message, type, this)
     mensaje = Gtk::MessageDialog.new(this,
     Gtk::MessageDialog::DESTROY_WITH_PARENT,
@@ -112,6 +117,7 @@ class GeneratorGUI < Gtk::Window
     mensaje.destroy
   end
 
+  #Metodo encargado de leer el archivo XML para la generacion de codigo
   def readPollFileXml ( pathFile, pathCreate, dbName, dbServer, dbUser, dbPass, emailAdmin )
     # Se realiza la lectura del documento XML base para realizar las encuestas
     xml = REXML::Document.new(File.open(pathFile))
@@ -237,30 +243,35 @@ class GeneratorGUI < Gtk::Window
     return resultado
   end
   
+  #Metodo encargado de invocar la plantilla para las respuestas mmrs
   def getResultPhpMmrs(ask,type,number,questionChild)
     name="#{type}_#{number}"
     erbTemplate = getTemplate("../encuestas/templates/result_php_mmrs.template",binding)
     return erbTemplate.to_s
   end 
   
+  #Metodo encargado de invocar la plantilla para las respuestas mmr
   def getResultPhpMmr(ask,type,number,questionChild)
     name="#{type}_#{number}"
     erbTemplate = getTemplate("../encuestas/templates/result_php_mmr.template",binding)
     return erbTemplate.to_s
   end 
   
+  #Metodo encargado de invocar la plantilla para las respuestas fecha hora
   def getResultPhpPfh(ask,type,number,questionChild)
     name="#{type}_#{number}"
     erbTemplate = getTemplate("../encuestas/templates/result_php_pfh.template",binding)
     return erbTemplate.to_s
   end 
   
+  #Metodo encargado de invocar la plantilla para las respuestas simples
   def getResultPhpPsu(ask,type,number,questionChild)
     name="#{type}_#{number}"
     erbTemplate = getTemplate("../encuestas/templates/result_php_psu.template",binding)
     return erbTemplate.to_s
   end
   
+  #Metodo encargado de invocar la plantilla para las respuestas de rango
   def getResultPhpEru(ask,type,number,questionChild)
     name="#{type}_#{number}"
     has = Hash.new
@@ -271,6 +282,7 @@ class GeneratorGUI < Gtk::Window
     return erbTemplate.to_s
   end
   
+  #Metodo encargado de invocar la plantilla para las respuestas de seleccion
   def getResultPhpSmr(ask,type,number,questionChild)
     name="#{type}_#{number}"
     erbTemplate = getTemplate("../encuestas/templates/result_php_smr.template",binding)
@@ -313,19 +325,22 @@ class GeneratorGUI < Gtk::Window
     return resultado
   end
 
+  #Metodo encargado de invocar la plantilla para la generecaion de codigo sql para las tablas parametricas
   def getSqlSm (ask,type,number,questionChild)
     name="#{type}_#{number}"
     listOptions = getListOptions(questionChild,"option")
     erbTemplate = getTemplate("../encuestas/templates/sql_sm.template",binding)
     return erbTemplate.to_s
   end
-
+  
+  #Metodo encargado de invocar la plantilla para la generecaion de codigo sql para las tablas parametricas
   def getSqlAsk (ask,type,number)
     name="#{type}_#{number}"
     erbTemplate = getTemplate("../encuestas/templates/sql_ask.template",binding)
     return erbTemplate.to_s
   end
-
+  
+  #Metodo encargado de invocar la plantilla para la generecaion de codigo sql para las tablas parametricas
   def getSqlMmr(ask,type,number,questionChild)
     name="#{type}_#{number}"
     listRows = getListOptions(questionChild.elements["rows"],"option")
@@ -333,7 +348,7 @@ class GeneratorGUI < Gtk::Window
     erbTemplate = getTemplate("../encuestas/templates/sql_mmr.template",binding)
     return erbTemplate.to_s
   end
-
+#Metodo encargado de invocar la plantilla para la generecaion de codigo sql para las tablas parametricas
   def getSqlMmrs (ask,type,number,questionChild)
     name="#{type}_#{number}"
     listRows = getListOptions(questionChild.elements["rows"],"option")
@@ -687,6 +702,7 @@ class GeneratorGUI < Gtk::Window
   end
 end
 
+#Invocacion de la ventana
 Gtk.init
 window = GeneratorGUI.new
 Gtk.main
