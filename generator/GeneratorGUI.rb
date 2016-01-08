@@ -11,7 +11,7 @@ class GeneratorGUI < Gtk::Window
 
   def inicializar_ventana
     set_title "Php - Generator Polls"
-    set_default_size 400, 270
+    set_default_size 400, 315
     set_window_position Gtk::Window::Position::CENTER
     signal_connect "delete_event" do
       Gtk.main_quit
@@ -47,17 +47,24 @@ class GeneratorGUI < Gtk::Window
     labelDB = Gtk::Label.new("Name Database:")
     entryDB = Gtk::Entry.new
     entryDB.set_width_chars 45
+    entryDB.set_text "encuestas"
     labelDBServer = Gtk::Label.new("Server Database:")
     entryDBServer = Gtk::Entry.new
     entryDBServer.set_width_chars 45
+    entryDBServer.set_text "localhost"
     labelDBUser = Gtk::Label.new("User Database:")
     entryDBUser = Gtk::Entry.new
     entryDBUser.set_width_chars 45
+    entryDBUser.set_text "root"
     labelDBPass = Gtk::Label.new("Pass Database:")
     entryDBPass = Gtk::Entry.new
     entryDBPass.set_width_chars 45
     entryDBPass.visibility = false
     entryDBPass.invisible_char = 42
+    labelEmail = Gtk::Label.new("Admin Email:")
+    entryEmail = Gtk::Entry.new
+    entryEmail.set_width_chars 45
+    entryEmail.set_text "luisarturo1989@gmail.com"
     btGenerate = Gtk::Button.new "Generate"
     btGenerate.signal_connect "clicked" do
       if pathFile == "" or pathCreate == ""
@@ -68,8 +75,10 @@ class GeneratorGUI < Gtk::Window
         showMessage("Debe Ingresar el servidor de la base de datos",Gtk::MessageDialog::ERROR,self)
       elsif entryDBUser.text.strip == ""
         showMessage("Debe Ingresar el nombre de usuario de la base de datos",Gtk::MessageDialog::ERROR,self)
+      elsif entryEmail.text.strip == ""
+        showMessage("Debe Ingresar el email del administrador",Gtk::MessageDialog::ERROR,self)
       else
-        readPollFileXml(pathFile,pathCreate,entryDB.text.strip, entryDBServer.text.strip,entryDBUser.text.strip,entryDBPass.text.strip)
+        readPollFileXml(pathFile,pathCreate,entryDB.text.strip, entryDBServer.text.strip,entryDBUser.text.strip,entryDBPass.text.strip,entryEmail.text.strip)
         showMessage("Se ha creado el formulario Satisfactoriamente en la ruta: "+pathCreate,Gtk::MessageDialog::INFO,self)
         Gtk.main_quit
       end
@@ -83,13 +92,15 @@ class GeneratorGUI < Gtk::Window
     fixed.put labelDBServer,15,103
     fixed.put labelDBUser,24,148
     fixed.put labelDBPass,24,193
+    fixed.put labelEmail,30,238
     fixed.put button,105,10
     fixed.put entryDB,105,55
     fixed.put entryDBServer,105,100
     fixed.put entryDBUser,105,145
     fixed.put entryDBPass,105,190
-    fixed.put btGenerate,145,235
-    fixed.put btCancel,205,235
+    fixed.put entryEmail,105,235
+    fixed.put btGenerate,145,275
+    fixed.put btCancel,205,275
   end
 
   def showMessage (message, type, this)
@@ -101,7 +112,7 @@ class GeneratorGUI < Gtk::Window
     mensaje.destroy
   end
 
-  def readPollFileXml ( pathFile, pathCreate, dbName, dbServer, dbUser, dbPass )
+  def readPollFileXml ( pathFile, pathCreate, dbName, dbServer, dbUser, dbPass, emailAdmin )
     # Se realiza la lectura del documento XML base para realizar las encuestas
     xml = REXML::Document.new(File.open(pathFile))
     # Se realiza la lectura de cada una las encuestas
