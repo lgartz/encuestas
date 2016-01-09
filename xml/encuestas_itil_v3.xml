@@ -1,5 +1,5 @@
 ﻿<polls>
-	<poll title="ITIL - Estrategia" name="Estrategia para los servicios IT Cauntitativa" namePage="estrategia_cuantitativa" detail="Esta encuesta ITIL evalúa las actividades de la fase de estrategía para los servicios de tecnologí;as de información de los servicios">
+	<poll title="ITIL - Estrategia" name="Estrategia para los servicios IT Cauntitativa" namePage="estrategia_cuantitativa" detail="Esta encuesta ITIL evalúa las actividades de la fase de estrategía para los servicios de tecnologías de información de los servicios">
 		<question type="title" value="Gestión del portafolio de servicios"></question>
 		<question number="1" type="eru_rb" required="true">
 			<ask value="¿Hay Relación entre los planes de negocio y las estrategias de los servicios de TI?" />
