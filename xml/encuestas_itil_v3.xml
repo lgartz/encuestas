@@ -1737,7 +1737,6 @@
 			<range minimum="0" maximum="5" labelminimum="Nada factible" labelmaximum="Muy factible"/>
 		</question>
 	</poll>
-
 	<poll title="ITIL - Operación (Relación entre procesos)" name="Operación de los servicios IT (Relación entre procesos) Caulitativa" namePage="operacion_cualitativa_procesos" detail="Esta encuesta ITIL evalúa las actividades de la fase de operación para los servicios de tecnologías de información de los servicios">
 	    <question type="title" value="Service Desk"></question>
 	    <question number="377" type="psc_ta" required="true">
