@@ -2614,67 +2614,67 @@
 		</question>
 		<question type="title" value="Indicadores"></question>
 		<question number="550" type="psu_t" required="true">
-			<ask value="Dispone de una correcta previsión de las necesidades de capacidad"/>
+			<ask value="¿Dispone de una correcta previsión de las necesidades de capacidad?"/>
 		</question>
 		<question number="551" type="psu_t" required="true">
-			<ask value="Dispone de reducción en los costes asociados a la capacidad"/>
+			<ask value="¿Dispone de reducción en los costes asociados a la capacidad?"/>
 		</question>
 		<question number="552" type="psu_t" required="true">
-			<ask value="Dispone de los más altos niveles de disponibilidad y seguridad"/>
+			<ask value="¿Dispone de los más altos niveles de disponibilidad y seguridad?"/>
 		</question>
 		<question number="553" type="psu_t" required="true">
-			<ask value="Dispone de una mayor satisfacción de los usuarios y clientes"/>
+			<ask value="¿Dispone de una mayor satisfacción de los usuarios y clientes?"/>
 		</question>
 		<question number="554" type="psu_t" required="true">
-			<ask value="Dispone de cumplimiento de los SLAs"/>
+			<ask value="¿Dispone de cumplimiento de los SLAs?"/>
 		</question>
 	</poll>
 	<poll title="ITIL - Control Proceso - Gestión de la Disponibilidad - Cualitativo" name="Control Proceso - Gestión de la Disponibilidad - Cualitativo" namePage="control_gestion_disponibilidad_cualitativo" detail="Esta encuesta permite evaluar el control de proceso de la Gestión de la Disponibilidad de la fase de Diseño">
 		<question type="title" value="Documentación"></question>
 		<question number="555" type="psu_t" required="true">
-			<ask value="Los informes generados en el proceso incluye técnicas y métodos utilizados para la prevención y el análisis de fallos."/>
+			<ask value="¿Los informes generados en el proceso incluye técnicas y métodos utilizados para la prevención y el análisis de fallos?"/>
 		</question>
 		<question number="556" type="psu_t" required="true">
-			<ask value="Los informes generados en el proceso incluye información estadística sobre tiempos de detección y respuesta a los fallos, tiempos de reparación y recuperación del servicio, tiempo medio de servicio entre fallos"/>
+			<ask value="¿Los informes generados en el proceso incluye información estadística sobre tiempos de detección y respuesta a los fallos, tiempos de reparación y recuperación del servicio, tiempo medio de servicio entre fallos?"/>
 		</question>
 		<question number="557" type="psu_t" required="true">
-			<ask value="Los informes generados en el proceso incluye disponibilidad real de los diferentes servicios"/>
+			<ask value="¿Los informes generados en el proceso incluye disponibilidad real de los diferentes servicios?"/>
 		</question>
 		<question number="558" type="psu_t" required="true">
-			<ask value="Los informes generados en el proceso incluye cumplimiento de los SLAs en todo lo referente a la disponibilidad y fiabilidad del servicio"/>
+			<ask value="¿Los informes generados en el proceso incluye cumplimiento de los SLAs en todo lo referente a la disponibilidad y fiabilidad del servicio?"/>
 		</question>
 		<question number="559" type="psu_t" required="true">
-			<ask value="Los informes generados en el proceso incluye cumplimiento de los OLAs y UCs en todo lo referente a la capacidad de servicio prestada por los proveedores internos y externos"/>
+			<ask value="¿ informes generados en el proceso incluye cumplimiento de los OLAs y UCs en todo lo referente a la capacidad de servicio prestada por los proveedores internos y externos?"/>
 		</question>
 	</poll>
 	<poll title="ITIL - Control Proceso - Gestión de la Continuidad de Servicios TI - Cualitativo" name="Control Proceso - Gestión de la Continuidad de Servicios TI - Cualitativo" namePage="control_gestion_continuidad_servicios_cualitativo" detail="Esta encuesta permite evaluar el control de proceso de la Gestión de la Continuidad de Servicios TI de la fase de Diseño">
 		<question number="560" type="psu_t" required="true">
-			<ask value="La gestión de la continuidad de servicios TI de su compañia garantiza la puesta en marcha de los planes preestablecidos"/>
+			<ask value="¿La gestión de la continuidad de servicios TI de su compañia garantiza la puesta en marcha de los planes preestablecidos?"/>
 		</question>
 		<question number="561" type="psu_t" required="true">
-			<ask value="La gestión de la continuidad de servicios TI de su compañia garantiza la supervisión de los planes preestablecidos"/>
+			<ask value="¿La gestión de la continuidad de servicios TI de su compañia garantiza la supervisión de los planes preestablecidos?"/>
 		</question>
 		<question number="562" type="psu_t" required="true">
-			<ask value="La gestión de la continuidad de servicios TI de su compañia garantiza la coordinación con la gestión de continuidad del negocio"/>
+			<ask value="¿La gestión de la continuidad de servicios TI de su compañia garantiza la coordinación con la gestión de continuidad del negocio?"/>
 		</question>
 		<question number="563" type="psu_t" required="true">
-			<ask value="La gestión de la continuidad de servicios TI de su compañia garantiza la asignación de recursos necesarios"/>
+			<ask value="¿La gestión de la continuidad de servicios TI de su compañia garantiza la asignación de recursos necesarios?"/>
 		</question>		
 		<question type="title" value="Documentación"></question>
 		<question number="564" type="psu_t" required="true">
 			<ask value="¿Los informes generados en el proceso incluye análisis sobre nuevos riesgos y evaluación de su impacto?"/>
 		</question>
 		<question number="565" type="psu_t" required="true">
-			<ask value="Los informes generados en el proceso incluye evaluación de los simulacros de desastre realizados"/>
+			<ask value="¿Los informes generados en el proceso incluye evaluación de los simulacros de desastre realizados?"/>
 		</question>
 		<question number="566" type="psu_t" required="true">
-			<ask value="Los informes generados en el proceso incluye actividades de prevención y recuperación realizadas"/>
+			<ask value="¿Los informes generados en el proceso incluye actividades de prevención y recuperación realizadas?"/>
 		</question>
 		<question number="567" type="psu_t" required="true">
-			<ask value="Los informes generados en el proceso incluye costes asociados a los planes de prevención y recuperación"/>
+			<ask value="¿Los informes generados en el proceso incluye costes asociados a los planes de prevención y recuperación?"/>
 		</question>
 		<question number="568" type="psu_t" required="true">
-			<ask value="Los informes generados en el proceso incluye preparación y capacitación del personal TI respecto a los planes y procedimientos de prevención y recuperación"/>
+			<ask value="¿Los informes generados en el proceso incluye preparación y capacitación del personal TI respecto a los planes y procedimientos de prevención y recuperación?"/>
 		</question>
 	</poll>
 	<poll title="ITIL - Control Proceso - Gestión de la Seguridad de la Información - Cualitativo" name="Control Proceso - Gestión de la Seguridad de la Información - Cualitativo" namePage="control_gestion_seguridad_información_cualitativo" detail="Esta encuesta permite evaluar el control de proceso de la Gestión de la Seguridad de la Información de la fase de Diseño">

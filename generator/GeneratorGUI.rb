@@ -51,15 +51,15 @@ class GeneratorGUI < Gtk::Window
     labelDB = Gtk::Label.new("Name Database:")
     entryDB = Gtk::Entry.new
     entryDB.set_width_chars 45
-    entryDB.set_text "encuestas"
+    entryDB.set_text ""
     labelDBServer = Gtk::Label.new("Server Database:")
     entryDBServer = Gtk::Entry.new
     entryDBServer.set_width_chars 45
-    entryDBServer.set_text "localhost"
+    entryDBServer.set_text ""
     labelDBUser = Gtk::Label.new("User Database:")
     entryDBUser = Gtk::Entry.new
     entryDBUser.set_width_chars 45
-    entryDBUser.set_text "root"
+    entryDBUser.set_text ""
     labelDBPass = Gtk::Label.new("Pass Database:")
     entryDBPass = Gtk::Entry.new
     entryDBPass.set_width_chars 45
@@ -68,7 +68,7 @@ class GeneratorGUI < Gtk::Window
     labelEmail = Gtk::Label.new("Admin Email:")
     entryEmail = Gtk::Entry.new
     entryEmail.set_width_chars 45
-    entryEmail.set_text "luisarturo1989@gmail.com"
+    entryEmail.set_text ""
     btGenerate = Gtk::Button.new "Generate"
     btGenerate.signal_connect "clicked" do
       if pathFile == "" or pathCreate == ""
