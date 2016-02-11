@@ -1,7 +1,7 @@
 <polls>
-	<poll title="encuesta1" name="Encuesta Helados 1" namePage="prueba" detail="Esta es una encuesta de helados 1">
+	<poll title="encuesta1" name="Encuesta Helados" namePage="helados" detail="Esta es una encuesta de helados">
 		<question number="1" type="smu_rb" required="true">
-			<ask value="¿Cual es su sabor de helado favorito?"/>
+			<ask value="¿Cual es su sabor de helado favorito? (smu_rb)"/>
 			<option value="Fresa" checked="true"/>
 			<option value="Chicle" />
 			<option value="Arequipe" />
@@ -10,7 +10,7 @@
 			<option value="Mani" />
 		</question>
 		<question number="2" type="smu_s" required="true">
-			<ask value="¿Cual es su sabor de helado favorito?" />
+			<ask value="¿Cual es su sabor de helado favorito? (smu_s)" />
 			<option value="Fresa" />
 			<option value="Chicle" />
 			<option value="Arequipe" />
@@ -18,9 +18,9 @@
 			<option value="Feijoa" />
 			<option value="Mani" />
 		</question>
-		<question type="title" value="Titulos prueba vamos a alrgar bastante este mensaje porque lo necitamos largo haber como se visualiza en pantalla"></question>
+		<question type="title" value="Titulos"></question>
 		<question number="3" type="smr_cb" required="true">
-			<ask value="¿Cuales son sus sabores de helado favoritos?" />
+			<ask value="¿Cuales son sus sabores de helado favoritos? (smr_cb)" />
 			<option value="Fresa" />
 			<option value="Chicle" />
 			<option value="Arequipe" />
@@ -29,7 +29,7 @@
 			<option value="Mani" />
 		</question>
 		<question number="4" type="smr_sm" required="true">
-			<ask value="¿Cuales son sus sabores de helado favoritos?" />
+			<ask value="¿Cuales son sus sabores de helado favoritos (smr_sm)?" />
 			<option value="Fresa" />
 			<option value="Chicle" />
 			<option value="Arequipe" />
@@ -38,7 +38,7 @@
 			<option value="Mani" />
 		</question>
 		<question number="5" type="mmr_rb" required="true">
-			<ask value="Evalue las siguientes preguntas" />
+			<ask value="Evalue las siguientes preguntas (mmr_rb)" />
 			<rows>
 				<option value="¿Que tan Importante es su Educacion?" />
 				<option value="¿Que tan Importante es su Familia?" />
@@ -55,7 +55,7 @@
 		</question>
 		<question number="6" type="mmr_cb" required="true">
 			<ask
-				value="¿Cuales sabores de helado son los favoritos para cada miembro de su familia?" />
+				value="¿Cuales sabores de helado son los favoritos para cada miembro de su familia (mmr_cb)?" />
 			<rows>
 				<option value="Papa" />
 				<option value="Mama" />
@@ -71,7 +71,7 @@
 		</question>
 		<question number="7" type="mmr_s" required="true">
 			<ask
-				value="Segun los siguientes sabores de helados seleccione el tipo de textura y sabor que prefiere" />
+				value="Segun los siguientes sabores de helados seleccione el tipo de textura y sabor que prefiere (mmr_s)" />
 			<rows>
 				<option value="Arequipe" />
 				<option value="Fresa" />
@@ -93,157 +93,27 @@
 			</columns>
 		</question>
 		<question number="9" type="eru_rb" required="true">
-			<ask value="¿Que tan probable es que recomiende el helado de fresa?" />
+			<ask value="¿Que tan probable es que recomiende el helado de fresa? (eru_rb)" />
 			<range minimum="0" maximum="10" labelminimum="Nada Probable" labelmaximum="Muy Probable"/>
 		</question>
 		<question number="10" type="psu_t" required="true">
-			<ask value="¿Cual es su marca de helado favorita?" />
+			<ask value="¿Cual es su marca de helado favorita? (psu_t)" />
 		</question>
 		<question number="11" type="psm_t" required="true">
-			<ask value="¿Cuales son sus tres marcas de helado?" />
+			<ask value="¿Cuales son sus tres marcas de helado? (psm_t)" />
 			<option value="3"></option>
 		</question>
 		<question number="12" type="psc_ta" required="true">
-			<ask value="¿Que es lo que mas le gusta de su helado favorito?" />
+			<ask value="¿Que es lo que mas le gusta de su helado favorito (psc_ta)?" />
 		</question>
 		<question number="13" type="pfh_s" required="true">
-			<ask value="¿Cuando fue el ultimo dia y hora en comer su helado?" />
+			<ask value="¿Cuando fue el ultimo dia y hora en comer su helado? (pfh_s)" />
 		</question>
 		<question number="14" type="psf_s" required="true">
-			<ask value="¿Cuando fue el ultimo dia en comer su helado?" />
+			<ask value="¿Cuando fue el ultimo dia en comer su helado? (psf_s)" />
 		</question>
 		<question number="15" type="psh_s" required="true">
-			<ask value="¿Cual es su hora favorita del dia para comer un helado?" />
-		</question>
-	</poll>
-	<poll title="encuesta2" name="Encuesta Helados 2" namePage="prueba2" detail="Esta es una encuesta de helados 2">
-		<question number="16" type="smu_rb" required="true">
-			<ask value="¿Cual es su sabor de helado favorito?" />
-			<option value="Fresa" />
-			<option value="Chicle" />
-			<option value="Arequipe" />
-			<option value="Queso" />
-			<option value="Feijoa" />
-			<option value="Mani" />
-		</question>
-		<question number="17" type="smu_s" required="true">
-			<ask value="¿Cual es su sabor de helado favorito?" />
-			<option value="Fresa" />
-			<option value="Chicle" />
-			<option value="Arequipe" />
-			<option value="Queso" />
-			<option value="Feijoa" />
-			<option value="Mani" />
-		</question>
-		<question number="18" type="smr_cb" required="true">
-			<ask value="¿Cuales son sus sabores de helado favoritos?" />
-			<option value="Fresa" />
-			<option value="Chicle" />
-			<option value="Arequipe" />
-			<option value="Queso" />
-			<option value="Feijoa" />
-			<option value="Mani" />
-		</question>
-		<question number="19" type="smr_sm" required="true">
-			<ask value="¿Cuales son sus sabores de helado favoritos?" />
-			<option value="Fresa" />
-			<option value="Chicle" />
-			<option value="Arequipe" />
-			<option value="Queso" />
-			<option value="Feijoa" />
-			<option value="Mani" />
-		</question>
-		<question number="20" type="mmr_rb" required="true">
-			<ask value="Evalue las siguientes preguntas" />
-			<rows>
-				<option value="¿Que tan Importante es su Educacion?" />
-				<option value="¿Que tan Importante es su Familia?" />
-				<option value="¿Que tan Importante es su Religion?" />
-				<option value="¿Que tan Importante es su Ejercicio Fisico?" />
-			</rows>
-			<columns>
-				<option value="Nada Importante" />
-				<option value="Poco Importante" />
-				<option value="Importante" />
-				<option value="Bastante Importante" />
-				<option value="Muy Importante" />
-			</columns>
-		</question>
-		<question number="21" type="mmr_cb" required="true">
-			<ask
-				value="¿Cuales sabores de helado son los favoritos para cada miembro de su familia?" />
-			<rows>
-				<option value="Papa" />
-				<option value="Mama" />
-				<option value="Hermana" />
-			</rows>
-			<columns>
-				<option value="Arequipe" />
-				<option value="Fresa" />
-				<option value="Chicle" />
-				<option value="Coco" />
-				<option value="Queso" />
-			</columns>
-		</question>
-		<question number="22" type="mmr_s" required="true">
-			<ask
-				value="Segun los siguientes sabores de helados seleccione el tipo de textura y sabor que prefiere" />
-			<rows>
-				<option value="Arequipe" />
-				<option value="Fresa" />
-				<option value="Chicle" />
-				<option value="Coco" />
-				<option value="Queso" />
-			</rows>
-			<columns>
-				<option value="textura">
-					<label value="Liso" />
-					<label value="Rugoso" />
-					<label value="Esponjoso" />
-				</option>
-				<option value="sabor">
-					<label value="Dulce" />
-					<label value="Amargo" />
-					<label value="Agridulce" />
-				</option>
-			</columns>
-		</question>
-		<question number="24" type="eru_rb" required="true">
-			<ask value="¿Que tan probable es que recomiende el helado de fresa?" />
-			<range minimum="0" maximum="10" labelminimum="Nada Probable" labelmaximum="Muy Probable"/>
-		</question>
-		<question number="25" type="psu_t" required="true">
-			<ask value="¿Cual es su marca de helado favorita?" />
-		</question>
-		<question number="26" type="psm_t" required="true">
-			<ask value="¿Cuales son sus tres marcas de helado?" />
-			<option value="3"></option>
-		</question>
-		<question number="27" type="psc_ta" required="true">
-			<ask value="¿Que es lo que mas le gusta de su helado favorito?" />
-		</question>
-		<question number="28" type="pfh_s" required="true">
-			<ask value="¿Cuando fue el ultimo dia y hora en comer su helado?" />
-		</question>
-		<question number="29" type="psf_s" required="true">
-			<ask value="¿Cuando fue el ultimo dia en comer su helado?" />
-		</question>
-		<question number="30" type="psh_s" required="true">
-			<ask value="¿Cual es su hora favorita del dia para comer un helado?" />
+			<ask value="¿Cual es su hora favorita del dia para comer un helado (psh_s)?" />
 		</question>
 	</poll>
 </polls>
-<!-- smu_rb = seleccion multiple unica respuesta radio button-->
-<!-- smu_s = seleccion multiple unica respuesta select-->
-<!-- smr_cb = seleccion múltiple multiple respuesta check box-->
-<!-- smr_sm = seleccion múltiple multiple respuesta select multiple-->
-<!-- mmr_rb = matriz multiples respuestas radio button-->  
-<!-- mmr_cb = matriz multiples respuestas check box-->
-<!-- mmr_s = matriz multiples respuestas select-->
-<!-- eru_rb escala de respuestas unica respuesta radio button -->
-<!-- psu_t pregunta simple unica respuesta text-->
-<!-- psm_t pregunta simple multiple respuesta text-->
-<!-- psc_ta  pregunta simple caja de comentario text area-->
-<!-- pfh_s pregunta simple fecha hora s-->
-<!-- psf_s pregunta simple fecha hora s-->
-<!-- psh_s pregunta simple hora s-->
